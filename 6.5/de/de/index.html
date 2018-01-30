@@ -805,15 +805,17 @@ Zu den Neuerungen zählen unter anderem:</p>
 <h4 id="rahmenbeschriftungnichtkorrekt">Rahmenbeschriftung nicht korrekt</h4>
 <h5 id="analyse-70">Analyse</h5>
 <p>Sowohl der Projektname als auch die Projektbeschreibung wurden in den Zeichnungsrahmen falsch eingesetzt.</p>
+<h5 id="ergebnis-67">Ergebnis</h5>
 <p>Die Rahmenbeschriftung ist nun korrekt.</p>
 <h4 id="textewurdenbeipdfexportmitfragezeichenstattapostropheausgegeben">Texte wurden bei PDF-Export mit Fragezeichen statt Apostrophe ausgegeben</h4>
 <h5 id="analyse-71">Analyse</h5>
 <p>Aufgrund eines Codierungsproblems wurden Apostrophe als Fragezeichen, in mittels intelligenten PDF-Export erzeugten PDFs, angezeigt.</p>
-<h5 id="ergebnis-67">Ergebnis</h5>
+<h5 id="ergebnis-68">Ergebnis</h5>
 <p>Alle Texte, in mittels intelligenten PDF-Export erzeugten PDFs, werden nun in UTF-8 codiert. Apostrophe werden damit wieder als Apostrophe angezeigt.</p>
 <h4 id="ausgabeformatbeipdfexporteinstellbar">Ausgabeformat bei PDF-Export einstellbar</h4>
 <h5 id="analyse-72">Analyse</h5>
 <p>Bisher konnte das Ausgabeformat der PDF beim intelligenten PDF-Export nicht eingestellt werden.</p>
+<h5 id="ergebnis-69">Ergebnis</h5>
 <p>Es besteht nun die Möglichkeit das Papierformat, die Ausrichtung und einen Rand zu bestimmen. Bitte beachten Sie, dass ein maßstabsgerechter Druck des Randes der generierten PDF nur dann möglich ist, wenn folgende Parameter eingehalten werden:</p>
 <ul>
 <li>Das Papierformat der PDF muss mit dem Papierformat des Drucks übereinstimmen.</li>
@@ -822,17 +824,17 @@ Zu den Neuerungen zählen unter anderem:</p>
 <h4 id="eingabevonungltigensymbolnamenbeisymbolerstellungundsymbolbearbeitung">Eingabe von ungültigen Symbolnamen bei Symbolerstellung und Symbolbearbeitung</h4>
 <h5 id="analyse-73">Analyse</h5>
 <p>Sowohl bei der Erstellung von Symbolen als auch beim Umbennen bzw. Kopieren von Symbolen konnten ungültige Zeichen für den Symbolnamen eingegeben werden. </p>
-<h5 id="ergebnis-68">Ergebnis</h5>
+<h5 id="ergebnis-70">Ergebnis</h5>
 <p>Ab sofort können nur noch die nachfolgenden Zeichen für Symbolnamen eingegeben werden: 0-9 a-z A-Z !#+-.@^_~</p>
 <h4 id="zeichnungsdateienbeipdfexportbersprungen">Zeichnungsdateien bei PDF-Export übersprungen</h4>
 <h5 id="analyse-74">Analyse</h5>
 <p>Es konnte vorkommen, dass Zeichnungsdateien, die ungültige Symbolnamen beinhalteten, beim intelligenten PDF-Export übersprungen wurden.</p>
-<h5 id="ergebnis-69">Ergebnis</h5>
+<h5 id="ergebnis-71">Ergebnis</h5>
 <p>Zeichnungsdateien die ungültige Symbolnamen beinhalten werden nun ebenfalls ausgegeben.</p>
 <h4 id="ausgabevongestricheltenlinienbeipdfexport">Ausgabe von gestrichelten Linien bei PDF-Export</h4>
 <h5 id="analyse-75">Analyse</h5>
 <p>Beim intelligenten PDF-Export wurden ursprünglich gestrichelte Linien als durchgezogene Linien ausgegeben.</p>
-<h5 id="ergebnis-70">Ergebnis</h5>
+<h5 id="ergebnis-72">Ergebnis</h5>
 <p>Gestrichelte Linien werden beim intelligenten PDF-Export wieder als gestrichelte Linien ausgegeben.</p>
 <h4 id="prjinfodaterstellen">PrjInfo.dat erstellen</h4>
 <p>In der Datei Prjinfo.dat werden die Daten eines Projektes gespeichert, die normalerweise in der Datenbank gespeichert sind. Diese Informationen werden beim Rekonstruieren und Anmelden von Projektes genutzt, um die Informationen in der jeweiligen Datenbank zu vervollständigen. Beim expliziten Erstellen der PrjInfo.dat wurden nicht die aktuellen Inhalte der Projektvariablen gespeichert.</p>
@@ -841,30 +843,30 @@ Zu den Neuerungen zählen unter anderem:</p>
 <h4 id="betriebsmittelmitmehrerenzugewiesenenartikelnbeipdfexport">Betriebsmittel mit mehreren zugewiesenen Artikeln bei PDF-Export</h4>
 <h5 id="analyse-76">Analyse</h5>
 <p>Wurden einem Betriebsmittel mehrere Artikel zugewiesen, so wurde immer nur der zuletzt hinzugefügte Artikel in den Artikelinformationen angezeigt.</p>
-<h5 id="ergebnis-71">Ergebnis</h5>
+<h5 id="ergebnis-73">Ergebnis</h5>
 <p>Alle Artikelinformationen zu allen den Betriebsmittel zugeordneten Artikel werden nun untereinandergeschrieben angezeigt.</p>
 <h4 id="ausgabevonzielverdrahtungbeipdfexport">Ausgabe von Zielverdrahtung bei PDF-Export</h4>
 <h5 id="analyse-77">Analyse</h5>
 <p>Bisher wurden Stromlaufpläne, beim intelligenten PDF-Export, immer mit Zielverdrahtung exportiert.</p>
-<h5 id="ergebnis-72">Ergebnis</h5>
+<h5 id="ergebnis-74">Ergebnis</h5>
 <p>Ob Stromlaufpläne mit Zielverdrahtung exportiert werden, hängt nun von der entsprechenden Einstellung (Extras &gt; Optionen &gt; System &gt; Darstellung &gt; Zielverdrahtung), in Treesoft CAD ab.</p>
 <h4 id="absturzderanwendungbeipdfexport">Absturz der Anwendung bei PDF-Export</h4>
 <h5 id="analyse-78">Analyse</h5>
 <p>Es konnte vorkommen, dass die Anwendung beim intelligenten PDF-Export abstürzt, wenn in einer der Zeichnungen leicht beschädigte Bitmaps hinterlegt sind.</p>
-<h5 id="ergebnis-73">Ergebnis</h5>
+<h5 id="ergebnis-75">Ergebnis</h5>
 <p>Durch eine Anpassung der verwendeten Funktionen zum Laden der Bitmaps in einer Zeichnung wurde erreicht, dass diese nun wesentlich unempfindlicher sind.</p>
 <h3 id="cadkonverter-6">CAD Konverter</h3>
 <h4 id="exportnichtmglich">Export nicht möglich</h4>
 <h5 id="analyse-79">Analyse</h5>
 <p>Es kann vorkommen, dass der Export nach ZNG nicht abgeschlossen werden kann,wenn die Quellzeichnung Schraffuren enthält.</p>
-<h5 id="ergebnis-74">Ergebnis</h5>
+<h5 id="ergebnis-76">Ergebnis</h5>
 <p>Die Auflösung der Schraffuren beim Export nach ZNG wurde angepasst und sollte den Abschluss des Exports nicht mehr behindern.</p>
 <h2 id="658">6.5.8</h2>
 <h3 id="cad-11">CAD</h3>
 <h4 id="absturzderanwendungbeipdfexport-1">Absturz der Anwendung bei PDF-Export</h4>
 <h5 id="analyse-80">Analyse</h5>
 <p>Treesoft CAD konnte beim PDF-Export von Zeichnungen, die viele Bilder enthalten, abstürzen.</p>
-<h5 id="ergebnis-75">Ergebnis</h5>
+<h5 id="ergebnis-77">Ergebnis</h5>
 <p>Die Pufferung, die sicherstellen sollte, dass ein Bild jeweils nur einmal in einer PDF hinterlegt wird, funktionierte nicht zuverlässig. Der Fehler wurde behoben, dies hat neben der Vermeidung des beschriebenen Absturzes den positiven Effekt, dass generierte PDF-Dateien mit vielen Bildern nun weniger Festplattenspeicher beanspruchen.</p>
 <h4 id="ausgabevonanschlusspunktenbeipdfexport">Ausgabe von Anschlusspunkten bei PDF-Export</h4>
 <p>Anschlusspunkte werden beim PDF-Export nicht länger ausgegeben.</p>
@@ -873,7 +875,7 @@ Zu den Neuerungen zählen unter anderem:</p>
 <h4 id="ausgabedesanteilesdermehrwertsteuereinerabschlagsrechnung">Ausgabe des Anteiles der Mehrwertsteuer einer Abschlagsrechnung</h4>
 <h5 id="analyse-81">Analyse</h5>
 <p>Wenn in einer Schlussrechnung in den Druck-Voreinstellungen "Nur Zwischensummen" gewählt ist, wird beim Abzug der Abschlagsrechnungen unter dem Gesamtbetrag der Schlussrechnung, der Anteil der Mehrwertsteuer nicht mehr ausgewiesen.</p>
-<h5 id="ergebnis-76">Ergebnis</h5>
+<h5 id="ergebnis-78">Ergebnis</h5>
 <p>Auch bei anderen Druckvoreinstellungen, wird der Anteil der Mehrwertsteuer für Abschlagsrechnungen nun in allen Schlussrechnungen ausgegeben.</p>
 <h2 id="656">6.5.6</h2>
 <h3 id="cad-12">CAD</h3>
@@ -890,124 +892,124 @@ Die intelligenten PDFs heben sich durch folgende Features von normalen PDFs ab:<
 <h4 id="projektkopieren">Projekt kopieren</h4>
 <h5 id="analyse-82">Analyse</h5>
 <p>Beim Kopieren eines Projektes im CAD bekamen einige Kunden die Fehlermeldung "Sie haben dem gewählten Projekt noch keinen Namen zugeordnet!". Der Kopiervorgang wurde damit auch beendet.</p>
-<h5 id="ergebnis-77">Ergebnis</h5>
+<h5 id="ergebnis-79">Ergebnis</h5>
 <p>Wir konnten, in Zusammenarbeit mit einigen Kunden das Problem analysieren, reproduzieren und haben es jetzt gelöst.</p>
 <h3 id="stammdaten-3">Stammdaten</h3>
 <h4 id="lieferantendatenknneninvolltextsuchenichtindiziertwerden">Lieferantendaten können in Volltextsuche nicht indiziert werden</h4>
 <h5 id="analyse-83">Analyse</h5>
 <p>Sowohl die Herstellerkurzbezeichnung als auch der Herstellercode konnten in der Volltextsuche nicht indiziert werden. Folglich blieb eine Suchanfrage nach einer der beiden Felder ergebnislos.</p>
-<h5 id="ergebnis-78">Ergebnis</h5>
+<h5 id="ergebnis-80">Ergebnis</h5>
 <p>Die Lieferantendaten werden nun ebenfalls korrekt indiziert. Es ist notwendig die Volltextsuche für Konfigurationen, welche die Herstellerkurzbezeichnung oder den Herstellercode beinhalten, neu aufzubauen!</p>
 <h3 id="importschnittstelle">Importschnittstelle</h3>
 <h4 id="performanceoptimierung">Performance-Optimierung</h4>
 <h5 id="analyse-84">Analyse</h5>
 <p>Mit der Version Treesoft Office 6.5 wurde ein neuer Volltextsuch-Server ausgeliefert. Einer der Vorteile ist, dass die Volltextsuche automatisch Änderungen an den Datensätzen in einer Volltextsuch-Konfiguration mitbekommt und diese automatisch aktualisiert. Durch das eingesetzte System für das Verfolgen der Änderungen dauerte der erneute Import von Katalogen (Kataloge aktualisieren) über die Schnittstellen DATANORM, ELDANORM, ZVEHNORM und Plug-ins je nach Anzahl der Volltextsuch-Konfigurationen ein vielfaches der Zeit in den Versionen 6.3 und 6.4.</p>
-<h5 id="ergebnis-79">Ergebnis</h5>
+<h5 id="ergebnis-81">Ergebnis</h5>
 <p>Durch eine Optimierung des Systems für die Änderungsverfolgung konnten wir den erneuten Import von Katalogen annähernd an die Geschwindigkeit des Imports in der Version 6.3 oder 6.4 angleichen. Der größte Vorteil bei dem neuen System ist, dass nach dem Aktualisieren eines bestehenden Katalogs zu dem es eine Volltextsuch-Konfiguration gibt, die Volltextsuche nicht erneut aufgebaut werden muss und sofort genutzt werden kann.</p>
 <h2 id="655">6.5.5</h2>
 <h3 id="cadgebudetechnikassistent">CAD Gebäudetechnik-Assistent</h3>
 <h4 id="einzelbemaung">Einzelbemaßung</h4>
 <h5 id="analyse-85">Analyse</h5>
 <p>In der Gebäudetechnik kann zwischen 4 unterschiedlichen Bemaßungsarten gewählt werden: Schrittbemaßung, horizontale Kettenbemaßung, vertikale Kettenbemaßung und Einzelbemaßung. Innerhalb der Bemaßungsfunktion können nächstgelegene Objekte nach oben, unten links oder rechts gefangen werden. Diese Funktionen sind nicht nur über die Schaltflächen der Toolbar aufrufbar, sondern auch über Kurztasten. Bis auf die Einzelbemaßung werden Objekte mit der Strg-Taste und der entsprechenden Pfeiltaste gefangen; in der Einzelbemaßung muss anstelle der Strg-Taste die Umschalt-Taste gedrückt werden.</p>
-<h5 id="ergebnis-80">Ergebnis</h5>
+<h5 id="ergebnis-82">Ergebnis</h5>
 <p>Die Funktion "Einzelbemaßung" in der Gebäudetechnik entspricht der Funktion "Bemaßung" des Schaltplan-Assistenten, d.h. Objekte werden mit der Umschalt+Pfeiltaste gefangen. Zwecks Optimierung des Arbeitsflusses werden nun in der Gebäudetechnik sowohl die Kurztasten mit der Umschalt-Taste als auch mit der Strg-Taste berücksichtigt. </p>
 <h3 id="cadkonverter-7">CAD Konverter</h3>
 <h4 id="nachzngkonvertiertezeichnungkannnichtgeffnetwerden">Nach ZNG konvertierte Zeichnung kann nicht geöffnet werden</h4>
 <h5 id="analyse-86">Analyse</h5>
 <p>Wurde eine Konvertierung einer Zeichnung mit Bildern nach ZNG durchgeführt, so konnte es vorkommen, dass die konvertierte Zeichnung nicht im CAD Konverter geöffnet werden konnte.</p>
-<h5 id="ergebnis-81">Ergebnis</h5>
+<h5 id="ergebnis-83">Ergebnis</h5>
 <p>Bei der Konvertierung nach ZNG konnten Bilder mit einer Höhe und Weite von null gespeichert werden, die der CAD Konverter nicht unterstützt. Entsprechende Bilder werden nun nicht mehr gespeichert.</p>
 <h3 id="crm-5">CRM</h3>
 <h4 id="versionsnummern">Versionsnummern</h4>
 <h5 id="analyse-87">Analyse</h5>
 <p>Fügt man eine neue Version in der Softwareverwaltung hinzu wird diese automatisch an das untere Ender der Liste hinzugefügt.</p>
-<h5 id="ergebnis-82">Ergebnis</h5>
+<h5 id="ergebnis-84">Ergebnis</h5>
 <p>Neue Einträge werden wie in allen anderen Listen in TreesoftOffice.org nun an der ersten Stelle hinzugefügt.</p>
 <h3 id="volltextsuche-8">Volltextsuche</h3>
 <h4 id="materialnummerkanninvolltextsuchenichtindiziertwerden">Materialnummer kann in Volltextsuche nicht indiziert werden</h4>
 <h5 id="analyse-88">Analyse</h5>
 <p>Die Materialnummer konnte in der Volltextsuche nicht indiziert, werden. Folglich blieb eine Suchanfrage nach einer Materialnummer ergebnislos.</p>
-<h5 id="ergebnis-83">Ergebnis</h5>
+<h5 id="ergebnis-85">Ergebnis</h5>
 <p>Die Materialnummer wird nun ebenfalls korrekt indiziert. Es ist notwendig die Volltextsuche für Konfigurationen, welche die Materialnummer beinhalten neu aufzubauen! </p>
 <h2 id="654">6.5.4</h2>
 <h3 id="cad-13">CAD</h3>
 <h4 id="dokumentenbaumzeigtnichtallezweigean">Dokumentenbaum zeigt nicht alle Zweige an</h4>
 <h5 id="analyse-89">Analyse</h5>
 <p>Es konnte vorkommen, dass nicht alle Zweige im Dokumentenbaum von Treesoft CAD angezeigt wurden.</p>
-<h5 id="ergebnis-84">Ergebnis</h5>
+<h5 id="ergebnis-86">Ergebnis</h5>
 <p>Es werden nun wieder alle Zweige angezeigt.</p>
 <h4 id="kopierenvonprojekten">Kopieren von Projekten</h4>
 <h5 id="analyse-90">Analyse</h5>
 <p>Beim Kopieren von Projekten über Treesoft CAD und anschließendem Ändern des Oberbegriffs im Treesoft CRM wurden sowohl das alte als auch das neue Projekt umbenannt. </p>
-<h5 id="ergebnis-85">Ergebnis</h5>
+<h5 id="ergebnis-87">Ergebnis</h5>
 <p>Das Kopieren von Projekten im Treesoft CAD funktioniert nun erwartungsgemäß.</p>
 <h3 id="cadgebudetechnikassistent-1">CAD Gebäudetechnik-Assistent</h3>
 <h4 id="hintergrundzeichnungwirdbeinderungvonblattformatmastabignoriert">Hintergrundzeichnung wird bei Änderung von Blattformat/Maßstab ignoriert</h4>
 <h5 id="analyse-91">Analyse</h5>
 <p>Mittels CAD Konverter, in das ZNG-Format, konvertierte Zeichnungen werden als Hintergrundzeichnung in Treesoft CAD angezeigt. Wird in Treesoft CAD das Blattformat bzw. der Maßstab geändert so muss auch die Hintergrundzeichnung angepasst werden. Es konnte dabei vorkommen, dass der Bezugspunkt der Hintergrundzeichnung außerhalb des Zeichnungsbereiches verschoben wurde. Nachfolgende Änderungen an Blattformat bzw. Maßstab wurden nachfolgend ignoriert.</p>
-<h5 id="ergebnis-86">Ergebnis</h5>
+<h5 id="ergebnis-88">Ergebnis</h5>
 <p>Der Bezugspunkt der Hintergrundzeichnung wird nun, bei einer Konvertierung in das ZNG-Format, vom CAD Konverter genau in die Mitte des Arbeitsbereichs gelegt. Änderungen an Blattformat bzw. Maßstab in Treesoft CAD sollten nun nicht mehr zu Folge haben, dass der Bezugspunkt in einen Bereich außerhalb der Zeichnung verschoben wird.</p>
 <h3 id="cadkonverter-8">CAD Konverter</h3>
 <h4 id="fehlerhaftepositionierungbeibidirektionalemimport">Fehlerhafte Positionierung bei bidirektionalem Import</h4>
 <h5 id="analyse-92">Analyse</h5>
 <p>Wurde das Blattformat oder der Maßstab eines exportierten Grundrisses in Treesoft CAD geändert, so konnte es vorkommen, dass neue Elemente beim bidirektionalen Import, fehlerhaft positioniert wurden. </p>
-<h5 id="ergebnis-87">Ergebnis</h5>
+<h5 id="ergebnis-89">Ergebnis</h5>
 <p>Die Positierung ist nun korrekt.</p>
 <h4 id="definierenvonexportbereichennachffnungeinerkonfigurationsdatei">Definieren von Exportbereichen nach Öffnung einer Konfigurationsdatei</h4>
 <h5 id="analyse-93">Analyse</h5>
 <p>Nach der Öffnung einer Konfigurationsdatei, in einem der Assistenten zur Konvertierung nach ZNG, konnte es vorkommen, dass zwar neue Exportbereiche definiert werden konnten, diese jedoch nicht berücksichtigt wurden.</p>
-<h5 id="ergebnis-88">Ergebnis</h5>
+<h5 id="ergebnis-90">Ergebnis</h5>
 <p>Neu definierte Exportbereiche werden nun berücksichtigt.</p>
 <h3 id="crmschnittstellesage-1">CRM Schnittstelle Sage</h3>
 <h4 id="untersttzungdersage100ehemalssageofficeline">Unterstützung der Sage 100 (ehemals Sage Office Line)</h4>
 <h5 id="analyse-94">Analyse</h5>
 <p>Das Produkt Sage Office Line wurde zu Sage 100 umbenannt.</p>
-<h5 id="ergebnis-89">Ergebnis</h5>
+<h5 id="ergebnis-91">Ergebnis</h5>
 <p>Wir haben geprüft und sichergestellt, dass die aktuelle Office Line-Schnittstelle auch mit Sage 100 funktioniert.</p>
 <h3 id="projektverwaltung-1">Projektverwaltung</h3>
 <h4 id="bilderimdateibaumvontreesoftcad">Bilder im Dateibaum von Treesoft CAD</h4>
 <h5 id="analyse-95">Analyse</h5>
 <p>Die Bilder im png- oder bmp-Format wurden im Dateibaum von Treesoft CAD nicht unter CAD Konverter angezeigt.</p>
-<h5 id="ergebnis-90">Ergebnis</h5>
+<h5 id="ergebnis-92">Ergebnis</h5>
 <p>Wir haben den Filter für die Dateimasken korrigiert und damit sichergestellt, dass die Bilder jetzt auch unterhalb des Zweiges CAD Konverter angezeigt werden.</p>
 <h3 id="notifier-2">Notifier</h3>
 <h4 id="anwendungimvordergrundbeimffneneinestelefonates">Anwendung im Vordergrund beim Öffnen eines Telefonates</h4>
 <h5 id="analyse-96">Analyse</h5>
 <p>Beim Öffnen eines Telefonates aus dem Treesoft Notifier konnte es passieren, dass das Telefonat im Hintergrund geöffnet wurde. Das Problem hat sich immer dann gezeigt, wenn Treesoft Office minimiert oder durch eine andere Anwendung überdeckt wurde.  </p>
-<h5 id="ergebnis-91">Ergebnis</h5>
+<h5 id="ergebnis-93">Ergebnis</h5>
 <p>Beim Öffnen eines Telefonates aus dem Treesoft Notifier wird Treesoft Office nun aktiviert und im Vordergrund angezeigt. Das Telefonat öffnet sich nun sichtbar für den Anwender.  </p>
 <h3 id="volltextsuche-9">Volltextsuche</h3>
 <h4 id="zusammengesetztewrterwerdennichtgefunden">Zusammengesetzte Wörter werden nicht gefunden</h4>
 <h5 id="analyse-97">Analyse</h5>
 <p>Mittels "+" zusammengesetzte Wörter, wie z. B. "A+B", wurden nicht gefunden.</p>
-<h5 id="ergebnis-92">Ergebnis</h5>
+<h5 id="ergebnis-94">Ergebnis</h5>
 <p>Wörter, die Mittels + zusammengesetzt wurden, werden nun gefunden. Um Wörter zu finden, die mittels "&amp;", "|" oder "-" zusammengesetzt wurden, muss das jeweilige Zeichen vornan mit "\" maskiert werden. Z. B. "A\&amp;B", "A\|B" oder "A\-B".</p>
 <h2 id="653">6.5.3</h2>
 <h3 id="crmadressverwaltung-1">CRM Adressverwaltung</h3>
 <h4 id="ndernderkundenlieferantenodermitarbeiternummer">Ändern der Kunden-, Lieferanten- oder Mitarbeiternummer</h4>
 <h5 id="analyse-98">Analyse</h5>
 <p>Die Eingabe von Buchstaben oder Sonderzeichen bei Kunden-, Lieferanten- oder Mitarbeiternummer führte zu einem unerwarteten Programmabbruch.</p>
-<h5 id="ergebnis-93">Ergebnis</h5>
+<h5 id="ergebnis-95">Ergebnis</h5>
 <p>Die Eingabe wird nun auf ungültige Zeichen geprüft und im Fehlerfall wird eine aussagekräftige Meldung für den Benutzer ausgegeben.</p>
 <h3 id="system-1">System</h3>
 <h4 id="fehlerhaftedarstellungintreesoftoffice">Fehlerhafte Darstellung in Treesoft Office</h4>
 <h5 id="analyse-99">Analyse</h5>
 <p>Durch eine Korrektur der Darstellung unter Windows 10 kam es bei Windows Vista bis einschließlich Windows 8.0 und den entsprechenden Server-Betriebssystemen Windows Server 2008/2008R2 und 2012 bei der Adressverwaltung, dem Optionen-Dialog, dem Texteditor und den Stammdaten zu Darstellungsfehlern.</p>
-<h5 id="ergebnis-94">Ergebnis</h5>
+<h5 id="ergebnis-96">Ergebnis</h5>
 <p>Wir haben die gemachten Änderungen wieder zurückgenommen, sodass es auch unter den genannten Betriebssystemen zu keinen Darstellungsfehlern kommt.</p>
 <h2 id="652">6.5.2</h2>
 <h3 id="crmadressverwaltung-2">CRM Adressverwaltung</h3>
 <h4 id="adressanlage">Adressanlage</h4>
 <h5 id="analyse-100">Analyse</h5>
 <p>Bei der Anlage oder beim Bearbeiten von Adressen konnte es unter wenigen Umständen zu einem unerwarteten Programmabbruch kommen.</p>
-<h5 id="ergebnis-95">Ergebnis</h5>
+<h5 id="ergebnis-97">Ergebnis</h5>
 <p>Die Adressanlage führt jetzt auch in den wenigen Umständen nicht zu einem unerwarteten Programmabbruch.</p>
 <h2 id="651">6.5.1</h2>
 <h3 id="cad-14">CAD</h3>
 <h4 id="bilderradierenimschaltplangebudetechnikassistent">Bilder radieren im Schaltplan-/Gebäudetechnik-Assistent</h4>
 <h5 id="analyse-101">Analyse</h5>
 <p>Bilder mit einer Farbtiefe von 32 Bit konnten bisher nicht radiert werden.</p>
-<h5 id="ergebnis-96">Ergebnis</h5>
+<h5 id="ergebnis-98">Ergebnis</h5>
 <p>Die Unterstützung, für Bilder mir einer Farbtiefe von 32 Bit, wurde der Funktion hinzugefügt.</p>
                         </div>
                     </div>
