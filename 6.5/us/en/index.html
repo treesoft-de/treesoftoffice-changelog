@@ -69,8 +69,10 @@
             font-size: 12pt;
             background-color: #EC911A;
             color: #FFFFFF;
-            margin: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
             margin-bottom: 20px;
+            margin-top: 30px;
         }
 
         #contentArea blockquote p {
@@ -94,6 +96,14 @@
                         <div class="ui left very close rail">
                             <div class="ui segment orange sticky">
                                 <div class="ui list">
+                                    
+                                    <div style="margin-top: 5px">
+                                        <b>
+                                            <a class="item" href="#6528">
+                                                6.5.28
+                                            </a>
+                                        </b>
+                                    </div>
                                     
                                     <div style="margin-top: 5px">
                                         <b>
@@ -306,722 +316,735 @@
   <p>This article was translated by machine.</p>
 </blockquote>
 <h1 id="changelogversion65">Changelog Version 6.5</h1>
+<h2 id="6528">6.5.28</h2>
+<h3 id="erpdokumente">ERP Dokumente</h3>
+<h4 id="crashwhenpostingcreditmemos">Crash when posting credit memos</h4>
+<h5 id="dissection">Dissection</h5>
+<p>Posting credit memos causes a crash if no invoice exists.</p>
+<h5 id="outcome">Outcome</h5>
+<p>The error has been fixed and the user is now told to add an invoice. </p>
+<h3 id="stammdaten">Stammdaten</h3>
+<h4 id="improvedstabilityonsomesystems">Improved stability on some systems</h4>
+<h5 id="dissection-1">Dissection</h5>
+<p>On some systems and under the influence of time factors, the software crashed when storing materials and services. </p>
+<h5 id="outcome-1">Outcome</h5>
+<p>The stability of materials and performance has been improved so that this error can no longer occur.</p>
 <h2 id="6527">6.5.27</h2>
 <h3 id="cad">CAD</h3>
 <h4 id="umschaltendersprache">Umschalten der Sprache</h4>
-<h5 id="dissection">Dissection</h5>
+<h5 id="dissection-2">Dissection</h5>
 <p>In order to change the CAD language, it was previously necessary to manually copy different translation files into the program directory.</p>
-<h5 id="outcome">Outcome</h5>
+<h5 id="outcome-2">Outcome</h5>
 <p>The language is now switched automatically according to the language selected in the login dialog.</p>
 <h3 id="crmschnittstellesage">CRM Schnittstelle Sage</h3>
 <h4 id="errorwithincorrectlyconfiguredinterface">Error with incorrectly configured interface</h4>
-<h5 id="dissection-1">Dissection</h5>
+<h5 id="dissection-3">Dissection</h5>
 <p>Gaps in error handling of the interface to Sage New Classic.</p>
-<h5 id="outcome-1">Outcome</h5>
+<h5 id="outcome-3">Outcome</h5>
 <p>Error handling related to incorrectly installed connections to Sage New Classic has been improved.</p>
 <h3 id="volltextsuche">Volltextsuche</h3>
-<h4 id="minimalesurchwortlngeignoriert">Minimale Surchwortlänge ignoriert</h4>
-<h5 id="dissection-2">Dissection</h5>
-<p>In der Adressliste von Treesoft Office wurden keine Adressen mit Suchbegriffen von weniger als drei Zeichen gefunden, auch dann nicht, wenn die minimale Suchwortlänge in den Einstellungen auf kleiner drei Zeichen eingestellt wurde. Ebenso wurden keine Materialien im Materialstamm gefunden, wenn der Suchbegriff kleiner zwei Zeichen war.</p>
-<h5 id="outcome-2">Outcome</h5>
-<p>Sowohl die Suche in der Adressliste als auch die Suche im Materialstamm reagieren nun auf Suchbegriffe, die mindestens ein Zeichen lang sind. Suchbegriffe kleiner als die minimale Suchwortlänge werden so behandelt, als ob der eingegebene Begriff nicht gefunden wurde.</p>
+<h4 id="minimumwordlengthignored">Minimum word length ignored</h4>
+<h5 id="dissection-4">Dissection</h5>
+<p>No addresses with search terms of less than three characters were found in the address list of Treesoft Office, even if the minimum search word length was set to less than three characters in the settings. Similarly, no materials were found in the material master if the search term was less than two characters.</p>
+<h5 id="outcome-4">Outcome</h5>
+<p>Both the address list search and the material master search now respond to search terms that are at least one character long. Search terms smaller than the minimum search word length are treated as if the entered term was not found.</p>
 <h2 id="6525">6.5.25</h2>
 <h3 id="cad-1">CAD</h3>
-<h4 id="texteinpassungbeiprojekteinzeldruckinkorrekt">Texteinpassung bei Projekt-/Einzeldruck inkorrekt</h4>
-<h5 id="dissection-3">Dissection</h5>
-<p>Bei Verwendung der Bildschirmskalierung von Windows auf High-DPI Monitoren wurden Texte beim Projekt-/Einzeldruck inkorrekt eingepasst wenn die Font ISO 3098 verwendet wurde.</p>
-<h5 id="outcome-3">Outcome</h5>
-<p>Die Einpassung ist nun auch bei Verwendung der Bildschirmskalierung von Windows korrekt.</p>
-<h4 id="kreiseundkreisbgenbeipdfexportnichtgestrichelt">Kreise und Kreisbögen bei PDF-Export nicht gestrichelt</h4>
-<p>Kreise und Kreisbögen können beim intelligenten PDF-Export nun ebenfalls gestrichelt ausgegeben werden.</p>
-<h3 id="erpdokumente">ERP Dokumente</h3>
-<h4 id="absturzbeimbearbeitenvonaufmalistenohnezugewiesenesraumbuch">Absturz beim Bearbeiten von Aufmaßlisten ohne zugewiesenes Raumbuch</h4>
-<h5 id="dissection-4">Dissection</h5>
-<p>Wurde eine Aufmaßliste ohne zugewiesenes Raumbuch bearbeitet, indem der Benutzer versuchte, eine Position hinzuzufügen, stürzte das Programm ab.</p>
-<h5 id="outcome-4">Outcome</h5>
-<p>Da Positionen in Aufmaßlisten immer Räumen zugeordnet werden, ist es nicht mehr möglich, Aufmaßlisten ohne zugewiesenes Raumbuch zu bearbeiten.</p>
-<h4 id="absturzwhrenddesschreibensvonneuemmaterialoderlohnineinestckliste">Absturz während des Schreibens von neuem Material oder Lohn in eine Stückliste</h4>
+<h4 id="incorrecttextfitforprojectindividualprinting">Incorrect text fit for project/individual printing</h4>
 <h5 id="dissection-5">Dissection</h5>
-<p>Fälschlicherweise war die Funktion 'Neues Material oder Lohn in diese Stückliste schreiben' nach dem Öffnen der Rechnung aktiv, obwohl das Dokument ausgewählt war. Führte der Benutzer die Funktion auf dem Dokument aus, trat ein Fehler auf, da direkt in das Dokument keine Materialien oder Löhne geschrieben werden können.</p>
+<p>When using the screen scaling of Windows on high DPI monitors, texts were incorrectly fitted during project/individual printing when using the ISO 3098 font.</p>
 <h5 id="outcome-5">Outcome</h5>
-<p>Es ist nicht mehr möglich die Funktion 'Neues Material oder Lohn in diese Stückliste schreiben' auf dem Dokument auszuführen.</p>
-<h3 id="projektverwaltung">Projektverwaltung</h3>
-<h4 id="mehrfachvergabevonprojektnummern">Mehrfachvergabe von Projekt-Nummern</h4>
+<p>Adjustment is now correct even when using Windows screen scaling.</p>
+<h4 id="nondashedcirclesandarcsforpdfexport">Non-dashed circles and arcs for PDF export</h4>
+<p>Circles and arcs can now also be output with dashed lines in intelligent PDF export.</p>
+<h3 id="erpdokumente-1">ERP Dokumente</h3>
+<h4 id="crashwheneditingmeasurementlistswithoutanassignedroombook">Crash when editing measurement lists without an assigned room book</h4>
 <h5 id="dissection-6">Dissection</h5>
-<p>Bei langsameren Netzwerkverbindungen konnte es vorkommen, dass Projektnummern mehrfach vergeben wurden. Das führt zwar nicht beim Anlegen, Kopieren, Anmelden und Rekonstruieren zum Problem, allerdings beim erneuten Öffnen der Projekte.</p>
+<p>If a measurement list was edited without an assigned room book by the user trying to add a position, the program crashed.</p>
 <h5 id="outcome-6">Outcome</h5>
-<p>Wir haben ein Verfahren implementiert das verhindert, dass eine Projektnummer mehrfach vergeben werden kann.</p>
-<h3 id="treesoftoffice">Treesoft Office</h3>
-<h4 id="bilderimoptionendialogbilderinoriginalgreanzeigenfhrtzumabsturzdersoftware">Bilder im Optionendialog - Bilder in Originalgröße Anzeigen führt zum Absturz der Software</h4>
+<p>Since positions in measurement lists are always assigned to rooms, it is no longer possible to edit measurement lists without an assigned room book.</p>
+<h4 id="crasheswhilewritingnewmaterialorwagestoabillofmaterial">Crashes while writing new material or wages to a bill of material</h4>
 <h5 id="dissection-7">Dissection</h5>
-<p>Nachdem im Optionendialog die Funktion "Bilder in Originalgröße Anzeigen" benutzt wurde, stürzte das Programm beim Beenden ab.</p>
-<p>Die Funktion "Bilder in Originalgröße Anzeigen" wurde vollständig entfernt.</p>
-<h4 id="absturzbeimffnenvongrundlagenbilderimoptionendialog">Absturz beim Öffnen von Grundlagen -&gt; Bilder im Optionendialog</h4>
-<h5 id="dissection-8">Dissection</h5>
-<p>Beim Öffnen des Fensters Grundlagen -&gt; Bilder im Optionendialog ist die Software abgestürzt, 
-wenn fehlerhafte Bilder in der Datenbank gespeichert waren. </p>
+<p>The' Write new material or payroll to BOM' function was incorrectly activated after opening the invoice, even though the document was selected. If the user executed the function on the document, an error occurred because no materials or wages can be written directly into the document.</p>
 <h5 id="outcome-7">Outcome</h5>
-<p>Befinden sich fehlerhafte Bilder in der Datenbank, werden diese jetzt ignoriert und können neu belegt werden.</p>
+<p>It is no longer possible to execute the function' Write new material or wage to this BOM' on a document.</p>
+<h3 id="projektverwaltung">Projektverwaltung</h3>
+<h4 id="multipleassignmentofprojectnumbers">Multiple assignment of project numbers</h4>
+<h5 id="dissection-8">Dissection</h5>
+<p>With slower network connections it could happen that project numbers were assigned several times. This does not cause any problems when creating, copying, logging in and reconstructing, but it does cause problems when the projects are opened again.</p>
+<h5 id="outcome-8">Outcome</h5>
+<p>We have implemented a procedure that prevents a project number from being assigned more than once.</p>
+<h3 id="treesoftoffice">Treesoft Office</h3>
+<h4 id="imagesinoptionsdialogimagesinoriginalsizedisplayleadstosoftwarecrash">Images in options dialog - Images in original size Display leads to software crash</h4>
+<h5 id="dissection-9">Dissection</h5>
+<p>After using the "Show images in original size" function in the options dialog, the program crashed when exiting.</p>
+<p>The function "Show images in original size" has been removed completely.</p>
+<h4 id="crashwhenopeningbasicsimagesintheoptionsdialog">Crash when opening Basics -&gt; Images in the Options dialog</h4>
+<h5 id="dissection-10">Dissection</h5>
+<p>The software crashed when opening the Basics -&gt; Images window in the Options dialog, 
+if faulty images were stored in the database. </p>
+<h5 id="outcome-9">Outcome</h5>
+<p>If there are faulty images in the database, they are now ignored and can be re-used.</p>
 <h2 id="6524">6.5.24</h2>
 <h3 id="cadkonverter">CAD Konverter</h3>
-<h4 id="funktionenreagierennuraufeingabetaste">Funktionen reagieren nur auf Eingabetaste</h4>
-<p>Die Betätigung der Entertaste erfüllt nun die gleiche Funktion wie die Betätigung der Eingabetaste.</p>
-<h4 id="maximalnutzbarerarbeitsbereicherweiterbar">Maximal nutzbarer Arbeitsbereich erweiterbar</h4>
-<h5 id="dissection-9">Dissection</h5>
-<p>In den Assistenten "PDF/DWG/DXF zum Konvertieren nach ZNG für die GT/ST öffnen" ist der nutzbare Arbeitsbereich, sofern nicht der originale Rahmen verwendet wird, auf die Ausdehnung der Standard-Rahmenzeichnungen begrenzt.</p>
-<h5 id="outcome-8">Outcome</h5>
-<p>Ab sofort besteht die Möglichkeit, die nutzbare Arbeitsfläche für eigene Rahmenzeichnungen anzupassen. Weitere Informationen zu der Anpassung des Arbeitsbereichs für eigene Rahmenzeichnungen finden Sie in der Dokumentation "Arbeitshandbuch-CAD Konverter.pdf".</p>
-<h3 id="crm">CRM</h3>
-<h4 id="lschenvongrafikeninadressinformationen">Löschen von Grafiken in Adressinformationen</h4>
-<p>Das Löschen von Grafiken in Adressinformationen konnte nicht gespeichert werden.</p>
-<h4 id="absturzindublettenbereinigungbeiinvertierterfindliste">Absturz in Dublettenbereinigung bei invertierter Findliste</h4>
-<p>Die Dublettenbereinigung ist abgestürzt, wenn die Findliste für Adressen doppelt invertiert und keine Adresse markiert wurde.</p>
-<h4 id="fehlendestandardkonfigurationbeidervolltextsuche">Fehlende Standardkonfiguration bei der Volltextsuche</h4>
-<h5 id="dissection-10">Dissection</h5>
-<p>In manchen Fällen wurde keine Standardkonfiguration für die Volltextsuche ausgewählt, obwohl mindestens eine vorhanden war.</p>
-<h5 id="outcome-9">Outcome</h5>
-<p>Es wird nun eine Konfiguration ausgewählt, wenn mindestens eine vorhanden ist.</p>
-<h4 id="absturzbeidervolltextsuchenachadressen">Absturz bei der Volltextsuche nach Adressen</h4>
-<p>Das CRM stürzte bei der Volltextsuche ab, wenn das Suchfenster teilweise außerhalb des Bildschirms lag.</p>
-<h3 id="stammdaten">Stammdaten</h3>
-<h4 id="absturzbeimspeicherversuchvonleerenstcklisten">Absturz beim Speicherversuch von leeren Stücklisten</h4>
+<h4 id="functionsrespondonlytoreturnkey">Functions respond only to return key</h4>
+<p>Pressing the Enter key will now perform the same function as pressing the Enter key.</p>
+<h4 id="maximumusableworkspaceexpandable">Maximum usable workspace expandable</h4>
 <h5 id="dissection-11">Dissection</h5>
-<p>Beim Ändern von Eigenschaften von Stücklisten kam es zum Absturz, wenn keine Daten vorhanden waren.</p>
+<p>In the "Open PDF/DWG/DXF to convert to ZNG for GT/ST" wizards, the usable workspace is limited to the extension of the standard frame drawings, unless the original frame is used.</p>
 <h5 id="outcome-10">Outcome</h5>
-<p>Eigenschaften können nur für gültige Daten geändert werden.</p>
+<p>From now on it is possible to adapt the usable working area for your own frame drawings. For more information on customizing the workspace for your own frame drawings, see the documentation "Work Manual CAD Converter. pdf".</p>
+<h3 id="crm">CRM</h3>
+<h4 id="deletinggraphicsinaddressinformation">Deleting graphics in address information</h4>
+<p>The deletion of graphics in address information could not be saved.</p>
+<h4 id="crashinduplicatecleanupwithinvertedfindlist">Crash in duplicate cleanup with inverted find list</h4>
+<p>The duplicate cleanup crashed if the find list for addresses was inverted twice and no address was selected.</p>
+<h4 id="missingdefaultconfigurationforfulltextsearch">Missing default configuration for full-text search</h4>
+<h5 id="dissection-12">Dissection</h5>
+<p>In some cases, no default configuration was selected for the full-text search, although at least one was available.</p>
+<h5 id="outcome-11">Outcome</h5>
+<p>A configuration is now selected if at least one exists.</p>
+<h4 id="crashduringfulltextsearchforaddresses">Crash during full text search for addresses</h4>
+<p>The CRM crashed during a full text search when the search window was partially out of screen.</p>
+<h3 id="stammdaten-1">Stammdaten</h3>
+<h4 id="crashwhentryingtosaveemptyboms">Crash when trying to save empty BOMs</h4>
+<h5 id="dissection-13">Dissection</h5>
+<p>When changing the properties of BOMs, there was a crash if no data existed.</p>
+<h5 id="outcome-12">Outcome</h5>
+<p>Properties can only be changed for valid data.</p>
 <h3 id="treesoftoffice-1">Treesoft Office</h3>
-<h4 id="nderungammenservice">Änderung am Menü Service</h4>
-<p>Menü Servicepack herunterladen in Update herunterladen umbenannt und Menü Upgrade anfordern hinzugefügt.</p>
+<h4 id="changetotheservicemenu">Change to the Service menu</h4>
+<p>Menu Download Service Pack renamed to Download Update and menu Request Upgrade added.</p>
 <h3 id="volltextsuche-1">Volltextsuche</h3>
-<h4 id="bestellnummerundeanknnenindiziertwerden">Bestellnummer und EAN können indiziert werden</h4>
-<p>Ab sofort können sowohl die Bestellnummer als auch die EAN zu einem Material indiziert werden.</p>
+<h4 id="ordernumberandeancanbeindexed">Order number and EAN can be indexed</h4>
+<p>From now on, both the purchase order number and the EAN for a material can be indexed.</p>
 <h2 id="6523">6.5.23</h2>
 <h3 id="notifier">Notifier</h3>
-<h4 id="telefonatefiltern">Telefonate filtern</h4>
-<h5 id="dissection-12">Dissection</h5>
-<p>Das Filtern von Telefonaten im Notifier hat nicht immer zuverlässig funktioniert. </p>
-<h5 id="outcome-11">Outcome</h5>
-<p>Es ist nun wieder möglich, Telefonate im Notifier, beispielsweise nach Telefonnummern zu durchsuchen. </p>
+<h4 id="filteringcalls">Filtering calls</h4>
+<h5 id="dissection-14">Dissection</h5>
+<p>Filtering calls in the notifier did not always work reliably. </p>
+<h5 id="outcome-13">Outcome</h5>
+<p>It is now possible to search for phone numbers in the notifier again. </p>
 <h3 id="treesoftoffice-2">Treesoft Office</h3>
-<h4 id="erlaubtelngefrnamenvonemailservernerhht">Erlaubte Länge für Namen von E-Mail Servern erhöht</h4>
-<h5 id="dissection-13">Dissection</h5>
-<p>Bisher war die Länge des Hostnamens für E-Mail Server auf 30 Zeichen beschränkt.</p>
-<h5 id="outcome-12">Outcome</h5>
-<p>Die Länge des Hostnamens wurde auf 255 Zeichen erhöht. 
-Zusätzlich ist es nun möglich lange E-Mail Adressen von bis zu 254 Zeichen zu verwenden. Diese Größe entspricht der maximalen Größe, die laut Standard erlaubt ist. </p>
+<h4 id="allowedlengthfornamesofemailserversincreased">Allowed length for names of e-mail servers increased</h4>
+<h5 id="dissection-15">Dissection</h5>
+<p>Previously, the length of the host name for e-mail servers was limited to 30 characters.</p>
+<h5 id="outcome-14">Outcome</h5>
+<p>The length of the host name has been increased to 255 characters. 
+In addition, it is now possible to use long e-mail addresses of up to 254 characters. This size corresponds to the maximum size allowed by the standard. </p>
 <h2 id="6522">6.5.22</h2>
 <h3 id="cad-2">CAD</h3>
-<h4 id="artikelinformationenbeipdfexportnichtausgeben">Artikelinformationen bei PDF-Export nicht ausgeben</h4>
-<h5 id="dissection-14">Dissection</h5>
-<p>Die Artikelinformationen zu einem Betriebsmittelkennzeichen wurden, sofern vorhanden, immer mit ausgegeben.</p>
-<h5 id="outcome-13">Outcome</h5>
-<p>Es besteht nun die Möglichkeit, die Ausgabe der Artikelinformationen zu deaktivieren. Weitere Informationen zum Deaktivieren der Ausgabe finden Sie in der Dokumentation "Arbeitshandbuch-Projekt-Einzeldruck-und-PDF-Export.pdf".</p>
-<h3 id="cadkonverter-1">CAD Konverter</h3>
-<h4 id="ebeneninklusivereferenzierenderobjektelschen">Ebenen inklusive referenzierender Objekte löschen</h4>
-<h5 id="dissection-15">Dissection</h5>
-<p>Ebenen können nur gelöscht werden, wenn kein Objekt diese Ebene referenziert. Es war im Vorfeld notwenig alle referenzierenden Objekte händisch zu löschen.</p>
-<h5 id="outcome-14">Outcome</h5>
-<p>Ab sofort werden referenzierende Objekte automatisch gelöscht. Sollte dies nicht vollständig gelingen, weil die Ebene beispielsweise Exportbereiche enthält, so wird diese nicht gelöscht.</p>
-<h3 id="crm-1">CRM</h3>
-<h4 id="mailingauswahldialogspalteneinstellungenspeichern">Mailing-Auswahl Dialog Spalten-Einstellungen speichern</h4>
+<h4 id="donotoutputarticleinformationwhenexportingpdffiles">Do not output article information when exporting PDF files</h4>
 <h5 id="dissection-16">Dissection</h5>
-<p>Aktuell werden die Spalteneinstellungen im Mailing-Auswahl Dialog nicht gespeichert.</p>
+<p>The article information for an equipment designation has always been output, if available.</p>
 <h5 id="outcome-15">Outcome</h5>
-<p>Die Spalteneinstellungen werden nun personenbezogen gespeichert. </p>
-<h4 id="zusammenfhrungvonansprechpartnernbeisehrgeringerhnlichkeit">Zusammenführung von Ansprechpartnern bei sehr geringer Ähnlichkeit</h4>
+<p>It is now possible to deactivate the output of the article information. For more information on disabling output, see the documentation "Work Manual Project Single Print and PDF Export. pdf".</p>
+<h3 id="cadkonverter-1">CAD Konverter</h3>
+<h4 id="deletinglayersincludingreferencingobjects">Deleting layers including referencing objects</h4>
 <h5 id="dissection-17">Dissection</h5>
-<p>Bei der Zusammenführung von Dubletten werden Ansprechpartner zusammengeführt, obwohl nur eine sehr geringe Ähnlichkeit besteht. </p>
+<p>Layers can only be deleted if no object references this layer. It was necessary to delete all referencing objects manually beforehand.</p>
 <h5 id="outcome-16">Outcome</h5>
-<p>Ansprechpartner werden nur noch bei großen Ähnlichkeiten zusammengefügt.</p>
-<h3 id="erpdokumente-1">ERP Dokumente</h3>
-<h4 id="absturzbeimffnenvondokumenten">Absturz beim Öffnen von Dokumenten</h4>
+<p>From now on, referencing objects are deleted automatically. If this is not completely successful because the layer contains export areas, for example, it is not deleted.</p>
+<h3 id="crm-1">CRM</h3>
+<h4 id="mailingselectiondialogsavecolumnsettings">Mailing selection dialog Save column settings</h4>
 <h5 id="dissection-18">Dissection</h5>
-<p>Unter bestimmten Umständen ist die Software beim Öffnen eines Dokumentes abgestürzt. </p>
-<p>Dieser Fehler wurde behoben.</p>
-<h4 id="absturzdurchauswahleinesnichtvollstndigkonfiguriertensteuerkennzeichens">Absturz durch Auswahl eines nicht vollständig konfigurierten Steuerkennzeichens</h4>
-<h5 id="dissection-19">Dissection</h5>
-<p>Wurden neue Steuerkennzeichen angelegt, jedoch nicht in der Zuordnungsmatrix konfiguriert und in den Einstellungen einer Rechnung unter Steuern ausgewählt, kam es zu einem Absturz der Software.</p>
+<p>Currently, the column settings are not saved in the Mailing Selection dialog.</p>
 <h5 id="outcome-17">Outcome</h5>
-<p>Steuerkennzeichen müssen ab sofort immer erst in der Zuordnungsmatrix vollständig konfiguriert werden, bevor sie in einer Rechnung ausgewählt werden können.</p>
-<h3 id="stammdaten-1">Stammdaten</h3>
-<h4 id="absturzbeimauswhlenanlegenbearbeiteneinerrabattgruppehauptwarengruppewarengruppe">Absturz beim Auswählen/Anlegen/Bearbeiten einer Rabattgruppe/Hauptwarengruppe/Warengruppe</h4>
-<h5 id="dissection-20">Dissection</h5>
-<ul>
-<li>Ein Klick auf die Schaltfläche für die Rabattgruppe oder die Hauptwarengruppe bzw. Warengruppe für ein Material führte zum Absturz der Software.</li>
-<li>Wurde versucht, eine neue Rabattgruppe in dem Rabattgruppen-Auswahlfenster anzulegen, stürzte die Software ab.</li>
-</ul>
+<p>The column settings are now saved for each person. </p>
+<h4 id="mergingofcontactpersonswithverylowsimilarity">Merging of contact persons with very low similarity</h4>
+<h5 id="dissection-19">Dissection</h5>
+<p>When duplicates are merged, contact persons are brought together, although there is only a very small similarity. </p>
 <h5 id="outcome-18">Outcome</h5>
-<p>Auch wenn eine Rabattgruppe, Hauptwarengruppe oder Warengruppe in dem jeweiligen Textfeld ausgewählt ist, die noch nicht in den Datenbanken angelegt wurde, kann das spezifische Auswahlfenster problemlos geöffnet werden, um die Gruppenauswahl anzupassen. 
-Außerdem kann das Auswahlfenster für die Rabattgruppe nun ohne Programmfehler dazu genutzt werden, neue Rabattgruppen anzulegen oder zu bearbeiten.</p>
-<h3 id="eintrge">Einträge</h3>
-<h4 id="menbefehleverschoben">Menübefehle verschoben</h4>
-<p>Die Befehle im Kontextmenü "Verknüpfte Adressen anzeigen" und "E-Mail mit Adresse verknüpfen" wurden aus dem Untermenü "Historie" eine Ebene nach oben verschoben.</p>
-<h3 id="computertelefonie">Computertelefonie</h3>
-<h4 id="telefonielistezeigtnichtalletelefonate">Telefonieliste zeigt nicht alle Telefonate</h4>
+<p>Contact persons are only put together if there are major similarities.</p>
+<h3 id="erpdokumente-2">ERP Dokumente</h3>
+<h4 id="crashwhenopeningdocuments">Crash when opening documents</h4>
+<h5 id="dissection-20">Dissection</h5>
+<p>Under certain circumstances, the software crashed when opening a document. </p>
+<p>This error has been fixed.</p>
+<h4 id="crashbyselectinganincompletelyconfiguredtaxcode">Crash by selecting an incompletely configured tax code</h4>
 <h5 id="dissection-21">Dissection</h5>
-<p>Die Telefonieliste zeigt maximal 2000 Telefonate an.</p>
+<p>If new tax codes were created but not configured in the allocation matrix and selected under Taxes in the invoice settings, the software crashed.</p>
 <h5 id="outcome-19">Outcome</h5>
-<p>Dieses Limit wurde nun aufgehoben, sodass alle den Filterbedingungen entsprechenden Telefonate angezeigt werden.</p>
-<h3 id="treesoftoffice-3">Treesoft Office</h3>
-<h4 id="neuigkeitenimstartcenter">Neuigkeiten im Startcenter</h4>
-<p>Über einen neuen Bereich im Startcenter erhalten Sie nun stets aktuelle Informationen über Treesoft oder das Produkt Treesoft Office.</p>
-<h4 id="fehlerhaftedarstellungvoninhaltenintabellenvonerpdokumentenprojektenundadressen">Fehlerhafte Darstellung von Inhalten in Tabellen von ERP Dokumenten, Projekten und Adressen</h4>
+<p>From now on, tax codes must always be fully configured in the assignment matrix before they can be selected in an invoice.</p>
+<h3 id="stammdaten-2">Stammdaten</h3>
+<h4 id="crashwhenselectingcreatingeditingadiscountgroupmajormerchandisecategorymerchandisegroup">Crash when selecting/creating/editing a discount group/major merchandise category/merchandise group</h4>
 <h5 id="dissection-22">Dissection</h5>
-<p>Bei der Vorschau und beim Drucken von ERP Dokumenten, Projekten und Adressen wurden Inhalte, die in Tabellen waren, nicht korrekt dargestellt. </p>
+<ul>
+<li>A click on the button for the discount group or the main merchandise category or merchandise category for a material caused the software to crash.</li>
+<li>If an attempt was made to create a new discount group in the discount group selection window, the software crashed.</li>
+</ul>
 <h5 id="outcome-20">Outcome</h5>
-<p>Da die von uns verwendete Komponente zum Drucken und zur Vorschau, auf eine spezifische Version der RTF-Dlls setzt, liefern wir diese nun auch in unserem Program-Verzeichnis mit. Damit nutzt Treesoft Office für den Druck und die Vorschau die mitgelieferte Dlls und nicht die vom System. </p>
-<h4 id="unsichtbaresortierungsschaltflcheinemailkontenausgehend">Unsichtbare Sortierungs-Schaltfläche in "E-Mail Konten ausgehend"</h4>
+<p>Even if a discount group, main merchandise category or merchandise category is selected in the respective text field that has not yet been created in the databases, the specific selection window can be opened without any problems to adjust the group selection. 
+In addition, the selection window for the discount group can now be used to create or edit new discount groups without program errors.</p>
+<h3 id="eintrge">Einträge</h3>
+<h4 id="menucommandsmoved">Menu commands moved</h4>
+<p>The commands in the context menu "Show linked addresses" and "Link e-mail with address" have been moved up one level from the submenu "History".</p>
+<h3 id="computertelefonie">Computertelefonie</h3>
+<h4 id="telephonelistdoesnotshowallcalls">Telephone list does not show all calls</h4>
 <h5 id="dissection-23">Dissection</h5>
-<p>Im Untermenü "E-Mail Konten ausgehend" des Optionen-Menüs wurde die Schaltfläche (unten rechts) zum Sortieren der E-Mail Konten nicht angezeigt. Die Schaltfläche konnte angeklickt und die dahinter liegende Funktion genutzt werden.</p>
+<p>The telephone list displays a maximum of 2000 calls.</p>
 <h5 id="outcome-21">Outcome</h5>
-<p>Die Schaltfläche zum Sortieren der Konten wird ordnungsgemäß angezeigt und ist weiterhin anwählbar.</p>
-<h4 id="prfendereinstellungderausgehendenemailkontenschlugtrotzvalidereingabenfehl">'Prüfen' der Einstellung der ausgehenden Email-Konten schlug trotz valider Eingaben fehl</h4>
+<p>This limit has now been removed, so that all calls corresponding to the filter conditions are displayed.</p>
+<h3 id="treesoftoffice-3">Treesoft Office</h3>
+<h4 id="newsinthestartcenter">News in the Start Center</h4>
+<p>A new area in the Start Center provides you with up-to-date information about Treesoft or the product Treesoft Office.</p>
+<h4 id="incorrectpresentationofcontentintablesoferpdocumentsprojectsandaddresses">Incorrect presentation of content in tables of ERP documents, projects and addresses</h4>
 <h5 id="dissection-24">Dissection</h5>
-<p>Im Optionen-Menü unter dem Punkt "E-Mail konnten ausgehend" lassen sich die eingegebenen E-Mail-Einstellungen überprüfen. Diese Überprüfung schlug auch bei korrekten Eingaben fehl.</p>
+<p>When previewing and printing ERP documents, projects and addresses, contents that were in tables were not displayed correctly. </p>
 <h5 id="outcome-22">Outcome</h5>
-<p>Die Funktion zum Überprüfen der E-Mail-Einstellungen kann zuverlässig genutzt werden. Der Benutzer wird korrekt über die Validität der Eingaben informiert.</p>
-<h3 id="demomandant">Demomandant</h3>
-<h4 id="fehlerhaftekonvertierungderdatumsangaben">Fehlerhafte Konvertierung der Datumsangaben</h4>
+<p>Since the component we use for printing and previewing is based on a specific version of the RTF dlls, we now also include them in our program directory. Treesoft Office uses the included dlls for printing and previewing, not the system dlls. </p>
+<h4 id="invisiblesortbuttoninoutgoingemailaccounts">Invisible sort button in outgoing email accounts.</h4>
 <h5 id="dissection-25">Dissection</h5>
-<p>Auf Systemen, welche eine andere Ländereinstellung als deutsch aufweisen, kam es aufgrund von inkompatiblen Datumsformaten zum unmittelbaren Absturz des Demomandanten nach dem Start der Software.</p>
+<p>In the Outgoing E-mail Accounts submenu of the Options menu, the button (lower right) for sorting e-mail accounts was not displayed. The button could be clicked and the function behind it could be used.</p>
 <h5 id="outcome-23">Outcome</h5>
-<p>Der Demomandant kann nun unabhängig von den systemweiten Ländereinstellungen zuverlässig verwendet werden.</p>
+<p>The button for sorting the accounts is displayed correctly and can still be selected.</p>
+<h4 id="checkthesettingofoutgoingemailaccountsfaileddespitevalidentries">'Check' the setting of outgoing email accounts failed despite valid entries</h4>
+<h5 id="dissection-26">Dissection</h5>
+<p>In the options menu under the item "Outgoing e-mail could be checked the entered e-mail settings. This check failed even if the input was correct.</p>
+<h5 id="outcome-24">Outcome</h5>
+<p>The e-mail settings check function can be used reliably. The user is correctly informed about the validity of the entries.</p>
+<h3 id="demomandant">Demomandant</h3>
+<h4 id="incorrectdateconversion">Incorrect date conversion</h4>
+<h5 id="dissection-27">Dissection</h5>
+<p>On systems with a different country setting than German, the demo client crashed immediately after starting the software due to incompatible date formats.</p>
+<h5 id="outcome-25">Outcome</h5>
+<p>The demo client can now be used reliably regardless of the system-wide country settings.</p>
 <h2 id="6521">6.5.21</h2>
 <h3 id="cadkonverter-2">CAD Konverter</h3>
-<h4 id="verzeichniswahlbeimexportnachzng">Verzeichniswahl beim Export nach ZNG</h4>
-<h5 id="dissection-26">Dissection</h5>
-<p>Da der CAD Konverter im Gegensatz zum CAD nicht an Projekte gebunden ist, wird im ZNG-Export Dialog immer das Verzeichnis der zuletzt geöffneten Zeichnung als Zielverzeichnis vorgeschlagen. Aufgrund dieser Eigenschaft kommt es regelmäßig vor, dass die Zeichnungen in das falsche Verzeichnis exportiert werden.</p>
-<h5 id="outcome-24">Outcome</h5>
-<p>Ab sofort kann im ZNG-Export Dialog auch ein Projekt als Ziel angegeben werden. Beim Öffnen des Dialogs erhalten Sie einen Hinweis, wenn das durch die zuletzt geöffnete Zeichnung vorgeschlagene Verzeichnis kein Projektverzeichnis ist. Sollte eines der geöffneten Zeichnungen einem Projekt zuordenbar sein, so wird dieses Projekt auch als Ziel vorgeschlagen.</p>
+<h4 id="directoryselectionforexporttozng">Directory selection for export to ZNG</h4>
+<h5 id="dissection-28">Dissection</h5>
+<p>As the CAD converter is not bound to projects, the ZNG-Export dialog always suggests the directory of the last opened drawing as the target directory. Due to this property, it happens regularly that the drawings are exported to the wrong directory.</p>
+<h5 id="outcome-26">Outcome</h5>
+<p>From now on you can also specify a project as destination in the ZNG-Export dialog. When opening the dialog box, you will receive a message if the directory suggested by the last opened drawing is not a project directory. If one of the open drawings can be assigned to a project, this project is also proposed as a target.</p>
 <h2 id="6520">6.5.20</h2>
 <h3 id="cad-3">CAD</h3>
-<h4 id="orientierungbeimprojekteinzeldrucknichtkorrektangewendet">Orientierung beim Projekt-/Einzeldruck nicht korrekt angewendet</h4>
-<h5 id="dissection-27">Dissection</h5>
-<p>Es konnte vorkommen, dass die Orientierung beim Projekt-/Einzeldruck nicht korrekt angewendet wurde, wenn ein nicht standardisiertes/druckbares Papierformat vom Drucker vorgegeben wird.</p>
-<h5 id="outcome-25">Outcome</h5>
-<p>Die Orientierung sollte nun, auch bei nicht standardisierten/druckbaren Papierformaten, korrekt angewendet werden.</p>
-<h4 id="wiederherstellungderzuletztgeschaltetenseiten">Wiederherstellung der zuletzt geschalteten Seite(n)</h4>
-<p>Ab sofort wird sowohl für den Projekt-/Dateidruck als auch den intelligenten PDF-Export gespeichert und wiederhergestellt, welche Seiten, im Dialog "Seiten schalten" der Ausgabe mit Ausnahme von benutzerdefinierten Seiten, geschaltet wurden.</p>
-<h4 id="volltextsucheinfunktionsymbolsetzen">Volltextsuche in Funktion Symbol setzen</h4>
-<h5 id="dissection-28">Dissection</h5>
-<p>Bei der Verwendung der Volltextsuche über die Funktion Symbol setzen wurden in einigen Fällen keine Ergebnisse gefunden. </p>
-<h5 id="outcome-26">Outcome</h5>
-<p>Es werden nun in allen Fällen zuverlässig Ergebnisse gefunden. </p>
-<h3 id="crm-2">CRM</h3>
-<h4 id="vorlageadressenfrkundeninformationendefinieren">Vorlage Adressen für Kundeninformationen definieren</h4>
-<p>Beim Anlegen der Kundeninformationen zu einer Adresse gab es bisher keine Möglichkeit die Kundeninformationen aus einer vorhandenen Adresse zu übernehmen.
-Besonders für Anwender von Treesoft Office ERP ist das manuelle Ausfüllen der Kundeninformationen eine zeitaufwendige Angelegenheit.</p>
-<p>Es können nun vorhandene Adressen mit Kundeninformationen als Vorlage mit einer Kurzbeschreibung im Optionendialog im Zweig "Adressen &gt; Vorlage für Kundeninformationen" ausgewählt werden. Beim Erstellen der Kundeninformationen zu einer Adresse werden bei der Auswahl einer Vorlageadresse folgende Einstellungen übernommen:</p>
-<ul>
-<li>Währung</li>
-<li>Kontrollkästchen Steuerkennzeichen aus Kundenstamm übernehmen</li>
-<li>Steuerkennzeichen</li>
-<li>Standardfarbe der Dokumente</li>
-<li>Gruppenfeld Zahlungsbedingungen</li>
-<li>Gruppenfeld Preisbildung</li>
-<li>Gruppenfeld Mahnwesen</li>
-<li>Gruppenfeld Gemeinkostenzuschläge GKZ</li>
-</ul>
-<p>Wir stellen unseren Quellcode nach und nach auf einen einheitlichen Standard um. Daher ist ab sofort die Funktion "Lücken füllen" für den Nummernkreis der Kunden nicht mehr auswählbar, bis für unsere Software ein einheitliches Verfahren für Nummernkreise eingeführt ist.</p>
-<h3 id="erpdokumente-2">ERP Dokumente</h3>
-<h4 id="darstellungsproblembeiderdruckausgabeeinernormalpositionmiteinerartikelnummerlnger23zeichen">Darstellungsproblem bei der Druckausgabe einer Normalposition mit einer Artikelnummer länger 23 Zeichen</h4>
+<h4 id="projectsingleprintorientationnotappliedcorrectly">Project/Single print orientation not applied correctly</h4>
 <h5 id="dissection-29">Dissection</h5>
-<p>Ist bei einer Normalposition die Artikelnummer länger als 23 Zeichen und ist die Druckoption "Artikelnummer drucken" nicht ausgewählt, wird die 1. Zeile der betroffenen Position nicht dargestellt.</p>
+<p>It could happen that the orientation was not correctly applied during project/individual printing if a non-standardized/printable paper format is specified by the printer.</p>
 <h5 id="outcome-27">Outcome</h5>
-<p>Das Darstellungsproblem ist nun für Normal- und Alternativpositionen beseitigt.</p>
-<h4 id="positionspreise">Positionspreise</h4>
+<p>The orientation should now be applied correctly, even for non-standardised/printable paper formats.</p>
+<h4 id="restoringthelastpagesswitched">Restoring the last page (s) switched</h4>
+<p>From now on, both for project/file printing and intelligent PDF export, it will save and restore which pages have been switched in the Switch Pages dialog of the output except for user-defined pages.</p>
+<h4 id="fulltextsearchinfunctionsetsymbol">Full-text search in function Set symbol</h4>
 <h5 id="dissection-30">Dissection</h5>
-<p>Vor dem Jahr 2008 wurde das Verfahren zum Kopieren von Gliederungen, Positionen und Positionsstücklisten angepasst. Dabei kam es für einen kurzen Zeitraum zu Überschneidungen der Verfahren. Werden nun Teile aus betroffenen Positionen kopiert, kann es zu Abweichungen im Positionspreis kommen, wenn die Berechnung aus der Sicht der Position oder aus einer anderen Sicht durchgeführt wird. Diese Überschneidung ist sehr selten da sie nur bei ganz speziellen Kalkulationseinstellungen und vorhandenen Dokumenten mit Überschneidungen in der Positionsstückliste auftritt. Die Ursache konnte dank der Mithilfe eines Kunden genau analysiert werden.</p>
+<p>In some cases, no results were found when using the Set symbol function for the full text search. </p>
 <h5 id="outcome-28">Outcome</h5>
-<p>Wenn nun Gliederungen oder Positionen aus Dokumenten mit Überschneidungen in der Positionsstückliste übernommen werden, treten diese Abweichungen nicht mehr auf.</p>
-<h3 id="volltextsuche-2">Volltextsuche</h3>
-<h4 id="umlautenichtkorrektindiziert">Umlaute nicht korrekt indiziert</h4>
+<p>Results are now reliably found in all cases. </p>
+<h3 id="crm-2">CRM</h3>
+<h4 id="definingaddressesforcustomerinformationtemplate">Defining Addresses for Customer Information Template</h4>
+<p>When creating customer information for an address, it was previously not possible to copy the customer information from an existing address.
+Especially for users of Treesoft Office ERP, manually filling in customer information is a time-consuming task.</p>
+<p>Existing addresses with customer information can now be selected as a template with a short description in the options dialog in the branch "Addresses &gt; Template for customer information". When creating customer information for an address, the following settings are applied when selecting a reference address:</p>
+<ul>
+<li>Currency - Currency</li>
+<li>Check box Copy tax codes from customer base</li>
+<li>Tax code</li>
+<li>Standard color of documents</li>
+<li>Group field Payment terms and conditions</li>
+<li>Group field Pricing</li>
+<li>Group field Dunning system</li>
+<li>Group field Overhead rates GKZ</li>
+</ul>
+<p>We are gradually changing our source code to a uniform standard. For this reason, the "Fill gaps" function is no longer available for customers' number ranges until a uniform procedure for number ranges has been introduced for our software.</p>
+<h3 id="erpdokumente-3">ERP Dokumente</h3>
+<h4 id="displayproblemwithprintingastandarditemwithanarticlenumberlongerthan23characters">Display problem with printing a standard item with an article number longer than 23 characters</h4>
 <h5 id="dissection-31">Dissection</h5>
-<p>Mit der Version 6.5.XX wurde die Datenbankverbindung des Volltextservers auf Unicode umgestellt. Leider wurde dabei die spezielle Behandlung von Text-Datenblöcken in der Datenbank nicht berücksichtigt. Dies hatte zur Folge, dass z. B. die Langtexte der Materialien fehlerhaft indiziert wurden und eine Suchanfrage, welche die Zeichen €,äÄ,üÜ,öÖ,ß enthielt, ergebnislos blieb.</p>
+<p>If the article number for a standard item is longer than 23 characters and the print option "Print article number" is not selected, the first line of the affected item is not displayed.</p>
 <h5 id="outcome-29">Outcome</h5>
-<p>Text-Datenblöcke werden nun korrekt indiziert. In jedem Fall raten wir Ihnen den vollständigen Neuaufbau aller Volltextsuchkonfigurationen. Wechsel Sie dazu bitte in den Optionen Dialog von Treesoft Office [Strg]+[Umsch.]+[O]. Hier den Zweig "Grundlagen &gt; Volltextsuche" wählen und im Kontextmenü zu den Volltextsuchkonfigurationen den Befehl "Alle Konfigurationen zurücksetzen" betätigen und mit "Ja" bestätigen. Anschließend im Kontextmenü zu den Volltextsuchkonfigurationen den Befehl "Alle Konfigurationen indizieren" betätigen, um den Neuaufbau zu starten.</p>
-<h3 id="treesoftoffice-4">Treesoft Office</h3>
-<h4 id="anzeigeeinesentwicklungsmenpunktes">Anzeige eines Entwicklungs-Menüpunktes</h4>
-<p>Das Menü Entwickler wurde entfernt.</p>
-<h3 id="startcenter">Start-Center</h3>
-<h4 id="bersetzbarkeitvonstartcenterherstellen">Übersetzbarkeit von Start-Center herstellen</h4>
+<p>The display problem for normal and alternative items has now been solved.</p>
+<h4 id="positionprices">position prices</h4>
 <h5 id="dissection-32">Dissection</h5>
-<p>Jedes Widget im Start-Center bezieht Titel und Beschreibung direkt aus der Datenbank. Die dort vorliegenden Texte können jedoch nicht übersetzt werden, da diese eventuell Benutzereingaben beinhalten. Die Anpassung der Anzeigesprache der Software an die Betriebssystemsprache ist daher nicht möglich.</p>
+<p>Before 2008, the procedure for copying outlines, items and item BOMs was adapted. The procedures overlaped for a short period of time. If you now copy parts from affected items, variances in the item price can occur if the calculation is carried out from the viewpoint of the item or from another viewpoint. This overlap is very rare because it occurs only for very special costing settings and existing documents with overlaps in the item BOM. Thanks to the assistance of a customer, the cause could be analysed in detail.</p>
 <h5 id="outcome-30">Outcome</h5>
-<p>Standard-Widgets beziehen Titel und Beschreibung nun nicht mehr aus der Datenbank, sondern aus den Programmressourcen, wodurch eine Anpassung der Anzeigesprache auf die Betriebssystemsprache möglich ist.</p>
+<p>If you transfer groupings or items from documents with overlaps in the item BOM, these variances no longer occur.</p>
+<h3 id="volltextsuche-2">Volltextsuche</h3>
+<h4 id="umlautsnotindexedcorrectly">Umlauts not indexed correctly</h4>
+<h5 id="dissection-33">Dissection</h5>
+<p>With version 6.5. XX, the database connection of the full text server was changed to Unicode. Unfortunately, the special handling of text data blocks in the database was not taken into account. As a result, for example, the long texts of the materials were incorrectly indexed and a search query containing the characters €, äÄ, üÜÜÜ, öÖÖ, ß remained unsuccessful.</p>
+<h5 id="outcome-31">Outcome</h5>
+<p>Text data blocks are now indexed correctly. In any case, we advise you to completely rebuild all full-text search configurations. To do this, please switch to the Options dialog of Treesoft Office[Ctrl]+[Shift].]+[O]. Select the branch "Basics &gt; Full-text search" and in the context menu for the full-text search configurations, select the command "Reset all configurations" and confirm with "Yes". Then, in the context menu for the full-text search configurations, press the "Index all configurations" command to start the rebuild.</p>
+<h3 id="treesoftoffice-4">Treesoft Office</h3>
+<h4 id="displayofadevelopmentmenuitem">Display of a development menu item</h4>
+<p>The Developer menu has been removed.</p>
+<h3 id="startcenter">Start-Center</h3>
+<h4 id="translatestartcenterintootherlanguages">Translate Start-Center into other languages</h4>
+<h5 id="dissection-34">Dissection</h5>
+<p>Each widget in the Start Center gets its title and description directly from the database. However, the texts available there cannot be translated because they may contain user input. It is therefore not possible to adapt the display language of the software to the operating system language.</p>
+<h5 id="outcome-32">Outcome</h5>
+<p>Standard widgets no longer retrieve the title and description from the database, but from the program resources, which makes it possible to adapt the display language to the operating system language.</p>
 <h2 id="6519">6.5.19</h2>
 <h3 id="cad-4">CAD</h3>
-<h4 id="zoomendervorschauimprojektdateidruckundintelligentempdfexport">Zoomen der Vorschau im Projekt-/Dateidruck und intelligentem PDF-Export</h4>
-<p>Im Vorschaufenster zum Projekt-/Dateidruck und intelligentem PDF-Export stehen nun die Befehle "Zoom +", "Zoom -" und "Zoom 1:1" zur Verfügung.</p>
-<h4 id="orientierungbeiprojektdateidruckundintelligentempdfexport">Orientierung bei Projekt-/Dateidruck und intelligentem PDF-Export</h4>
-<p>Ab sofort kann, sowohl beim Projekt-/Dateidruck als auch beim intelligenten PDF-Export, die Orientierung der Seiten auf "Querformat" bzw. "Hochformat" gesetzt werden.</p>
-<h4 id="skalierungbeiprojektdateidruckundpdfexport">Skalierung bei Projekt-Dateidruck und PDF-Export</h4>
-<p>Die Skalierungsart "An Seite angepasst" wurde in "An Seite angepasst (S/V beibeh.)" umbenannt und eine zusätzliche Skalierungsart "An Seite angepasst (S/V ignorieren)" hinzugefügt. Weitere Informationen zu der neuen Skalierungsart finden Sie in der Dokumentation "Arbeitshandbuch-Projekt-Einzeldruck-und-PDF-Export.pdf".</p>
-<h4 id="berschreibendesmaximalendruckbereichs">Überschreiben des maximalen Druckbereichs</h4>
-<p>Ab sofort kann beim Projekt-/Dateidruck der Druckbereich auf "Maximum" umgestellt werden. Anschließend werden die Vorgaben des Druckers, bezüglich des maximal druckbaren Bereichs, ignoriert und ein beliebig kleiner Rand kann eingestellt werden.</p>
+<h4 id="zoompreviewinprojectfileprintingandintelligentpdfexport">Zoom preview in project/file printing and intelligent PDF export</h4>
+<p>The "Zoom +","Zoom -" and "Zoom 1:1" commands are now available in the preview window for project/file printing and intelligent PDF export.</p>
+<h4 id="orientationforprojectfileprintingandintelligentpdfexport">Orientation for project/file printing and intelligent PDF export</h4>
+<p>With immediate effect, the orientation of the pages can be set to "landscape format" or "portrait format", both for project / file printing and for intelligent PDF export.</p>
+<h4 id="scalingforprojectfileprintingandpdfexport">Scaling for project file printing and PDF export</h4>
+<p>The scaling type "Fit to Page" has been renamed to "Fit to Page" and an additional scaling type "Fit to Page (Ignore S/V)" has been added. Further information on the new scaling method can be found in the documentation "Work Manual Project Single Print and PDF Export. pdf".</p>
+<h4 id="overwritingthemaximumprintrange">Overwriting the maximum print range</h4>
+<p>With immediate effect, the print range can be changed to "Maximum" for project and file printing. Afterwards, the printer defaults regarding the maximum printable area are ignored and an arbitrarily small margin can be set.</p>
 <h3 id="cadkonverter-3">CAD Konverter</h3>
-<h4 id="aktualisierungvonpdfimportbibliothek">Aktualisierung von PDF-Import Bibliothek</h4>
-<p>Die Bibliothek wurde auf v11.0.3.1 aktualisiert.</p>
-<h3 id="erpdokumente-3">ERP Dokumente</h3>
-<h4 id="programmabbruchbeizuschnellemschlieenvonfenstern">Programmabbruch bei zu schnellem Schließen von Fenstern</h4>
-<h5 id="dissection-33">Dissection</h5>
-<p>Beim Beenden eines ERP-Dokuments oder der Projektliste wurde das Programm in sehr seltenen Fällen unerwartet beendet.</p>
-<p>Durch das Abblenden der Schließen-Schaltfläche während des Ladevorgangs verhindern wir diesen Programmabbruch.</p>
-<h4 id="bernahmeundstandardvorlagefrdenvorundschlusstext">Übernahme und Standardvorlage für den Vor- und Schlusstext</h4>
-<h5 id="dissection-34">Dissection</h5>
-<p>Bisher gab es keine Möglichkeit den Vor- oder Schlusstext aus anderen Dokumenten zu übernehmen oder eine Vorlage beim Erstellen eines Dokumentes automatisch einzufügen.</p>
-<h5 id="outcome-31">Outcome</h5>
-<p>Im Optionendialog Dokument -&gt; Vor- Schlusstexte können Vorlagen für die unterschiedlichen ERP Dokumente ausgewählt werden. Diese werden beim Anlegen eines neuen ERP Dokumentes automatisch eingefügt.
-Im Dialog neues ERP-Dokument kann der Vor- oder Schlusstext aus einem anderen Dokument ausgewählt werden.</p>
-<h4 id="ausgabedeslohnanteiles">Ausgabe des Lohnanteiles</h4>
+<h4 id="updatingthepdfimportlibrary">Updating the PDF import library</h4>
+<p>The library has been updated to v11.0.3.1.</p>
+<h3 id="erpdokumente-4">ERP Dokumente</h3>
+<h4 id="programabortifwindowsclosetoofast">Program abort if windows close too fast</h4>
 <h5 id="dissection-35">Dissection</h5>
-<p>Bisher gab es keine Möglichkeit den Lohnanteil in einem ERP-Dokument auszugeben.</p>
-<h5 id="outcome-32">Outcome</h5>
-<p>Der Lohnanteil kann nun zum Dokument als Gesamtsumme mit einem Text wahlweise vor oder nach den Zahlungsbedingungen ausgegeben werden. 
-Der Text wird definiert im Optionendialog Dokument -&gt; Prüfung/Schutz/Texte.
-In den Druckoptionen zum ERP-Dokument kann gewählt werden, ob der Lohnanteil vor oder nach den Zahlungsbedingungen ausgegeben werden soll. Weiterhin ist es möglich den Lohnanteil zu jeder Position auszugeben.</p>
-<h3 id="volltextsuche-3">Volltextsuche</h3>
-<h4 id="volltextsucheimmaterialstamm">Volltextsuche im Materialstamm</h4>
+<p>When terminating an ERP document or the project list, the program was unexpectedly terminated in very rare cases.</p>
+<p>By hiding the close button during the loading process, we prevent this program from aborting.</p>
+<h4 id="transferandstandardtemplateforthepreliminaryandfinaltext">Transfer and standard template for the preliminary and final text</h4>
 <h5 id="dissection-36">Dissection</h5>
-<p>Bei der Benutzung der Volltextsuche im Materialstamm konnten beim schnellen Tippen einzelne Buchstaben verloren gehen.</p>
+<p>Until now, it was not possible to copy the preliminary or final text from other documents or to insert a template automatically when creating a document.</p>
 <h5 id="outcome-33">Outcome</h5>
-<p>Beim Suchen über die Volltextsuche sollten nun keine Buchstaben mehr verloren gehen. </p>
+<p>In the options dialog Document -&gt; Preliminary texts you can select templates for the different ERP documents. These are inserted automatically when a new ERP document is created.
+In the New ERP Document dialog, you can select the preliminary or final text from another document.</p>
+<h4 id="outputofwageshare">Output of wage share</h4>
+<h5 id="dissection-37">Dissection</h5>
+<p>Up to now, there has been no way of outputting the wage share in an ERP document.</p>
+<h5 id="outcome-34">Outcome</h5>
+<p>The wage share can now be output to the document as a total with a text either before or after the payment conditions. 
+The text is defined in the options dialog Document -&gt; Validation/Protection/Protection/Texts.
+In the print options for the ERP document, you can choose whether the wage share is to be output before or after the payment terms. It is also possible to display the wage share for each item.</p>
+<h3 id="volltextsuche-3">Volltextsuche</h3>
+<h4 id="fulltextsearchinthematerialmaster">Full text search in the material master</h4>
+<h5 id="dissection-38">Dissection</h5>
+<p>When using the full text search in the material master, single letters could be lost when typing fast.</p>
+<h5 id="outcome-35">Outcome</h5>
+<p>When searching through the full-text search, no more letters should be lost. </p>
 <h2 id="6518">6.5.18</h2>
 <h3 id="cad-5">CAD</h3>
-<h4 id="farbpalettenbeiprojektdateidruckundpdfexportvertauscht">Farbpaletten bei Projekt-/Dateidruck und PDF-Export vertauscht</h4>
-<h5 id="dissection-37">Dissection</h5>
-<p>Die Farbpaletten "Standard weißer Hintergrund" und "Standard schwarzer Hintergrund" waren im Listenfeld der jeweils anderen Farbpalette zugeordnet.</p>
-<h5 id="outcome-34">Outcome</h5>
-<p>Die Farbpaletten sind nun korrekt zugeordnet.</p>
-<h4 id="gestricheltelinienwerdenzuschwachgedruckt">Gestrichelte Linien werden zu schwach gedruckt</h4>
-<h5 id="dissection-38">Dissection</h5>
-<p>Die Druckausgabe wurde erst kürzlich auf ein neues Ausgabesystem umgestellt. Dabei wurden gestrichelte Linien zu schwach/dünn ausgegeben.</p>
-<h5 id="outcome-35">Outcome</h5>
-<p>Die Handhabung von gestrichelten Linien wurde überarbeitet und folglich sollten gestrichelte Linien nun genau dieselbe Strichstärke/Linienstärke wie normale durchgezogene Linien aufweisen.</p>
-<h4 id="zustzlicheroffsetundfaktorfrlinienstrkebeimprojektdateidruckundpdfexport">Zusätzlicher Offset und Faktor für Linienstärke beim Projekt-/Dateidruck und PDF-Export</h4>
+<h4 id="colorpalettesinterchangedforprojectfileprintingandpdfexport">Color palettes interchanged for project/file printing and PDF export</h4>
 <h5 id="dissection-39">Dissection</h5>
-<p>Nach der Umstellung der Druckausgabe hat sich gezeigt, dass manche Drucker Linien zu schwach bzw. dünn ausgeben.</p>
+<p>The color palettes "Standard white background" and "Standard black background" were assigned to the other color palette in the list box.</p>
 <h5 id="outcome-36">Outcome</h5>
-<p>Um Probleme bei der Druckausgabe zu umgehen, besteht nun die Möglichkeit einen zusätzlichen Offset und Faktor beim Projekt-/Dateidruck und PDF-Export zu wählen. Eine genaue Beschreibung der neuen Funktionen finden Sie in der Dokumentation "Arbeitshandbuch-Projekt-Einzeldruck-und-PDF-Export.pdf".</p>
-<h4 id="variablebeimprojektdateidruckundpdfexportmitfalscheminhalt">Variable beim Projekt-/Dateidruck und PDF-Export mit falschem Inhalt</h4>
+<p>Die Farbpaletten sind nun korrekt zugeordnet.</p>
+<h4 id="dottedlinesareprintedtooweakly">Dotted lines are printed too weakly</h4>
 <h5 id="dissection-40">Dissection</h5>
-<p>Die Variable «ProjectName» wurde bisher mit demselben Inhalt gefüllt wie die Variable «ProjectDescription».</p>
+<p>The print output was recently converted to a new output system. The output of dashed lines was too weak/thin.</p>
 <h5 id="outcome-37">Outcome</h5>
-<p>Die Variable «ProjectName» wird nun korrekt mit dem Verzeichnisnamen des Projekts gefüllt.</p>
-<h4 id="namedesdruckauftragsbeidateidruckangepasst">Name des Druckauftrags bei Dateidruck angepasst</h4>
+<p>The handling of dashed lines has been reworked, so that dashed lines should now have exactly the same line width as normal solid lines.</p>
+<h4 id="additionaloffsetandfactorforlinewidthforprojectfileprintingandpdfexport">Additional offset and factor for line width for project/file printing and PDF export</h4>
 <h5 id="dissection-41">Dissection</h5>
-<p>Bisher wurde bei der Namensgebung von Druckaufträgen zwischen Projektdruck und Dateidruck nicht unterschieden. Es wurde immer die Bezeichnung des Projekts verwendet.</p>
+<p>After the conversion of the print output, it has been shown that some printers print lines too weakly or thinly.</p>
 <h5 id="outcome-38">Outcome</h5>
-<p>Ab sofort wird der Dateiname der Zeichnung beim Dateidruck als Name für den Druckauftrag gewählt.</p>
-<h4 id="speichernundwiederherstellenvonprojekdateidruckundpdfexporteinstellungen">Speichern und Wiederherstellen von Projek-/Dateidruck und PDF-Export Einstellungen</h4>
-<p>Ab sofort werden, mit Ausnahme der Zeichnungstyp Reihenfolge, alle Einstellungen für den Projekt-/Dateidruck und PDF-Export gesondert voneinander gespeichert und wiederhergestellt.</p>
-<h4 id="auswhlbarefontsbeiprojektdateidruckundpdfexporterweitert">Auswählbare Fonts bei Projekt-/Dateidruck und PDF-Export erweitert</h4>
-<p>Alle im Treesoft CAD Font Verzeichnis enthaltenen Treesoft Fonts können nun beim Projekt-/Dateidruck und PDF-Export ausgewählt werden.</p>
-<h3 id="cadkonverter-4">CAD Konverter</h3>
-<h4 id="bildrahmenwirdebanfallsnachzngkonvertiert">Bildrahmen wird ebanfalls nach ZNG konvertiert</h4>
+<p>In order to avoid printing problems, it is now possible to select an additional offset and factor for project/file printing and PDF export. A detailed description of the new functions can be found in the documentation "Work Manual Project - Single Print and PDF Export. pdf".</p>
+<h4 id="variableinprojectfileprintingandpdfexportwithincorrectcontent">Variable in project/file printing and PDF export with incorrect content</h4>
 <h5 id="dissection-42">Dissection</h5>
-<p>Um Bilder besser voneinander trennen zu können, wurde bisher der Bildrahmen ebenfalls nach ZNG konvertiert. Diese Funktion war eher störend als hilfreich.</p>
+<p>The variable "ProjectName" was previously filled with the same content as the variable "ProjectDescription".</p>
 <h5 id="outcome-39">Outcome</h5>
-<p>Es werden nur noch die Bilder nach ZNG konvertiert.</p>
-<h3 id="crm-3">CRM</h3>
-<h4 id="emailversand">E-Mail-Versand</h4>
+<p>The variable "ProjectName" is now correctly filled with the directory name of the project.</p>
+<h4 id="adjustedthenameoftheprintjobwhenprintingfiles">Adjusted the name of the print job when printing files</h4>
 <h5 id="dissection-43">Dissection</h5>
-<p>Beim E-Mail-Versand an mehreren Empfängern konnte die E-Mail nicht versendet werden, wenn die E-Mail-Adressen mit mehr als einem Leerzeichen getrennt waren.</p>
+<p>Up to now, no distinction has been made between project printing and file printing when naming print jobs. The name of the project was always used.</p>
 <h5 id="outcome-40">Outcome</h5>
-<p>Die E-Mail wird nun unabhängig von der Anzahl der Leerzeichen zwischen den E-Mail-Adressen versendet.</p>
-<h3 id="stammdaten-2">Stammdaten</h3>
-<h4 id="datanormimportbeschleunigt">DATANORM-Import beschleunigt</h4>
+<p>From now on, the file name of the drawing is selected as the name for the print job during file printing.</p>
+<h4 id="savingandrestoringprojectfileprintingandpdfexportsettings">Saving and restoring project/file printing and PDF export settings</h4>
+<p>With the exception of the drawing type Sequence, all settings for project/file printing and PDF export are now saved and restored separately.</p>
+<h4 id="selectablefontsforprojectfileprintingandpdfexportextended">Selectable fonts for project/file printing and PDF export extended</h4>
+<p>All Treesoft fonts contained in the Treesoft CAD Font directory can now be selected for project / file printing and PDF export.</p>
+<h3 id="cadkonverter-4">CAD Konverter</h3>
+<h4 id="imageframeisalsoconvertedtozngifnecessary">Image frame is also converted to ZNG if necessary</h4>
 <h5 id="dissection-44">Dissection</h5>
-<p>Um die Volltextsuche konsistent zu halten, werden beim Importieren von Katalogen alle Stammdaten überwacht und wenn erforderlich Indiziert. </p>
+<p>In order to be able to separate images better from each other, the image frame was also converted to ZNG. This function was more annoying than helpful.</p>
 <h5 id="outcome-41">Outcome</h5>
-<p>Dieser Prozess wurde optimiert, um das Importieren von Katalogen zu beschleunigen.</p>
-<h4 id="volltextsuchefindetnichtimmerergebnisse">Volltextsuche findet nicht immer Ergebnisse</h4>
+<p>Only the images are converted to ZNG.</p>
+<h3 id="crm-3">CRM</h3>
+<h4 id="emaildispatch">e-mail dispatch</h4>
 <h5 id="dissection-45">Dissection</h5>
-<p>Bei großen Katalogen dauert die Abfrage nach sehr generellen Begriffen zum Teil etwas länger. Damit die Anwendung benutzbar bleibt, wurde ein Timeout eingesetzt, ab dem die Suche abgebrochen wird.</p>
+<p>When sending e-mails to multiple recipients, the e-mail could not be sent if the e-mail addresses were separated by more than one blank space.</p>
 <h5 id="outcome-42">Outcome</h5>
-<p>Durch Optimierungen des Suchalgorithmus wurde die Suchzeit bei großen Katalogen drastisch reduziert. In einem Testszenario konnte die Suche von ca. 60 Sekunden auf unter 0,5 Sekunden reduziert werden. Das Entspricht in etwa einer Verbesserung von 1200%. Zusätzlich wurde der Timeout erhöht.</p>
-<h3 id="volltextsuche-4">Volltextsuche</h3>
-<h4 id="suchsyntaxkonfigurieren">Suchsyntax Konfigurieren</h4>
+<p>The e-mail is now sent regardless of the number of blanks between the e-mail addresses.</p>
+<h3 id="stammdaten-3">Stammdaten</h3>
+<h4 id="datanormimportaccelerated">DATANORM import accelerated</h4>
 <h5 id="dissection-46">Dissection</h5>
-<p>Mittels der Volltextsuche können große Datenmengen sehr flexible durchsucht werden. Neben der reinen Eingabe von Suchausdrücken können zusätzlich bestimmte Zeichen zur Verknüpfung von Wörter eingegeben werden. Bisher war es nicht möglich diese Zeichen einzustellen. Das hat dazu geführt, dass beispielsweise nicht nach Materialien mit einem Bindestrich im Namen gesucht werden konnte. </p>
+<p>To keep the full-text search consistent, all master data is monitored when importing catalogs and indexed if necessary. </p>
 <h5 id="outcome-43">Outcome</h5>
-<p>Es ist nun möglich global über den Optionendialog (unter Volltextsuche -&gt; Syntax Konfigurieren) die Sonderzeichen für die Volltextsuche einzustellen. Neben der Möglichkeit andere Zeichen zu wählen können die Operatoren auch komplett deaktiviert werden.</p>
-<h2 id="6517">6.5.17</h2>
-<h3 id="erpdokumente-4">ERP Dokumente</h3>
-<h4 id="einfgenvonartikelnberdiekurztasten">Einfügen von Artikeln über die Kurz-Tasten</h4>
+<p>This process has been optimized to speed up the import of catalogs.</p>
+<h4 id="fulltextsearchdoesnotalwaysfindresults">Full text search does not always find results</h4>
 <h5 id="dissection-47">Dissection</h5>
-<p>Beim Einfügen von Artikeln in ein ERP-Dokument konnte bei sehr schneller Schreibweise der Oberbegriff des Projektes überschrieben werden.</p>
+<p>For large catalogs, the query for very general terms sometimes takes a little longer. In order to keep the application usable, a timeout has been set up to abort the search.</p>
 <h5 id="outcome-44">Outcome</h5>
-<p>Ursache war ein falscher Focus während der Initialisierung des Setting-Dialoges. Es werden nun keine Settings mehr überschrieben.</p>
-<h3 id="volltextsuche-5">Volltextsuche</h3>
-<h4 id="berarbeitungdervolltextsuchtverwaltung">Überarbeitung der Volltextsucht-Verwaltung</h4>
+<p>Optimization of the search algorithm has drastically reduced the search time for large catalogs. In a test scenario, the search could be reduced from approx. 60 seconds to less than 0.5 seconds. This corresponds to an improvement of approximately 1200%. Additionally, the timeout has been increased.</p>
+<h3 id="volltextsuche-4">Volltextsuche</h3>
+<h4 id="configuringsearchsyntax">Configuring Search Syntax</h4>
 <h5 id="dissection-48">Dissection</h5>
-<p>Nach der Umstellung auf die neue Volltextsuche wurden aus Gründen der Kompatibilität die Nutzeroberflächen für die Verwaltung nicht umgestellt und modernisiert.</p>
+<p>By means of the full-text search, large amounts of data can be searched very flexibly. In addition to entering search terms, you can also enter certain characters to link words. Until now, it was not possible to set these characters. As a result, it was not possible to search for materials with a hyphen in the name, for example. </p>
 <h5 id="outcome-45">Outcome</h5>
-<p>Für die Verwaltung der Volltextsuche gibt es nun im Optionendialog von Treesoft Office eine zentrale Verwaltungsoberfläche. Über diese Oberfläche können, unabhängig von der Kategorie, alle Volltextsuch-Konfigurationen verwaltet werden. Durch diese Umstellung werden die alten *.CFG-Dateien obsolet und können gelöscht werden. Kunden, die die neue Volltextsuche noch nicht verwenden, können über eine Migration ihre Konfigurationen übernehmen. Die neue Verwaltungsoberfläche ermöglicht einen tieferen Einblick in die aktuell von der Volltextsuche durchgeführten Aktionen und hat deutliche Performance-Vorteile durch den parallelen Aufbau mehrerer Konfigurationen.</p>
+<p>It is now possible to set the special characters for the full text search globally via the options dialog (under Full Text Search -&gt; Configure Syntax). In addition to the option to select other characters, the operators can also be completely deactivated.</p>
+<h2 id="6517">6.5.17</h2>
+<h3 id="erpdokumente-5">ERP Dokumente</h3>
+<h4 id="insertingarticlesusingthehotkeys">Inserting articles using the hotkeys</h4>
+<h5 id="dissection-49">Dissection</h5>
+<p>When inserting articles into an ERP document, the generic term of the project could be overwritten with a very fast way of writing.</p>
+<h5 id="outcome-46">Outcome</h5>
+<p>The cause was an incorrect focus during the initialization of the setting dialog. Settings are no longer overwritten.</p>
+<h3 id="volltextsuche-5">Volltextsuche</h3>
+<h4 id="revisionofthefulltextsearchadministration">Revision of the full-text search administration</h4>
+<h5 id="dissection-50">Dissection</h5>
+<p>After the conversion to the new full-text search, the user interfaces for administration were not changed and modernized for reasons of compatibility.</p>
+<h5 id="outcome-47">Outcome</h5>
+<p>In the options dialog of Treesoft Office, there is now a central administration interface for managing the full-text search. This interface allows you to manage all full-text search configurations regardless of the category. As a result of this conversion, the old *. CFG files become obsolete and can be deleted. Customers who are not yet using the new full-text search can use a migration to adopt their configurations. The new management interface provides a deeper insight into the actions currently performed by the full-text search and has clear performance advantages due to the parallel construction of several configurations.</p>
 <h2 id="6516">6.5.16</h2>
 <h3 id="cad-6">CAD</h3>
-<h4 id="tastenkombinationenfrprojektdateidruckgendert">Tastenkombinationen für Projekt-/Datei-Druck geändert</h4>
-<p>Die Tastenkombination für die Druckfunktionen wurde über alle Assistenten hinweg, auf [Strg]+[P] für den Dateidruck und [Strg]+[Alt]+[P] für den Projektdruck, geändert.</p>
-<h4 id="ausgabeallersichtbarenebenenbeimdruck">Ausgabe aller sichtbaren Ebenen beim Druck</h4>
-<p>Werden Ebenen unterschiedlicher Blätter sichtbar geschaltet, beispielsweise die Ebenen 1 und 2 in einem Schaltplan, und anschließend im Menü Datei der Befehl Drucken ausgeführt, werden die sichtbaren Ebenen als ein einziges Blatt interpretiert und ausgegeben. Dies entspricht dem Verhalten des ehemaligen Direktdrucks.</p>
-<h4 id="druckundpdfexportvongestricheltenobjektenteil2">Druck und PDF-Export von gestrichelten Objekten (Teil 2)</h4>
-<h5 id="dissection-49">Dissection</h5>
-<p>Sowohl bei der Bildschirmausgabe als auch beim alten Druck werden bzw. wurden Strichelungen adaptiv angewendet. Das heisst, dass z. B. gestrichelte Linien immer mit dem gezeichneten Teil anfangen und enden. Dadurch ist eine besonders saubere Darstellung von Strichelungen möglich. Die neuen Druckfunktionen und der PDF-Export verfügten noch nicht über eine Adaptive ausgabe der Strichelung.</p>
-<h5 id="outcome-46">Outcome</h5>
-<p>Ab sofort werden alle gestrichelten Linien adaptiv ausgegeben. Die Art und Weise wie die Adaption umgesetzt wird, unterscheidet sich von der Bildschrimausgabe von Treesoft CAD. Während gestrichelte Linien für die Bildschrimausgabe in Treesoft CAD in kleine Segmente zerteilt werden, wird bei dem neuen Verfahren das Muster der Strichelung, für jede Linie einzeln angepasst und zusammen mit der gesamten Linie ausgegeben. Dadurch ergibt sich der Vorteil, dass die Darstellung in der Vorschau, im Druck und in exportierten PDF identisch sind.</p>
-<h4 id="druckundpdfexportvongestricheltenobjektenteil1">Druck und PDF-Export von gestrichelten Objekten (Teil 1)</h4>
-<h5 id="dissection-50">Dissection</h5>
-<p>Die Strichelung von Objekten wird über den Objekttyp bestimmt. Die Darstellung eines Objekttyps kann über die plin.dat über den Optionendialog System &gt; Zeichen von Treesoft CAD beeinflusst werden. Neben der Stiftbreite und Farbe wird in der plin.dat auch ein Faktor zur Beeinflussung der Strichelung gespeichert. Dieser Faktor wurde bisher nicht berücksichtigt, was zur Folge hatte, dass bestimmte Strichelungen beim Druck bzw. PDF-Export das gleiche Muster aufwiesen.</p>
-<h5 id="outcome-47">Outcome</h5>
-<p>Der Faktor wird nun korrekt auf die Strichelung übertragen. Unterschiedliche Strichelungen sind nun eindeutig voneinander unterscheidbar.</p>
-<h4 id="verbleibendealtedruckfunktionenersetzt">Verbleibende alte Druckfunktionen ersetzt</h4>
+<h4 id="keyboardshortcutsforprojectfileprintingchanged">Keyboard shortcuts for project/file printing changed</h4>
+<p>The key combination for printing functions has been changed to[Ctrl]+[P] for file printing and[Ctrl]+[Alt]+[P] for project printing across all wizards.</p>
+<h4 id="outputofallvisiblelayersduringprinting">Output of all visible layers during printing</h4>
+<p>If layers of different sheets are made visible, e. g. layers 1 and 2 in a schematic, and then the Print command is executed in the File menu, the visible layers are interpreted and output as a single sheet. This corresponds to the behavior of former direct printing.</p>
+<h4 id="printandpdfexportofdashedobjectspart2">Print and PDF export of dashed objects (part 2)</h4>
 <h5 id="dissection-51">Dissection</h5>
-<p>Bei der Umstellung auf die neuen Druckfunktionen wurden ein paar der alten Druckfunktionen übersehen.</p>
+<p>Both for the screen output and the old print, dashes are or have been applied adaptively. This means, for example, that dashed lines always begin and end with the drawn part. This allows a particularly clean display of dashes. The new printing functions and PDF export did not yet have an adaptive output of dashing.</p>
 <h5 id="outcome-48">Outcome</h5>
-<p>Alle Druckfunktionen sind nun umgestellt.</p>
-<h4 id="rahmenbeschriftungeninschaltschrankansichtenwurdennichtexportiertgedruckt">Rahmenbeschriftungen in Schaltschrankansichten wurden nicht exportiert/gedruckt</h4>
-<p>Die Rahmenbeschriftungen in Schaltschrankansichten werden nun ebenfalls exportiert/gedruckt.</p>
-<h4 id="druckundpdfexportderaktivenseiteundaktivenzeichnung">Druck und PDF-Export der aktiven Seite und aktiven Zeichnung</h4>
-<p>Ab sofort kann im Dialog zur Seitenauswahl neben "Alle", "Nur Belegte", "Keine" und "Benutzerdefiniert" auch "Nur aktive Zeichnung" und "Nur aktive Seite" ausgewählt werden. Mit Wahl von "Nur aktive Zeichnung" werden alle Seiten, bis auf die der aktiven Zeichnung, vom Druck bzw. intelligenten PDF-Export ausgeschlossen. Mit Wahl von "Nur aktive Seite" werden alle Seiten, bis auf die aktive Ebene bzw. das aktive Blatt (inkl. Rahmenzeichnung) der aktiven Zeichnung, vom Druck bzw. intelligenten PDF-Export ausgeschlossen.</p>
-<h4 id="bereichskopienvonelektroinstallationsplnenwurdenfalschexportiertgedruckt">Bereichskopien von Elektroinstallationsplänen wurden falsch exportiert/gedruckt</h4>
+<p>From now on all dashed lines will be output adaptively. The way in which the adaptation is implemented differs from the screen output of Treesoft CAD. While dashed lines for screen output in Treesoft CAD are split into small segments, the new method uses the pattern of dashing to be adjusted individually for each line and output together with the entire line. The advantage of this is that the display in preview, print and exported PDF are identical.</p>
+<h4 id="printandpdfexportofdashedobjectspart1">Print and PDF export of dashed objects (part 1)</h4>
 <h5 id="dissection-52">Dissection</h5>
-<p>Bereichskopien von Elektroinstallationsplänen wurden wie Elektroinstallationspläne behandelt, sodass mehrere Bereichskopien als eine Seite exportiert/gedruckt wurden.</p>
+<p>The dashing of objects is determined by the object type. The representation of an object type can be influenced by the plin. dat via the options dialog System &gt; Characters of Treesoft CAD. In addition to the pen width and color, plin. dat also stores a factor for influencing the dashing. This factor has not yet been taken into account, with the result that certain dashes have the same pattern when printing or exporting PDFs.</p>
 <h5 id="outcome-49">Outcome</h5>
-<p>Bereichskopien werden nun als solche erkannt und entsprechend behandelt. Beim Projekt-/Einzeldruck und intelligenten PDF Export in Treesoft CAD sind Bereichskopieren standardmäßig nicht aktiviert und werden dementsprechend nicht mit exportiert/gedruckt.</p>
-<h4 id="ausgabevonbesonderenschriftzeichenbeidruckundpdfexport">Ausgabe von besonderen Schriftzeichen bei Druck und PDF-Export</h4>
+<p>The factor is now correctly transferred to the dashing. Different dashes are now clearly distinguishable from each other.</p>
+<h4 id="remainingoldprintingfunctionsreplaced">Remaining old printing functions replaced</h4>
 <h5 id="dissection-53">Dissection</h5>
-<p>Die ersten Versionen von Treesoft CAD wurden für Microsoft DOS entwickelt. Zu dieser Zeit war der gängige Zeichensatz für Westeuropa CP850 (DOS-Latin-1). Dieser Zeichensatz beinhaltete jedoch nicht, die für die Elektrotechnik notwendigen, griechischen Zeichen Theta, Omega oder Delta. Aus diesem Grund wurden diese Zeichen auf andere nicht benötigte Zeichen gelegt. Dieser neue Treesoft eigene Zeichensatz wurde bisher nicht korrekt auf Unicode Zeichen übersetzt, was zu folge hatte, dass alle griechischen Zeichen, bei Verwendung der Font ISO 3098, falsch dargestellt bzw. ausgeben wurden.</p>
+<p>When switching to the new printing functions, some of the old printing functions were overlooked.</p>
 <h5 id="outcome-50">Outcome</h5>
-<p>Ab sofort werden alle von dem Zeichensatz CP850 abweichenden Zeichen in die entsprechenden Unicode Zeichen übersetzt. Die Darstellung und Ausgabe mit dem Font ISO 3098 erfolgt nun mit den korrekten Zeichen.</p>
-<h4 id="listenohnekatalogbezugverwendennurglobalevolltextsuchkonfigurationen">Listen ohne Katalogbezug verwenden nur globale Volltextsuch-Konfigurationen</h4>
+<p>All print functions are now switched.</p>
+<h4 id="framelabelsincontrolcabinetviewswerenotexportedprinted">Frame labels in control cabinet views were not exported/printed</h4>
+<p>The frame labels in control cabinet views are now also exported/printed.</p>
+<h4 id="printandpdfexportofactivepageandactivedrawing">Print and PDF export of active page and active drawing</h4>
+<p>From now on, you can also select "Only active drawing"and "Only active page"in the dialog for page selection next to "All","Only active page","None" and "User-defined". Selecting "Only active drawing" excludes all pages, except for the active drawing, from printing or intelligent PDF export. Selecting "Only active page" excludes all pages from printing or intelligent PDF export, except for the active layer or sheet (incl. frame drawing) of the active drawing.</p>
+<h4 id="areacopiesofelectricalinstallationplanswereincorrectlyexportedprinted">area copies of electrical installation plans were incorrectly exported/printed</h4>
 <h5 id="dissection-54">Dissection</h5>
-<p>Listen im Treesoft CAD ohne Bezug zu einem Katalog haben bisher alle Volltextsuch-Konfigurationen zur Auswahl angeboten, auch wenn diese Konfigurationen speziell für Kataloge bestimmt waren. Dies konnte zur Verwirrung bei der Verwendung der Volltextsuche führen.</p>
+<p>Section copies of electrical installation plans were treated like electrical installation plans, so that several section copies were exported/printed as one page.</p>
 <h5 id="outcome-51">Outcome</h5>
-<p>Listen wie "Symbol setzen…" oder "Löhne" verwenden nun nur noch Volltextsuch-Konfigurationen, die keinem Katalog direkt zugeordnet sind.</p>
-<h4 id="speichernderzuletztgewhltenvolltextsuchkonfiguration">Speichern der zuletzt gewählten Volltextsuch-Konfiguration</h4>
+<p>Area copies are now recognized as such and treated accordingly. In project printing and intelligent PDF export in Treesoft CAD, area copying is not enabled by default and is therefore not exported/printed.</p>
+<h4 id="outputofspecialcharactersforprintingandpdfexport">Output of special characters for printing and PDF export</h4>
 <h5 id="dissection-55">Dissection</h5>
-<p>Existieren mehrere Volltextsuch-Konfigurationen zu einer Kategorie (Bsp.: Material), dann musste bei jedem Aufruf der entsprechenden Liste die gewünschte Konfiguration erneut gewählt werden. </p>
+<p>The first versions of Treesoft CAD were developed for Microsoft DOS. At that time, the common character set for Western Europe was CP850 (DOS-Latin-1). However, this character set did not contain the Greek characters Theta, Omega or Delta, which were necessary for electrical engineering. For this reason, these characters have been placed on other characters that are not required. This new Treesoft character set has not been translated correctly to Unicode characters, which means that all Greek characters were displayed or printed incorrectly when using the ISO 3098 font.</p>
 <h5 id="outcome-52">Outcome</h5>
-<p>Die zuletzt gewählte Konfiguration wird nun pro Liste benutzerbezogen gespeichert. </p>
-<h4 id="suchennachausrufezeicheninlisten">Suchen nach Ausrufezeichen in Listen</h4>
+<p>From now on, all characters deviating from the character set CP850 will be translated into the corresponding Unicode characters. The display and output with the ISO 3098 font is now done with the correct characters.</p>
+<h4 id="listswithoutcataloguereferenceuseonlyglobalfulltextsearchconfigurations">Lists without catalogue reference use only global full-text search configurations</h4>
 <h5 id="dissection-56">Dissection</h5>
-<p>Eine Besonderheit der Listen im CAD ist die Suche mittels logischer Operatoren. 
-Das Zeichen Ausrufezeichen negiert beispielsweise den gesammten Ausdruck. 
-Es wurde demnach als Sonderzeichen interpretiert. 
-Das verhinderte das Finden von Texten, in denen dieses Zeichen enthalten ist.</p>
+<p>Lists in Treesoft CAD without reference to a catalog have so far offered all full-text search configurations for selection, even if these configurations were specifically designed for catalogs. This could lead to confusion when using the full-text search.</p>
 <h5 id="outcome-53">Outcome</h5>
-<p>Um die Suchen nach einem Ausrufezeichen zu ermöglichen wurde die Syntax der Negation leicht abgewandelt. 
-Anstelle von "!Motor" ist nun "! Motor" notwendig, um alle Datensätze one das Wort "Motor" zu finden.</p>
-<h4 id="listefrsekundresymbolzuordnungenimmerleer">Liste für sekundäre Symbolzuordnungen immer leer</h4>
+<p>Lists such as "Set symbol…" or "Wages" now only use full-text search configurations that are not directly assigned to a catalog.</p>
+<h4 id="savingthelastselectedfulltextsearchconfiguration">Saving the last selected full-text search configuration</h4>
 <h5 id="dissection-57">Dissection</h5>
-<p>Durch die Integration der Volltextsuche in die Liste der sekundären Symbolzuordnungen gab es ein Problem 
-mit der Aktualisierung der Liste.</p>
+<p>If there are several full-text search configurations for a category (e. g. material), the desired configuration had to be selected each time the corresponding list was called. </p>
 <h5 id="outcome-54">Outcome</h5>
-<p>Die Liste funktioniert nun wieder wie gewohnt.</p>
-<h3 id="cadkonverter-5">CAD Konverter</h3>
-<h4 id="umbenennungvonstapelexportinstapelverarbeitung">Umbenennung von Stapelexport in Stapelverarbeitung</h4>
-<p>Die Funktion Stapelexport wurde im Programm nun, entsprechend den Handbüchern und Artikel-/Materialdaten, namentlich angepasst.</p>
-<h4 id="linientypenwerdennichtexportiert">Linientypen werden nicht exportiert</h4>
+<p>The last selected configuration is now saved per user for each list. </p>
+<h4 id="searchingforexclamationmarksinlists">Searching for exclamation marks in lists</h4>
 <h5 id="dissection-58">Dissection</h5>
-<p>Die Linientypen, aus einer TreeCAD Zeichnung, wurden nicht auf exportierte DWG/DXF Zeichnungen übertragen.</p>
+<p>A special feature of the lists in CAD is the search using logical operators. 
+For example, the exclamation point character negates the entire expression. 
+It was therefore interpreted as a special character. 
+This prevented the system from finding texts containing this character.</p>
 <h5 id="outcome-55">Outcome</h5>
-<p>Die Linientypen werden nun, mit Außnahme der Linienbreite, auf die zu exportierenden DWG/DXF Zeichnungen übertragen.</p>
-<h3 id="mobileanbindung">Mobile Anbindung</h3>
-<h4 id="volltextsuchefradressen">Volltextsuche für Adressen</h4>
+<p>The syntax of the negation has been slightly modified to allow searching for an exclamation mark. 
+Instead of "!Motor" is now "! Motor" to find all records one with the word "Motor".</p>
+<h4 id="listforsecondarysymbolassignmentsalwaysempty">List for secondary symbol assignments always empty</h4>
 <h5 id="dissection-59">Dissection</h5>
-<p>Die Suche über Adressen in der iPhone-App hat keine Ergebnisse geliefert.</p>
+<p>There was a problem with the integration of the full text search in the list of secondary symbol assignments. 
+to update the list.</p>
 <h5 id="outcome-56">Outcome</h5>
-<p>Das Problem wurde beseitig und die Suche nach Adressen in der iPhone-App funktioniert nun wieder wie gewohnt.</p>
-<h3 id="volltextsuche-6">Volltextsuche</h3>
-<h4 id="fehlerhandlingimzusammenhangmitderconfigurationxml">Fehlerhandling im Zusammenhang mit der configuration.xml</h4>
+<p>The list now works as usual again.</p>
+<h3 id="cadkonverter-5">CAD Konverter</h3>
+<h4 id="renamingofbatchexporttobatchprocessing">Renaming of batch export to batch processing</h4>
+<p>The batch export function has now been modified in the program according to the manuals and article/material data.</p>
+<h4 id="linetypesarenotexported">Line types are not exported</h4>
 <h5 id="dissection-60">Dissection</h5>
-<p>Bei Kunden tritt es vermehrt auf, dass die Konfigurations-Datei des Find-Servers beschädigt wird. Es lässt sich leider nicht genau ermittel, warum die Datei kaputt geht. Es muss irgendwie im Zusammenhang mit einem Server-Absturz stehen.</p>
+<p>The line types from a TreeCAD drawing were not transferred to exported DWG/DXF drawings.</p>
 <h5 id="outcome-57">Outcome</h5>
-<p>In jedem Fall haben wir jedoch nun das Fehlerhandling mit der Konfigurationsdatei verbessert.</p>
-<h4 id="katalogunabhngigestandardkonfigurationen">Katalog unabhängige Standard-Konfigurationen</h4>
+<p>The line types are now transferred to the DWG/DXF drawings to be exported, with the exception of the line width.</p>
+<h3 id="mobileanbindung">Mobile Anbindung</h3>
+<h4 id="fulltextsearchforaddresses">Full-text search for addresses</h4>
 <h5 id="dissection-61">Dissection</h5>
-<p>Durch die Installation von Treesoft Office werden aktuell für jeden installierten Katalog standard Volltextsuch-Konfigurationen erzeugt. An einigen Stellen in der Softeware kann jedoch unabhängig eines Kataloges gesucht werden. Für diese Stellen sind daher allgemeine Konfigurationen erforderlich, die über alle Kataloge suchen.</p>
+<p>Searching for addresses in the iPhone app did not return any results.</p>
 <h5 id="outcome-58">Outcome</h5>
-<p>Sollten zum Zeitpunkt des Updates oder der Installation noch keine allgemeinen Volltextsuch-Konfigurationen je Kategorie vorhanden sein, werden diese erzeugt. </p>
+<p>The problem has been fixed and the search for addresses in the iPhone app now works as usual again.</p>
+<h3 id="volltextsuche-6">Volltextsuche</h3>
+<h4 id="errorhandlinginconnectionwithconfigurationxml">Error handling in connection with configuration. xml</h4>
+<h5 id="dissection-62">Dissection</h5>
+<p>Customers are increasingly experiencing damage to the configuration file of the find server. Unfortunately, it is not possible to determine exactly why the file is broken. It must be somehow related to a server crash.</p>
+<h5 id="outcome-59">Outcome</h5>
+<p>In any case, we have improved error handling with the configuration file.</p>
+<h4 id="catalogindependentstandardconfigurations">Catalog independent standard configurations</h4>
+<h5 id="dissection-63">Dissection</h5>
+<p>By installing Treesoft Office, standard full-text search configurations are currently generated for each installed catalog. However, some parts of the software can be searched independently of a catalogue. For this reason, general configurations are required for these locations, which can be searched in all catalogues.</p>
+<h5 id="outcome-60">Outcome</h5>
+<p>If there are no general full-text search configurations per category at the time of the update or installation, they will be created. </p>
 <h2 id="6513">6.5.13</h2>
 <h3 id="cad-7">CAD</h3>
-<h4 id="berarbeitungvondruckundintelligentenpdfexport">Überarbeitung von Druck und Intelligenten PDF-Export</h4>
-<p>Mit dem Intelligenten PDF-Export wurde die Basis geschaffen, um den Projekt-/Einzeldruck in Treesoft CAD vollständig zu überarbeiten. Ab sofort gibt es nur noch einen einheitlichen Dialog für sämtliche Druckfunktionen aller Assistenten und den Intelligenten PDF-Export.
-Zu den Neuerungen zählen unter anderem:</p>
+<h4 id="revisionofprintandintelligentpdfexport">Revision of print and intelligent PDF export</h4>
+<p>With the Intelligent PDF export, the basis was created to completely revise the project/individual print in Treesoft CAD. From now on, there is only one unified dialog for all print functions of all wizards and the intelligent PDF export.
+Among the new features are among others:</p>
 <ul>
-<li>Ausrichten der Zeichnung auf dem Papier</li>
-<li>Einstellen eines Randes unter Berücksichtigung des Druckerlimits</li>
-<li>Skalierte und maßstabsgerechte Ausgabe</li>
-<li>Wahl des zu verwendenden Fonts</li>
-<li>Wahl der zu verwendenden Farbpalette</li>
-<li>Ausgabe in Farbe und Schwarzweiß</li>
-<li>Anwendung der Linienstärke </li>
-<li>Auswahl der zu exportierenden Zeichnungen/Seiten und Ebenen</li>
-<li>Anpassung der Ausgabereihenfolge inkl. Umkehrung der Reihenfolge</li>
-<li>Live-Vorschau die immer das zu erwartende Ergebnis angezeigt</li>
+<li>Aligning the drawing on paper</li>
+<li>Setting a border taking the printer limit into account</li>
+<li>Scaled and true-to-scale output</li>
+<li>Choice of font to be used</li>
+<li>Choice of the colour palette to be used</li>
+<li>Colour and monochrome output</li>
+<li>Line thickness application </li>
+<li>Selection of the drawings/pages and layers to be exported</li>
+<li>Adjustment of the output sequence incl. reversal of the sequence</li>
+<li>Live preview that always shows the expected result</li>
 </ul>
 <h4 id="volltextsuche-7">Volltextsuche</h4>
-<h5 id="dissection-62">Dissection</h5>
-<p>In den Listen im CAD gibt es die Möglichkeit abhängig von der Spalte Datensätze zu finden. Nicht möglich war es jedoch bisher unabhägig einer bestimmten Spalte alle Daten zu durchsuchen.</p>
-<h5 id="outcome-59">Outcome</h5>
-<p>In allen Listen im CAD gibt es nun die Möglichkeit über die Volltextsuche Datensätze zu finden. Das Betrifft sowohl Symbole, Materialien und Leistungen als auch Adressen und Löhne.</p>
-<h3 id="crm-4">CRM</h3>
-<h4 id="suchenundersetzeninderansprechpartnerliste">Suchen und Ersetzen in der Ansprechpartner Liste</h4>
-<h5 id="dissection-63">Dissection</h5>
-<p>Die Funktion "Suchen und Ersetzen" in der Ansprechpartner Liste unterstützt die Felder "Anrede, Abteilung sowie Position". Es fehlen die Felder "Titel" und "Namenszusatz".</p>
-<h5 id="outcome-60">Outcome</h5>
-<p>Die Funktion wurde neben den Feldern "Titel" und "Namenszusatz" um weitere Funktionen ergänzt. Die Funktionalität lässt sich über die Rechteverwaltung einschränken bzw. ganz ausschalten. "Suchen und Ersetzen" arbeitet jetzt zuverlässig mit gesetzten Markierungen in den Adressen sowie den Kontakten. Als Vorgabe zum Ersetzen dienen die Voreinstellungen im Optionendialog.</p>
-<h3 id="system">System</h3>
-<h4 id="suchfeldinprojektlistehistorienterminenaufgabenetcerlaubtvorlaufendeeingabe">Suchfeld in Projektliste/Historien/Terminen/Aufgaben/Etc. erlaubt vorlaufende Eingabe</h4>
 <h5 id="dissection-64">Dissection</h5>
-<p>Wird im Suchfeld eine Eingabe mit einer Unterbrechung getätigt, so wird während der Unterbrechung bereits ein Filter entsprechend der bisherigen Eingabe ausgeführt. Während der Ausführung des Filters wurde das Suchfeld deaktiviert und damit alle der Unterbrechung folgenden Eingaben, bis zur vollständigen Anwendung des Filters, verworfen. Dies erschwerte die Handhabung der Projektliste/Historien/Terminen/Aufgaben/Etc. erheblich.</p>
+<p>In the lists in CAD there is the possibility to find records depending on the column Data records. Until now, however, it was not possible to search all data independently of a certain column.</p>
 <h5 id="outcome-61">Outcome</h5>
-<p>Während der Ausführung eines Filters bleibt das Suchfeld aktiviert und erlaubt damit eine vorlaufende Eingabe. Nach der Ausführung des Filters wird dieser erneut ausgeführt, sollte sich die Eingabe geändert haben.</p>
+<p>In all lists in CAD there is now the possibility to find records via the full text search. This applies to symbols, materials and services as well as addresses and wages.</p>
+<h3 id="crm-4">CRM</h3>
+<h4 id="searchandreplaceinthecontactpersonlist">Search and replace in the contact person list</h4>
+<h5 id="dissection-65">Dissection</h5>
+<p>The function "Search and replace" in the contact person list supports the fields "Salutation, department and position". The fields "Title" and "Name affix"are missing.</p>
+<h5 id="outcome-62">Outcome</h5>
+<p>Other functions have been added to the "Title" and "Name affix" fields. The functionality can be limited or deactivated via the rights management. "Search and Replace" now works reliably with marks set in the addresses and contacts. The default settings in the options dialog are used as a default for replacing.</p>
+<h3 id="system">System</h3>
+<h4 id="searchfieldinprojectlisthistoryeventstaskstasksetcallowsprerunninginput">Search field in project list/history/events/tasks/tasks/etc. allows pre-running input</h4>
+<h5 id="dissection-66">Dissection</h5>
+<p>If an entry is made in the search field with an interruption, a filter is already executed according to the previous entry during the interruption. While the filter was running, the search box was deactivated and all entries following the interruption were discarded until the filter was fully applied. This made the handling of the project list/history/dates/tasks/etc. considerably more difficult.</p>
+<h5 id="outcome-63">Outcome</h5>
+<p>During the execution of a filter, the search field remains activated and allows for a pre-running input. After the filter has been executed, it is executed again if the input has changed.</p>
 <h2 id="6512">6.5.12</h2>
 <h3 id="cad-8">CAD</h3>
-<h4 id="unsichtbaretextewerdenbeiintelligentenpdfexportmitausgegeben">Unsichtbare Texte werden bei intelligenten PDF-Export mit ausgegeben</h4>
-<h5 id="dissection-65">Dissection</h5>
-<p>Bisher wurden ebenfalls Texte mit einer negativen Texthöhe ausgegeben.</p>
-<h5 id="outcome-62">Outcome</h5>
-<p>Texte mit einer negativen Texthöhe werden nun beim intelligenten PDF-Export,genau wie beim Druck oder Export nach DXF/DWG, nicht mehr ausgegeben. Des Weiteren entspricht die Ausgabe von Texten nun den Einstellungen zum Druck in Treesoft CAD.</p>
-<h4 id="verweiseinmittelsintelligentenpdfexporterzeugtenpdfsindverschoben">Verweise in mittels intelligenten PDF-Export erzeugten PDF sind Verschoben</h4>
-<h5 id="dissection-66">Dissection</h5>
-<p>Es konnte vorkommen, dass Verweise in der erzeugten PDF falsch positioniert wurden.</p>
-<h5 id="outcome-63">Outcome</h5>
-<p>Alle Verweise in einer, mittels intelligenten PDF-Export, erzeugten PDF werden nun korrekt positioniert.</p>
-<h4 id="ausgabevonintelligenterpdfinschwarzwei">Ausgabe von intelligenter PDF in schwarz/weiß</h4>
-<p>Es besteht nun die Möglichkeit den Farbmodus, für die Ausgabe von intelligenten PDFs, auf schwarz/weiß umzustellen. Mehr Informationen hierzu finden Sie im Handbuch zum intelligenten PDF-Export.</p>
-<h3 id="crmadressverwaltung">CRM Adressverwaltung</h3>
-<h4 id="automatischenummervergabebeikundenlieferantenundmitarbeitern">Automatische Nummervergabe bei Kunden/Lieferanten und Mitarbeitern</h4>
+<h4 id="invisibletextsareoutputwithintelligentpdfexport">Invisible texts are output with intelligent PDF export</h4>
 <h5 id="dissection-67">Dissection</h5>
-<p>In Treesoft Office werden an einigen Stellen Nummern über die Nummernkreise vergeben, dazu gehört auch eine Prüfung ob diese Nummer bereits vergeben ist. Bei der Vergabe von Nummern zu Kunden, Lieferanten und Mitarbeitern führte die automatische Nummernvergabe in einigen Fällen zu einem unerwarteten Programmabbruch.</p>
+<p>Previously, texts with a negative text height were also output.</p>
 <h5 id="outcome-64">Outcome</h5>
-<p>Die automatische Nummernvergabe für Kunden, Lieferanten und Mitarbeiter ist korrigiert und funktioniert wie man es erwartet.</p>
-<h3 id="notifier-1">Notifier</h3>
-<h4 id="automatischezuordnungvonadressenzueintrgen">Automatische Zuordnung von Adressen zu Einträgen</h4>
+<p>Texts with a negative text height are no longer output in the intelligent PDF export, just like when printing or exporting to DXF/DWG. Furthermore, the output of texts now corresponds to the settings for printing in Treesoft CAD.</p>
+<h4 id="referencesinpdfcreatedbyintelligentpdfexportareshifted">References in PDF created by intelligent PDF export are shifted</h4>
 <h5 id="dissection-68">Dissection</h5>
-<p>Bei der Verwendung der Computertelefonie über den Notifier konnte in einzelnen Fällen keine Adresse zur Telefonnummer gefunden werden. </p>
+<p>It could happen that links were positioned incorrectly in the generated PDF.</p>
 <h5 id="outcome-65">Outcome</h5>
-<p>Gespräche werden nun wieder wie gewohnt zuverlässig mit Adresse protokolliert. </p>
+<p>All references in a PDF created by intelligent PDF export are now positioned correctly.</p>
+<h4 id="outputofintelligentpdfinblackandwhite">Output of intelligent PDF in black and white</h4>
+<p>It is now possible to change the color mode to black and white for the output of intelligent PDFs. For more information, refer to the Intelligent PDF Export manual.</p>
+<h3 id="crmadressverwaltung">CRM Adressverwaltung</h3>
+<h4 id="automaticnumberassignmentforcustomerssuppliersandemployees">Automatic number assignment for customers/suppliers and employees</h4>
+<h5 id="dissection-69">Dissection</h5>
+<p>In Treesoft Office, numbers are assigned in some places using the number ranges, including a check whether this number has already been assigned. When assigning numbers to customers, suppliers and employees, automatic number assignment sometimes led to an unexpected termination of the program.</p>
+<h5 id="outcome-66">Outcome</h5>
+<p>The automatic number assignment for customers, suppliers and employees is corrected and works as expected.</p>
+<h3 id="notifier-1">Notifier</h3>
+<h4 id="automaticassignmentofaddressestoentries">Automatic assignment of addresses to entries</h4>
+<h5 id="dissection-70">Dissection</h5>
+<p>When using computer telephony via the notifier, in some cases it was not possible to find an address for the telephone number. </p>
+<h5 id="outcome-67">Outcome</h5>
+<p>Calls are now logged with address as usual. </p>
 <h2 id="6511">6.5.11</h2>
 <h3 id="computertelefonie-1">Computertelefonie</h3>
-<h4 id="verfgbaretelefoneleitungenermitteln">Verfügbare Telefone/Leitungen ermitteln</h4>
-<h5 id="dissection-69">Dissection</h5>
-<p>In Treesoft Office hat man über die TAPI-Schnittstelle (Versionen 1.3 - 2.2)die Möglichkeit Anrufe zu tätigen aber auch anzunehmen. Bei einigen TAPI-Treibern hat Treesoft Office die Telefone/Leitungen über die TAPI-Schnittstelle nicht auslesen können, sodass diese nicht für die Verwendung in Treesoft Office zur Verfügung standen.</p>
-<h5 id="outcome-66">Outcome</h5>
-<p>Durch eine Anpassung der Kommunikation mit der TAPI-Schnittstelle werden jetzt alle unterstützten Telefone/Leitungen ausgelesen und stehen somit auch für die Verwendung mit Treesoft Office zur Verfügung.</p>
+<h4 id="determineavailabletelephoneslines">Determine available telephones/lines</h4>
+<h5 id="dissection-71">Dissection</h5>
+<p>In Treesoft Office the TAPI interface (versions 1.3 - 2.2) offers the possibility to make and receive calls. For some TAPI drivers, Treesoft Office could not read the telephones/lines via the TAPI interface, so that they were not available for use in Treesoft Office.</p>
+<h5 id="outcome-68">Outcome</h5>
+<p>By adapting the communication with the TAPI interface, all supported telephones/lines are now read out and are therefore also available for use with Treesoft Office.</p>
 <h2 id="6510">6.5.10</h2>
 <h3 id="cad-9">CAD</h3>
-<h4 id="rahmenbeschriftungnichtkorrekt">Rahmenbeschriftung nicht korrekt</h4>
-<h5 id="dissection-70">Dissection</h5>
-<p>Sowohl der Projektname als auch die Projektbeschreibung wurden in den Zeichnungsrahmen falsch eingesetzt.</p>
-<h5 id="outcome-67">Outcome</h5>
-<p>Die Rahmenbeschriftung ist nun korrekt.</p>
-<h4 id="textewurdenbeipdfexportmitfragezeichenstattapostropheausgegeben">Texte wurden bei PDF-Export mit Fragezeichen statt Apostrophe ausgegeben</h4>
-<h5 id="dissection-71">Dissection</h5>
-<p>Aufgrund eines Codierungsproblems wurden Apostrophe als Fragezeichen, in mittels intelligenten PDF-Export erzeugten PDFs, angezeigt.</p>
-<h5 id="outcome-68">Outcome</h5>
-<p>Alle Texte, in mittels intelligenten PDF-Export erzeugten PDFs, werden nun in UTF-8 codiert. Apostrophe werden damit wieder als Apostrophe angezeigt.</p>
-<h4 id="ausgabeformatbeipdfexporteinstellbar">Ausgabeformat bei PDF-Export einstellbar</h4>
+<h4 id="framelabelingnotcorrect">Frame labeling not correct</h4>
 <h5 id="dissection-72">Dissection</h5>
-<p>Bisher konnte das Ausgabeformat der PDF beim intelligenten PDF-Export nicht eingestellt werden.</p>
+<p>Both the project name and the project description were incorrectly inserted into the drawing frame.</p>
 <h5 id="outcome-69">Outcome</h5>
-<p>Es besteht nun die Möglichkeit das Papierformat, die Ausrichtung und einen Rand zu bestimmen. Bitte beachten Sie, dass ein maßstabsgerechter Druck des Randes der generierten PDF nur dann möglich ist, wenn folgende Parameter eingehalten werden:</p>
-<ul>
-<li>Das Papierformat der PDF muss mit dem Papierformat des Drucks übereinstimmen.</li>
-<li>Beim Druck darf die Ansicht nicht angepasst werden. Verwenden Sie hier die tatsächliche Größe.</li>
-</ul>
-<h4 id="eingabevonungltigensymbolnamenbeisymbolerstellungundsymbolbearbeitung">Eingabe von ungültigen Symbolnamen bei Symbolerstellung und Symbolbearbeitung</h4>
+<p>The frame caption is now correct.</p>
+<h4 id="textswereprintedwithquestionmarksinsteadofapostropheduringpdfexport">Texts were printed with question marks instead of apostrophe during PDF export</h4>
 <h5 id="dissection-73">Dissection</h5>
-<p>Sowohl bei der Erstellung von Symbolen als auch beim Umbennen bzw. Kopieren von Symbolen konnten ungültige Zeichen für den Symbolnamen eingegeben werden. </p>
+<p>Due to a coding problem, apostrophe was displayed as a question mark in PDFs created by intelligent PDF export.</p>
 <h5 id="outcome-70">Outcome</h5>
-<p>Ab sofort können nur noch die nachfolgenden Zeichen für Symbolnamen eingegeben werden: 0-9 a-z A-Z !#+-.@^_~</p>
-<h4 id="zeichnungsdateienbeipdfexportbersprungen">Zeichnungsdateien bei PDF-Export übersprungen</h4>
+<p>All texts in PDFs created by intelligent PDF export are now encoded in UTF-8. Apostrophe will be displayed as apostrophe again.</p>
+<h4 id="outputformatcanbesetforpdfexport">Output format can be set for PDF export</h4>
 <h5 id="dissection-74">Dissection</h5>
-<p>Es konnte vorkommen, dass Zeichnungsdateien, die ungültige Symbolnamen beinhalteten, beim intelligenten PDF-Export übersprungen wurden.</p>
+<p>Until now, the output format of the PDF could not be set for intelligent PDF export.</p>
 <h5 id="outcome-71">Outcome</h5>
-<p>Zeichnungsdateien die ungültige Symbolnamen beinhalten werden nun ebenfalls ausgegeben.</p>
-<h4 id="ausgabevongestricheltenlinienbeipdfexport">Ausgabe von gestrichelten Linien bei PDF-Export</h4>
+<p>It is now possible to determine the paper size, orientation and border. Please note that a true-to-scale printing of the border of the generated PDF is only possible if the following parameters are adhered to:</p>
+<ul>
+<li>The paper size of the PDF must be the same as the paper size of the print.</li>
+<li>The view may not be adjusted during printing. Use the actual size here.</li>
+</ul>
+<h4 id="enteringinvalidsymbolnameswhencreatingandeditingsymbols">Entering invalid symbol names when creating and editing symbols</h4>
 <h5 id="dissection-75">Dissection</h5>
-<p>Beim intelligenten PDF-Export wurden ursprünglich gestrichelte Linien als durchgezogene Linien ausgegeben.</p>
+<p>When creating symbols as well as renaming or copying symbols, it was possible to enter invalid characters for the symbol name. </p>
 <h5 id="outcome-72">Outcome</h5>
-<p>Gestrichelte Linien werden beim intelligenten PDF-Export wieder als gestrichelte Linien ausgegeben.</p>
-<h4 id="prjinfodaterstellen">PrjInfo.dat erstellen</h4>
-<p>In der Datei Prjinfo.dat werden die Daten eines Projektes gespeichert, die normalerweise in der Datenbank gespeichert sind. Diese Informationen werden beim Rekonstruieren und Anmelden von Projektes genutzt, um die Informationen in der jeweiligen Datenbank zu vervollständigen. Beim expliziten Erstellen der PrjInfo.dat wurden nicht die aktuellen Inhalte der Projektvariablen gespeichert.</p>
+<p>From now on, only the following characters can be entered for symbol names: 0-9 a-z A-Z!#+-.@^_~</p>
+<h4 id="skipdrawingfilesforpdfexport">Skip drawing files for PDF export</h4>
+<h5 id="dissection-76">Dissection</h5>
+<p>It could happen that drawing files containing invalid symbol names were skipped during intelligent PDF export.</p>
+<h5 id="outcome-73">Outcome</h5>
+<p>Drawing files containing invalid symbol names are now also output.</p>
+<h4 id="outputofdashedlinesforpdfexport">Output of dashed lines for PDF export</h4>
+<h5 id="dissection-77">Dissection</h5>
+<p>In the case of intelligent PDF export, dashed lines were originally output as solid lines.</p>
+<h5 id="outcome-74">Outcome</h5>
+<p>With intelligent PDF export, dashed lines are returned as dashed lines.</p>
+<h4 id="createprjinfodat">Create PrjInfo.dat</h4>
+<p>The Prjinfo. dat file stores the data of a project that is normally stored in the database. This information is used when reconstructing and registering projects to complete the information in the database. When creating the PrjInfo. dat explicitly, the current contents of the project variables were not saved.</p>
 <h2 id="659">6.5.9</h2>
 <h3 id="cad-10">CAD</h3>
-<h4 id="betriebsmittelmitmehrerenzugewiesenenartikelnbeipdfexport">Betriebsmittel mit mehreren zugewiesenen Artikeln bei PDF-Export</h4>
-<h5 id="dissection-76">Dissection</h5>
-<p>Wurden einem Betriebsmittel mehrere Artikel zugewiesen, so wurde immer nur der zuletzt hinzugefügte Artikel in den Artikelinformationen angezeigt.</p>
-<h5 id="outcome-73">Outcome</h5>
-<p>Alle Artikelinformationen zu allen den Betriebsmittel zugeordneten Artikel werden nun untereinandergeschrieben angezeigt.</p>
-<h4 id="ausgabevonzielverdrahtungbeipdfexport">Ausgabe von Zielverdrahtung bei PDF-Export</h4>
-<h5 id="dissection-77">Dissection</h5>
-<p>Bisher wurden Stromlaufpläne, beim intelligenten PDF-Export, immer mit Zielverdrahtung exportiert.</p>
-<h5 id="outcome-74">Outcome</h5>
-<p>Ob Stromlaufpläne mit Zielverdrahtung exportiert werden, hängt nun von der entsprechenden Einstellung (Extras &gt; Optionen &gt; System &gt; Darstellung &gt; Zielverdrahtung), in Treesoft CAD ab.</p>
-<h4 id="absturzderanwendungbeipdfexport">Absturz der Anwendung bei PDF-Export</h4>
+<h4 id="resourceswithseveralassignedarticlesforpdfexport">Resources with several assigned articles for PDF export</h4>
 <h5 id="dissection-78">Dissection</h5>
-<p>Es konnte vorkommen, dass die Anwendung beim intelligenten PDF-Export abstürzt, wenn in einer der Zeichnungen leicht beschädigte Bitmaps hinterlegt sind.</p>
+<p>If several articles were assigned to an item, only the last added article was displayed in the item information.</p>
 <h5 id="outcome-75">Outcome</h5>
-<p>Durch eine Anpassung der verwendeten Funktionen zum Laden der Bitmaps in einer Zeichnung wurde erreicht, dass diese nun wesentlich unempfindlicher sind.</p>
-<h3 id="cadkonverter-6">CAD Konverter</h3>
-<h4 id="exportnichtmglich">Export nicht möglich</h4>
+<p>All item information for all items assigned to the equipment is now displayed written to each other.</p>
+<h4 id="outputoftargetwiringforpdfexport">Output of target wiring for PDF export</h4>
 <h5 id="dissection-79">Dissection</h5>
-<p>Es kann vorkommen, dass der Export nach ZNG nicht abgeschlossen werden kann,wenn die Quellzeichnung Schraffuren enthält.</p>
+<p>Previously, circuit diagrams were always exported with target wiring for intelligent PDF export.</p>
 <h5 id="outcome-76">Outcome</h5>
-<p>Die Auflösung der Schraffuren beim Export nach ZNG wurde angepasst und sollte den Abschluss des Exports nicht mehr behindern.</p>
+<p>Whether circuit diagrams with target wiring are exported now depends on the corresponding setting (Tools &gt; Options &gt; System &gt; Display &gt; Target Wiring) in Treesoft CAD.</p>
+<h4 id="applicationcrashesduringpdfexport">Application crashes during PDF export</h4>
+<h5 id="dissection-80">Dissection</h5>
+<p>It could happen that the application crashes during intelligent PDF export if slightly damaged bitmaps are stored in one of the drawings.</p>
+<h5 id="outcome-77">Outcome</h5>
+<p>By adapting the functions used to load the bitmaps in a drawing, it has been possible to make them much less sensitive.</p>
+<h3 id="cadkonverter-6">CAD Konverter</h3>
+<h4 id="exportnotpossible">Export not possible</h4>
+<h5 id="dissection-81">Dissection</h5>
+<p>It may happen that the export to ZNG cannot be completed if the source drawing contains hatchings.</p>
+<h5 id="outcome-78">Outcome</h5>
+<p>The resolution of hatching when exporting to ZNG has been adjusted and should no longer hinder the completion of the export.</p>
 <h2 id="658">6.5.8</h2>
 <h3 id="cad-11">CAD</h3>
-<h4 id="absturzderanwendungbeipdfexport-1">Absturz der Anwendung bei PDF-Export</h4>
-<h5 id="dissection-80">Dissection</h5>
-<p>Treesoft CAD konnte beim PDF-Export von Zeichnungen, die viele Bilder enthalten, abstürzen.</p>
-<h5 id="outcome-77">Outcome</h5>
-<p>Die Pufferung, die sicherstellen sollte, dass ein Bild jeweils nur einmal in einer PDF hinterlegt wird, funktionierte nicht zuverlässig. Der Fehler wurde behoben, dies hat neben der Vermeidung des beschriebenen Absturzes den positiven Effekt, dass generierte PDF-Dateien mit vielen Bildern nun weniger Festplattenspeicher beanspruchen.</p>
-<h4 id="ausgabevonanschlusspunktenbeipdfexport">Ausgabe von Anschlusspunkten bei PDF-Export</h4>
-<p>Anschlusspunkte werden beim PDF-Export nicht länger ausgegeben.</p>
+<h4 id="applicationcrashesduringpdfexport-1">Application crashes during PDF export</h4>
+<h5 id="dissection-82">Dissection</h5>
+<p>Treesoft CAD could crash when exporting PDF-drawings containing many images.</p>
+<h5 id="outcome-79">Outcome</h5>
+<p>The buffering, which was supposed to ensure that an image is stored only once in a PDF file, did not work reliably. The bug has been fixed, this has the positive effect that generated PDF files with a lot of images take up less hard disk space.</p>
+<h4 id="outputofconnectionpointsforpdfexport">Output of connection points for PDF export</h4>
+<p>Connection points are no longer output when exporting PDF files.</p>
 <h2 id="657">6.5.7</h2>
-<h3 id="erpdokumente-5">ERP Dokumente</h3>
-<h4 id="ausgabedesanteilesdermehrwertsteuereinerabschlagsrechnung">Ausgabe des Anteiles der Mehrwertsteuer einer Abschlagsrechnung</h4>
-<h5 id="dissection-81">Dissection</h5>
-<p>Wenn in einer Schlussrechnung in den Druck-Voreinstellungen "Nur Zwischensummen" gewählt ist, wird beim Abzug der Abschlagsrechnungen unter dem Gesamtbetrag der Schlussrechnung, der Anteil der Mehrwertsteuer nicht mehr ausgewiesen.</p>
-<h5 id="outcome-78">Outcome</h5>
-<p>Auch bei anderen Druckvoreinstellungen, wird der Anteil der Mehrwertsteuer für Abschlagsrechnungen nun in allen Schlussrechnungen ausgegeben.</p>
+<h3 id="erpdokumente-6">ERP Dokumente</h3>
+<h4 id="outputoftheshareofthevalueaddedtaxinapartialinvoice">Output of the share of the value added tax in a partial invoice</h4>
+<h5 id="dissection-83">Dissection</h5>
+<p>If "Subtotals only" is selected in the print presets of a final invoice, the VAT share is no longer shown under the total amount of the final invoice when deducting the partial invoices.</p>
+<h5 id="outcome-80">Outcome</h5>
+<p>For other print presets, the VAT portion for partial invoices is now also included in all final invoices.</p>
 <h2 id="656">6.5.6</h2>
 <h3 id="cad-12">CAD</h3>
-<h4 id="intelligenterpdfexport">Intelligenter PDF-Export</h4>
-<p>Ab sofort können Sie mit dem intelligenten PDF-Export Ihre Treesoft CAD Projekte schnell und einfach auf Knopfdruck in eine intelligente PDF überführen.
-Die intelligenten PDFs heben sich durch folgende Features von normalen PDFs ab:</p>
+<h4 id="intelligentpdfexport">Intelligent PDF export</h4>
+<p>With the intelligent PDF export, you can convert your Treesoft CAD projects into an intelligent PDF at the touch of a button.
+The intelligent PDFs stand out from normal PDFs by the following features:</p>
 <ul>
-<li>Sie beinhalten ein vollständiges Inhaltsverzeichnis aller Zeichnungen inklusive Blätter bzw. Grundrissen.</li>
-<li>Querverweisen werden innerhalb der PDF verlinkt, was Ihnen eine schnelle und bequeme Navigation erlaubt.</li>
-<li>Sämtliche Texte werden standardmäßig als echte Texte ausgegeben. Dies erlaubt Ihnen, innerhalb der PDF, nach Bauteilen etc. zu suchen.</li>
-<li>Artikelinformationen werden als Text-Anmerkungen auf den Betriebsmittelkennzeichen hinterlegt.</li>
+<li>They contain a complete table of contents for all drawings including sheets and floor plans.</li>
+<li>Cross-references are linked within the PDF, allowing you to navigate quickly and easily.</li>
+<li>All texts are output as real texts by default. This allows you to search within the PDF for parts, etc.</li>
+<li>Article information is stored as text annotations on the equipment identification plate.</li>
 </ul>
-<p>Schauen Sie auf unserer Website vorbei, um mehr über den intelligenten PDF-Export zu erfahren.</p>
-<h4 id="projektkopieren">Projekt kopieren</h4>
-<h5 id="dissection-82">Dissection</h5>
-<p>Beim Kopieren eines Projektes im CAD bekamen einige Kunden die Fehlermeldung "Sie haben dem gewählten Projekt noch keinen Namen zugeordnet!". Der Kopiervorgang wurde damit auch beendet.</p>
-<h5 id="outcome-79">Outcome</h5>
-<p>Wir konnten, in Zusammenarbeit mit einigen Kunden das Problem analysieren, reproduzieren und haben es jetzt gelöst.</p>
-<h3 id="stammdaten-3">Stammdaten</h3>
-<h4 id="lieferantendatenknneninvolltextsuchenichtindiziertwerden">Lieferantendaten können in Volltextsuche nicht indiziert werden</h4>
-<h5 id="dissection-83">Dissection</h5>
-<p>Sowohl die Herstellerkurzbezeichnung als auch der Herstellercode konnten in der Volltextsuche nicht indiziert werden. Folglich blieb eine Suchanfrage nach einer der beiden Felder ergebnislos.</p>
-<h5 id="outcome-80">Outcome</h5>
-<p>Die Lieferantendaten werden nun ebenfalls korrekt indiziert. Es ist notwendig die Volltextsuche für Konfigurationen, welche die Herstellerkurzbezeichnung oder den Herstellercode beinhalten, neu aufzubauen!</p>
-<h3 id="importschnittstelle">Importschnittstelle</h3>
-<h4 id="performanceoptimierung">Performance-Optimierung</h4>
+<p>Visit our website to learn more about intelligent PDF export.</p>
+<h4 id="copyproject">Copy Project</h4>
 <h5 id="dissection-84">Dissection</h5>
-<p>Mit der Version Treesoft Office 6.5 wurde ein neuer Volltextsuch-Server ausgeliefert. Einer der Vorteile ist, dass die Volltextsuche automatisch Änderungen an den Datensätzen in einer Volltextsuch-Konfiguration mitbekommt und diese automatisch aktualisiert. Durch das eingesetzte System für das Verfolgen der Änderungen dauerte der erneute Import von Katalogen (Kataloge aktualisieren) über die Schnittstellen DATANORM, ELDANORM, ZVEHNORM und Plug-ins je nach Anzahl der Volltextsuch-Konfigurationen ein vielfaches der Zeit in den Versionen 6.3 und 6.4.</p>
+<p>When copying a project in CAD, some customers received the error message "You have not yet assigned a name to the selected project! The copying process was also terminated.</p>
 <h5 id="outcome-81">Outcome</h5>
-<p>Durch eine Optimierung des Systems für die Änderungsverfolgung konnten wir den erneuten Import von Katalogen annähernd an die Geschwindigkeit des Imports in der Version 6.3 oder 6.4 angleichen. Der größte Vorteil bei dem neuen System ist, dass nach dem Aktualisieren eines bestehenden Katalogs zu dem es eine Volltextsuch-Konfiguration gibt, die Volltextsuche nicht erneut aufgebaut werden muss und sofort genutzt werden kann.</p>
+<p>In cooperation with some customers we were able to analyse the problem, reproduce it and have now solved it.</p>
+<h3 id="stammdaten-4">Stammdaten</h3>
+<h4 id="supplierdatacannotbeindexedinfulltextsearch">Supplier data cannot be indexed in full text search</h4>
+<h5 id="dissection-85">Dissection</h5>
+<p>Both the manufacturer's abbreviation and the manufacturer's code could not be indexed in the full-text search. Consequently, a search query for one of the two fields was unsuccessful.</p>
+<h5 id="outcome-82">Outcome</h5>
+<p>The vendor data is now also indexed correctly. It is necessary to rebuild the full text search for configurations that contain the manufacturer's abbreviation or manufacturer code!</p>
+<h3 id="importschnittstelle">Importschnittstelle</h3>
+<h4 id="performanceoptimization">performance optimization</h4>
+<h5 id="dissection-86">Dissection</h5>
+<p>A new full-text search server has been delivered with the Treesoft Office 6.5 version. One of the advantages of full-text search is that it automatically detects changes to the records in a full-text search configuration and updates them automatically. Due to the system used for tracking the changes, the re-importing of catalogs (catalogues update) via the interfaces DATANORM, ELDANORM, ZVEHNORM and plug-ins took many times the time in versions 6.3 and 6.4, depending on the number of full-text search configurations.</p>
+<h5 id="outcome-83">Outcome</h5>
+<p>By optimizing the change tracking system, we were able to approximate the speed of importing catalogs to that of version 6.3 or 6.4. The biggest advantage of the new system is that after updating an existing catalog to which there is a full-text search configuration, the full-text search does not have to be rebuilt and can be used immediately.</p>
 <h2 id="655">6.5.5</h2>
 <h3 id="cadgebudetechnikassistent">CAD Gebäudetechnik-Assistent</h3>
-<h4 id="einzelbemaung">Einzelbemaßung</h4>
-<h5 id="dissection-85">Dissection</h5>
-<p>In der Gebäudetechnik kann zwischen 4 unterschiedlichen Bemaßungsarten gewählt werden: Schrittbemaßung, horizontale Kettenbemaßung, vertikale Kettenbemaßung und Einzelbemaßung. Innerhalb der Bemaßungsfunktion können nächstgelegene Objekte nach oben, unten links oder rechts gefangen werden. Diese Funktionen sind nicht nur über die Schaltflächen der Toolbar aufrufbar, sondern auch über Kurztasten. Bis auf die Einzelbemaßung werden Objekte mit der Strg-Taste und der entsprechenden Pfeiltaste gefangen; in der Einzelbemaßung muss anstelle der Strg-Taste die Umschalt-Taste gedrückt werden.</p>
-<h5 id="outcome-82">Outcome</h5>
-<p>Die Funktion "Einzelbemaßung" in der Gebäudetechnik entspricht der Funktion "Bemaßung" des Schaltplan-Assistenten, d.h. Objekte werden mit der Umschalt+Pfeiltaste gefangen. Zwecks Optimierung des Arbeitsflusses werden nun in der Gebäudetechnik sowohl die Kurztasten mit der Umschalt-Taste als auch mit der Strg-Taste berücksichtigt. </p>
-<h3 id="cadkonverter-7">CAD Konverter</h3>
-<h4 id="nachzngkonvertiertezeichnungkannnichtgeffnetwerden">Nach ZNG konvertierte Zeichnung kann nicht geöffnet werden</h4>
-<h5 id="dissection-86">Dissection</h5>
-<p>Wurde eine Konvertierung einer Zeichnung mit Bildern nach ZNG durchgeführt, so konnte es vorkommen, dass die konvertierte Zeichnung nicht im CAD Konverter geöffnet werden konnte.</p>
-<h5 id="outcome-83">Outcome</h5>
-<p>Bei der Konvertierung nach ZNG konnten Bilder mit einer Höhe und Weite von null gespeichert werden, die der CAD Konverter nicht unterstützt. Entsprechende Bilder werden nun nicht mehr gespeichert.</p>
-<h3 id="crm-5">CRM</h3>
-<h4 id="versionsnummern">Versionsnummern</h4>
+<h4 id="singledimension">single dimension</h4>
 <h5 id="dissection-87">Dissection</h5>
-<p>Fügt man eine neue Version in der Softwareverwaltung hinzu wird diese automatisch an das untere Ender der Liste hinzugefügt.</p>
+<p>In building services engineering, you can choose between 4 different dimensioning types: Step dimensions, horizontal chain dimensioning, vertical chain dimensioning and single dimensioning. Within the dimensioning function, the closest objects can be trapped up, down, left or right. These functions can be called not only via the toolbar buttons, but also via short keys. With the exception of the single dimension, objects are captured with the Ctrl key and the corresponding arrow key; in the single dimension, the Shift key must be pressed instead of the Ctrl key.</p>
 <h5 id="outcome-84">Outcome</h5>
-<p>Neue Einträge werden wie in allen anderen Listen in TreesoftOffice.org nun an der ersten Stelle hinzugefügt.</p>
-<h3 id="volltextsuche-8">Volltextsuche</h3>
-<h4 id="materialnummerkanninvolltextsuchenichtindiziertwerden">Materialnummer kann in Volltextsuche nicht indiziert werden</h4>
+<p>The "Single dimensioning" function in building services corresponds to the "Dimensioning" function of the SCM wizard, i. e. objects are captured with the Shift+arrow key. In order to optimize the workflow, both the shortcut keys with the Shift key and the Ctrl key are now taken into account in building services engineering. </p>
+<h3 id="cadkonverter-7">CAD Konverter</h3>
+<h4 id="drawingconvertedtozngcannotbeopened">Drawing converted to ZNG cannot be opened</h4>
 <h5 id="dissection-88">Dissection</h5>
-<p>Die Materialnummer konnte in der Volltextsuche nicht indiziert, werden. Folglich blieb eine Suchanfrage nach einer Materialnummer ergebnislos.</p>
+<p>When converting a drawing with images to ZNG, it could happen that the converted drawing could not be opened in the CAD converter.</p>
 <h5 id="outcome-85">Outcome</h5>
-<p>Die Materialnummer wird nun ebenfalls korrekt indiziert. Es ist notwendig die Volltextsuche für Konfigurationen, welche die Materialnummer beinhalten neu aufzubauen! </p>
+<p>During the conversion to ZNG, images with a height and width of zero could be saved which are not supported by the CAD converter. Corresponding images are no longer saved.</p>
+<h3 id="crm-5">CRM</h3>
+<h4 id="versionnumbers">version numbers</h4>
+<h5 id="dissection-89">Dissection</h5>
+<p>Adding a new version in the software administration will automatically add it to the lower end of the list.</p>
+<h5 id="outcome-86">Outcome</h5>
+<p>New entries are now added at the top of TreesoftOffice.org as in all other lists.</p>
+<h3 id="volltextsuche-8">Volltextsuche</h3>
+<h4 id="materialnumbercannotbeindexedinfulltextsearch">Material number cannot be indexed in full text search</h4>
+<h5 id="dissection-90">Dissection</h5>
+<p>The material number could not be indexed in the full text search. Consequently, a search query for a material number was unsuccessful.</p>
+<h5 id="outcome-87">Outcome</h5>
+<p>The material number is now also indexed correctly. It is necessary to rebuild the full text search for configurations containing the material number! </p>
 <h2 id="654">6.5.4</h2>
 <h3 id="cad-13">CAD</h3>
-<h4 id="dokumentenbaumzeigtnichtallezweigean">Dokumentenbaum zeigt nicht alle Zweige an</h4>
-<h5 id="dissection-89">Dissection</h5>
-<p>Es konnte vorkommen, dass nicht alle Zweige im Dokumentenbaum von Treesoft CAD angezeigt wurden.</p>
-<h5 id="outcome-86">Outcome</h5>
-<p>Es werden nun wieder alle Zweige angezeigt.</p>
-<h4 id="kopierenvonprojekten">Kopieren von Projekten</h4>
-<h5 id="dissection-90">Dissection</h5>
-<p>Beim Kopieren von Projekten über Treesoft CAD und anschließendem Ändern des Oberbegriffs im Treesoft CRM wurden sowohl das alte als auch das neue Projekt umbenannt. </p>
-<h5 id="outcome-87">Outcome</h5>
-<p>Das Kopieren von Projekten im Treesoft CAD funktioniert nun erwartungsgemäß.</p>
-<h3 id="cadgebudetechnikassistent-1">CAD Gebäudetechnik-Assistent</h3>
-<h4 id="hintergrundzeichnungwirdbeinderungvonblattformatmastabignoriert">Hintergrundzeichnung wird bei Änderung von Blattformat/Maßstab ignoriert</h4>
+<h4 id="documenttreedoesnotshowallbranches">Document tree does not show all branches</h4>
 <h5 id="dissection-91">Dissection</h5>
-<p>Mittels CAD Konverter, in das ZNG-Format, konvertierte Zeichnungen werden als Hintergrundzeichnung in Treesoft CAD angezeigt. Wird in Treesoft CAD das Blattformat bzw. der Maßstab geändert so muss auch die Hintergrundzeichnung angepasst werden. Es konnte dabei vorkommen, dass der Bezugspunkt der Hintergrundzeichnung außerhalb des Zeichnungsbereiches verschoben wurde. Nachfolgende Änderungen an Blattformat bzw. Maßstab wurden nachfolgend ignoriert.</p>
+<p>It could happen that not all branches were displayed in the document tree of Treesoft CAD.</p>
 <h5 id="outcome-88">Outcome</h5>
-<p>Der Bezugspunkt der Hintergrundzeichnung wird nun, bei einer Konvertierung in das ZNG-Format, vom CAD Konverter genau in die Mitte des Arbeitsbereichs gelegt. Änderungen an Blattformat bzw. Maßstab in Treesoft CAD sollten nun nicht mehr zu Folge haben, dass der Bezugspunkt in einen Bereich außerhalb der Zeichnung verschoben wird.</p>
-<h3 id="cadkonverter-8">CAD Konverter</h3>
-<h4 id="fehlerhaftepositionierungbeibidirektionalemimport">Fehlerhafte Positionierung bei bidirektionalem Import</h4>
+<p>All branches are now displayed again.</p>
+<h4 id="copyingprojects">Copying Projects</h4>
 <h5 id="dissection-92">Dissection</h5>
-<p>Wurde das Blattformat oder der Maßstab eines exportierten Grundrisses in Treesoft CAD geändert, so konnte es vorkommen, dass neue Elemente beim bidirektionalen Import, fehlerhaft positioniert wurden. </p>
+<p>When copying projects using Treesoft CAD and then changing the generic term in Treesoft CRM, both the old and the new project were renamed. </p>
 <h5 id="outcome-89">Outcome</h5>
-<p>Die Positierung ist nun korrekt.</p>
-<h4 id="definierenvonexportbereichennachffnungeinerkonfigurationsdatei">Definieren von Exportbereichen nach Öffnung einer Konfigurationsdatei</h4>
+<p>Copying projects in Treesoft CAD now works as expected.</p>
+<h3 id="cadgebudetechnikassistent-1">CAD Gebäudetechnik-Assistent</h3>
+<h4 id="backgrounddrawingisignoredwhenchangingsheetformatscale">Background drawing is ignored when changing sheet format/scale</h4>
 <h5 id="dissection-93">Dissection</h5>
-<p>Nach der Öffnung einer Konfigurationsdatei, in einem der Assistenten zur Konvertierung nach ZNG, konnte es vorkommen, dass zwar neue Exportbereiche definiert werden konnten, diese jedoch nicht berücksichtigt wurden.</p>
+<p>Drawings converted to ZNG format via CAD converter are displayed as background drawings in Treesoft CAD. If the page format or scale is changed in Treesoft CAD, the background drawing must also be adapted. It could happen that the reference point of the background drawing was moved outside the drawing area. Subsequent changes to sheet format or scale were ignored.</p>
 <h5 id="outcome-90">Outcome</h5>
-<p>Neu definierte Exportbereiche werden nun berücksichtigt.</p>
-<h3 id="crmschnittstellesage-1">CRM Schnittstelle Sage</h3>
-<h4 id="untersttzungdersage100ehemalssageofficeline">Unterstützung der Sage 100 (ehemals Sage Office Line)</h4>
+<p>The reference point of the background drawing is now placed exactly in the middle of the working area by the CAD converter when converting to ZNG format. Changes to sheet format or scale in Treesoft CAD should no longer have the effect of moving the datum to an area outside the drawing.</p>
+<h3 id="cadkonverter-8">CAD Konverter</h3>
+<h4 id="incorrectpositioningwithbidirectionalimport">Incorrect positioning with bidirectional import</h4>
 <h5 id="dissection-94">Dissection</h5>
-<p>Das Produkt Sage Office Line wurde zu Sage 100 umbenannt.</p>
+<p>If the sheet format or scale of an exported floor plan was changed in Treesoft CAD, new elements could be incorrectly positioned during bidirectional import. </p>
 <h5 id="outcome-91">Outcome</h5>
-<p>Wir haben geprüft und sichergestellt, dass die aktuelle Office Line-Schnittstelle auch mit Sage 100 funktioniert.</p>
-<h3 id="projektverwaltung-1">Projektverwaltung</h3>
-<h4 id="bilderimdateibaumvontreesoftcad">Bilder im Dateibaum von Treesoft CAD</h4>
+<p>The position is now correct.</p>
+<h4 id="defineexportareasafteropeningaconfigurationfile">Define export areas after opening a configuration file</h4>
 <h5 id="dissection-95">Dissection</h5>
-<p>Die Bilder im png- oder bmp-Format wurden im Dateibaum von Treesoft CAD nicht unter CAD Konverter angezeigt.</p>
+<p>After opening a configuration file in one of the ZNG conversion wizards, it could happen that new export areas could be defined, but these were not considered.</p>
 <h5 id="outcome-92">Outcome</h5>
-<p>Wir haben den Filter für die Dateimasken korrigiert und damit sichergestellt, dass die Bilder jetzt auch unterhalb des Zweiges CAD Konverter angezeigt werden.</p>
-<h3 id="notifier-2">Notifier</h3>
-<h4 id="anwendungimvordergrundbeimffneneinestelefonates">Anwendung im Vordergrund beim Öffnen eines Telefonates</h4>
+<p>Newly defined export areas are now taken into account.</p>
+<h3 id="crmschnittstellesage-1">CRM Schnittstelle Sage</h3>
+<h4 id="supportforthesage100formerlysageofficeline">Support for the Sage 100 (formerly Sage Office Line)</h4>
 <h5 id="dissection-96">Dissection</h5>
-<p>Beim Öffnen eines Telefonates aus dem Treesoft Notifier konnte es passieren, dass das Telefonat im Hintergrund geöffnet wurde. Das Problem hat sich immer dann gezeigt, wenn Treesoft Office minimiert oder durch eine andere Anwendung überdeckt wurde.  </p>
+<p>The product Sage Office Line has been renamed to Sage 100.</p>
 <h5 id="outcome-93">Outcome</h5>
-<p>Beim Öffnen eines Telefonates aus dem Treesoft Notifier wird Treesoft Office nun aktiviert und im Vordergrund angezeigt. Das Telefonat öffnet sich nun sichtbar für den Anwender.  </p>
-<h3 id="volltextsuche-9">Volltextsuche</h3>
-<h4 id="zusammengesetztewrterwerdennichtgefunden">Zusammengesetzte Wörter werden nicht gefunden</h4>
+<p>We have checked and ensured that the current Office Line interface also works with Sage 100.</p>
+<h3 id="projektverwaltung-1">Projektverwaltung</h3>
+<h4 id="imagesinthefiletreeoftreesoftcad">Images in the file tree of Treesoft CAD</h4>
 <h5 id="dissection-97">Dissection</h5>
-<p>Mittels "+" zusammengesetzte Wörter, wie z. B. "A+B", wurden nicht gefunden.</p>
+<p>The images in png or bmp format were not displayed in the Treesoft CAD file tree under CAD Converter.</p>
 <h5 id="outcome-94">Outcome</h5>
-<p>Wörter, die Mittels + zusammengesetzt wurden, werden nun gefunden. Um Wörter zu finden, die mittels "&amp;", "|" oder "-" zusammengesetzt wurden, muss das jeweilige Zeichen vornan mit "\" maskiert werden. Z. B. "A\&amp;B", "A\|B" oder "A\-B".</p>
+<p>We have corrected the filter for the file masks to ensure that the images are now displayed below the CAD Converter branch.</p>
+<h3 id="notifier-2">Notifier</h3>
+<h4 id="applicationintheforegroundwhenopeningaphonecall">Application in the foreground when opening a phone call</h4>
+<h5 id="dissection-98">Dissection</h5>
+<p>When opening a call from the Treesoft Notifier, it could happen that the call was opened in the background. The problem has always arisen when Treesoft Office has been minimized or masked by another application.  </p>
+<h5 id="outcome-95">Outcome</h5>
+<p>When opening a phone call from the Treesoft Notifier, Treesoft Office is now activated and displayed in the foreground. The phone call now opens visibly for the user.  </p>
+<h3 id="volltextsuche-9">Volltextsuche</h3>
+<h4 id="compositewordsarenotfound">Composite words are not found</h4>
+<h5 id="dissection-99">Dissection</h5>
+<p>Composite words such as "A+B" were not found using "+".</p>
+<h5 id="outcome-96">Outcome</h5>
+<p>Words composed by + are now found. In order to find words that have been compounded using "&amp;","|" or "-", the respective character must be masked with "\" in front of it. E. g."A\&amp;B","A\|B" or "A\-B".</p>
 <h2 id="653">6.5.3</h2>
 <h3 id="crmadressverwaltung-1">CRM Adressverwaltung</h3>
-<h4 id="ndernderkundenlieferantenodermitarbeiternummer">Ändern der Kunden-, Lieferanten- oder Mitarbeiternummer</h4>
-<h5 id="dissection-98">Dissection</h5>
-<p>Die Eingabe von Buchstaben oder Sonderzeichen bei Kunden-, Lieferanten- oder Mitarbeiternummer führte zu einem unerwarteten Programmabbruch.</p>
-<h5 id="outcome-95">Outcome</h5>
-<p>Die Eingabe wird nun auf ungültige Zeichen geprüft und im Fehlerfall wird eine aussagekräftige Meldung für den Benutzer ausgegeben.</p>
+<h4 id="changingthecustomervendororemployeenumber">Changing the customer, vendor or employee number</h4>
+<h5 id="dissection-100">Dissection</h5>
+<p>Entering letters or special characters for customer, supplier or employee numbers led to an unexpected termination of the program.</p>
+<h5 id="outcome-97">Outcome</h5>
+<p>The input is now checked for invalid characters and in the event of an error, a meaningful message is issued to the user.</p>
 <h3 id="system-1">System</h3>
-<h4 id="fehlerhaftedarstellungintreesoftoffice">Fehlerhafte Darstellung in Treesoft Office</h4>
-<h5 id="dissection-99">Dissection</h5>
-<p>Durch eine Korrektur der Darstellung unter Windows 10 kam es bei Windows Vista bis einschließlich Windows 8.0 und den entsprechenden Server-Betriebssystemen Windows Server 2008/2008R2 und 2012 bei der Adressverwaltung, dem Optionen-Dialog, dem Texteditor und den Stammdaten zu Darstellungsfehlern.</p>
-<h5 id="outcome-96">Outcome</h5>
-<p>Wir haben die gemachten Änderungen wieder zurückgenommen, sodass es auch unter den genannten Betriebssystemen zu keinen Darstellungsfehlern kommt.</p>
+<h4 id="incorrectdisplayintreesoftoffice">Incorrect display in Treesoft Office</h4>
+<h5 id="dissection-101">Dissection</h5>
+<p>Corrected display errors in Windows Vista up to and including Windows 8.0 and the corresponding server operating systems Windows Server 2008/2008R2 and 2012 for address management, options dialog, text editor and master data.</p>
+<h5 id="outcome-98">Outcome</h5>
+<p>We have withdrawn the changes again, so that there are no display errors under the mentioned operating systems.</p>
 <h2 id="652">6.5.2</h2>
 <h3 id="crmadressverwaltung-2">CRM Adressverwaltung</h3>
-<h4 id="adressanlage">Adressanlage</h4>
-<h5 id="dissection-100">Dissection</h5>
-<p>Bei der Anlage oder beim Bearbeiten von Adressen konnte es unter wenigen Umständen zu einem unerwarteten Programmabbruch kommen.</p>
-<h5 id="outcome-97">Outcome</h5>
-<p>Die Adressanlage führt jetzt auch in den wenigen Umständen nicht zu einem unerwarteten Programmabbruch.</p>
+<h4 id="addresssystem">address system</h4>
+<h5 id="dissection-102">Dissection</h5>
+<p>An unexpected program termination could occur under a few circumstances when creating or editing addresses.</p>
+<h5 id="outcome-99">Outcome</h5>
+<p>The address system does not lead to an unexpected abort of the program even in the few circumstances.</p>
 <h2 id="651">6.5.1</h2>
 <h3 id="cad-14">CAD</h3>
-<h4 id="bilderradierenimschaltplangebudetechnikassistent">Bilder radieren im Schaltplan-/Gebäudetechnik-Assistent</h4>
-<h5 id="dissection-101">Dissection</h5>
-<p>Bilder mit einer Farbtiefe von 32 Bit konnten bisher nicht radiert werden.</p>
-<h5 id="outcome-98">Outcome</h5>
-<p>Die Unterstützung, für Bilder mir einer Farbtiefe von 32 Bit, wurde der Funktion hinzugefügt.</p>
+<h4 id="erasingimagesintheschematicbuildingsengineeringassistant">Erasing images in the schematic/buildings engineering assistant</h4>
+<h5 id="dissection-103">Dissection</h5>
+<p>Images with a color depth of 32 bit could not be erased until now.</p>
+<h5 id="outcome-100">Outcome</h5>
+<p>Added support for images with 32-bit color depth to the function.</p>
                         </div>
                     </div>
                 </div>
