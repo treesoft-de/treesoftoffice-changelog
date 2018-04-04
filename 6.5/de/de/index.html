@@ -99,6 +99,14 @@
                                     
                                     <div style="margin-top: 5px">
                                         <b>
+                                            <a class="item" href="#6529">
+                                                6.5.29
+                                            </a>
+                                        </b>
+                                    </div>
+                                    
+                                    <div style="margin-top: 5px">
+                                        <b>
                                             <a class="item" href="#6528">
                                                 6.5.28
                                             </a>
@@ -313,6 +321,25 @@
                         
                         <div id="contentArea">
                             <h1 id="nderungsprotokollversion65">Änderungsprotokoll Version 6.5</h1>
+<h2 id="6529">6.5.29</h2>
+<h3 id="cadgebudetechnikassistent">CAD Gebäudetechnik-Assistent</h3>
+<h4 id="anlagevonneuengrundrisszeichnungenmirfalschemmastab">Anlage von neuen Grundrisszeichnungen mir falschem Maßstab</h4>
+<p>Bei der Anlage von neuen Zeichnungen aus dem Projektbaum von Treesoft Office, konnte es vorkommen, dass die Zeichnung mit falschem Maßstab erzeugt wurde. Ab sofort wird der richtige Maßstab für neu angelegte Zeichnung hinterlegt.</p>
+<h3 id="projektverwaltung">Projektverwaltung</h3>
+<h4 id="suchenachdokumentennummern">Suche nach Dokumentennummern</h4>
+<p>Bei der Suche nach Dokumentennummern war die Eingabe auf 8 Zeichen beschränkt. Diese Einschränkung wurde aufgehoben, damit nun auch Dokumente mit längeren Nummern gefunden werden können.</p>
+<h3 id="stammdaten">Stammdaten</h3>
+<h4 id="absturzbeimkopierenvonleistungen">Absturz beim Kopieren von Leistungen</h4>
+<p>Das Kopieren von Leistungen führte zu einem Absturz, wenn Stücklisten mit bestimmten Einheiten verwendet wurden.</p>
+<h3 id="computertelefonie">Computertelefonie</h3>
+<h4 id="prfixignorierenbeiausgehendentelefonaten">Präfix ignorieren bei ausgehenden Telefonaten</h4>
+<p>In den Standorteinstellungen der Computertelefonie ist es nun möglich auch für ausgehende Telefonate ein Präfix zu definieren, der von Treesoft Office ignoriert wird. Es gibt Telefonanlagen/-treiber, die über die TAPI-Schnittstelle die Amtsleitung zum Rauswählen wieder zurückliefern, das führt dann bei der Rückwärtssuche (Telefonnummer -&gt; Adresse) zu keinen Ergebnissen.</p>
+<h3 id="crmadressverwaltung">CRM Adressverwaltung</h3>
+<h4 id="absturzdurchdasffneneineradresseineinemneuenfenster">Absturz durch das Öffnen einer Adresse in einem neuen Fenster</h4>
+<p>Durch das wiederholte Aufrufen der Funktion 'Adresse in neuem Fenster öffnen' trat ein Programmabsturz auf. Ab sofort lässt sich diese Funktion beliebig oft ausführen. Außerdem werden neue Fenster nun angedockt geöffnet.</p>
+<h3 id="eintrge">Einträge</h3>
+<h4 id="ansprechpartnerineintrgentauschen">Ansprechpartner in Einträgen tauschen</h4>
+<p>Über den Kontext-Menü Befehl "Eintrag mit Ansprechpartner verknüpfen" können nachträglich die Ansprechpartner von Einträgen getauscht werden. Diese Funktion berücksichtigt nun die Mehrfachmarkierung. </p>
 <h2 id="6528">6.5.28</h2>
 <h3 id="erpdokumente">ERP Dokumente</h3>
 <h4 id="absturzbeimbuchenvongutschriften">Absturz beim Buchen von Gutschriften</h4>
@@ -320,7 +347,7 @@
 <p>Das Buchen von Gutschriften führt zu einem Absturz, wenn keine Rechnung vorhanden ist.</p>
 <h5 id="ergebnis">Ergebnis</h5>
 <p>Der Fehler wurde behoben und der Benutzer wird nun darauf hingewiesen, dass man eine Rechnung hinzufügen soll. </p>
-<h3 id="stammdaten">Stammdaten</h3>
+<h3 id="stammdaten-1">Stammdaten</h3>
 <h4 id="stabilittaufeinigensystemenverbessert">Stabilität auf einigen Systemen verbessert</h4>
 <h5 id="analyse-1">Analyse</h5>
 <p>Auf manchen Systemen und unter Einfluss zeitlicher Faktoren ist die Software beim Speichern von Materialien und Leistungen abgestürzt. </p>
@@ -365,7 +392,7 @@
 <p>Fälschlicherweise war die Funktion 'Neues Material oder Lohn in diese Stückliste schreiben' nach dem Öffnen der Rechnung aktiv, obwohl das Dokument ausgewählt war. Führte der Benutzer die Funktion auf dem Dokument aus, trat ein Fehler auf, da direkt in das Dokument keine Materialien oder Löhne geschrieben werden können.</p>
 <h5 id="ergebnis-7">Ergebnis</h5>
 <p>Es ist nicht mehr möglich die Funktion 'Neues Material oder Lohn in diese Stückliste schreiben' auf dem Dokument auszuführen.</p>
-<h3 id="projektverwaltung">Projektverwaltung</h3>
+<h3 id="projektverwaltung-1">Projektverwaltung</h3>
 <h4 id="mehrfachvergabevonprojektnummern">Mehrfachvergabe von Projekt-Nummern</h4>
 <h5 id="analyse-8">Analyse</h5>
 <p>Bei langsameren Netzwerkverbindungen konnte es vorkommen, dass Projektnummern mehrfach vergeben wurden. Das führt zwar nicht beim Anlegen, Kopieren, Anmelden und Rekonstruieren zum Problem, allerdings beim erneuten Öffnen der Projekte.</p>
@@ -403,7 +430,7 @@ wenn fehlerhafte Bilder in der Datenbank gespeichert waren. </p>
 <p>Es wird nun eine Konfiguration ausgewählt, wenn mindestens eine vorhanden ist.</p>
 <h4 id="absturzbeidervolltextsuchenachadressen">Absturz bei der Volltextsuche nach Adressen</h4>
 <p>Das CRM stürzte bei der Volltextsuche ab, wenn das Suchfenster teilweise außerhalb des Bildschirms lag.</p>
-<h3 id="stammdaten-1">Stammdaten</h3>
+<h3 id="stammdaten-2">Stammdaten</h3>
 <h4 id="absturzbeimspeicherversuchvonleerenstcklisten">Absturz beim Speicherversuch von leeren Stücklisten</h4>
 <h5 id="analyse-13">Analyse</h5>
 <p>Beim Ändern von Eigenschaften von Stücklisten kam es zum Absturz, wenn keine Daten vorhanden waren.</p>
@@ -463,7 +490,7 @@ Zusätzlich ist es nun möglich lange E-Mail Adressen von bis zu 254 Zeichen zu 
 <p>Wurden neue Steuerkennzeichen angelegt, jedoch nicht in der Zuordnungsmatrix konfiguriert und in den Einstellungen einer Rechnung unter Steuern ausgewählt, kam es zu einem Absturz der Software.</p>
 <h5 id="ergebnis-19">Ergebnis</h5>
 <p>Steuerkennzeichen müssen ab sofort immer erst in der Zuordnungsmatrix vollständig konfiguriert werden, bevor sie in einer Rechnung ausgewählt werden können.</p>
-<h3 id="stammdaten-2">Stammdaten</h3>
+<h3 id="stammdaten-3">Stammdaten</h3>
 <h4 id="absturzbeimauswhlenanlegenbearbeiteneinerrabattgruppehauptwarengruppewarengruppe">Absturz beim Auswählen/Anlegen/Bearbeiten einer Rabattgruppe/Hauptwarengruppe/Warengruppe</h4>
 <h5 id="analyse-22">Analyse</h5>
 <ul>
@@ -473,10 +500,10 @@ Zusätzlich ist es nun möglich lange E-Mail Adressen von bis zu 254 Zeichen zu 
 <h5 id="ergebnis-20">Ergebnis</h5>
 <p>Auch wenn eine Rabattgruppe, Hauptwarengruppe oder Warengruppe in dem jeweiligen Textfeld ausgewählt ist, die noch nicht in den Datenbanken angelegt wurde, kann das spezifische Auswahlfenster problemlos geöffnet werden, um die Gruppenauswahl anzupassen. 
 Außerdem kann das Auswahlfenster für die Rabattgruppe nun ohne Programmfehler dazu genutzt werden, neue Rabattgruppen anzulegen oder zu bearbeiten.</p>
-<h3 id="eintrge">Einträge</h3>
+<h3 id="eintrge-1">Einträge</h3>
 <h4 id="menbefehleverschoben">Menübefehle verschoben</h4>
 <p>Die Befehle im Kontextmenü "Verknüpfte Adressen anzeigen" und "E-Mail mit Adresse verknüpfen" wurden aus dem Untermenü "Historie" eine Ebene nach oben verschoben.</p>
-<h3 id="computertelefonie">Computertelefonie</h3>
+<h3 id="computertelefonie-1">Computertelefonie</h3>
 <h4 id="telefonielistezeigtnichtalletelefonate">Telefonieliste zeigt nicht alle Telefonate</h4>
 <h5 id="analyse-23">Analyse</h5>
 <p>Die Telefonieliste zeigt maximal 2000 Telefonate an.</p>
@@ -649,7 +676,7 @@ In den Druckoptionen zum ERP-Dokument kann gewählt werden, ob der Lohnanteil vo
 <p>Beim E-Mail-Versand an mehreren Empfängern konnte die E-Mail nicht versendet werden, wenn die E-Mail-Adressen mit mehr als einem Leerzeichen getrennt waren.</p>
 <h5 id="ergebnis-42">Ergebnis</h5>
 <p>Die E-Mail wird nun unabhängig von der Anzahl der Leerzeichen zwischen den E-Mail-Adressen versendet.</p>
-<h3 id="stammdaten-3">Stammdaten</h3>
+<h3 id="stammdaten-4">Stammdaten</h3>
 <h4 id="datanormimportbeschleunigt">DATANORM-Import beschleunigt</h4>
 <h5 id="analyse-46">Analyse</h5>
 <p>Um die Volltextsuche konsistent zu halten, werden beim Importieren von Katalogen alle Stammdaten überwacht und wenn erforderlich Indiziert. </p>
@@ -812,7 +839,7 @@ Zu den Neuerungen zählen unter anderem:</p>
 <p>Alle Verweise in einer, mittels intelligenten PDF-Export, erzeugten PDF werden nun korrekt positioniert.</p>
 <h4 id="ausgabevonintelligenterpdfinschwarzwei">Ausgabe von intelligenter PDF in schwarz/weiß</h4>
 <p>Es besteht nun die Möglichkeit den Farbmodus, für die Ausgabe von intelligenten PDFs, auf schwarz/weiß umzustellen. Mehr Informationen hierzu finden Sie im Handbuch zum intelligenten PDF-Export.</p>
-<h3 id="crmadressverwaltung">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-1">CRM Adressverwaltung</h3>
 <h4 id="automatischenummervergabebeikundenlieferantenundmitarbeitern">Automatische Nummervergabe bei Kunden/Lieferanten und Mitarbeitern</h4>
 <h5 id="analyse-69">Analyse</h5>
 <p>In Treesoft Office werden an einigen Stellen Nummern über die Nummernkreise vergeben, dazu gehört auch eine Prüfung ob diese Nummer bereits vergeben ist. Bei der Vergabe von Nummern zu Kunden, Lieferanten und Mitarbeitern führte die automatische Nummernvergabe in einigen Fällen zu einem unerwarteten Programmabbruch.</p>
@@ -825,7 +852,7 @@ Zu den Neuerungen zählen unter anderem:</p>
 <h5 id="ergebnis-67">Ergebnis</h5>
 <p>Gespräche werden nun wieder wie gewohnt zuverlässig mit Adresse protokolliert. </p>
 <h2 id="6511">6.5.11</h2>
-<h3 id="computertelefonie-1">Computertelefonie</h3>
+<h3 id="computertelefonie-2">Computertelefonie</h3>
 <h4 id="verfgbaretelefoneleitungenermitteln">Verfügbare Telefone/Leitungen ermitteln</h4>
 <h5 id="analyse-71">Analyse</h5>
 <p>In Treesoft Office hat man über die TAPI-Schnittstelle (Versionen 1.3 - 2.2)die Möglichkeit Anrufe zu tätigen aber auch anzunehmen. Bei einigen TAPI-Treibern hat Treesoft Office die Telefone/Leitungen über die TAPI-Schnittstelle nicht auslesen können, sodass diese nicht für die Verwendung in Treesoft Office zur Verfügung standen.</p>
@@ -925,7 +952,7 @@ Die intelligenten PDFs heben sich durch folgende Features von normalen PDFs ab:<
 <p>Beim Kopieren eines Projektes im CAD bekamen einige Kunden die Fehlermeldung "Sie haben dem gewählten Projekt noch keinen Namen zugeordnet!". Der Kopiervorgang wurde damit auch beendet.</p>
 <h5 id="ergebnis-81">Ergebnis</h5>
 <p>Wir konnten, in Zusammenarbeit mit einigen Kunden das Problem analysieren, reproduzieren und haben es jetzt gelöst.</p>
-<h3 id="stammdaten-4">Stammdaten</h3>
+<h3 id="stammdaten-5">Stammdaten</h3>
 <h4 id="lieferantendatenknneninvolltextsuchenichtindiziertwerden">Lieferantendaten können in Volltextsuche nicht indiziert werden</h4>
 <h5 id="analyse-85">Analyse</h5>
 <p>Sowohl die Herstellerkurzbezeichnung als auch der Herstellercode konnten in der Volltextsuche nicht indiziert werden. Folglich blieb eine Suchanfrage nach einer der beiden Felder ergebnislos.</p>
@@ -938,7 +965,7 @@ Die intelligenten PDFs heben sich durch folgende Features von normalen PDFs ab:<
 <h5 id="ergebnis-83">Ergebnis</h5>
 <p>Durch eine Optimierung des Systems für die Änderungsverfolgung konnten wir den erneuten Import von Katalogen annähernd an die Geschwindigkeit des Imports in der Version 6.3 oder 6.4 angleichen. Der größte Vorteil bei dem neuen System ist, dass nach dem Aktualisieren eines bestehenden Katalogs zu dem es eine Volltextsuch-Konfiguration gibt, die Volltextsuche nicht erneut aufgebaut werden muss und sofort genutzt werden kann.</p>
 <h2 id="655">6.5.5</h2>
-<h3 id="cadgebudetechnikassistent">CAD Gebäudetechnik-Assistent</h3>
+<h3 id="cadgebudetechnikassistent-1">CAD Gebäudetechnik-Assistent</h3>
 <h4 id="einzelbemaung">Einzelbemaßung</h4>
 <h5 id="analyse-87">Analyse</h5>
 <p>In der Gebäudetechnik kann zwischen 4 unterschiedlichen Bemaßungsarten gewählt werden: Schrittbemaßung, horizontale Kettenbemaßung, vertikale Kettenbemaßung und Einzelbemaßung. Innerhalb der Bemaßungsfunktion können nächstgelegene Objekte nach oben, unten links oder rechts gefangen werden. Diese Funktionen sind nicht nur über die Schaltflächen der Toolbar aufrufbar, sondern auch über Kurztasten. Bis auf die Einzelbemaßung werden Objekte mit der Strg-Taste und der entsprechenden Pfeiltaste gefangen; in der Einzelbemaßung muss anstelle der Strg-Taste die Umschalt-Taste gedrückt werden.</p>
@@ -974,7 +1001,7 @@ Die intelligenten PDFs heben sich durch folgende Features von normalen PDFs ab:<
 <p>Beim Kopieren von Projekten über Treesoft CAD und anschließendem Ändern des Oberbegriffs im Treesoft CRM wurden sowohl das alte als auch das neue Projekt umbenannt. </p>
 <h5 id="ergebnis-89">Ergebnis</h5>
 <p>Das Kopieren von Projekten im Treesoft CAD funktioniert nun erwartungsgemäß.</p>
-<h3 id="cadgebudetechnikassistent-1">CAD Gebäudetechnik-Assistent</h3>
+<h3 id="cadgebudetechnikassistent-2">CAD Gebäudetechnik-Assistent</h3>
 <h4 id="hintergrundzeichnungwirdbeinderungvonblattformatmastabignoriert">Hintergrundzeichnung wird bei Änderung von Blattformat/Maßstab ignoriert</h4>
 <h5 id="analyse-93">Analyse</h5>
 <p>Mittels CAD Konverter, in das ZNG-Format, konvertierte Zeichnungen werden als Hintergrundzeichnung in Treesoft CAD angezeigt. Wird in Treesoft CAD das Blattformat bzw. der Maßstab geändert so muss auch die Hintergrundzeichnung angepasst werden. Es konnte dabei vorkommen, dass der Bezugspunkt der Hintergrundzeichnung außerhalb des Zeichnungsbereiches verschoben wurde. Nachfolgende Änderungen an Blattformat bzw. Maßstab wurden nachfolgend ignoriert.</p>
@@ -997,7 +1024,7 @@ Die intelligenten PDFs heben sich durch folgende Features von normalen PDFs ab:<
 <p>Das Produkt Sage Office Line wurde zu Sage 100 umbenannt.</p>
 <h5 id="ergebnis-93">Ergebnis</h5>
 <p>Wir haben geprüft und sichergestellt, dass die aktuelle Office Line-Schnittstelle auch mit Sage 100 funktioniert.</p>
-<h3 id="projektverwaltung-1">Projektverwaltung</h3>
+<h3 id="projektverwaltung-2">Projektverwaltung</h3>
 <h4 id="bilderimdateibaumvontreesoftcad">Bilder im Dateibaum von Treesoft CAD</h4>
 <h5 id="analyse-97">Analyse</h5>
 <p>Die Bilder im png- oder bmp-Format wurden im Dateibaum von Treesoft CAD nicht unter CAD Konverter angezeigt.</p>
@@ -1016,7 +1043,7 @@ Die intelligenten PDFs heben sich durch folgende Features von normalen PDFs ab:<
 <h5 id="ergebnis-96">Ergebnis</h5>
 <p>Wörter, die Mittels + zusammengesetzt wurden, werden nun gefunden. Um Wörter zu finden, die mittels "&amp;", "|" oder "-" zusammengesetzt wurden, muss das jeweilige Zeichen vornan mit "\" maskiert werden. Z. B. "A\&amp;B", "A\|B" oder "A\-B".</p>
 <h2 id="653">6.5.3</h2>
-<h3 id="crmadressverwaltung-1">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-2">CRM Adressverwaltung</h3>
 <h4 id="ndernderkundenlieferantenodermitarbeiternummer">Ändern der Kunden-, Lieferanten- oder Mitarbeiternummer</h4>
 <h5 id="analyse-100">Analyse</h5>
 <p>Die Eingabe von Buchstaben oder Sonderzeichen bei Kunden-, Lieferanten- oder Mitarbeiternummer führte zu einem unerwarteten Programmabbruch.</p>
@@ -1029,7 +1056,7 @@ Die intelligenten PDFs heben sich durch folgende Features von normalen PDFs ab:<
 <h5 id="ergebnis-98">Ergebnis</h5>
 <p>Wir haben die gemachten Änderungen wieder zurückgenommen, sodass es auch unter den genannten Betriebssystemen zu keinen Darstellungsfehlern kommt.</p>
 <h2 id="652">6.5.2</h2>
-<h3 id="crmadressverwaltung-2">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-3">CRM Adressverwaltung</h3>
 <h4 id="adressanlage">Adressanlage</h4>
 <h5 id="analyse-102">Analyse</h5>
 <p>Bei der Anlage oder beim Bearbeiten von Adressen konnte es unter wenigen Umständen zu einem unerwarteten Programmabbruch kommen.</p>

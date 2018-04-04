@@ -99,6 +99,14 @@
                                     
                                     <div style="margin-top: 5px">
                                         <b>
+                                            <a class="item" href="#6529">
+                                                6.5.29
+                                            </a>
+                                        </b>
+                                    </div>
+                                    
+                                    <div style="margin-top: 5px">
+                                        <b>
                                             <a class="item" href="#6528">
                                                 6.5.28
                                             </a>
@@ -316,6 +324,25 @@
   <p>This article was translated by machine.</p>
 </blockquote>
 <h1 id="changelogversion65">Changelog Version 6.5</h1>
+<h2 id="6529">6.5.29</h2>
+<h3 id="cadgebudetechnikassistent">CAD Gebäudetechnik-Assistent</h3>
+<h4 id="creationofnewelectricalinstallationdrawingswithwrongscale">Creation of new electrical installation drawings with wrong scale</h4>
+<p>When creating new drawings from the Treesoft Office project tree, it could happen that the drawing was created with the wrong scale. From now on, the correct scale for newly created drawings is stored.</p>
+<h3 id="projektverwaltung">Projektverwaltung</h3>
+<h4 id="searchfordocumentnumbers">Search for document numbers</h4>
+<p>When searching for document numbers, the input was limited to 8 characters. This restriction has been removed so that documents with longer numbers can now also be found.</p>
+<h3 id="stammdaten">Stammdaten</h3>
+<h4 id="crashwhencopyingservices">Crash when copying services</h4>
+<p>Copying services caused a crash if parts with certain units were used.</p>
+<h3 id="computertelefonie">Computertelefonie</h3>
+<h4 id="ignoreprefixforoutgoingcalls">Ignore prefix for outgoing calls</h4>
+<p>In the location settings of computer telephony it is now possible to define a prefix for outgoing calls which is ignored by Treesoft Office. There are telephone systems/drivers that return the exchange line via the TAPI interface for dialing out, which does not lead to any results with the reverse search (telephone number -&gt; address).</p>
+<h3 id="crmadressverwaltung">CRM Adressverwaltung</h3>
+<h4 id="crashcausedbyopeninganaddressinanewwindow">Crash caused by opening an address in a new window</h4>
+<p>A program crash occurred by repeatedly calling the function 'Open address in new window'. From now on this function can be executed as often as you like. In addition, new windows will now opened docked.</p>
+<h3 id="eintrge">Einträge</h3>
+<h4 id="exchangecontactpersoninentries">Exchange contact person in entries</h4>
+<p>Via the context menu command "Link entry to contact person" the contacts of entries can be exchanged later. This function now takes into account the multiple selection. </p>
 <h2 id="6528">6.5.28</h2>
 <h3 id="erpdokumente">ERP Dokumente</h3>
 <h4 id="crashwhenpostingcreditmemos">Crash when posting credit memos</h4>
@@ -323,7 +350,7 @@
 <p>Posting credit memos causes a crash if no invoice exists.</p>
 <h5 id="outcome">Outcome</h5>
 <p>The error has been fixed and the user is now told to add an invoice. </p>
-<h3 id="stammdaten">Stammdaten</h3>
+<h3 id="stammdaten-1">Stammdaten</h3>
 <h4 id="improvedstabilityonsomesystems">Improved stability on some systems</h4>
 <h5 id="dissection-1">Dissection</h5>
 <p>On some systems and under the influence of time factors, the software crashed when storing materials and services. </p>
@@ -368,7 +395,7 @@
 <p>The' Write new material or payroll to BOM' function was incorrectly activated after opening the invoice, even though the document was selected. If the user executed the function on the document, an error occurred because no materials or wages can be written directly into the document.</p>
 <h5 id="outcome-7">Outcome</h5>
 <p>It is no longer possible to execute the function' Write new material or wage to this BOM' on a document.</p>
-<h3 id="projektverwaltung">Projektverwaltung</h3>
+<h3 id="projektverwaltung-1">Projektverwaltung</h3>
 <h4 id="multipleassignmentofprojectnumbers">Multiple assignment of project numbers</h4>
 <h5 id="dissection-8">Dissection</h5>
 <p>With slower network connections it could happen that project numbers were assigned several times. This does not cause any problems when creating, copying, logging in and reconstructing, but it does cause problems when the projects are opened again.</p>
@@ -406,7 +433,7 @@ if faulty images were stored in the database. </p>
 <p>A configuration is now selected if at least one exists.</p>
 <h4 id="crashduringfulltextsearchforaddresses">Crash during full text search for addresses</h4>
 <p>The CRM crashed during a full text search when the search window was partially out of screen.</p>
-<h3 id="stammdaten-1">Stammdaten</h3>
+<h3 id="stammdaten-2">Stammdaten</h3>
 <h4 id="crashwhentryingtosaveemptyboms">Crash when trying to save empty BOMs</h4>
 <h5 id="dissection-13">Dissection</h5>
 <p>When changing the properties of BOMs, there was a crash if no data existed.</p>
@@ -466,7 +493,7 @@ In addition, it is now possible to use long e-mail addresses of up to 254 charac
 <p>If new tax codes were created but not configured in the allocation matrix and selected under Taxes in the invoice settings, the software crashed.</p>
 <h5 id="outcome-19">Outcome</h5>
 <p>From now on, tax codes must always be fully configured in the assignment matrix before they can be selected in an invoice.</p>
-<h3 id="stammdaten-2">Stammdaten</h3>
+<h3 id="stammdaten-3">Stammdaten</h3>
 <h4 id="crashwhenselectingcreatingeditingadiscountgroupmajormerchandisecategorymerchandisegroup">Crash when selecting/creating/editing a discount group/major merchandise category/merchandise group</h4>
 <h5 id="dissection-22">Dissection</h5>
 <ul>
@@ -476,10 +503,10 @@ In addition, it is now possible to use long e-mail addresses of up to 254 charac
 <h5 id="outcome-20">Outcome</h5>
 <p>Even if a discount group, main merchandise category or merchandise category is selected in the respective text field that has not yet been created in the databases, the specific selection window can be opened without any problems to adjust the group selection. 
 In addition, the selection window for the discount group can now be used to create or edit new discount groups without program errors.</p>
-<h3 id="eintrge">Einträge</h3>
+<h3 id="eintrge-1">Einträge</h3>
 <h4 id="menucommandsmoved">Menu commands moved</h4>
 <p>The commands in the context menu "Show linked addresses" and "Link e-mail with address" have been moved up one level from the submenu "History".</p>
-<h3 id="computertelefonie">Computertelefonie</h3>
+<h3 id="computertelefonie-1">Computertelefonie</h3>
 <h4 id="telephonelistdoesnotshowallcalls">Telephone list does not show all calls</h4>
 <h5 id="dissection-23">Dissection</h5>
 <p>The telephone list displays a maximum of 2000 calls.</p>
@@ -652,7 +679,7 @@ In the print options for the ERP document, you can choose whether the wage share
 <p>When sending e-mails to multiple recipients, the e-mail could not be sent if the e-mail addresses were separated by more than one blank space.</p>
 <h5 id="outcome-42">Outcome</h5>
 <p>The e-mail is now sent regardless of the number of blanks between the e-mail addresses.</p>
-<h3 id="stammdaten-3">Stammdaten</h3>
+<h3 id="stammdaten-4">Stammdaten</h3>
 <h4 id="datanormimportaccelerated">DATANORM import accelerated</h4>
 <h5 id="dissection-46">Dissection</h5>
 <p>To keep the full-text search consistent, all master data is monitored when importing catalogs and indexed if necessary. </p>
@@ -815,7 +842,7 @@ Among the new features are among others:</p>
 <p>All references in a PDF created by intelligent PDF export are now positioned correctly.</p>
 <h4 id="outputofintelligentpdfinblackandwhite">Output of intelligent PDF in black and white</h4>
 <p>It is now possible to change the color mode to black and white for the output of intelligent PDFs. For more information, refer to the Intelligent PDF Export manual.</p>
-<h3 id="crmadressverwaltung">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-1">CRM Adressverwaltung</h3>
 <h4 id="automaticnumberassignmentforcustomerssuppliersandemployees">Automatic number assignment for customers/suppliers and employees</h4>
 <h5 id="dissection-69">Dissection</h5>
 <p>In Treesoft Office, numbers are assigned in some places using the number ranges, including a check whether this number has already been assigned. When assigning numbers to customers, suppliers and employees, automatic number assignment sometimes led to an unexpected termination of the program.</p>
@@ -828,7 +855,7 @@ Among the new features are among others:</p>
 <h5 id="outcome-67">Outcome</h5>
 <p>Calls are now logged with address as usual. </p>
 <h2 id="6511">6.5.11</h2>
-<h3 id="computertelefonie-1">Computertelefonie</h3>
+<h3 id="computertelefonie-2">Computertelefonie</h3>
 <h4 id="determineavailabletelephoneslines">Determine available telephones/lines</h4>
 <h5 id="dissection-71">Dissection</h5>
 <p>In Treesoft Office the TAPI interface (versions 1.3 - 2.2) offers the possibility to make and receive calls. For some TAPI drivers, Treesoft Office could not read the telephones/lines via the TAPI interface, so that they were not available for use in Treesoft Office.</p>
@@ -928,7 +955,7 @@ The intelligent PDFs stand out from normal PDFs by the following features:</p>
 <p>When copying a project in CAD, some customers received the error message "You have not yet assigned a name to the selected project! The copying process was also terminated.</p>
 <h5 id="outcome-81">Outcome</h5>
 <p>In cooperation with some customers we were able to analyse the problem, reproduce it and have now solved it.</p>
-<h3 id="stammdaten-4">Stammdaten</h3>
+<h3 id="stammdaten-5">Stammdaten</h3>
 <h4 id="supplierdatacannotbeindexedinfulltextsearch">Supplier data cannot be indexed in full text search</h4>
 <h5 id="dissection-85">Dissection</h5>
 <p>Both the manufacturer's abbreviation and the manufacturer's code could not be indexed in the full-text search. Consequently, a search query for one of the two fields was unsuccessful.</p>
@@ -941,7 +968,7 @@ The intelligent PDFs stand out from normal PDFs by the following features:</p>
 <h5 id="outcome-83">Outcome</h5>
 <p>By optimizing the change tracking system, we were able to approximate the speed of importing catalogs to that of version 6.3 or 6.4. The biggest advantage of the new system is that after updating an existing catalog to which there is a full-text search configuration, the full-text search does not have to be rebuilt and can be used immediately.</p>
 <h2 id="655">6.5.5</h2>
-<h3 id="cadgebudetechnikassistent">CAD Gebäudetechnik-Assistent</h3>
+<h3 id="cadgebudetechnikassistent-1">CAD Gebäudetechnik-Assistent</h3>
 <h4 id="singledimension">single dimension</h4>
 <h5 id="dissection-87">Dissection</h5>
 <p>In building services engineering, you can choose between 4 different dimensioning types: Step dimensions, horizontal chain dimensioning, vertical chain dimensioning and single dimensioning. Within the dimensioning function, the closest objects can be trapped up, down, left or right. These functions can be called not only via the toolbar buttons, but also via short keys. With the exception of the single dimension, objects are captured with the Ctrl key and the corresponding arrow key; in the single dimension, the Shift key must be pressed instead of the Ctrl key.</p>
@@ -977,7 +1004,7 @@ The intelligent PDFs stand out from normal PDFs by the following features:</p>
 <p>When copying projects using Treesoft CAD and then changing the generic term in Treesoft CRM, both the old and the new project were renamed. </p>
 <h5 id="outcome-89">Outcome</h5>
 <p>Copying projects in Treesoft CAD now works as expected.</p>
-<h3 id="cadgebudetechnikassistent-1">CAD Gebäudetechnik-Assistent</h3>
+<h3 id="cadgebudetechnikassistent-2">CAD Gebäudetechnik-Assistent</h3>
 <h4 id="backgrounddrawingisignoredwhenchangingsheetformatscale">Background drawing is ignored when changing sheet format/scale</h4>
 <h5 id="dissection-93">Dissection</h5>
 <p>Drawings converted to ZNG format via CAD converter are displayed as background drawings in Treesoft CAD. If the page format or scale is changed in Treesoft CAD, the background drawing must also be adapted. It could happen that the reference point of the background drawing was moved outside the drawing area. Subsequent changes to sheet format or scale were ignored.</p>
@@ -1000,7 +1027,7 @@ The intelligent PDFs stand out from normal PDFs by the following features:</p>
 <p>The product Sage Office Line has been renamed to Sage 100.</p>
 <h5 id="outcome-93">Outcome</h5>
 <p>We have checked and ensured that the current Office Line interface also works with Sage 100.</p>
-<h3 id="projektverwaltung-1">Projektverwaltung</h3>
+<h3 id="projektverwaltung-2">Projektverwaltung</h3>
 <h4 id="imagesinthefiletreeoftreesoftcad">Images in the file tree of Treesoft CAD</h4>
 <h5 id="dissection-97">Dissection</h5>
 <p>The images in png or bmp format were not displayed in the Treesoft CAD file tree under CAD Converter.</p>
@@ -1019,7 +1046,7 @@ The intelligent PDFs stand out from normal PDFs by the following features:</p>
 <h5 id="outcome-96">Outcome</h5>
 <p>Words composed by + are now found. In order to find words that have been compounded using "&amp;","|" or "-", the respective character must be masked with "\" in front of it. E. g."A\&amp;B","A\|B" or "A\-B".</p>
 <h2 id="653">6.5.3</h2>
-<h3 id="crmadressverwaltung-1">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-2">CRM Adressverwaltung</h3>
 <h4 id="changingthecustomervendororemployeenumber">Changing the customer, vendor or employee number</h4>
 <h5 id="dissection-100">Dissection</h5>
 <p>Entering letters or special characters for customer, supplier or employee numbers led to an unexpected termination of the program.</p>
@@ -1032,7 +1059,7 @@ The intelligent PDFs stand out from normal PDFs by the following features:</p>
 <h5 id="outcome-98">Outcome</h5>
 <p>We have withdrawn the changes again, so that there are no display errors under the mentioned operating systems.</p>
 <h2 id="652">6.5.2</h2>
-<h3 id="crmadressverwaltung-2">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-3">CRM Adressverwaltung</h3>
 <h4 id="addresssystem">address system</h4>
 <h5 id="dissection-102">Dissection</h5>
 <p>An unexpected program termination could occur under a few circumstances when creating or editing addresses.</p>
