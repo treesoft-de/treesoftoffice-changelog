@@ -187,6 +187,14 @@
                                     
                                     <div style="margin-top: 5px">
                                         <b>
+                                            <a class="item" href="#6530">
+                                                6.5.30
+                                            </a>
+                                        </b>
+                                    </div>
+                                    
+                                    <div style="margin-top: 5px">
+                                        <b>
                                             <a class="item" href="#6529">
                                                 6.5.29
                                             </a>
@@ -521,11 +529,20 @@ The problem has been fixed while slightly improving performance.</p>
 <p>In the "Open PDF/DWG/DXF to convert to ZNG for GT/ST" wizards, the usable workspace is limited to the extension of the standard frame drawings, unless the original frame is used.</p>
 <h5 id="outcome-10">Outcome</h5>
 <p>From now on it is possible to adapt the usable working area for your own frame drawings. For more information on customizing the workspace for your own frame drawings, see the documentation "Arbeitshandbuch-CAD-Konverter.pdf".</p>
+<h2 id="6530">6.5.30</h2>
+<h3 id="cad-9">CAD</h3>
+<h4 id="pdfexportabortedwitherror">PDF export aborted with error</h4>
+<p>An error, that caused the PDF export to be aborted, has been corrected.</p>
+<h3 id="projektverwaltung">Projektverwaltung</h3>
+<h4 id="appendplaceholderstomanuallyselectedprojectdirectories">Append placeholders to manually selected project directories</h4>
+<p>Placeholders for the number and generic term of a project can now be automatically appended to manually selected project directories.</p>
+<h4 id="createprojecttemplatedirectorieswhencreatingprojects">Create project template directories when creating projects</h4>
+<p>By default, project template directories are not created until the first document to be included is created. Now the project template directories can be created automatically when creating projects.</p>
 <h2 id="6529">6.5.29</h2>
 <h3 id="cadgebudetechnikassistent-1">CAD Gebäudetechnik-Assistent</h3>
 <h4 id="creationofnewelectricalinstallationdrawingswithwrongscale">Creation of new electrical installation drawings with wrong scale</h4>
 <p>When creating new drawings from the Treesoft Office project tree, it could happen that the drawing was created with the wrong scale. From now on, the correct scale for newly created drawings is stored.</p>
-<h3 id="projektverwaltung">Projektverwaltung</h3>
+<h3 id="projektverwaltung-1">Projektverwaltung</h3>
 <h4 id="searchfordocumentnumbers">Search for document numbers</h4>
 <p>When searching for document numbers, the input was limited to 8 characters. This restriction has been removed so that documents with longer numbers can now also be found.</p>
 <h3 id="stammdaten">Stammdaten</h3>
@@ -554,7 +571,7 @@ The problem has been fixed while slightly improving performance.</p>
 <h5 id="outcome-12">Outcome</h5>
 <p>The stability of materials and performance has been improved so that this error can no longer occur.</p>
 <h2 id="6527">6.5.27</h2>
-<h3 id="cad-9">CAD</h3>
+<h3 id="cad-10">CAD</h3>
 <h4 id="umschaltendersprache">Umschalten der Sprache</h4>
 <h5 id="dissection-13">Dissection</h5>
 <p>In order to change the CAD language, it was previously necessary to manually copy different translation files into the program directory.</p>
@@ -573,7 +590,7 @@ The problem has been fixed while slightly improving performance.</p>
 <h5 id="outcome-15">Outcome</h5>
 <p>Both the address list search and the material master search now respond to search terms that are at least one character long. Search terms smaller than the minimum search word length are treated as if the entered term was not found.</p>
 <h2 id="6525">6.5.25</h2>
-<h3 id="cad-10">CAD</h3>
+<h3 id="cad-11">CAD</h3>
 <h4 id="incorrecttextfitforprojectindividualprinting">Incorrect text fit for project/individual printing</h4>
 <h5 id="dissection-16">Dissection</h5>
 <p>When using the screen scaling of Windows on high DPI monitors, texts were incorrectly fitted during project/individual printing when using the ISO 3098 font.</p>
@@ -592,7 +609,7 @@ The problem has been fixed while slightly improving performance.</p>
 <p>The' Write new material or payroll to BOM' function was incorrectly activated after opening the invoice, even though the document was selected. If the user executed the function on the document, an error occurred because no materials or wages can be written directly into the document.</p>
 <h5 id="outcome-18">Outcome</h5>
 <p>It is no longer possible to execute the function' Write new material or wage to this BOM' on a document.</p>
-<h3 id="projektverwaltung-1">Projektverwaltung</h3>
+<h3 id="projektverwaltung-2">Projektverwaltung</h3>
 <h4 id="multipleassignmentofprojectnumbers">Multiple assignment of project numbers</h4>
 <h5 id="dissection-19">Dissection</h5>
 <p>With slower network connections it could happen that project numbers were assigned several times. This does not cause any problems when creating, copying, logging in and reconstructing, but it does cause problems when the projects are opened again.</p>
@@ -657,7 +674,7 @@ if faulty images were stored in the database. </p>
 <p>The length of the host name has been increased to 255 characters. 
 In addition, it is now possible to use long e-mail addresses of up to 254 characters. This size corresponds to the maximum size allowed by the standard. </p>
 <h2 id="6522">6.5.22</h2>
-<h3 id="cad-11">CAD</h3>
+<h3 id="cad-12">CAD</h3>
 <h4 id="donotoutputarticleinformationwhenexportingpdffiles">Do not output article information when exporting PDF files</h4>
 <h5 id="dissection-27">Dissection</h5>
 <p>The article information for an equipment designation has always been output, if available.</p>
@@ -741,7 +758,7 @@ In addition, the selection window for the discount group can now be used to crea
 <h5 id="outcome-37">Outcome</h5>
 <p>From now on you can also specify a project as destination in the ZNG-Export dialog. When opening the dialog box, you will receive a message if the directory suggested by the last opened drawing is not a project directory. If one of the open drawings can be assigned to a project, this project is also proposed as a target.</p>
 <h2 id="6520">6.5.20</h2>
-<h3 id="cad-12">CAD</h3>
+<h3 id="cad-13">CAD</h3>
 <h4 id="projectsingleprintorientationnotappliedcorrectly">Project/Single print orientation not applied correctly</h4>
 <h5 id="dissection-40">Dissection</h5>
 <p>It could happen that the orientation was not correctly applied during project/individual printing if a non-standardized/printable paper format is specified by the printer.</p>
@@ -797,7 +814,7 @@ Especially for users of Treesoft Office ERP, manually filling in customer inform
 <h5 id="outcome-43">Outcome</h5>
 <p>Standard widgets no longer retrieve the title and description from the database, but from the program resources, which makes it possible to adapt the display language to the operating system language.</p>
 <h2 id="6519">6.5.19</h2>
-<h3 id="cad-13">CAD</h3>
+<h3 id="cad-14">CAD</h3>
 <h4 id="zoompreviewinprojectfileprintingandintelligentpdfexport">Zoom preview in project/file printing and intelligent PDF export</h4>
 <p>The "Zoom +","Zoom -" and "Zoom 1:1" commands are now available in the preview window for project/file printing and intelligent PDF export.</p>
 <h4 id="orientationforprojectfileprintingandintelligentpdfexport">Orientation for project/file printing and intelligent PDF export</h4>
@@ -834,7 +851,7 @@ In the print options for the ERP document, you can choose whether the wage share
 <h5 id="outcome-46">Outcome</h5>
 <p>When searching through the full-text search, no more letters should be lost. </p>
 <h2 id="6518">6.5.18</h2>
-<h3 id="cad-14">CAD</h3>
+<h3 id="cad-15">CAD</h3>
 <h4 id="colorpalettesinterchangedforprojectfileprintingandpdfexport">Color palettes interchanged for project/file printing and PDF export</h4>
 <h5 id="dissection-50">Dissection</h5>
 <p>The color palettes "Standard white background" and "Standard black background" were assigned to the other color palette in the list box.</p>
@@ -907,7 +924,7 @@ In the print options for the ERP document, you can choose whether the wage share
 <h5 id="outcome-58">Outcome</h5>
 <p>In the options dialog of Treesoft Office, there is now a central administration interface for managing the full-text search. This interface allows you to manage all full-text search configurations regardless of the category. As a result of this conversion, the old *. CFG files become obsolete and can be deleted. Customers who are not yet using the new full-text search can use a migration to adopt their configurations. The new management interface provides a deeper insight into the actions currently performed by the full-text search and has clear performance advantages due to the parallel construction of several configurations.</p>
 <h2 id="6516">6.5.16</h2>
-<h3 id="cad-15">CAD</h3>
+<h3 id="cad-16">CAD</h3>
 <h4 id="keyboardshortcutsforprojectfileprintingchanged">Keyboard shortcuts for project/file printing changed</h4>
 <p>The key combination for printing functions has been changed to[Ctrl]+[P] for file printing and[Ctrl]+[Alt]+[P] for project printing across all wizards.</p>
 <h4 id="outputofallvisiblelayersduringprinting">Output of all visible layers during printing</h4>
@@ -992,7 +1009,7 @@ to update the list.</p>
 <h5 id="outcome-71">Outcome</h5>
 <p>If there are no general full-text search configurations per category at the time of the update or installation, they will be created. </p>
 <h2 id="6513">6.5.13</h2>
-<h3 id="cad-16">CAD</h3>
+<h3 id="cad-17">CAD</h3>
 <h4 id="revisionofprintandintelligentpdfexport">Revision of print and intelligent PDF export</h4>
 <p>With the Intelligent PDF export, the basis was created to completely revise the project/individual print in Treesoft CAD. From now on, there is only one unified dialog for all print functions of all wizards and the intelligent PDF export.
 Among the new features are among others:</p>
@@ -1026,7 +1043,7 @@ Among the new features are among others:</p>
 <h5 id="outcome-74">Outcome</h5>
 <p>During the execution of a filter, the search field remains activated and allows for a pre-running input. After the filter has been executed, it is executed again if the input has changed.</p>
 <h2 id="6512">6.5.12</h2>
-<h3 id="cad-17">CAD</h3>
+<h3 id="cad-18">CAD</h3>
 <h4 id="invisibletextsareoutputwithintelligentpdfexport">Invisible texts are output with intelligent PDF export</h4>
 <h5 id="dissection-78">Dissection</h5>
 <p>Previously, texts with a negative text height were also output.</p>
@@ -1059,7 +1076,7 @@ Among the new features are among others:</p>
 <h5 id="outcome-79">Outcome</h5>
 <p>By adapting the communication with the TAPI interface, all supported telephones/lines are now read out and are therefore also available for use with Treesoft Office.</p>
 <h2 id="6510">6.5.10</h2>
-<h3 id="cad-18">CAD</h3>
+<h3 id="cad-19">CAD</h3>
 <h4 id="framelabelingnotcorrect">Frame labeling not correct</h4>
 <h5 id="dissection-83">Dissection</h5>
 <p>Both the project name and the project description were incorrectly inserted into the drawing frame.</p>
@@ -1097,7 +1114,7 @@ Among the new features are among others:</p>
 <h4 id="createprjinfodat">Create PrjInfo.dat</h4>
 <p>The Prjinfo. dat file stores the data of a project that is normally stored in the database. This information is used when reconstructing and registering projects to complete the information in the database. When creating the PrjInfo. dat explicitly, the current contents of the project variables were not saved.</p>
 <h2 id="659">6.5.9</h2>
-<h3 id="cad-19">CAD</h3>
+<h3 id="cad-20">CAD</h3>
 <h4 id="resourceswithseveralassignedarticlesforpdfexport">Resources with several assigned articles for PDF export</h4>
 <h5 id="dissection-89">Dissection</h5>
 <p>If several articles were assigned to an item, only the last added article was displayed in the item information.</p>
@@ -1120,7 +1137,7 @@ Among the new features are among others:</p>
 <h5 id="outcome-89">Outcome</h5>
 <p>The resolution of hatching when exporting to ZNG has been adjusted and should no longer hinder the completion of the export.</p>
 <h2 id="658">6.5.8</h2>
-<h3 id="cad-20">CAD</h3>
+<h3 id="cad-21">CAD</h3>
 <h4 id="applicationcrashesduringpdfexport-1">Application crashes during PDF export</h4>
 <h5 id="dissection-93">Dissection</h5>
 <p>Treesoft CAD could crash when exporting PDF-drawings containing many images.</p>
@@ -1136,7 +1153,7 @@ Among the new features are among others:</p>
 <h5 id="outcome-91">Outcome</h5>
 <p>For other print presets, the VAT portion for partial invoices is now also included in all final invoices.</p>
 <h2 id="656">6.5.6</h2>
-<h3 id="cad-21">CAD</h3>
+<h3 id="cad-22">CAD</h3>
 <h4 id="intelligentpdfexport">Intelligent PDF export</h4>
 <p>With the intelligent PDF export, you can convert your Treesoft CAD projects into an intelligent PDF at the touch of a button.
 The intelligent PDFs stand out from normal PDFs by the following features:</p>
@@ -1190,7 +1207,7 @@ The intelligent PDFs stand out from normal PDFs by the following features:</p>
 <h5 id="outcome-98">Outcome</h5>
 <p>The material number is now also indexed correctly. It is necessary to rebuild the full text search for configurations containing the material number! </p>
 <h2 id="654">6.5.4</h2>
-<h3 id="cad-22">CAD</h3>
+<h3 id="cad-23">CAD</h3>
 <h4 id="documenttreedoesnotshowallbranches">Document tree does not show all branches</h4>
 <h5 id="dissection-102">Dissection</h5>
 <p>It could happen that not all branches were displayed in the document tree of Treesoft CAD.</p>
@@ -1224,7 +1241,7 @@ The intelligent PDFs stand out from normal PDFs by the following features:</p>
 <p>The product Sage Office Line has been renamed to Sage 100.</p>
 <h5 id="outcome-104">Outcome</h5>
 <p>We have checked and ensured that the current Office Line interface also works with Sage 100.</p>
-<h3 id="projektverwaltung-2">Projektverwaltung</h3>
+<h3 id="projektverwaltung-3">Projektverwaltung</h3>
 <h4 id="imagesinthefiletreeoftreesoftcad">Images in the file tree of Treesoft CAD</h4>
 <h5 id="dissection-108">Dissection</h5>
 <p>The images in png or bmp format were not displayed in the Treesoft CAD file tree under CAD Converter.</p>
@@ -1263,7 +1280,7 @@ The intelligent PDFs stand out from normal PDFs by the following features:</p>
 <h5 id="outcome-110">Outcome</h5>
 <p>The address system does not lead to an unexpected abort of the program even in the few circumstances.</p>
 <h2 id="651">6.5.1</h2>
-<h3 id="cad-23">CAD</h3>
+<h3 id="cad-24">CAD</h3>
 <h4 id="erasingimagesintheschematicbuildingsengineeringassistant">Erasing images in the schematic/buildings engineering assistant</h4>
 <h5 id="dissection-114">Dissection</h5>
 <p>Images with a color depth of 32 bit could not be erased until now.</p>
