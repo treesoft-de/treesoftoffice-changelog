@@ -99,6 +99,14 @@
                                     
                                     <div style="margin-top: 5px">
                                         <b>
+                                            <a class="item" href="#6532">
+                                                6.5.32
+                                            </a>
+                                        </b>
+                                    </div>
+                                    
+                                    <div style="margin-top: 5px">
+                                        <b>
                                             <a class="item" href="#6531">
                                                 6.5.31
                                             </a>
@@ -337,6 +345,11 @@
                         
                         <div id="contentArea">
                             <h1 id="nderungsprotokollversion65">Änderungsprotokoll Version 6.5</h1>
+<h2 id="6532">6.5.32</h2>
+<h3 id="treesoftoffice">Treesoft Office</h3>
+<h4 id="besserefehlermeldungenbeiproblemenmitderdatenbankverbindung">Bessere Fehlermeldungen bei Problemen mit der Datenbankverbindung</h4>
+<p>Trat ein Problem bei der Datenbankverbindung auf, stürzte Treesoft Office ohne hilfreiche Fehlermeldung ab. 
+Nun wird die Datenbankverbindung explizit überprüft und wenn notwendig ein aussagekräftiger Hinweis vor der Beendigung des Programms angezeigt.</p>
 <h2 id="6531">6.5.31</h2>
 <h3 id="startcenter">Start-Center</h3>
 <h4 id="newswidgetzeigtdauerhaftgrauenhintergrund">News-Widget zeigt dauerhaft grauen Hintergrund</h4>
@@ -428,7 +441,7 @@ Dieser Fehler wurde nun behoben.</p>
 <p>Bei langsameren Netzwerkverbindungen konnte es vorkommen, dass Projektnummern mehrfach vergeben wurden. Das führt zwar nicht beim Anlegen, Kopieren, Anmelden und Rekonstruieren zum Problem, allerdings beim erneuten Öffnen der Projekte.</p>
 <h5 id="ergebnis-8">Ergebnis</h5>
 <p>Wir haben ein Verfahren implementiert das verhindert, dass eine Projektnummer mehrfach vergeben werden kann.</p>
-<h3 id="treesoftoffice">Treesoft Office</h3>
+<h3 id="treesoftoffice-1">Treesoft Office</h3>
 <h4 id="bilderimoptionendialogbilderinoriginalgreanzeigenfhrtzumabsturzdersoftware">Bilder im Optionendialog - Bilder in Originalgröße Anzeigen führt zum Absturz der Software</h4>
 <h5 id="analyse-9">Analyse</h5>
 <p>Nachdem im Optionendialog die Funktion "Bilder in Originalgröße Anzeigen" benutzt wurde, stürzte das Programm beim Beenden ab.</p>
@@ -466,7 +479,7 @@ wenn fehlerhafte Bilder in der Datenbank gespeichert waren. </p>
 <p>Beim Ändern von Eigenschaften von Stücklisten kam es zum Absturz, wenn keine Daten vorhanden waren.</p>
 <h5 id="ergebnis-12">Ergebnis</h5>
 <p>Eigenschaften können nur für gültige Daten geändert werden.</p>
-<h3 id="treesoftoffice-1">Treesoft Office</h3>
+<h3 id="treesoftoffice-2">Treesoft Office</h3>
 <h4 id="nderungammenservice">Änderung am Menü Service</h4>
 <p>Menü Servicepack herunterladen in Update herunterladen umbenannt und Menü Upgrade anfordern hinzugefügt.</p>
 <h3 id="volltextsuche-1">Volltextsuche</h3>
@@ -479,7 +492,7 @@ wenn fehlerhafte Bilder in der Datenbank gespeichert waren. </p>
 <p>Das Filtern von Telefonaten im Notifier hat nicht immer zuverlässig funktioniert. </p>
 <h5 id="ergebnis-13">Ergebnis</h5>
 <p>Es ist nun wieder möglich, Telefonate im Notifier, beispielsweise nach Telefonnummern zu durchsuchen. </p>
-<h3 id="treesoftoffice-2">Treesoft Office</h3>
+<h3 id="treesoftoffice-3">Treesoft Office</h3>
 <h4 id="erlaubtelngefrnamenvonemailservernerhht">Erlaubte Länge für Namen von E-Mail Servern erhöht</h4>
 <h5 id="analyse-15">Analyse</h5>
 <p>Bisher war die Länge des Hostnamens für E-Mail Server auf 30 Zeichen beschränkt.</p>
@@ -539,7 +552,7 @@ Außerdem kann das Auswahlfenster für die Rabattgruppe nun ohne Programmfehler 
 <p>Die Telefonieliste zeigt maximal 2000 Telefonate an.</p>
 <h5 id="ergebnis-21">Ergebnis</h5>
 <p>Dieses Limit wurde nun aufgehoben, sodass alle den Filterbedingungen entsprechenden Telefonate angezeigt werden.</p>
-<h3 id="treesoftoffice-3">Treesoft Office</h3>
+<h3 id="treesoftoffice-4">Treesoft Office</h3>
 <h4 id="neuigkeitenimstartcenter">Neuigkeiten im Startcenter</h4>
 <p>Über einen neuen Bereich im Startcenter erhalten Sie nun stets aktuelle Informationen über Treesoft oder das Produkt Treesoft Office.</p>
 <h4 id="fehlerhaftedarstellungvoninhaltenintabellenvonerpdokumentenprojektenundadressen">Fehlerhafte Darstellung von Inhalten in Tabellen von ERP Dokumenten, Projekten und Adressen</h4>
@@ -617,7 +630,7 @@ Besonders für Anwender von Treesoft Office ERP ist das manuelle Ausfüllen der 
 <p>Mit der Version 6.5.XX wurde die Datenbankverbindung des Volltextservers auf Unicode umgestellt. Leider wurde dabei die spezielle Behandlung von Text-Datenblöcken in der Datenbank nicht berücksichtigt. Dies hatte zur Folge, dass z. B. die Langtexte der Materialien fehlerhaft indiziert wurden und eine Suchanfrage, welche die Zeichen €,äÄ,üÜ,öÖ,ß enthielt, ergebnislos blieb.</p>
 <h5 id="ergebnis-31">Ergebnis</h5>
 <p>Text-Datenblöcke werden nun korrekt indiziert. In jedem Fall raten wir Ihnen den vollständigen Neuaufbau aller Volltextsuchkonfigurationen. Wechsel Sie dazu bitte in den Optionen Dialog von Treesoft Office [Strg]+[Umsch.]+[O]. Hier den Zweig "Grundlagen &gt; Volltextsuche" wählen und im Kontextmenü zu den Volltextsuchkonfigurationen den Befehl "Alle Konfigurationen zurücksetzen" betätigen und mit "Ja" bestätigen. Anschließend im Kontextmenü zu den Volltextsuchkonfigurationen den Befehl "Alle Konfigurationen indizieren" betätigen, um den Neuaufbau zu starten.</p>
-<h3 id="treesoftoffice-4">Treesoft Office</h3>
+<h3 id="treesoftoffice-5">Treesoft Office</h3>
 <h4 id="anzeigeeinesentwicklungsmenpunktes">Anzeige eines Entwicklungs-Menüpunktes</h4>
 <p>Das Menü Entwickler wurde entfernt.</p>
 <h3 id="startcenter-1">Start-Center</h3>

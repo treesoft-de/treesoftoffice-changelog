@@ -99,6 +99,14 @@
                                     
                                     <div style="margin-top: 5px">
                                         <b>
+                                            <a class="item" href="#6532">
+                                                6.5.32
+                                            </a>
+                                        </b>
+                                    </div>
+                                    
+                                    <div style="margin-top: 5px">
+                                        <b>
                                             <a class="item" href="#6531">
                                                 6.5.31
                                             </a>
@@ -340,6 +348,11 @@
   <p>This article was translated by machine.</p>
 </blockquote>
 <h1 id="changelogversion65">Changelog Version 6.5</h1>
+<h2 id="6532">6.5.32</h2>
+<h3 id="treesoftoffice">Treesoft Office</h3>
+<h4 id="bettererrormessagesincaseofproblemswiththedatabaseconnection">Better error messages in case of problems with the database connection</h4>
+<p>If a problem occurred with the database connection, Treesoft Office crashed without a helpful error message. 
+Now the database connection is explicitly checked and, if necessary, a meaningful message is displayed before the program ends.</p>
 <h2 id="6531">6.5.31</h2>
 <h3 id="startcenter">Start-Center</h3>
 <h4 id="newswidgetshowspermanentgreybackground">News-Widget shows permanent grey background</h4>
@@ -431,7 +444,7 @@ This error has now been corrected.</p>
 <p>With slower network connections it could happen that project numbers were assigned several times. This does not cause any problems when creating, copying, logging in and reconstructing, but it does cause problems when the projects are opened again.</p>
 <h5 id="outcome-8">Outcome</h5>
 <p>We have implemented a procedure that prevents a project number from being assigned more than once.</p>
-<h3 id="treesoftoffice">Treesoft Office</h3>
+<h3 id="treesoftoffice-1">Treesoft Office</h3>
 <h4 id="imagesinoptionsdialogimagesinoriginalsizedisplayleadstosoftwarecrash">Images in options dialog - Images in original size Display leads to software crash</h4>
 <h5 id="dissection-9">Dissection</h5>
 <p>After using the "Show images in original size" function in the options dialog, the program crashed when exiting.</p>
@@ -469,7 +482,7 @@ if faulty images were stored in the database. </p>
 <p>When changing the properties of BOMs, there was a crash if no data existed.</p>
 <h5 id="outcome-12">Outcome</h5>
 <p>Properties can only be changed for valid data.</p>
-<h3 id="treesoftoffice-1">Treesoft Office</h3>
+<h3 id="treesoftoffice-2">Treesoft Office</h3>
 <h4 id="changetotheservicemenu">Change to the Service menu</h4>
 <p>Menu Download Service Pack renamed to Download Update and menu Request Upgrade added.</p>
 <h3 id="volltextsuche-1">Volltextsuche</h3>
@@ -482,7 +495,7 @@ if faulty images were stored in the database. </p>
 <p>Filtering calls in the notifier did not always work reliably. </p>
 <h5 id="outcome-13">Outcome</h5>
 <p>It is now possible to search for phone numbers in the notifier again. </p>
-<h3 id="treesoftoffice-2">Treesoft Office</h3>
+<h3 id="treesoftoffice-3">Treesoft Office</h3>
 <h4 id="allowedlengthfornamesofemailserversincreased">Allowed length for names of e-mail servers increased</h4>
 <h5 id="dissection-15">Dissection</h5>
 <p>Previously, the length of the host name for e-mail servers was limited to 30 characters.</p>
@@ -542,7 +555,7 @@ In addition, the selection window for the discount group can now be used to crea
 <p>The telephone list displays a maximum of 2000 calls.</p>
 <h5 id="outcome-21">Outcome</h5>
 <p>This limit has now been removed, so that all calls corresponding to the filter conditions are displayed.</p>
-<h3 id="treesoftoffice-3">Treesoft Office</h3>
+<h3 id="treesoftoffice-4">Treesoft Office</h3>
 <h4 id="newsinthestartcenter">News in the Start Center</h4>
 <p>A new area in the Start Center provides you with up-to-date information about Treesoft or the product Treesoft Office.</p>
 <h4 id="incorrectpresentationofcontentintablesoferpdocumentsprojectsandaddresses">Incorrect presentation of content in tables of ERP documents, projects and addresses</h4>
@@ -620,7 +633,7 @@ Especially for users of Treesoft Office ERP, manually filling in customer inform
 <p>With version 6.5. XX, the database connection of the full text server was changed to Unicode. Unfortunately, the special handling of text data blocks in the database was not taken into account. As a result, for example, the long texts of the materials were incorrectly indexed and a search query containing the characters €, äÄ, üÜÜÜ, öÖÖ, ß remained unsuccessful.</p>
 <h5 id="outcome-31">Outcome</h5>
 <p>Text data blocks are now indexed correctly. In any case, we advise you to completely rebuild all full-text search configurations. To do this, please switch to the Options dialog of Treesoft Office[Ctrl]+[Shift].]+[O]. Select the branch "Basics &gt; Full-text search" and in the context menu for the full-text search configurations, select the command "Reset all configurations" and confirm with "Yes". Then, in the context menu for the full-text search configurations, press the "Index all configurations" command to start the rebuild.</p>
-<h3 id="treesoftoffice-4">Treesoft Office</h3>
+<h3 id="treesoftoffice-5">Treesoft Office</h3>
 <h4 id="displayofadevelopmentmenuitem">Display of a development menu item</h4>
 <p>The Developer menu has been removed.</p>
 <h3 id="startcenter-1">Start-Center</h3>
