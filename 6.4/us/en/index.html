@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en-US">
+    <title>Treesoft Office Changelog</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Treesoft GmbH &amp; Co. KG">
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+
+    <style>
+        .ui.very.close.rail {
+            width: 100px;
+        }
+
+        .ui.sticky.fixed.top {
+            top: 14px;
+        }
+
+        .ui.orange.segment:not(.inverted) {
+            border-top: 2px solid #EC911A!important;
+        }
+
+        #contentArea h1 {
+            color: #EC911A;
+            margin-top: 0px;
+        }
+
+        #languages {
+            position: relative;
+            float: right;
+        }
+
+        #contentArea h3 {
+            text-indent: 15px;
+        }
+
+        #contentArea h4 {
+            text-indent: 40px;
+            display: list-item;
+            list-style-type: disc;
+            list-style-position: inside;
+            margin-top: 20px;
+        }
+
+        #contentArea h5 {
+            text-indent: 60px;
+            margin-bottom: 0px;
+            margin-top: 10px;
+        }
+
+        #contentArea p {
+            padding-left: 60px;
+        }
+
+        #contentArea ul {
+            list-style-type: square;
+        }
+
+        #contentArea li {
+            margin-left: 40px;
+        }
+
+        #contentArea blockquote {
+            text-align: center;
+            font-weight: bold;
+            font-size: 12pt;
+            background-color: #EC911A;
+            color: #FFFFFF;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+
+        #contentArea blockquote p {
+            padding-left: 0px;
+            line-height: 20pt;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="ui container">
+        <p></p>
+        <div class="ui grid">
+            <div class="ui row">
+                <div class="two wide mobile hidden column">
+                    <p></p>
+                </div>
+                <div class="sixteen wide mobile twelve wide tablet twelve wide computer column" id="stickyContext">
+                    <div class="ui segment orange">
+                        <div class="ui left very close rail">
+                            <div class="ui segment orange sticky">
+                                <div class="ui list">
+                                    
+                                    <div style="margin-top: 5px">
+                                        <b>
+                                            <a class="item" href="#6416">
+                                                6.4.16
+                                            </a>
+                                        </b>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="languages">
+                            
+                            &nbsp;
+                            <a href="/7.0/de/de/index.html">Deutsch</a>
+                            
+                            &nbsp;
+                            <a href="/7.0/us/en/index.html">English</a>
+                            
+                        </div>
+                        
+                        <div id="contentArea">
+                            <blockquote>
+  <p>This article was translated by machine.</p>
+</blockquote>
+<h1 id="nderungsprotokollversion64">Änderungsprotokoll Version 6.4</h1>
+<h2 id="6416">6.4.16</h2>
+<h3 id="treesoftoffice">Treesoft Office</h3>
+<h4 id="notifierdatumsanzeigevonaufgabenundterminen">Notifier, Datumsanzeige von Aufgaben und Terminen</h4>
+<p>Die Bezeichnung des Datums im Notifier von Aufgaben und Termine führte in einigen Fällen zur Verwirrung. Es war nicht direkt ersichtlich, ob sich das Datum auf das Erstellungsdatum oder dem Beginnt-Am Datum der Aufgabe bezieht.</p>
+<p>Die Bezeichner für Aufgaben und Termine wurden überarbeitet. Die ToolTips wurden ebenfalls um weitere Informationen ergänzt.</p>
+<h4 id="notifierverknpfteadressenzuaufgabenwerdennichtangezeigt">Notifier, Verknüpfte Adressen zu Aufgaben werden nicht angezeigt</h4>
+<p>Wenn sich Adressen außerhalb vom Notifier verändern, kann es dazu führen, dass die Anzeige im Notifier nicht korrekt aktualisiert wird.</p>
+<p>Der Notifier versucht nun, für ihn alle bekannten Informationen zu überwachen und alle Änderungen live anzuzeigen. Aufgrund von zeitkritischen Umständen kann es in Einzelfällen immer noch dazu führen, dass eine geänderte Adresse immer noch mit der alten Bezeichnung angezeigt wird. Nach einem einmaligen Aktualisieren sind die Informationen in jedem Fall aktuell und es bedarf kein Neustart des Notifiers mehr zum Lösen dieses Umstandes.</p>
+<h4 id="installationsynchronisationbleibthngenwenneinedateiohnedateiendunggefundenwird">Installation, Synchronisation bleibt hängen, wenn eine Datei ohne Dateiendung gefunden wird</h4>
+<p>Die Synchronisation der lokalen Netzwerkinstallation konnte hängen bleiben, falls eine Datei mit einer leeren Dateiendung über einem UNC-Pfad abgerufen wurde.</p>
+<p>Die Synchronisation erkennt nun auch Dateien ohne Dateiendung und wird wie erwartet ausgeführt.</p>
+<h4 id="eintrgeaktualisierendeskalendersnachnderungineinemterminodereineraufgabe">Einträge, Aktualisieren des Kalenders nach Änderung in einem Termin oder einer Aufgabe</h4>
+<p>Der Kalender hat sich nicht automatisch aktualisiert, wenn eine Aufgabe oder ein Termin aus einer anderen Programmstelle heraus bearbeitet wurde.</p>
+<p>Der Kalender aktualisiert sich beim Speichern von Aufgaben und Terminen nun automatisch und zeigt die Aufgaben und Termine korrekt an.</p>
+<h4 id="stammdatenaufbauzeitdermaterialliste">Stammdaten, Aufbauzeit der Materialliste</h4>
+<p>Seit der Umstellung des Datenbankservers auf Firebird 2.5 kam es bei Kunden mit Materialkatalogen von ca. 400.000 Datensätzen zu einer spürbaren Verlängerung der Aufbauzeit der Liste.</p>
+<p>Der Aufbau der Liste wurde durch eine Optimierung am SQL-Statement beschleunigt, und ist nun messbar schneller als mit Firebird 2.1.</p>
+<h4 id="eintrgeemaileingangundemailausgang">Einträge, E-Mail Eingang und E-Mail Ausgang</h4>
+<p>In vereinzelten Fällen konnte es dazu führen, dass die Liste der E-Mails leer ist, aber ein Datensatz im Vorschaufenster angezeigt wurde.</p>
+<p>Die Liste der E-Mails und das Vorschaufenster verhalten sich nun synchron zueinander und zeigt keine falschen Datensätze an.</p>
+<h4 id="mobileanbindunghttpverbindung">Mobile Anbindung, HTTP Verbindung</h4>
+<p>Durch ein iOS Update wurden die Standard-Richtlinien bezüglich Verbindungen zu Servern geändert. Standardmäßig werden nun HTTP-Verbindungen blockiert und nur HTTPS zugelassen.</p>
+<p>Es ist nun wieder möglich, eine Verbindung über das HTTP-Protokoll herzustellen.</p>
+<h4 id="mobileanbindungsucheimtagesplaner">Mobile Anbindung, Suche im Tagesplaner</h4>
+<p>Im Tagesplaner gibt es eine Suchfunktion zum Filtern der angezeigten Daten, wie in allen anderen Listen der App auch. Hier wurde aber die Suche nicht durchgeführt, weshalb es keine sichtbare Veränderung an der Liste gab.</p>
+<p>Es ist nun möglich, im Tagesplaner wie gewohnt zu suchen.</p>
+<h4 id="mobileanbindungrckmeldungberergebnismengenindensuchfunktionen">Mobile Anbindung, Rückmeldung über Ergebnismengen in den Suchfunktionen</h4>
+<p>Die Suchfunktionen haben keine anständige Rückmeldung über die Ergebnismenge gegeben, wenn es keine Übereinstimmung gefunden wurde.</p>
+<p>Es wird nun in der Mitte der Liste eine Meldung mit "Keine Daten" angezeigt, sobald keine Ergebnisse zu dem Suchmuster geliefert werden.</p>
+<h4 id="mobileanbindungvolltextsuche">Mobile Anbindung, Volltextsuche</h4>
+<p>Bei jedem Tastendruck wurde eine Suchanfrage geschickt, bei zu schnellem Tippen wurde der Benutzer ggf. in den Login Bildschirm gebracht.</p>
+<p>Die Volltextsuche wird nun erst nach 0.5 Sekunden nach dem Aufhören des Tippens ausgeführt, wie man es in TreesoftOffice auch gewohnt ist.</p>
+<h4 id="mobileanbindungnachladenderadressenindervolltextsuche">Mobile Anbindung, Nachladen der Adressen in der Volltextsuche</h4>
+<p>In der Volltextsuche war fest vorgegeben, dass vom Suchergebnis nur die ersten 25 Ergebnisse angezeigt werden.</p>
+<p>Es ist nun möglich in der Volltextsuche, die Ergebnisse der Suche nachzuladen und somit nicht nur die ersten 25 Ergebnisse anzeigen zu lassen.</p>
+<h4 id="eintrgeanzeigederkrzelinderspalteids">Einträge, Anzeige der Kürzel in der Spalte IDs</h4>
+<p>In der Liste der Einträge werden in der Spalte IDs die Kürzel der zugewiesenen Ansprechpartner angezeigt. Hatten zwei Ansprechpartner das gleiche Kürzel wurde es nur einmal angezeigt, obwohl mehrere Ansprechpartner mit dem Eintrag verknüpft sind.</p>
+<p>Es werden jetzt alle Kürzel der zugeordneten Ansprechpartner angezeigt, auch wenn sich diese dadurch doppeln. Dadurch kann man aber in der Liste leichter sehen ob einer oder mehrere Ansprechpartner verknüpft sind.</p>
+<h4 id="notifieraufrufeinesprojekts">Notifier, Aufruf eines Projekts</h4>
+<p>Der Notifier bietet keine Möglichkeit, ein Projekt aus einer angezeigten Aufgabe oder Termin aufzurufen.</p>
+<p>Es ist nun mittels Kontext-Menü möglich, die verknüpften Projekte aus einer angezeigten Aufgabe oder Termin aufzurufen. Zudem ist es möglich, ein neues Projekt einer Aufgabe oder einem Termin zuzuweisen.</p>
+<h4 id="startcentereinstellungenderwidgetsgehenverloren">Start-Center, Einstellungen der Widgets gehen verloren</h4>
+<p>Die Spalteneinstellungen der Widgets im Start-Center konnten verloren gehen und wurden auf einen Default zurückgesetzt.</p>
+<p>Die Spalteneinstellungen der Widgets im Start-Center werden nun korrekt gespeichert und wiederhergestellt.</p>
+<h4 id="startcentermenblckecadcrmerpviaeinstellungimoptionendialogeinausblenden">Start-Center, Menü-Blöcke CAD/CRM/ERP via Einstellung im Optionendialog Ein-/Ausblenden</h4>
+<p>Im Startcenter waren die Hauptmenüs CAD, CRM und ERP immer eingeblendet.</p>
+<p>Jeder Benutzer hat nun die Möglichkeit die einzelnen Menüs und Programmteile ein und auszublenden. Hierzu wurde im Optionen-Dialog im Bereich Grundlagen unter dem Zweig Start-Center eine Registerkarte hinzugefügt um die Menü-Blöcke, zu konfigurieren.</p>
+<h4 id="projektverwaltungprogrammendebeimvernderndereinstellungeneinesprojektes">Projektverwaltung, Programmende beim Verändern der Einstellungen eines Projektes</h4>
+<p>Bei Inaktivität oder bei einer längeren Bearbeitung der Einstellungen eines Projektes, konnte es dazu kommen, dass sich die Software automatisch mit der Fehlermeldung "invalid BLOB id." beendet.</p>
+<p>Die Projektliste, sowie die Einstellungen eines Projektes werden nun aktuell gehalten, somit kann eine längere Bearbeitung der Einstellungen nicht mehr zu dem Zustand "invalid BLOB id." führen.</p>
+<h4 id="mobileanbindungstabilittdervolltextsucheverbessert">Mobile Anbindung, Stabilität der Volltextsuche verbessert</h4>
+<p>Bei stark frequentierten oder parallelen Anfragen an die Volltextsuche konnte es vorkommen, dass der Mobile Agent Volltextsuchanfragen verweigerte.</p>
+<p>Der Mobile Agent ist nun darauf vorbereitet, stark frequentierte und parallele Volltextsuchanfragen zu verarbeiten.</p>
+<h4 id="mobileanbindungbenutzendervolltextsuche">Mobile Anbindung, Benutzen der Volltextsuche</h4>
+<p>Beim Benutzen der Volltextsuche durch ein mobiles Endgerät konnte es bei zu vielen Suchergebnissen dazu kommen, dass der Mobile Agent auf keine weitere Anfrage eines Clients antwortete.</p>
+<p>Der Fehler der dazu führte wurde korrigiert. Die Volltextsuche funktioniert nun auch bei vielen Ergebnissen im Mobile Agent.</p>
+<h4 id="mobileanbindungfehlerhafteanzeigeindenkommunikationeninfozueinemansprechpartner">Mobile Anbindung, Fehlerhafte Anzeige in den Kommunikationen/Info zu einem Ansprechpartner</h4>
+<p>Beim Auswählen eines Ansprechpartners, wurden von einem anderen Ansprechpartner die Daten zum jeweiligen Ansprechpartner angezeigt.</p>
+<p>Es werden nun die richtigen Informationen zum Ansprechpartner angezeigt.</p>
+<h4 id="mobileanbindunggelschteadressenwerdenangezeigt">Mobile Anbindung, Gelöschte Adressen werden angezeigt</h4>
+<p>In der Volltextsuche, sowie bei den Adressen wurden gelöschte bzw. archivierte Adressen angezeigt.</p>
+<p>Gelöschte bzw. archivierte Adressen werden nun nicht mehr in der Volltextsuche angezeigt.</p>
+<h4 id="systemerkennungvonwindows10">System, Erkennung von Windows 10</h4>
+<p>Ab den 29.07.2015 stellt Microsoft das Betriebssystem Windows 10 zur Verfügung.</p>
+<p>Solange wir TreesoftOffice.org noch nicht offiziell für Windows 10 freigegeben haben erscheint beim Programmstart ein Hinweis.</p>
+<h4 id="systemuntersttzungfrwindowsserver2003undserver2003r2eingestellt">System, Unterstützung für Windows Server 2003 und Server 2003 R2 eingestellt</h4>
+<p>Am 14.07.2015 hat Microsoft den erweiterten Support für Windows Server 2003 und Windows Server 2003 R2 eingestellt.</p>
+<p>Mit dem Ende des Supports von Microsoft beenden auch wir die Unterstützung für das Server-Betriebssystem.</p>
+<h4 id="projektlistesortierennacherstelleroderbenutzer">Projektliste, Sortieren nach Ersteller oder Benutzer</h4>
+<p>Mit der Version TreesoftOffice.org 6.4 führte das Sortieren nach dem Ersteller oder Benutzer in der Projektliste dazu, dass keine Ergebnisse angezeigt wurden. Stattdessen wurde immer nur das "Einen Moment bitte…" angezeigt.</p>
+<p>Ab sofort ist es, wieder möglich in der Projektliste auch nach dem Ersteller oder Benutzer zu sortieren.</p>
+<h4 id="systemtreesoftofficeorgantaskleisteinwindowsanheften">System, TreesoftOffice.org an Taskleiste in Windows anheften</h4>
+<p>Für einen schnelleren Start von Programmen werden in Windows gerne die häufig genutzten Programme an die Taskleiste angeheftet. Auf einem Arbeitsplatz einer Client-\Server-Installation von TreesoftOffice.org war das aber nicht möglich, das Kontextmenü zeigte ausschließlich den Punkt "Fenster schließen" an. War TreesoftOffice.org aber auf einem Einzelplatz installiert, konnte man TreesoftOffice.org an die Taskleiste anheften.</p>
+<p>Ab dieser Version ist es nun auch auf einem Arbeitsplatz im Client-\Server-Betrieb möglich, TreesoftOffice.org an die Taskleiste anzuheften.</p>
+<h4 id="treesoftbackupmanagervalidierungderdatenbanksicherung">Treesoft Backup Manager, Validierung der Datenbank-Sicherung</h4>
+<p>Bisher wurden bei der Datenbank-Sicherung mit dem Treesoft Backup Manager die Datenbank über Firebird gesichert. Eine Validierung der erstellten Sicherung gab es nicht.</p>
+<p>Ab der Version 6.4 wird bei der Erstellung einer Datenbank-Sicherung direkt eine Validierung der Datenbank-Sicherung durchgeführt. Damit ist sichergestellt, dass für den Fall einer Wiederherstellung die erstellte Sicherung bereits einmal getestet wurde und funktioniert.</p>
+<h4 id="pluginmanagerberprfungobeinpluginkompatibelist">Plug-in Manager, Überprüfung ob ein Plug-in kompatibel ist</h4>
+<p>Bisher war es unabhängig von der TreesoftOffice.org Version in der ein Plug-in erstellt wurde, möglich ein Plug-in in jede TreesoftOffice.org 6.x Version zu installieren. Das ist zwar eins der größten Vorteile aber auch gleichzeitig ein sehr großes Fehlerpotenzial. Mit der Version 6.4 läßt sich kein einziges Plug-in, dass in einer früheren Version erstellt wurde importieren, da der Firebird-Server das Encoding sehr genau nimmt und alle älteren Plug-ins hier einiges durcheinander gebracht haben.</p>
+<p>Der Treesoft Plug-in Manager prüft nun ob das Plug-in von der Version kompatibel ist. Wenn man in der Version 6.4 versucht ein Plug-in zu importieren, dass mit einer vorherigen Version erstellt wurde, dann wird das Import verhindert.</p>
+<h3 id="cad">CAD</h3>
+<h4 id="cadkonvertermaximaleanzahlvonobjektenberschritten">CAD Konverter, Maximale Anzahl von Objekten überschritten</h4>
+<p>Wurde beim Export nach ZNG die maximale Anzahl von Objekten überschritten, so wurde dies dem Benutzer nicht mitgeteilt. Trotz der Meldung "Export erfolgreich!" enthielt die exportierte Zeichnung nicht alle Objekte.</p>
+<p>Dem Benutzer wird nun mitgeteilt, dass die maximale Anzahl von Objekten überschritten wird. Dabei besteht die Möglichkeit den Vorgang abzubrechen und nachträglich eine andere Zeichnung als Ziel für den Export, zu wählen. Um diesen Vorgang zu vereinfachen, wurde die Funktionalität des Befehls "Neu zuordnen" erweitert.</p>
+<h4 id="cadkonverterschaltflchenbleibennachausfhrungeinesbefehlsdeaktiviert">CAD Konverter, Schaltflächen bleiben nach Ausführung eines Befehls deaktiviert</h4>
+<p>Es konnte vorkommen, dass einige Schaltflächen nach der Ausführung eines Befehls nicht wieder aktiviert wurden.</p>
+<p>Die betreffenden Schaltflächen werden nun wieder korrekt aktiviert.</p>
+<h4 id="cadkonverterausdehnungvonexportbereichnichtneuberechnet">CAD Konverter, Ausdehnung von Exportbereich nicht neu berechnet</h4>
+<p>Es konnte vorkommen, dass die Ausdehnungen von Exportbereichen nicht neu berechnet wurden, wenn Objekte in der Zeichnung verschoben oder gelöscht wurden.</p>
+<p>Die Ausdehnungen der Exportbereiche werden nun nach Änderungen an der Zeichnung neu berechnet.</p>
+<h4 id="cadkonverterzeichnungfalschvermittelt">CAD Konverter, Zeichnung falsch vermittelt</h4>
+<p>Es konnte vorkommen, dass die zu exportierenden Zeichnungen falsch vermittelt wurden, wenn ein Exportbereich im Batch Export Modus für die Steuerungstechnik verändert wurde.</p>
+<p>Die zu exportierenden Zeichnungen werden nun korrekt vermittelt.</p>
+<h4 id="cadkonverteranlagevonexportbereichnichtmglich">CAD Konverter, Anlage von Exportbereich nicht möglich</h4>
+<p>Es konnte vorkommen, dass die Anlage eines Exportbereiches im Model Space Layout mit der Meldung "Es können keine Exportbereiche in einem Paper Space Layout angelegt werden." verweigert wurde.</p>
+<p>Das Model Space Layout wird nun auch als solches erkannt.</p>
+<h4 id="cadkonverterabsturzbeimexportnachzng">CAD Konverter, Absturz beim Export nach ZNG</h4>
+<p>Unendliche Linien (Xlines) konnten beim Export von DWG-/DXF-Zeichnungen nach ZNG zum Absturz der Software führen.</p>
+<p>Xlines werden nun beim Export berücksichtigt und führen nicht mehr zum Absturz der Software.</p>
+<h3 id="erp">ERP</h3>
+<h4 id="erpeinstellungenprogrammabbruchbeimaufrufderdokumentenoderpositionseinstellungen">ERP Einstellungen, Programmabbruch beim Aufruf der Dokumenten- oder Positions-Einstellungen</h4>
+<p>Im TreesoftOffice.org kann man in dem Kundeninformationen zu einer Adresse Standard-Einstellungen für Zahlungsbedingungen und Steuerkennzeichen festlegen. Wenn man bei der Anlage eines Dokuments die Optionen "Zahlungsbedingungen vom Kunden übernehmen" oder "Steuerkennzeichen vom Kunden übernehmen" ausgewählt hat und in den Kundeninformationen der Adresse waren keine hinterlegt, dann führte es bei dem Hinzufügen von Positionen und beim Aufruf der Einstellungen von einer Position und dem Dokument zu einem unerwarteten Programmabbruch.</p>
+<p>Bei der Auswahl der Optionen wird nun geprüft, ob die Informationen bei der jeweiligen Adresse hinterlegt sind. Wenn nicht dann hat der Benutzer die Möglichkeit zur Adresse zu wechseln und das zu Ändern oder diese Option nicht zu verwenden.</p>
+<h4 id="erpbernahmevonvorgeschlagenenrechnungsbetrgen">ERP, Übernahme von vorgeschlagenen Rechnungsbeträgen</h4>
+<p>Wurde eine Rechnung mit Skonto erstellt, und sollte der vorgeschlagene Zahlungseingang ohne Skonto übernommen werden, obwohl der Skontoabzug möglich war, wurde trotzdem der Skonto immer abgezogen.</p>
+<p>Jetzt werden die bei der Übernahme angeklickten Werte aus der vorgeschlagenen Zeile korrekt übernommen.</p>
+<h4 id="offenepostenverwaltungauswahleinesmalingsimmahnlauf">Offene Posten Verwaltung, Auswahl eines Malings im Mahnlauf</h4>
+<p>Wir haben die Auswahl-Dialoge für Mailings, Filter und Texte neu entwickelt und in TreesoftOffice.org integriert. Seit dieser Integration war beim Ausführen eines Mahnlaufs nicht mehr möglich über die Schaltfläche "…" ein Mailing zu wählen oder zu ändern. Die Änderung oder die Auswahl eines Mailings konnte nur noch in dem Optionen-Dialog &gt; Grundlagen &gt; Mahnwesen &gt; Mahnlauf vorgenommen werden.</p>
+<p>Ab sofort kann man auch in dem Fenster für den Mahnlauf ein Mailing auswählen.</p>
+<h4 id="erpdokumenteprogrammabbrchebeivorschaudruckenundbuchen">ERP Dokumente, Programmabbrüche bei Vorschau/Drucken und Buchen</h4>
+<p>Beim Aufruf der Vorschau/des Drucks und des Buchens eines Dokuments wurde das Programm in den meisten Fällen mit einer Fehlermeldung abgebrochen.</p>
+<p>Wir haben die letzten Änderungen erstmal wieder aus dem ERP entfernt und werden den Programmabbruch genauer analysieren. Damit funktioniert die Vorschau/der Druck und das Buchen von ERP-Dokumenten wieder wie vorher.</p>
+<h3 id="crm">CRM</h3>
+<h4 id="mailingdateianhnge">Mailing, Dateianhänge</h4>
+<p>Beim Versenden einer E-Mail mit Dateianhängen konnte es passieren, dass die Dateianhänge als mailatt* versendet und gespeichert wurden. Dieses konnte nur passieren, wenn die E-Mail aus den Entwürfen geöffnet, dann gedruckt und direkt im Anschluss versendet wurde.</p>
+<p>Die E-Mails werden nun auch in der oben genannten Konstellation mit den richtigen Namen für Dateianhänge verschickt und gespeichert.</p>
+<h4 id="crmansprechpartneranlegenvornamewirdfalscherkannt">CRM, Ansprechpartner Anlegen, Vorname wird falsch erkannt</h4>
+<p>Beim Anlegen eines Ansprechpartners erkennt die Software automatisch den Titel, Anrede, Vorname sowie den Nachnamen und füllt damit die Briefanrede automatisch aus. Bei dem Namen "Frauke", oder "Herrmann" ist es dazu gekommen, dass der Vorname abgeschnitten wurde, da es ebenfalls Bestandteil der Anrede ist.</p>
+<p>Dieses Fehlverhalten wurde behoben. Die Briefanrede wird nun auch bei Vornamen, die Teil der Anrede sind richtig gefüllt.</p>
+<h4 id="crmadressverwaltungsteuerkennzeichenundzahlungsbedingungauskundenstammbernehmen">CRM Adressverwaltung, Steuerkennzeichen und Zahlungsbedingung aus Kundenstamm übernehmen</h4>
+<p>Auf dem Kundeninformationen-Register in einer Adresse kann ein Benutzer für das Steuerkennzeichen und die Zahlungsbedingungen über ein Optionsfeld hinterlegen, dass diese bei der Anlage eines ERP-Dokuments Standardmäßig ausgewählt ist. Bisher konnte man das Optionsfeld auch aktivieren, wenn kein Steuerkennzeichen oder keine Zahlungsbedingung ausgewählt wurde. Das führte dann bei der Anlage eines ERP-Dokuments in einigen Fällen zu einem unerwarteten Programmabbruch.</p>
+<p>Beim Aktivieren dieser Optionsfelder für Steuerkennzeichen und Zahlungsbedingungen stellen wir nun sicher, dass vorher ein Steuerkennzeichen oder eine Zahlungsbedingung ausgewählt wurde.</p>
+<h4 id="adressverwaltunganzeigedesbetreffsdesterminsoderderaufgabeindenwiedervorlagen">Adressverwaltung, Anzeige des Betreffs des Termins oder der Aufgabe in den Wiedervorlagen</h4>
+<p>In den Wiedervorlagen der Adressen wurde das Beginnt am, die Hauptgruppe und Gruppe der Aufgabe oder des Termins angezeigt. Für den besseren Überblick bei Adressen mit mehreren Aufgaben oder Terminen fehlte die Anzeige des Betreffs der jeweiligen Aufgabe oder des Termins.</p>
+<p>In der Wiedervorlage der Adressen wird für die bessere Übersicht nun auch noch die Spalte "Betreff" der Aufgabe oder des Termins angezeigt. Da durch diese neue Spalte die ausgelieferte Spaltensortierung angepasst werden muss, wird die Spaltensortierung der Adressliste mit diesem Update auf den Auslieferungszustand zurückgesetzt. Der Benutzer kann bei Bedarf aber die Spaltenreihenfolge nach dem Update wieder definieren.</p>
+<h4 id="erpschnittstelleuntersttzungdersagenewclassic2016">ERP-Schnittstelle, Unterstützung der Sage New Classic 2016</h4>
+<p>Es wurde die Sage New Classic 2016 (Version 5.3.4) per Live-Update zur Verfügung gestellt.</p>
+<p>TreesoftOffice.org unterstützt als ERP-Schnittstelle jetzt auch die Version 2016.</p>
+<h4 id="adressverwaltungeintrgeduplizieren">Adressverwaltung, Einträge duplizieren</h4>
+<p>Aus den Listen in der Adressverwaltung ist es möglich einen Eintrag zur aktuellen, einer anderen oder zu einem Projekt zu duplizieren. Im Hauptmenü zu den Einträgen in der Adressverwaltung fehlt dieser Eintrag. Hier ist es nur möglich einen Historien-Eintrag zu duplizieren, aber nicht Termine und Aufgaben.</p>
+<p>Das Hauptmenü in der Adressverwaltung zu den Einträgen wurde erweitert. Es ist nun möglich, Einträge genauso wie aus den Listen heraus zu duplizieren.</p>
+<h4 id="mailingnamenderdateianhngeinemails">Mailing, Namen der Dateianhänge in E-Mails</h4>
+<p>Beim Versenden von E-Mails über den E-Mail-Editor kann man Dateien von der Festplatte auswählen und die als Anhang der E-Mail zuordnen. Bisher konnte es passieren, dass der Dateiname in der versendeten E-Mail aber anders lautete wie der im E-Mail-Editor angezeigt wurde. Der Inhalt der Datei war aber immer richtig.</p>
+<p>Wir stellen nun sicher, dass die Namen die im E-Mail-Editor für Dateianhänge angezeigt werden, auch tatsächlich beim Verschicken verwendet werden.</p>
+<h4 id="eintrgerechtebeieintrgen">Einträge, Rechte bei Einträgen</h4>
+<p>Mit der Rechteverwaltung von TreesoftOffice.org kann man die Sichtbarkeit von Einträgen einschränken. Wenn man den Historien-Eintrag über den Bearbeiten-Stift im Treesoft Notifier oder den Anrufdialog in der Adressverwaltung erstellt hat, dann wurden keine Rechte für den Eintrag gesetzt, sodass dieser Eintrag für jeden sichtbar war.</p>
+<p>Bei dem Protokollieren von Gesprächen über den Anrufdialog oder dem Treesoft Notifier werden nun die Rechte nach der folgenden Regel gesetzt. Es werden die Default-Rechte der Adressen mit der Rufnummer additiv zusammengesetzt, und wenn sich der aktuelle Benutzer in einem der Rechte explizit oder in einer Gruppe befindet, dann werden die kumulierte Default-Rechte gesetzt, ansonsten ist der Eintrag öffentlich und für jeden sichtbar.</p>
+<h4 id="mailingrechtebeimemaileingang">Mailing, Rechte beim E-Mail-Eingang</h4>
+<p>Mit der Rechteverwaltung von TreesoftOffice.org kann man die Sichtbarkeit von Einträgen einschränken. In einigen Umständen wurden die Rechte für die E-Mails nicht wie erwartet und definiert gesetzt, sodass diese Einträge für jeden sichtbar waren.</p>
+<p>Bei dem E-Mail-Eingang werden nun die Rechte nach der folgenden Regel gesetzt. Wenn es Default-Rechte bei den Adressen mit der Absender-E-Mail-Adresse gibt, dann werden diese und die Benutzer die in AN und CC benannt wurden additiv zusammengesetzt und der E-Mail zugewiesen. Wenn es keine Default-Rechte bei den Adressen gibt, dann bleibt die E-Mail öffentlich. Nur wenn keine Adresse im CRM gefunden wird, dann wird das Default-Recht des E-Mail-Kontos ausgelesen und wenn es nicht öffentlich ist dann additiv mit den Benutzern in AN und CC der E-Mail zusammengesetzt und der E-Mail zugewiesen, ansonsten ist die E-Mail öffentlich.</p>
+<h4 id="notifieranzeigederadressenbeianrufen">Notifier, Anzeige der Adressen bei Anrufen</h4>
+<p>Welche Informationen der gefundenen Adresse im Notifier angezeigt werden, kann man im Optionen-Dialog &gt; Grundlagen &gt; Computertelefonie einstellen, Standard ist Name1 und Ansprechpartner. Bei Anrufen - egal ob eingehend oder ausgehend - von Rufnummern die Personen-Adressen hinterlegt sind, wurde "Es ist keine Adresse mit diesem Eintrag verknüpft" angezeigt obwohl die Rufnummer bei einer Adresse hinterlegt war.</p>
+<p>Mit diesem Update wird auch in dieser Konstellation der Name der Adresse wieder angezeigt.</p>
+<h4 id="mailingoptimierungdergeschwindigkeitbeimmehrfachversand">Mailing, Optimierung der Geschwindigkeit beim Mehrfachversand</h4>
+<p>Vor einem Mehrfachversand wird ein Filter ausgeführt, der die Datensätze einschränk und die Kommunikation auswählt. Beim Mehrfachversand wurde für jede einzelne Adresse die Adressinformation für die Variablenersetzung erneut mit den kompletten Bedingungen des Filters ausgelesen. Das führte bei komplexeren Filtern dazu, dass zwischen der Bearbeitung jeder E-Mail mehrere Sekunden vergehen konnten.</p>
+<p>Beim Auslesen der Adressinformationen für die Variablenersetzung wird nur noch nach der Adress-ID aus dem bereits ausgeführtem Filter die Adresse ausgewählt. Dies ist um einiges schneller und führt - unabhängig von der Komplexität des Filters - zu einer konstanten Zeit je Adresse.</p>
+<h4 id="adressverwaltunghinzufgenvonkundenmitarbeiteroderlieferantenherstellerinformationen">Adressverwaltung, Hinzufügen von Kunden-/Mitarbeiter- oder Lieferanten-/Herstellerinformationen</h4>
+<p>In dem Start-Center von TreesoftOffice.org werden ihnen unter anderem auch die zuletzt bearbeiteten Adressen angezeigt. Beim Hinzufügen von Kunden-/Mitarbeiter-/Lieferanten- oder Hersteller-Informationen zu einer Adresse, wurde diese Adresse aber nicht die Liste der zuletzt bearbeiteten Adressen hinzugefügt.</p>
+<p>Beim Hinzufügen von Kunden-/Mitarbeiter-/Lieferanten- oder Hersteller-Informationen, wird diese Adresse nun auch in die Liste der zuletzt bearbeitete Adressen hinzugefügt. Somit können Sie jetzt auch auf diese Adressen sehr schnell über das Start-Center zugreifen.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="two wide mobile hidden column">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.ui.sticky')
+                .sticky({
+                    context: '#stickyContext'
+                });
+        })
+    </script>
+</body>
+
+</html>
