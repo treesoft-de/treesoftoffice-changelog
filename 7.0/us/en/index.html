@@ -99,6 +99,14 @@
                                     
                                     <div style="margin-top: 5px">
                                         <b>
+                                            <a class="item" href="#7039">
+                                                7.0.39
+                                            </a>
+                                        </b>
+                                    </div>
+                                    
+                                    <div style="margin-top: 5px">
+                                        <b>
                                             <a class="item" href="#7038">
                                                 7.0.38
                                             </a>
@@ -516,6 +524,13 @@
   <p>This article was translated by machine.</p>
 </blockquote>
 <h1 id="changelogversion70">Changelog Version 7.0</h1>
+<h2 id="7039">7.0.39</h2>
+<h3 id="crmmailing">CRM Mailing</h3>
+<h4 id="addemailattachmentsusingdragdrop">Add e-mail attachments using Drag&amp;Drop</h4>
+<p>Files can now also be added as e-mail attachments using drag&amp;drop if the dialog for sending the e-mail has been opened via an address.</p>
+<h3 id="crm">CRM</h3>
+<h4 id="generalstabilityimprovements">General stability improvements</h4>
+<p>CRM stability has been improved</p>
 <h2 id="7038">7.0.38</h2>
 <h3 id="cad">CAD</h3>
 <h4 id="invalidcharactersintexts">Invalid characters in texts</h4>
@@ -534,13 +549,13 @@ The error always occurred if a text was to be changed on a layer that did not co
 <h3 id="erpdokumente">ERP Dokumente</h3>
 <h4 id="focusproblemduringtakeover">Focus problem during takeover</h4>
 <p>For partial invoices and delivery notes, positions can be taken from the booked order confirmation. The list for the takeover is no longer hidden behind the main window.</p>
-<h3 id="crmmailing">CRM Mailing</h3>
-<h4 id="addemailattachmentsusingdragdrop">Add e-mail attachments using Drag&amp;Drop</h4>
+<h3 id="crmmailing-1">CRM Mailing</h3>
+<h4 id="addemailattachmentsusingdragdrop-1">Add e-mail attachments using Drag&amp;Drop</h4>
 <p>Files can now also be added as e-mail attachments using Drag&amp;Drop.</p>
 <h3 id="crmadressverwaltung">CRM Adressverwaltung</h3>
 <h4 id="crashwhileaddingcustomerinformationtoanewaddress">Crash while adding customer information to a new address</h4>
 <p>If a new address has been created and customer information was subsequently added, program crashes could occur. This problem is now fixed.</p>
-<h3 id="crm">CRM</h3>
+<h3 id="crm-1">CRM</h3>
 <h4 id="crashduringthecreationofatasktoanemailtowhichnoaddressisassigned">Crash during the creation of a task to an e-mail to which no address is assigned</h4>
 <p>If a task was created for an e-mail to which no address is assigned (via context menu -&gt; Entries -&gt; Create task), program crashes could occur. This problem is now fixed.</p>
 <h3 id="stammdaten">Stammdaten</h3>
@@ -832,7 +847,7 @@ if faulty images were stored in the database. </p>
 <p>In the "Open PDF/DWG/DXF to convert to ZNG for GT/ST" wizards, the usable workspace is limited to the extension of the standard frame drawings, unless the original frame is used.</p>
 <h5 id="outcome-21">Outcome</h5>
 <p>From now on it is possible to adapt the usable working area for your own frame drawings. For more information on customizing the workspace for your own frame drawings, see the documentation "Work Manual CAD Converter. pdf".</p>
-<h3 id="crm-1">CRM</h3>
+<h3 id="crm-2">CRM</h3>
 <h4 id="deletinggraphicsinaddressinformation">Deleting graphics in address information</h4>
 <p>The deletion of graphics in address information could not be saved.</p>
 <h4 id="crashinduplicatecleanupwithinvertedfindlist">Crash in duplicate cleanup with inverted find list</h4>
@@ -883,7 +898,7 @@ In addition, it is now possible to use long e-mail addresses of up to 254 charac
 <p>Layers can only be deleted if no object references this layer. It was necessary to delete all referencing objects manually beforehand.</p>
 <h5 id="outcome-27">Outcome</h5>
 <p>From now on, referencing objects are deleted automatically. If this is not completely successful because the layer contains export areas, for example, it is not deleted.</p>
-<h3 id="crm-2">CRM</h3>
+<h3 id="crm-3">CRM</h3>
 <h4 id="mailingselectiondialogsavecolumnsettings">Mailing selection dialog Save column settings</h4>
 <h5 id="dissection-29">Dissection</h5>
 <p>Currently, the column settings are not saved in the Mailing Selection dialog.</p>
@@ -968,7 +983,7 @@ In addition, the selection window for the discount group can now be used to crea
 <p>In some cases, no results were found when using the Set symbol function for the full text search. </p>
 <h5 id="outcome-39">Outcome</h5>
 <p>Results are now reliably found in all cases. </p>
-<h3 id="crm-3">CRM</h3>
+<h3 id="crm-4">CRM</h3>
 <h4 id="definingaddressesforcustomerinformationtemplate">Defining Addresses for Customer Information Template</h4>
 <p>When creating customer information for an address, it was previously not possible to copy the customer information from an existing address.
 Especially for users of Treesoft Office ERP, manually filling in customer information is a time-consuming task.</p>
@@ -1084,7 +1099,7 @@ In the print options for the ERP document, you can choose whether the wage share
 <p>In order to be able to separate images better from each other, the image frame was also converted to ZNG. This function was more annoying than helpful.</p>
 <h5 id="outcome-52">Outcome</h5>
 <p>Only the images are converted to ZNG.</p>
-<h3 id="crm-4">CRM</h3>
+<h3 id="crm-5">CRM</h3>
 <h4 id="emaildispatch">e-mail dispatch</h4>
 <h5 id="dissection-56">Dissection</h5>
 <p>When sending e-mails to multiple recipients, the e-mail could not be sent if the e-mail addresses were separated by more than one blank space.</p>
@@ -1227,7 +1242,7 @@ Among the new features are among others:</p>
 <p>In the lists in CAD there is the possibility to find records depending on the column Data records. Until now, however, it was not possible to search all data independently of a certain column.</p>
 <h5 id="outcome-72">Outcome</h5>
 <p>In all lists in CAD there is now the possibility to find records via the full text search. This applies to symbols, materials and services as well as addresses and wages.</p>
-<h3 id="crm-5">CRM</h3>
+<h3 id="crm-6">CRM</h3>
 <h4 id="searchandreplaceinthecontactpersonlist">Search and replace in the contact person list</h4>
 <h5 id="dissection-76">Dissection</h5>
 <p>The function "Search and replace" in the contact person list supports the fields "Salutation, department and position". The fields "Title" and "Name affix"are missing.</p>
@@ -1391,7 +1406,7 @@ The intelligent PDFs stand out from normal PDFs by the following features:</p>
 <p>When converting a drawing with images to ZNG, it could happen that the converted drawing could not be opened in the CAD converter.</p>
 <h5 id="outcome-96">Outcome</h5>
 <p>During the conversion to ZNG, images with a height and width of zero could be saved which are not supported by the CAD converter. Corresponding images are no longer saved.</p>
-<h3 id="crm-6">CRM</h3>
+<h3 id="crm-7">CRM</h3>
 <h4 id="versionnumbers">version numbers</h4>
 <h5 id="dissection-100">Dissection</h5>
 <p>Adding a new version in the software administration will automatically add it to the lower end of the list.</p>
