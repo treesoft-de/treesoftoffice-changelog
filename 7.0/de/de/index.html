@@ -694,8 +694,8 @@
 <p>Das Fadenkreuz konnte beim Fangen von Objekten in gestreckten, gestauchten oder gedrehten Symbolen um eine Einheit versetzt positioniert werden.</p>
 <h4 id="abgeschnittenetexteinsymbolvorschau">Abgeschnittene Texte in Symbolvorschau</h4>
 <p>Einige Buchstaben gehen über die sogenannte H-Linie hinaus oder liegen teilweise unter der Grundlinie (z. B. g oder q). Diese Anteile wurden bei der Grenzberechnung nicht berücksichtigt, was in Symbolvorschauen zu abgeschnittenen Texten führte.</p>
-<h4 id="kennzeichnungfrinternebzwexterneklemmenbeiintelligentempdfexportfalschausgegeben">Kennzeichnung für interne bzw. externe Klemmen bei intelligentem PDF-Export falsch ausgegeben</h4>
-<p>Die entsprechenden Unicode-Zeichen waren kein Bestandteil der von uns zur Verfügung gestellten Font ISO 3098</p>
+<h4 id="kennzeichnungfrinternebzwexterneklemmenbeimintelligentenpdfexportfalschausgegeben">Kennzeichnung für interne bzw. externe Klemmen beim intelligenten PDF-Export falsch ausgegeben</h4>
+<p>Die entsprechenden Unicode-Zeichen waren kein Bestandteil des von uns zur Verfügung gestellten Font ISO 3098</p>
 <h2 id="7058releasedate07012019releasedate">7.0.58 <releasedate>07.01.2019</releasedate></h2>
 <p>Allgemeine Optimierungen und Verbesserungen der Stabilität.</p>
 <h2 id="7057releasedate21122018releasedate">7.0.57 <releasedate>21.12.2018</releasedate></h2>
@@ -1066,7 +1066,7 @@ Das Problem wurde behoben und gleichzeitig die Performance leicht verbessert.</p
 <h2 id="7019">7.0.19</h2>
 <h3 id="cad-27">CAD</h3>
 <h4 id="darstellungvonhilfstextenverbessert">Darstellung von Hilfstexten verbessert</h4>
-<p>Beim Zeichen von einfachen Objekten werden zusätzliche Informationen, wie z.&nbsp;B. der Radius des zu zeichnenden Kreisbogens, zur Unterstützung angezeigt. Diese zusätzlichen Informationen werden nun unabhängig vom aktuellen Zoom immer gleich groß dargestellt.</p>
+<p>Beim Zeichen von einfachen Objekten werden zusätzliche Informationen, wie z. B. der Radius des zu zeichnenden Kreisbogens, zur Unterstützung angezeigt. Diese zusätzlichen Informationen werden nun unabhängig vom aktuellen Zoom immer gleich groß dargestellt.</p>
 <h3 id="cadgebudetechnikassistent-3">CAD Gebäudetechnik-Assistent</h3>
 <h4 id="vorschaulinieninderobjekttypenlisteimoptionsdialognichtsichtbar">Vorschaulinien in der Objekttypenliste im Optionsdialog nicht sichtbar</h4>
 <p>Die Vorschaulinien zu den einzelnen Objekttypen in der Objekttypenlist des Optionsdialog werden nun wieder korrekt angezeigt. Des Weiteren konnte die Zeit, bis die Liste komplett aufgebaut wird, drastisch reduziert werden.</p>
@@ -1432,7 +1432,7 @@ Besonders für Anwender von Treesoft Office ERP ist das manuelle Ausfüllen der 
 <h3 id="volltextsuche-2">Volltextsuche</h3>
 <h4 id="umlautenichtkorrektindiziert">Umlaute nicht korrekt indiziert</h4>
 <h5 id="analyse-44">Analyse</h5>
-<p>Mit der Version 6.5.XX wurde die Datenbankverbindung des Volltextservers auf Unicode umgestellt. Leider wurde dabei die spezielle Behandlung von Text-Datenblöcken in der Datenbank nicht berücksichtigt. Dies hatte zur Folge, dass z.&nbsp;B. die Langtexte der Materialien fehlerhaft indiziert wurden und eine Suchanfrage, welche die Zeichen €,äÄ,üÜ,öÖ,ß enthielt, ergebnislos blieb.</p>
+<p>Mit der Version 6.5.XX wurde die Datenbankverbindung des Volltextservers auf Unicode umgestellt. Leider wurde dabei die spezielle Behandlung von Text-Datenblöcken in der Datenbank nicht berücksichtigt. Dies hatte zur Folge, dass z. B. die Langtexte der Materialien fehlerhaft indiziert wurden und eine Suchanfrage, welche die Zeichen €,äÄ,üÜ,öÖ,ß enthielt, ergebnislos blieb.</p>
 <h5 id="ergebnis-42">Ergebnis</h5>
 <p>Text-Datenblöcke werden nun korrekt indiziert. In jedem Fall raten wir Ihnen den vollständigen Neuaufbau aller Volltextsuchkonfigurationen. Wechsel Sie dazu bitte in den Optionen Dialog von Treesoft Office [Strg]+[Umsch.]+[O]. Hier den Zweig "Grundlagen &gt; Volltextsuche" wählen und im Kontextmenü zu den Volltextsuchkonfigurationen den Befehl "Alle Konfigurationen zurücksetzen" betätigen und mit "Ja" bestätigen. Anschließend im Kontextmenü zu den Volltextsuchkonfigurationen den Befehl "Alle Konfigurationen indizieren" betätigen, um den Neuaufbau zu starten.</p>
 <h3 id="treesoftoffice-5">Treesoft Office</h3>
@@ -1852,9 +1852,9 @@ Die intelligenten PDFs heben sich durch folgende Features von normalen PDFs ab:<
 <h3 id="cadgebudetechnikassistent-6">CAD Gebäudetechnik-Assistent</h3>
 <h4 id="hintergrundzeichnungwirdbeinderungvonblattformatmastabignoriert">Hintergrundzeichnung wird bei Änderung von Blattformat/Maßstab ignoriert</h4>
 <h5 id="analyse-104">Analyse</h5>
-<p>Mittels CAD&nbsp;Konverter, in das ZNG-Format, konvertierte Zeichnungen werden als Hintergrundzeichnung in Treesoft&nbsp;CAD angezeigt. Wird in Treesoft&nbsp;CAD das Blattformat bzw. der Maßstab geändert so muss auch die Hintergrundzeichnung angepasst werden. Es konnte dabei vorkommen, dass der Bezugspunkt der Hintergrundzeichnung außerhalb des Zeichnungsbereiches verschoben wurde. Nachfolgende Änderungen an Blattformat bzw. Maßstab wurden nachfolgend ignoriert.</p>
+<p>Mittels CAD Konverter, in das ZNG-Format, konvertierte Zeichnungen werden als Hintergrundzeichnung in Treesoft CAD angezeigt. Wird in Treesoft CAD das Blattformat bzw. der Maßstab geändert so muss auch die Hintergrundzeichnung angepasst werden. Es konnte dabei vorkommen, dass der Bezugspunkt der Hintergrundzeichnung außerhalb des Zeichnungsbereiches verschoben wurde. Nachfolgende Änderungen an Blattformat bzw. Maßstab wurden nachfolgend ignoriert.</p>
 <h5 id="ergebnis-101">Ergebnis</h5>
-<p>Der Bezugspunkt der Hintergrundzeichnung wird nun, bei einer Konvertierung in das ZNG-Format, vom CAD&nbsp;Konverter genau in die Mitte des Arbeitsbereichs gelegt. Änderungen an Blattformat bzw. Maßstab in Treesoft&nbsp;CAD sollten nun nicht mehr zu Folge haben, dass der Bezugspunkt in einen Bereich außerhalb der Zeichnung verschoben wird.</p>
+<p>Der Bezugspunkt der Hintergrundzeichnung wird nun, bei einer Konvertierung in das ZNG-Format, vom CAD Konverter genau in die Mitte des Arbeitsbereichs gelegt. Änderungen an Blattformat bzw. Maßstab in Treesoft CAD sollten nun nicht mehr zu Folge haben, dass der Bezugspunkt in einen Bereich außerhalb der Zeichnung verschoben wird.</p>
 <h3 id="cadkonverter-13">CAD Konverter</h3>
 <h4 id="fehlerhaftepositionierungbeibidirektionalemimport">Fehlerhafte Positionierung bei bidirektionalem Import</h4>
 <h5 id="analyse-105">Analyse</h5>
@@ -1887,7 +1887,7 @@ Die intelligenten PDFs heben sich durch folgende Features von normalen PDFs ab:<
 <h3 id="volltextsuche-9">Volltextsuche</h3>
 <h4 id="zusammengesetztewrterwerdennichtgefunden">Zusammengesetzte Wörter werden nicht gefunden</h4>
 <h5 id="analyse-110">Analyse</h5>
-<p>Mittels "+" zusammengesetzte Wörter, wie z.&nbsp;B. "A+B", wurden nicht gefunden.</p>
+<p>Mittels "+" zusammengesetzte Wörter, wie z. B. "A+B", wurden nicht gefunden.</p>
 <h5 id="ergebnis-107">Ergebnis</h5>
 <p>Wörter, die Mittels + zusammengesetzt wurden, werden nun gefunden. Um Wörter zu finden, die mittels "&amp;", "|" oder "-" zusammengesetzt wurden, muss das jeweilige Zeichen vornan mit "\" maskiert werden. Z. B. "A\&amp;B", "A\|B" oder "A\-B".</p>
 <h2 id="653">6.5.3</h2>
