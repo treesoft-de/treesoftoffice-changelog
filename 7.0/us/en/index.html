@@ -21,11 +21,11 @@
         }
 
         .ui.orange.segment:not(.inverted) {
-            border-top: 2px solid #EC911A!important;
+            border-top: 2px solid #ff7100!important;
         }
 
         #contentArea h1 {
-            color: #EC911A;
+            color: #ff7100;
             margin-top: 0px;
         }
 
@@ -68,7 +68,7 @@
             text-align: center;
             font-weight: bold;
             font-size: 12pt;
-            background-color: #EC911A;
+            background-color: #ff7100;
             color: #FFFFFF;
             margin-left: 0px;
             margin-right: 0px;
@@ -103,6 +103,22 @@
                         <div class="ui left very close rail">
                             <div class="ui segment orange sticky">
                                 <div class="ui list">
+                                    
+                                    <div style="margin-top: 5px">
+                                        <b>
+                                            <a class="item" href="#7063releasedate04102019releasedate">
+                                                7.0.63
+                                            </a>
+                                        </b>
+                                    </div>
+                                    
+                                    <div style="margin-top: 5px">
+                                        <b>
+                                            <a class="item" href="#7062releasedate03252019releasedate">
+                                                7.0.62
+                                            </a>
+                                        </b>
+                                    </div>
                                     
                                     <div style="margin-top: 5px">
                                         <b>
@@ -707,14 +723,91 @@
   <p>This article was translated by machine.</p>
 </blockquote>
 <h1 id="changelogversion70">Changelog Version 7.0</h1>
-<h2 id="7061releasedate02232019releasedate">7.0.61 <releasedate>02/23/2019</releasedate></h2>
+<h2 id="7063releasedate04102019releasedate">7.0.63 <releasedate>04/10/2019</releasedate></h2>
 <h3 id="cad">CAD</h3>
+<h4 id="setarticlesymbol">Set article/symbol</h4>
+<p>If a cable is inserted into the schematic via the article selection, the variables for the type and cross-section of the symbol are automatically labeled.
+Here some special characters (e.g. '²' for the power of two) were stored incorrectly coded in the drawing.</p>
+<h4 id="setarticlesymbol-1">Set article/symbol</h4>
+<p>If a cable to which another article is assigned is selected from the selection list of already assigned device identifiers, 
+the current article number is automatically changed to the already assigned article number.</p>
+<h3 id="importschnittstelle">Importschnittstelle</h3>
+<h4 id="highimportdurationforpricefiles">High import duration for price files</h4>
+<p>If a price file was imported in addition to a datanorm file, the process was extremely time-consuming. The import time for price files has been greatly improved.</p>
+<h3 id="erp">ERP</h3>
+<h4 id="priceswithoutordernumberswerenotcopied">Prices without order numbers were not copied</h4>
+<p>When copying a material or inserting prices into an existing material, prices without a order number were not taken into account. Prices without a order number are now also copied.</p>
+<h3 id="erpdokumente">ERP Dokumente</h3>
+<h4 id="missinglongtextsformaterialsandservices">Missing long texts for materials and services</h4>
+<p>When inserting materials and services into a document that had not yet been copied to the user's own catalog, the long texts for the positions inserted were missing. The long texts are now inserted correctly.</p>
+<h3 id="eintrge">Einträge</h3>
+<h4 id="resettingthefiltersbarforentries">Resetting the filters bar for entries</h4>
+<p>If the entries in the filter bar were filtered according to certain main groups, the display could no longer be reset to all entries. This bug has now been fixed.</p>
+<h4 id="improvedduplicationofentriestasksandevents">Improved duplication of entries, tasks and events</h4>
+<p>When duplicating entries, tasks and events, the spent time, progress, start on date, due date and time stamp are no longer simply copied, but set to meaningful values.</p>
+<h3 id="termine">Termine</h3>
+<h4 id="rightsforeventswerenotdisplayed">Rights for events were not displayed</h4>
+<p>After opening an event, it was displayed as publicly viewable. When confirming the dialog, the access right for the event was incorrectly set to public. This bug has now been fixed.</p>
+<h2 id="7062releasedate03252019releasedate">7.0.62 <releasedate>03/25/2019</releasedate></h2>
+<h3 id="projektverwaltung">Projektverwaltung</h3>
+<h4 id="projectlistenlargeseachtimeitisopened">Project list enlarges each time it is opened</h4>
+<p>Due to a special Windows adaptation it could happen on some systems that the project list has been enlarged bit by bit.</p>
+<h3 id="erpdokumente-1">ERP Dokumente</h3>
+<h4 id="incorrecttotalsforcopiedpositions">Incorrect totals for copied positions</h4>
+<p>In rare cases, copied positions could have incorrect totals. This required that the original part lists were previously edited in derived documents.</p>
+<h4 id="crasheswhenselectingpositions">Crashes when selecting positions</h4>
+<p>Program crashes could occur when selecting a position in an ERP document. These crashes have now been fixed.</p>
+<h4 id="changesinpreandfinaltextswerediscardedwhenthewindowwasundockedordocked">Changes in pre- and final texts were discarded when the window was undocked or docked</h4>
+<p>If a text template was used in a pre- or final text, the program rejected these changes when the window was undocked or docked.</p>
+<h4 id="copyoutlinelevelsbydragdropfromundockedtodockeddocuments">Copy outline levels by drag&amp;drop from undocked to docked documents</h4>
+<p>When copying outline levels from undocked to docked documents using Drag&amp;Drop, the target document could no longer be operated afterwards.</p>
+<h3 id="importschnittstelle-1">Importschnittstelle</h3>
+<h4 id="createdcatalognotdisplayed">Created catalog not displayed</h4>
+<p>If a catalog was created without importing data, it was no longer displayed the next time the window 'Import DATANORM, ELDANORM or ZVEHNORM' was opened. This error has now been corrected.</p>
+<h4 id="warningwhenimportingintoacatalogwithdifferentsuppliers">Warning when importing into a catalog with different suppliers</h4>
+<p>When importing DATANORM, ELDANORM or ZVEHNORM, now the suppliers of the last file read in and the file to be read in are compared. If the suppliers do not match, a warning is displayed.</p>
+<h4 id="simplifiedselectionofthesupplierofacatalog">Simplified selection of the supplier of a catalog</h4>
+<p>To select the supplier, the address window is no longer opened, but only the address list. This simplifies the operation of the program.</p>
+<h3 id="erp-1">ERP</h3>
+<h4 id="ordernumberswhencopyingmaterials">Order numbers when copying materials</h4>
+<p>When copying materials that are in the own catalog, order numbers are no longer copied for the prices.</p>
+<h4 id="copyingmaterialprices">Copying material prices</h4>
+<p>When copying a material to the own catalog or when copying prices to an existing material, only prices that are currently valid or valid in the future are taken into account.</p>
+<h4 id="priceselectionformaterialsinthematerialwagebasis">Price selection for materials in the material/wage basis</h4>
+<p>Previously, alternative prices could only be selected in the material/wage basis using the Price button. The user first had to select the appropriate material. Now it is possible to directly select a new price in the material table via [Alt]+[Left mouse button] on the purchase or sales price. The user no longer has to select a material; the current prices of the corresponding material from the master data are offered for selection.
+The purchase and sales prices are now kept consistent. If, for example, the user changes the purchase price, the system automatically sets the sales price with the appropriate purchase order number.</p>
+<h4 id="supplierselectioninthematerialcontractbasis">Supplier selection in the material/contract basis</h4>
+<p>The supplier of a material can no longer be changed manually in the material/wage basis. The supplier is automatically set on the basis of the selected price. If the vendor is to be changed, the corresponding price offered by this vendor must be selected.</p>
+<h4 id="priceselectionforwagesinthematerialwagebasis">Price selection for wages in the material/wage basis</h4>
+<p>Previously, an alternative price from a material could be incorrectly selected for wages in the material/wage basis using the Price button. From now on, the button Price for wages in the material/wage base is inactive. The Update button can also be used to synchronize the prices for wages in the project with the prices from the master data.</p>
+<h4 id="automaticselectionofthecurrentmaterialprice">Automatic selection of the current material price</h4>
+<p>Previously, the date of the last change to a price was used to automatically select the most current price when a material was entered in an invoice, for example. When you copy prices to your own catalog, these date values are updated, which means that the most current price can no longer be determined reliably. This issue has now been fixed.</p>
+<h4 id="selectpricesinthematerialandwagebase">Select prices in the material and wage base</h4>
+<p>If price was selected in the material and wage base, the column with the order number was incorrectly labeled "Order quantity" in the table with the available prices. The column is now labeled correctly.</p>
+<h4 id="selectionofthecurrentmaterialpriceformanuallycreatedprices">Selection of the current material price for manually created prices</h4>
+<p>Manually created prices were incorrectly not selected as the most current prices, even if they were added last. This issue has now been fixed.</p>
+<h4 id="insertingnewpricesfromthemasterdataintoamaterial">Inserting new prices from the master data into a material</h4>
+<p>When inserting new prices into an existing material, all prices of the selected material were copied up to now. From now on, only purchase and sales prices that are currently valid or will be valid in the future are copied.</p>
+<h4 id="simplifiedsuppliermanufacturerselectionformaterialsandprices">Simplified supplier/manufacturer selection for materials and prices</h4>
+<p>To select the supplier or manufacturer for materials and prices, the address window is no longer opened, but only the address list. This simplifies the operation of the program.</p>
+<h3 id="aufgaben">Aufgaben</h3>
+<h4 id="sortingtasksbykeyboardinsteadofdragdrop">Sorting tasks by keyboard instead of drag&amp;drop</h4>
+<p>Previously, it was possible to sort tasks within projects and addresses in a special sort mode using drag&amp;drop. Sorting was very error-prone and time-consuming via terminal sessions. Instead of drag &amp; drop, tasks can now be sorted using the key combinations [Alt] + [Left] / [Right] / [Top] / [Bottom].</p>
+<h3 id="system">System</h3>
+<h4 id="clipboardcannotbeopened">Clipboard cannot be opened</h4>
+<p>In cooperation with external applications, it could happen that the software crashes if the external application opened the clipboard but then did not close it correctly. </p>
+<h3 id="treesoftoffice">Treesoft Office</h3>
+<h4 id="newiconfordemoversion">New icon for demo version</h4>
+<p>The demo version now has its own icon to make it better recognizable as a demo and test/experiment environment.
+Furthermore, when starting the demo client, a message appears that the data stored there can be overwritten during updates.</p>
+<h2 id="7061releasedate02232019releasedate">7.0.61 <releasedate>02/23/2019</releasedate></h2>
+<h3 id="cad-1">CAD</h3>
 <h4 id="copysymbol">Copy symbol</h4>
 <p>When copying symbols with article numbers located within the path text area, the article number was treated as a path text; 
 i.e. after copying it was no longer on the reference point of the symbol. </p>
 <h4 id="labelingcables">Labeling cables</h4>
 <p>When labeling cable symbols, user-defined placeholders were not taken into account.</p>
-<h3 id="erp">ERP</h3>
+<h3 id="erp-2">ERP</h3>
 <h4 id="priceswhencopyingamaterial">Prices when copying a material</h4>
 <p>When copying materials, only the purchase and sales prices are copied.</p>
 <h4 id="filterpricesofmaterials">Filter prices of materials</h4>
@@ -723,19 +816,19 @@ i.e. after copying it was no longer on the reference point of the symbol. </p>
 <p>When selecting the main supplier of a material, all suppliers were previously offered. If the material has been copied from a foreign catalog, only suppliers for which a price has been defined in the material in question are now offered for selection.</p>
 <h4 id="colormarkingofprices">Color marking of prices</h4>
 <p>The color marking of prices for materials has been adjusted. Now all imported prices, e.g. via the DATANORM interface, are displayed in red. The current prices, which are used when inserting the material into an offer or an invoice, are marked green. Prices that are no longer current are displayed in yellow.</p>
-<h3 id="importschnittstelle">Importschnittstelle</h3>
+<h3 id="importschnittstelle-2">Importschnittstelle</h3>
 <h4 id="pluginsintheimportinterfacefordatanormeldanormandzvehnorm">Plug-ins in the import interface for DATANORM, ELDANORM and ZVEHNORM</h4>
 <p>Previously, all plug-ins in the import interface for DATANORM, ELDANORM and ZVEHNORM were also displayed. This has often led to files to be imported being read into a plug-in. Plug-ins are no longer displayed in the import interfaces.</p>
-<h3 id="treesoftoffice">Treesoft Office</h3>
+<h3 id="treesoftoffice-1">Treesoft Office</h3>
 <h4 id="programcrashinemptytables">Program crash in empty tables</h4>
 <p>In several tables the program crashed, if these were empty and the [Del] button was pressed.</p>
-<h3 id="erpdokumente">ERP Dokumente</h3>
+<h3 id="erpdokumente-2">ERP Dokumente</h3>
 <h4 id="preandfinaltextsdisappearedwhenthewindowwasundockedordocked">Pre- and final texts disappeared when the window was undocked or docked.</h4>
 <p>Pre- and final texts are now also preserved when the window is undocked or docked.</p>
 <h3 id="installation">Installation</h3>
 <p>Windows Server 2019 is now officially supported.</p>
 <h2 id="7060releasedate02042019releasedate">7.0.60 <releasedate>02/04/2019</releasedate></h2>
-<h3 id="cad-1">CAD</h3>
+<h3 id="cad-2">CAD</h3>
 <h4 id="navigationnotpossible">Navigation not possible</h4>
 <p>The function "Navigate" is terminated with the error message "Loading the drawing 'xxx' failed!" The problem was caused by a previously performed correction, where values intended for testing were incorrectly transferred to the release version.</p>
 <h4 id="areafunctiondoesnotrespondasexpected">Area function does not respond as expected</h4>
@@ -745,7 +838,7 @@ i.e. after copying it was no longer on the reference point of the symbol. </p>
 <p>Print settings can be defined as default. 
 Under rare circumstances, the settings could not be saved and reset to their origin.</p>
 <h2 id="7059releasedate01292019releasedate">7.0.59 <releasedate>01/29/2019</releasedate></h2>
-<h3 id="cad-2">CAD</h3>
+<h3 id="cad-3">CAD</h3>
 <h4 id="cursorincorrectlypositioned">Cursor incorrectly positioned</h4>
 <p>The cursor could be moved by one unit when snapping objects in stretched, compressed or rotated symbols.</p>
 <h4 id="clippedtextsinsymbolpreview">Clipped texts in symbol preview</h4>
@@ -755,7 +848,7 @@ Under rare circumstances, the settings could not be saved and reset to their ori
 <h2 id="7058releasedate01072019releasedate">7.0.58 <releasedate>01/07/2019</releasedate></h2>
 <p>General optimizations and stability improvements.</p>
 <h2 id="7057releasedate12212018releasedate">7.0.57 <releasedate>12/21/2018</releasedate></h2>
-<h3 id="cad-3">CAD</h3>
+<h3 id="cad-4">CAD</h3>
 <h4 id="coordinates">Coordinates</h4>
 <p>If an opening parenthesis "(" or a space was entered as the last character in the "Coordinates" function, the program crashed.</p>
 <h4 id="articletextsconcealsymboltexts">Article texts conceal symbol texts</h4>
@@ -798,18 +891,18 @@ If any of this information was missing, an error message was displayed in an inf
 <h4 id="fixedtheimportpathofthepluginmanager">Fixed the import path of the Plug-in Manager</h4>
 <p>In the Plug-in Manager the folder "Import" in the program directory was opened when selecting the plug-ins to be imported, if the folder exists.
 The folder "Import/Plug-ins" in the program directory will now be opened if the folder exists.</p>
-<h3 id="erp-1">ERP</h3>
+<h3 id="erp-3">ERP</h3>
 <h4 id="displayofnextnumbersdialedfordocumentsandmasterdataunified">Display of next numbers dialed for documents and master data unified</h4>
 <p>In the options dialog under number ranges, the next numbers selected were displayed for documents and the last numbers assigned for master data.
 Now the next numbers selected are also displayed for the master data.</p>
 <h2 id="7056releasedate11092018releasedate">7.0.56 <releasedate>11/09/2018</releasedate></h2>
-<h3 id="cad-4">CAD</h3>
+<h3 id="cad-5">CAD</h3>
 <h4 id="griddisplay">Grid display</h4>
 <p>The minimum grid mesh size was halved.</p>
 <h4 id="itemdesignationtextsintextannotationsofexportedpdffilesareincorrectlyencoded">Item designation texts in text annotations of exported PDF files are incorrectly encoded</h4>
 <p>The wrong encoding was noticeable by apostrophes instead of spaces in the title of text annotations.</p>
 <h2 id="7055releasedate11022018releasedate">7.0.55 <releasedate>11/02/2018</releasedate></h2>
-<h3 id="cad-5">CAD</h3>
+<h3 id="cad-6">CAD</h3>
 <h4 id="text">Text</h4>
 <p>The line breaks were lost when inserting multiline text modules.</p>
 <h4 id="text-1">Text</h4>
@@ -836,7 +929,7 @@ Each user can see which contact person others are currently speaking to.</p>
 <h2 id="7053releasedate10022018releasedate">7.0.53 <releasedate>10/02/2018</releasedate></h2>
 <p>General optimizations and stability improvements.</p>
 <h2 id="7052">7.0.52</h2>
-<h3 id="cad-6">CAD</h3>
+<h3 id="cad-7">CAD</h3>
 <h4 id="translationupdated">Translation updated</h4>
 <p>Some incorrect, incorrectly formatted and non-existent translations into English have been corrected or added.</p>
 <h4 id="incorrectlylabeledbookmarksinexportedpdf">Incorrectly labeled bookmarks in exported PDF</h4>
@@ -857,11 +950,11 @@ Each user can see which contact person others are currently speaking to.</p>
 <h4 id="symbolinformationelectricalcomponenti">Symbol information Electrical component [I]</h4>
 <p>If texts have been changed in this dialog, a noticeable screen flicker occurred during the subsequent layout.</p>
 <h2 id="7051">7.0.51</h2>
-<h3 id="cad-7">CAD</h3>
+<h3 id="cad-8">CAD</h3>
 <h4 id="crashoftheprogramfixed">Crash of the program fixed</h4>
 <p>It could happen that the program crashed when an evaluation-relevant component was processed on a sheet containing cables from a library other than the e-technology library.</p>
 <h2 id="7050">7.0.50</h2>
-<h3 id="cad-8">CAD</h3>
+<h3 id="cad-9">CAD</h3>
 <h4 id="copyareaorlayer">Copy (area or layer)</h4>
 <p>The labeling list for termination points was not updated during copying.</p>
 <h4 id="rightmousebuttoninzoomeddrawing">Right mouse button in zoomed drawing</h4>
@@ -873,11 +966,11 @@ Each user can see which contact person others are currently speaking to.</p>
 <h4 id="orderofdocumenttypesintheprintpdfexportdialog">Order of document types in the print/PDF export dialog</h4>
 <p>Both the order and the activation status of documents of different types are now saved for each project.</p>
 <h2 id="7049">7.0.49</h2>
-<h3 id="erpdokumente-1">ERP Dokumente</h3>
+<h3 id="erpdokumente-3">ERP Dokumente</h3>
 <h4 id="fixedpurchasepriceandfixedsalespricefortheposition">Fixed purchase price and fixed sales price for the position</h4>
 <p>It is again possible to enter a negative amount at the fixed purchase price and fixed sales price for the position. The invalid character warning has been removed.</p>
 <h2 id="7048">7.0.48</h2>
-<h3 id="cad-9">CAD</h3>
+<h3 id="cad-10">CAD</h3>
 <h4 id="navigation">Navigation</h4>
 <p>Now works with master potentials again.</p>
 <h4 id="editprojecttable-1">Edit project table</h4>
@@ -891,7 +984,7 @@ Each user can see which contact person others are currently speaking to.</p>
 <h4 id="optimizeddisplayofobjectstobechangedinareaandobjectfunctions">Optimized display of objects to be changed in area and object functions</h4>
 <p>The display of objects to be changed in area and object functions, such as Move or Rotate, has been adjusted again and can now be personalized. To do this, add the entry "ObjectsToProcessVisibility=VFD" to the "System.ini" under the group "[Developer]". V=Visible, F=Fuzzy, D=Deleted.</p>
 <h2 id="7047">7.0.47</h2>
-<h3 id="cad-10">CAD</h3>
+<h3 id="cad-11">CAD</h3>
 <h4 id="autoconnectlines">Autoconnect lines</h4>
 <p>When moveing/copying areas and objects, virtual lines are displayed in the correct object type.</p>
 <h4 id="displayofsnappedtexts">Display of snapped texts</h4>
@@ -920,7 +1013,7 @@ Each user can see which contact person others are currently speaking to.</p>
 <h4 id="movedsettingsinoptionsdialog">Moved settings in options dialog</h4>
 <p>Up to now, the mobile connection could be configured in the options dialog under "Grundlagen -&gt; Treesoft Mobile Agent". The configuration has been moved to "Grundlagen -&gt; Mobile".</p>
 <h2 id="7045">7.0.45</h2>
-<h3 id="cad-11">CAD</h3>
+<h3 id="cad-12">CAD</h3>
 <h4 id="editprojecttable-2">Edit project table</h4>
 <p>The first time the function was called, the dialog was displayed transparently. 
 In the "Replace" function, the "Replace all" option caused a program crash if the character string to be searched for was part of the character string to be replaced.</p>
@@ -943,22 +1036,22 @@ In the "Replace" function, the "Replace all" option caused a program crash if th
 <h3 id="startcenter">Start-Center</h3>
 <h4 id="displayofdocumentationinthestartcenter">Display of documentation in the Start Center</h4>
 <p>Documentation for Treesoft Office can now be opened quickly via a tile in the Start Center. The tile is only activated by default in the demo version.</p>
-<h3 id="erpdokumente-2">ERP Dokumente</h3>
+<h3 id="erpdokumente-4">ERP Dokumente</h3>
 <h4 id="thetextforthetaxcodeisnowcheckedduringbookingwithoutpreview">The text for the tax code is now checked during booking without preview.</h4>
 <h4 id="theentryofinvalidcharactersatthefixedpurchasepriceandfixedsalespriceforthepositionisnowprevented">The entry of invalid characters at the fixed purchase price and fixed sales price for the position is now prevented.</h4>
 <h2 id="7044">7.0.44</h2>
-<h3 id="cad-12">CAD</h3>
+<h3 id="cad-13">CAD</h3>
 <h4 id="stretchingandcompressingofbitmaps">Stretching and compressing of bitmaps</h4>
 <p>Bitmaps can now be stretched or compressed again. </p>
-<h3 id="erpdokumente-3">ERP Dokumente</h3>
+<h3 id="erpdokumente-5">ERP Dokumente</h3>
 <h4 id="fixedprogramcrashwhenbookinginvoices">Fixed program crash when booking invoices</h4>
 <p>It could happen that the program crashes when booking newly created invoices.</p>
 <h2 id="7043">7.0.43</h2>
-<h3 id="cad-13">CAD</h3>
+<h3 id="cad-14">CAD</h3>
 <h4 id="changingtheactivecolorpaletteorbackgroundcolornotdirectlyvisible">Changing the active color palette or background color not directly visible</h4>
 <p>Changes to the active color palette and background color, via the options dialog, are now directly visible again in the active drawing.</p>
 <h2 id="7042">7.0.42</h2>
-<h3 id="cad-14">CAD</h3>
+<h3 id="cad-15">CAD</h3>
 <h4 id="replacingtexts">Replacing Texts</h4>
 <p>If placeholders are used in the search, the line breaks disappeared after replacement for multiline texts.</p>
 <h4 id="labelingconnectiontexts">Labeling connection texts</h4>
@@ -985,14 +1078,14 @@ In the "Replace" function, the "Replace all" option caused a program crash if th
 <h4 id="changetheoriginofacommunication">Change the origin of a communication</h4>
 <p>Changing the origin of a communication (Personal, Department, Global) could cause a crash under certain circumstances. </p>
 <h2 id="7041">7.0.41</h2>
-<h3 id="cad-15">CAD</h3>
+<h3 id="cad-16">CAD</h3>
 <h4 id="incorrectlylabeledbookmarksinexportedpdf-1">Incorrectly labeled bookmarks in exported PDF</h4>
 <p>Bookmarks created during PDF export are now correctly labeled again.</p>
 <h2 id="7040">7.0.40</h2>
-<h3 id="projektverwaltung">Projektverwaltung</h3>
+<h3 id="projektverwaltung-1">Projektverwaltung</h3>
 <h4 id="deletetreecaddocumentsintheprojectmanagement">Delete TreeCAD documents in the project management</h4>
 <p>The top files under the TreeCAD tab in the document overview of the project management could not be deleted. This is now possible.</p>
-<h3 id="cad-16">CAD</h3>
+<h3 id="cad-17">CAD</h3>
 <h4 id="optimizedvisualizationofobjectstobechangedinareaandobjectfunctions">Optimized visualization of objects to be changed in area and object functions</h4>
 <p>By popular request, the visualization of objects to be changed in area and object functions, such as move or rotate, has been optimized.</p>
 <h4 id="rotaterectangles">Rotate rectangles</h4>
@@ -1007,7 +1100,7 @@ In the "Replace" function, the "Replace all" option caused a program crash if th
 <h4 id="generalstabilityimprovements-1">General stability improvements</h4>
 <p>CRM stability has been improved</p>
 <h2 id="7038">7.0.38</h2>
-<h3 id="cad-17">CAD</h3>
+<h3 id="cad-18">CAD</h3>
 <h4 id="invalidcharactersintexts">Invalid characters in texts</h4>
 <p>Unlike other texts, variable texts in CAD have additional properties (Layer/Global, visible/invisible,…). This information is stored together with the actual text.
 This additional information was mistakenly stored in all texts. </p>
@@ -1021,7 +1114,7 @@ This additional information was mistakenly stored in all texts. </p>
 <p>If a cable was labeled with the option "Label all symbols of the cable", it could happen that any variable texts on the layer of this cable were changed. 
 The error always occurred if a text was to be changed on a layer that did not correspond to the active layer and a text was also at the same position on the active layer.</p>
 <p>When cables are labeled for the first time, the entries for the last cable are preset in the dialog. </p>
-<h3 id="erpdokumente-4">ERP Dokumente</h3>
+<h3 id="erpdokumente-6">ERP Dokumente</h3>
 <h4 id="focusproblemduringtakeover">Focus problem during takeover</h4>
 <p>For partial invoices and delivery notes, positions can be taken from the booked order confirmation. The list for the takeover is no longer hidden behind the main window.</p>
 <h3 id="crmmailing-1">CRM Mailing</h3>
@@ -1038,7 +1131,7 @@ The error always occurred if a text was to be changed on a layer that did not co
 <p>If you select the "Valid To" (Valid From:) checkboxes in the Master Data&gt;Material dialog on the Prices tab, they can no longer be deactivated.</p>
 <p>A warning message informs the user that areas of validity that have been set cannot be removed or changed again.</p>
 <h2 id="7037">7.0.37</h2>
-<h3 id="cad-18">CAD</h3>
+<h3 id="cad-19">CAD</h3>
 <h4 id="edittext-1">Edit Text</h4>
 <p>If a text is edited on a layer that is not active but only visible, the text now remains on its original layer.</p>
 <h4 id="crashatprogramstart">Crash at program start</h4>
@@ -1055,19 +1148,19 @@ The error always occurred if a text was to be changed on a layer that did not co
 <h2 id="7036">7.0.36</h2>
 <h3 id="cadkonverter-2">CAD Konverter</h3>
 <p>The program now starts again with the set background color.</p>
-<h3 id="cad-19">CAD</h3>
+<h3 id="cad-20">CAD</h3>
 <h4 id="keyboardoperation">Keyboard operation</h4>
 <p>Following the functions "File &gt; Open…" and "Symbol &gt; Set article/symbol…" it was not possible to operate the document with the keyboard after selecting a file or symbol.</p>
 <h2 id="7035">7.0.35</h2>
-<h3 id="cad-20">CAD</h3>
+<h3 id="cad-21">CAD</h3>
 <h4 id="optimizedcursorrendering">Optimized cursor rendering</h4>
 <p>The cursor only partially covers underlying objects so that they are easier to see.</p>
 <h2 id="7034">7.0.34</h2>
-<h3 id="cad-21">CAD</h3>
+<h3 id="cad-22">CAD</h3>
 <h4 id="changesintheprintpdfexportdialogarenotdisplayedinthepreview">Changes in the print/PDF export dialog are not displayed in the preview</h4>
 <p>The preview now works again as expected</p>
 <h2 id="7033">7.0.33</h2>
-<h3 id="cad-22">CAD</h3>
+<h3 id="cad-23">CAD</h3>
 <h4 id="graphicsoutputoptimized">Graphics output optimized</h4>
 <p>Changes to active objects such as the cursor no longer require a complete drawing of the entire drawing, which in some cases makes working with complex drawings much smoother.</p>
 <h4 id="objectsnapofcirculararcscaptureserroneouslyclosestpositiononcirculararc">Object snap of circular arcs captures, erroneously, closest position on circular arc</h4>
@@ -1075,7 +1168,7 @@ The error always occurred if a text was to be changed on a layer that did not co
 <h4 id="theradiusfunctioncannotbeexecuted">The "Radius" function cannot be executed</h4>
 <p>The function can now be executed again if only rectangles are present on the visible layers.</p>
 <h2 id="7032">7.0.32</h2>
-<h3 id="cad-23">CAD</h3>
+<h3 id="cad-24">CAD</h3>
 <h4 id="referencesandarticleinformationwerenotincludedintheintelligentpdfexport">References and article information were not included in the intelligent PDF export</h4>
 <p>Both references and article informations are now displayed again.</p>
 <h3 id="cadschaltplanassistent-1">CAD Schaltplan-Assistent</h3>
@@ -1085,55 +1178,55 @@ The error always occurred if a text was to be changed on a layer that did not co
 <h4 id="areacopieswerenotdisplayed">Area copies were not displayed</h4>
 <p>Area copies were stored in the wrong directory and could therefore not be displayed or set. The error has been corrected.</p>
 <h2 id="7031">7.0.31</h2>
-<h3 id="cad-24">CAD</h3>
+<h3 id="cad-25">CAD</h3>
 <h4 id="specialcharactersintextinputdialog">Special characters in text input dialog</h4>
 <p>The Greek character 'Omega' can now be inserted again in the dialog using the special button. In addition, the dialog has been extended by the special buttons for the Greek characters 'Delta' and 'Theta'.</p>
 <h2 id="7030">7.0.30</h2>
 <p>General optimizations and stability improvements.</p>
 <h2 id="7029">7.0.29</h2>
-<h3 id="cad-25">CAD</h3>
+<h3 id="cad-26">CAD</h3>
 <h4 id="sectiontextsinvisible">Section texts invisible</h4>
 <p>Section texts are no longer created as invisible variable texts and are therefore visible even when the placeholder display is deactivated.</p>
 <h3 id="cadkonverter-3">CAD Konverter</h3>
 <h4 id="symbolsnotexported">Symbols not exported</h4>
 <p>Some symbols in the "Open PDF/DWG/DXF to ZNG for ST" wizard may not have been exported. The error has been corrected.</p>
 <h2 id="7028">7.0.28</h2>
-<h3 id="eintrge">Einträge</h3>
+<h3 id="eintrge-1">Einträge</h3>
 <h4 id="missingcolumncontentsintheemailoutbox">Missing column contents in the e-mail outbox</h4>
 <p>Due to the last update of Firebird, some columns were missing in the email outbox. 
 The problem has been fixed while slightly improving performance.</p>
 <h2 id="7027">7.0.27</h2>
 <p>General optimizations and stability improvements.</p>
 <h2 id="7026">7.0.26</h2>
-<h3 id="cad-26">CAD</h3>
+<h3 id="cad-27">CAD</h3>
 <h4 id="gridandcursorincrementaljognotgettingadjustedwhenopeningdrawingsandswitchingviews">Grid and cursor incremental jog not getting adjusted when opening drawings and switching views</h4>
 <p>The grid and cursor incremental jog is now adjusted to the paper size and scale of the opened drawing or view.</p>
 <h2 id="7022">7.0.22</h2>
-<h3 id="cad-27">CAD</h3>
+<h3 id="cad-28">CAD</h3>
 <h4 id="symboltextswithnegativetextheight">Symbol texts with negative text height</h4>
 <p>In addition to 7.0.17, automatically applied texts now take over the correct text height as well</p>
 <h2 id="7020">7.0.20</h2>
-<h3 id="cad-28">CAD</h3>
+<h3 id="cad-29">CAD</h3>
 <h4 id="movingtheview">Moving the view</h4>
 <p>The view can now be moved by pressing and holding the middle mouse button.</p>
 <h3 id="cadschaltplanassistent-2">CAD Schaltplan-Assistent</h3>
 <h4 id="updateofthelabellinglists">Update of the labelling lists</h4>
 <p>The label lists are now updated in the area functions.</p>
 <h2 id="7019">7.0.19</h2>
-<h3 id="cad-29">CAD</h3>
+<h3 id="cad-30">CAD</h3>
 <h4 id="improvedrenderingofhelptexts">Improved rendering of help texts</h4>
 <p>When drawing simple objects, additional information, such as the radius of the arc to be drawn, is displayed for support. This additional information is now always rendered in the same size regardless of the current zoom.</p>
 <h3 id="cadgebudetechnikassistent-3">CAD Gebäudetechnik-Assistent</h3>
 <h4 id="previewlinesnotvisibleintheobjecttypelistintheoptionsdialog">Preview lines not visible in the object type list in the options dialog</h4>
 <p>The preview lines for the individual object types in the object type list of the options dialog are now displayed correctly again. Furthermore, the time until the list is completely built up could be drastically reduced.</p>
 <h2 id="7018">7.0.18</h2>
-<h3 id="cad-30">CAD</h3>
+<h3 id="cad-31">CAD</h3>
 <h4 id="configuredlayersandobjecttypeignoredforhatchingfunction">Configured layers and object type ignored for hatching function</h4>
 <p>Both the configuration of the layers to be considered and the object type set are now taken into account when hatching in the electrical installation and cabinet construction assistant.</p>
 <h4 id="accelerationofthehatchingfunction">Acceleration of the hatching function</h4>
 <p>The hatching function has been reworked and now works much faster in all assistants.</p>
 <h2 id="7017">7.0.17</h2>
-<h3 id="cad-31">CAD</h3>
+<h3 id="cad-32">CAD</h3>
 <h4 id="symboltextswithnegativetextheight-1">Symbol texts with negative text height</h4>
 <h5 id="dissection">Dissection</h5>
 <p>When inscribing symbol texts with a negative text height, the inserted text was inserted into the document with a positive text height. This text was visible when printing the drawing afterwards.</p>
@@ -1144,7 +1237,7 @@ The problem has been fixed while slightly improving performance.</p>
 <h4 id="keyboardshortcutsadaptedtoenglishtranslation">Keyboard shortcuts adapted to English translation</h4>
 <p>The keyboard shortcuts in the menus are now the same in both the English and German versions.</p>
 <h2 id="7016">7.0.16</h2>
-<h3 id="cad-32">CAD</h3>
+<h3 id="cad-33">CAD</h3>
 <h4 id="screenscalingenabled">Screen scaling enabled</h4>
 <h5 id="dissection-1">Dissection</h5>
 <p>The trend is towards monitors with ever-higher resolutions and a constant size, with the result that many control elements are displayed only very small. In order to counteract this and still benefit from the higher resolution, Microsoft has introduced screen scaling. This tells a program which factors have to be used to scale the control elements in order to compensate for the high resolutions. Due to the very early development of Treesoft Office, most parts of the program are not prepared to scale the controls and therefore require extensive and lengthy changes. Some parts have already been adapted, such as the CAD or CAD converter, but scaling had to be activated via a configuration file.</p>
@@ -1173,14 +1266,14 @@ The problem has been fixed while slightly improving performance.</p>
 <h5 id="outcome-5">Outcome</h5>
 <p>The grid dimension is now restored correctly regardless of sheet size and scale.</p>
 <h2 id="7012">7.0.12</h2>
-<h3 id="cad-33">CAD</h3>
+<h3 id="cad-34">CAD</h3>
 <h4 id="screenoutputinaccuracy">Screen output inaccuracy</h4>
 <h5 id="dissection-6">Dissection</h5>
 <p>It could happen that objects within symbols were represented by rounding differences to free objects, offset by one pixel.</p>
 <h5 id="outcome-6">Outcome</h5>
 <p>A performance optimization for the display of symbols, which did not have any measurable effects on the display speed after comprehensive tests, has been removed. Objects in symbols are now displayed in the same way as free objects.</p>
 <h2 id="7011">7.0.11</h2>
-<h3 id="cad-34">CAD</h3>
+<h3 id="cad-35">CAD</h3>
 <h4 id="selectionofobjectssimplified">Selection of objects simplified</h4>
 <h5 id="dissection-7">Dissection</h5>
 <p>The selection of objects in functions such as "Tangent drawing" could become difficult if the anchor point of the respective object could not be approached in the set incremental dimension.</p>
@@ -1207,7 +1300,7 @@ The problem has been fixed while slightly improving performance.</p>
 <h5 id="outcome-10">Outcome</h5>
 <p>From now on it is possible to adapt the usable working area for your own frame drawings. For more information on customizing the workspace for your own frame drawings, see the documentation "Arbeitshandbuch-CAD-Konverter.pdf".</p>
 <h2 id="6532">6.5.32</h2>
-<h3 id="treesoftoffice-1">Treesoft Office</h3>
+<h3 id="treesoftoffice-2">Treesoft Office</h3>
 <h4 id="bettererrormessagesincaseofproblemswiththedatabaseconnection">Better error messages in case of problems with the database connection</h4>
 <p>If a problem occurred with the database connection, Treesoft Office crashed without a helpful error message. 
 Now the database connection is explicitly checked and, if necessary, a meaningful message is displayed before the program ends.</p>
@@ -1217,10 +1310,10 @@ Now the database connection is explicitly checked and, if necessary, a meaningfu
 <p>After a change of the website, the news widget permanently shows a grey background. 
 This error has now been corrected.</p>
 <h2 id="6530">6.5.30</h2>
-<h3 id="cad-35">CAD</h3>
+<h3 id="cad-36">CAD</h3>
 <h4 id="pdfexportabortedwitherror">PDF export aborted with error</h4>
 <p>An error, that caused the PDF export to be aborted, has been corrected.</p>
-<h3 id="projektverwaltung-1">Projektverwaltung</h3>
+<h3 id="projektverwaltung-2">Projektverwaltung</h3>
 <h4 id="appendplaceholderstomanuallyselectedprojectdirectories">Append placeholders to manually selected project directories</h4>
 <p>Placeholders for the number and generic term of a project can now be automatically appended to manually selected project directories.</p>
 <h4 id="createprojecttemplatedirectorieswhencreatingprojects">Create project template directories when creating projects</h4>
@@ -1229,7 +1322,7 @@ This error has now been corrected.</p>
 <h3 id="cadgebudetechnikassistent-4">CAD Gebäudetechnik-Assistent</h3>
 <h4 id="creationofnewelectricalinstallationdrawingswithwrongscale">Creation of new electrical installation drawings with wrong scale</h4>
 <p>When creating new drawings from the Treesoft Office project tree, it could happen that the drawing was created with the wrong scale. From now on, the correct scale for newly created drawings is stored.</p>
-<h3 id="projektverwaltung-2">Projektverwaltung</h3>
+<h3 id="projektverwaltung-3">Projektverwaltung</h3>
 <h4 id="searchfordocumentnumbers">Search for document numbers</h4>
 <p>When searching for document numbers, the input was limited to 8 characters. This restriction has been removed so that documents with longer numbers can now also be found.</p>
 <h3 id="stammdaten-1">Stammdaten</h3>
@@ -1241,11 +1334,11 @@ This error has now been corrected.</p>
 <h3 id="crmadressverwaltung-2">CRM Adressverwaltung</h3>
 <h4 id="crashcausedbyopeninganaddressinanewwindow">Crash caused by opening an address in a new window</h4>
 <p>A program crash occurred by repeatedly calling the function 'Open address in new window'. From now on this function can be executed as often as you like. In addition, new windows will now opened docked.</p>
-<h3 id="eintrge-1">Einträge</h3>
+<h3 id="eintrge-2">Einträge</h3>
 <h4 id="exchangecontactpersoninentries">Exchange contact person in entries</h4>
 <p>Via the context menu command "Link entry to contact person" the contacts of entries can be exchanged later. This function now takes into account the multiple selection. </p>
 <h2 id="6528">6.5.28</h2>
-<h3 id="erpdokumente-5">ERP Dokumente</h3>
+<h3 id="erpdokumente-7">ERP Dokumente</h3>
 <h4 id="crashwhenpostingcreditmemos">Crash when posting credit memos</h4>
 <h5 id="dissection-11">Dissection</h5>
 <p>Posting credit memos causes a crash if no invoice exists.</p>
@@ -1258,7 +1351,7 @@ This error has now been corrected.</p>
 <h5 id="outcome-12">Outcome</h5>
 <p>The stability of materials and performance has been improved so that this error can no longer occur.</p>
 <h2 id="6527">6.5.27</h2>
-<h3 id="cad-36">CAD</h3>
+<h3 id="cad-37">CAD</h3>
 <h4 id="umschaltendersprache">Umschalten der Sprache</h4>
 <h5 id="dissection-13">Dissection</h5>
 <p>In order to change the CAD language, it was previously necessary to manually copy different translation files into the program directory.</p>
@@ -1277,7 +1370,7 @@ This error has now been corrected.</p>
 <h5 id="outcome-15">Outcome</h5>
 <p>Both the address list search and the material master search now respond to search terms that are at least one character long. Search terms smaller than the minimum search word length are treated as if the entered term was not found.</p>
 <h2 id="6525">6.5.25</h2>
-<h3 id="cad-37">CAD</h3>
+<h3 id="cad-38">CAD</h3>
 <h4 id="incorrecttextfitforprojectindividualprinting">Incorrect text fit for project/individual printing</h4>
 <h5 id="dissection-16">Dissection</h5>
 <p>When using the screen scaling of Windows on high DPI monitors, texts were incorrectly fitted during project/individual printing when using the ISO 3098 font.</p>
@@ -1285,7 +1378,7 @@ This error has now been corrected.</p>
 <p>Adjustment is now correct even when using Windows screen scaling.</p>
 <h4 id="nondashedcirclesandarcsforpdfexport">Non-dashed circles and arcs for PDF export</h4>
 <p>Circles and arcs can now also be output with dashed lines in intelligent PDF export.</p>
-<h3 id="erpdokumente-6">ERP Dokumente</h3>
+<h3 id="erpdokumente-8">ERP Dokumente</h3>
 <h4 id="crashwheneditingmeasurementlistswithoutanassignedroombook">Crash when editing measurement lists without an assigned room book</h4>
 <h5 id="dissection-17">Dissection</h5>
 <p>If a measurement list was edited without an assigned room book by the user trying to add a position, the program crashed.</p>
@@ -1296,13 +1389,13 @@ This error has now been corrected.</p>
 <p>The' Write new material or payroll to BOM' function was incorrectly activated after opening the invoice, even though the document was selected. If the user executed the function on the document, an error occurred because no materials or wages can be written directly into the document.</p>
 <h5 id="outcome-18">Outcome</h5>
 <p>It is no longer possible to execute the function' Write new material or wage to this BOM' on a document.</p>
-<h3 id="projektverwaltung-3">Projektverwaltung</h3>
+<h3 id="projektverwaltung-4">Projektverwaltung</h3>
 <h4 id="multipleassignmentofprojectnumbers">Multiple assignment of project numbers</h4>
 <h5 id="dissection-19">Dissection</h5>
 <p>With slower network connections it could happen that project numbers were assigned several times. This does not cause any problems when creating, copying, logging in and reconstructing, but it does cause problems when the projects are opened again.</p>
 <h5 id="outcome-19">Outcome</h5>
 <p>We have implemented a procedure that prevents a project number from being assigned more than once.</p>
-<h3 id="treesoftoffice-2">Treesoft Office</h3>
+<h3 id="treesoftoffice-3">Treesoft Office</h3>
 <h4 id="imagesinoptionsdialogimagesinoriginalsizedisplayleadstosoftwarecrash">Images in options dialog - Images in original size Display leads to software crash</h4>
 <h5 id="dissection-20">Dissection</h5>
 <p>After using the "Show images in original size" function in the options dialog, the program crashed when exiting.</p>
@@ -1340,7 +1433,7 @@ if faulty images were stored in the database. </p>
 <p>When changing the properties of BOMs, there was a crash if no data existed.</p>
 <h5 id="outcome-23">Outcome</h5>
 <p>Properties can only be changed for valid data.</p>
-<h3 id="treesoftoffice-3">Treesoft Office</h3>
+<h3 id="treesoftoffice-4">Treesoft Office</h3>
 <h4 id="changetotheservicemenu">Change to the Service menu</h4>
 <p>Menu Download Service Pack renamed to Download Update and menu Request Upgrade added.</p>
 <h3 id="volltextsuche-1">Volltextsuche</h3>
@@ -1353,7 +1446,7 @@ if faulty images were stored in the database. </p>
 <p>Filtering calls in the notifier did not always work reliably. </p>
 <h5 id="outcome-24">Outcome</h5>
 <p>It is now possible to search for phone numbers in the notifier again. </p>
-<h3 id="treesoftoffice-4">Treesoft Office</h3>
+<h3 id="treesoftoffice-5">Treesoft Office</h3>
 <h4 id="allowedlengthfornamesofemailserversincreased">Allowed length for names of e-mail servers increased</h4>
 <h5 id="dissection-26">Dissection</h5>
 <p>Previously, the length of the host name for e-mail servers was limited to 30 characters.</p>
@@ -1361,7 +1454,7 @@ if faulty images were stored in the database. </p>
 <p>The length of the host name has been increased to 255 characters. 
 In addition, it is now possible to use long e-mail addresses of up to 254 characters. This size corresponds to the maximum size allowed by the standard. </p>
 <h2 id="6522">6.5.22</h2>
-<h3 id="cad-38">CAD</h3>
+<h3 id="cad-39">CAD</h3>
 <h4 id="donotoutputarticleinformationwhenexportingpdffiles">Do not output article information when exporting PDF files</h4>
 <h5 id="dissection-27">Dissection</h5>
 <p>The article information for an equipment designation has always been output, if available.</p>
@@ -1384,7 +1477,7 @@ In addition, it is now possible to use long e-mail addresses of up to 254 charac
 <p>When duplicates are merged, contact persons are brought together, although there is only a very small similarity. </p>
 <h5 id="outcome-29">Outcome</h5>
 <p>Contact persons are only put together if there are major similarities.</p>
-<h3 id="erpdokumente-7">ERP Dokumente</h3>
+<h3 id="erpdokumente-9">ERP Dokumente</h3>
 <h4 id="crashwhenopeningdocuments">Crash when opening documents</h4>
 <h5 id="dissection-31">Dissection</h5>
 <p>Under certain circumstances, the software crashed when opening a document. </p>
@@ -1404,7 +1497,7 @@ In addition, it is now possible to use long e-mail addresses of up to 254 charac
 <h5 id="outcome-31">Outcome</h5>
 <p>Even if a discount group, main merchandise category or merchandise category is selected in the respective text field that has not yet been created in the databases, the specific selection window can be opened without any problems to adjust the group selection. 
 In addition, the selection window for the discount group can now be used to create or edit new discount groups without program errors.</p>
-<h3 id="eintrge-2">Einträge</h3>
+<h3 id="eintrge-3">Einträge</h3>
 <h4 id="menucommandsmoved">Menu commands moved</h4>
 <p>The commands in the context menu "Show linked addresses" and "Link e-mail with address" have been moved up one level from the submenu "History".</p>
 <h3 id="computertelefonie-1">Computertelefonie</h3>
@@ -1413,7 +1506,7 @@ In addition, the selection window for the discount group can now be used to crea
 <p>The telephone list displays a maximum of 2000 calls.</p>
 <h5 id="outcome-32">Outcome</h5>
 <p>This limit has now been removed, so that all calls corresponding to the filter conditions are displayed.</p>
-<h3 id="treesoftoffice-5">Treesoft Office</h3>
+<h3 id="treesoftoffice-6">Treesoft Office</h3>
 <h4 id="newsinthestartcenter">News in the Start Center</h4>
 <p>A new area in the Start Center provides you with up-to-date information about Treesoft or the product Treesoft Office.</p>
 <h4 id="incorrectpresentationofcontentintablesoferpdocumentsprojectsandaddresses">Incorrect presentation of content in tables of ERP documents, projects and addresses</h4>
@@ -1445,7 +1538,7 @@ In addition, the selection window for the discount group can now be used to crea
 <h5 id="outcome-37">Outcome</h5>
 <p>From now on you can also specify a project as destination in the ZNG-Export dialog. When opening the dialog box, you will receive a message if the directory suggested by the last opened drawing is not a project directory. If one of the open drawings can be assigned to a project, this project is also proposed as a target.</p>
 <h2 id="6520">6.5.20</h2>
-<h3 id="cad-39">CAD</h3>
+<h3 id="cad-40">CAD</h3>
 <h4 id="projectsingleprintorientationnotappliedcorrectly">Project/Single print orientation not applied correctly</h4>
 <h5 id="dissection-40">Dissection</h5>
 <p>It could happen that the orientation was not correctly applied during project/individual printing if a non-standardized/printable paper format is specified by the printer.</p>
@@ -1474,7 +1567,7 @@ Especially for users of Treesoft Office ERP, manually filling in customer inform
 <li>Group field Overhead rates GKZ</li>
 </ul>
 <p>We are gradually changing our source code to a uniform standard. For this reason, the "Fill gaps" function is no longer available for customers' number ranges until a uniform procedure for number ranges has been introduced for our software.</p>
-<h3 id="erpdokumente-8">ERP Dokumente</h3>
+<h3 id="erpdokumente-10">ERP Dokumente</h3>
 <h4 id="displayproblemwithprintingastandarditemwithanarticlenumberlongerthan23characters">Display problem with printing a standard item with an article number longer than 23 characters</h4>
 <h5 id="dissection-42">Dissection</h5>
 <p>If the article number for a standard item is longer than 23 characters and the print option "Print article number" is not selected, the first line of the affected item is not displayed.</p>
@@ -1491,7 +1584,7 @@ Especially for users of Treesoft Office ERP, manually filling in customer inform
 <p>With version 6.5. XX, the database connection of the full text server was changed to Unicode. Unfortunately, the special handling of text data blocks in the database was not taken into account. As a result, for example, the long texts of the materials were incorrectly indexed and a search query containing the characters €, äÄ, üÜÜÜ, öÖÖ, ß remained unsuccessful.</p>
 <h5 id="outcome-42">Outcome</h5>
 <p>Text data blocks are now indexed correctly. In any case, we advise you to completely rebuild all full-text search configurations. To do this, please switch to the Options dialog of Treesoft Office[Ctrl]+[Shift].]+[O]. Select the branch "Basics &gt; Full-text search" and in the context menu for the full-text search configurations, select the command "Reset all configurations" and confirm with "Yes". Then, in the context menu for the full-text search configurations, press the "Index all configurations" command to start the rebuild.</p>
-<h3 id="treesoftoffice-6">Treesoft Office</h3>
+<h3 id="treesoftoffice-7">Treesoft Office</h3>
 <h4 id="displayofadevelopmentmenuitem">Display of a development menu item</h4>
 <p>The Developer menu has been removed.</p>
 <h3 id="startcenter-2">Start-Center</h3>
@@ -1501,7 +1594,7 @@ Especially for users of Treesoft Office ERP, manually filling in customer inform
 <h5 id="outcome-43">Outcome</h5>
 <p>Standard widgets no longer retrieve the title and description from the database, but from the program resources, which makes it possible to adapt the display language to the operating system language.</p>
 <h2 id="6519">6.5.19</h2>
-<h3 id="cad-40">CAD</h3>
+<h3 id="cad-41">CAD</h3>
 <h4 id="zoompreviewinprojectfileprintingandintelligentpdfexport">Zoom preview in project/file printing and intelligent PDF export</h4>
 <p>The "Zoom +","Zoom -" and "Zoom 1:1" commands are now available in the preview window for project/file printing and intelligent PDF export.</p>
 <h4 id="orientationforprojectfileprintingandintelligentpdfexport">Orientation for project/file printing and intelligent PDF export</h4>
@@ -1513,7 +1606,7 @@ Especially for users of Treesoft Office ERP, manually filling in customer inform
 <h3 id="cadkonverter-8">CAD Konverter</h3>
 <h4 id="updatingthepdfimportlibrary">Updating the PDF import library</h4>
 <p>The library has been updated to v11.0.3.1.</p>
-<h3 id="erpdokumente-9">ERP Dokumente</h3>
+<h3 id="erpdokumente-11">ERP Dokumente</h3>
 <h4 id="programabortifwindowsclosetoofast">Program abort if windows close too fast</h4>
 <h5 id="dissection-46">Dissection</h5>
 <p>When terminating an ERP document or the project list, the program was unexpectedly terminated in very rare cases.</p>
@@ -1538,7 +1631,7 @@ In the print options for the ERP document, you can choose whether the wage share
 <h5 id="outcome-46">Outcome</h5>
 <p>When searching through the full-text search, no more letters should be lost. </p>
 <h2 id="6518">6.5.18</h2>
-<h3 id="cad-41">CAD</h3>
+<h3 id="cad-42">CAD</h3>
 <h4 id="colorpalettesinterchangedforprojectfileprintingandpdfexport">Color palettes interchanged for project/file printing and PDF export</h4>
 <h5 id="dissection-50">Dissection</h5>
 <p>The color palettes "Standard white background" and "Standard black background" were assigned to the other color palette in the list box.</p>
@@ -1598,7 +1691,7 @@ In the print options for the ERP document, you can choose whether the wage share
 <h5 id="outcome-56">Outcome</h5>
 <p>It is now possible to set the special characters for the full text search globally via the options dialog (under Full Text Search -&gt; Configure Syntax). In addition to the option to select other characters, the operators can also be completely deactivated.</p>
 <h2 id="6517">6.5.17</h2>
-<h3 id="erpdokumente-10">ERP Dokumente</h3>
+<h3 id="erpdokumente-12">ERP Dokumente</h3>
 <h4 id="insertingarticlesusingthehotkeys">Inserting articles using the hotkeys</h4>
 <h5 id="dissection-60">Dissection</h5>
 <p>When inserting articles into an ERP document, the generic term of the project could be overwritten with a very fast way of writing.</p>
@@ -1611,7 +1704,7 @@ In the print options for the ERP document, you can choose whether the wage share
 <h5 id="outcome-58">Outcome</h5>
 <p>In the options dialog of Treesoft Office, there is now a central administration interface for managing the full-text search. This interface allows you to manage all full-text search configurations regardless of the category. As a result of this conversion, the old *. CFG files become obsolete and can be deleted. Customers who are not yet using the new full-text search can use a migration to adopt their configurations. The new management interface provides a deeper insight into the actions currently performed by the full-text search and has clear performance advantages due to the parallel construction of several configurations.</p>
 <h2 id="6516">6.5.16</h2>
-<h3 id="cad-42">CAD</h3>
+<h3 id="cad-43">CAD</h3>
 <h4 id="keyboardshortcutsforprojectfileprintingchanged">Keyboard shortcuts for project/file printing changed</h4>
 <p>The key combination for printing functions has been changed to[Ctrl]+[P] for file printing and[Ctrl]+[Alt]+[P] for project printing across all wizards.</p>
 <h4 id="outputofallvisiblelayersduringprinting">Output of all visible layers during printing</h4>
@@ -1696,7 +1789,7 @@ to update the list.</p>
 <h5 id="outcome-71">Outcome</h5>
 <p>If there are no general full-text search configurations per category at the time of the update or installation, they will be created. </p>
 <h2 id="6513">6.5.13</h2>
-<h3 id="cad-43">CAD</h3>
+<h3 id="cad-44">CAD</h3>
 <h4 id="revisionofprintandintelligentpdfexport">Revision of print and intelligent PDF export</h4>
 <p>With the Intelligent PDF export, the basis was created to completely revise the project/individual print in Treesoft CAD. From now on, there is only one unified dialog for all print functions of all wizards and the intelligent PDF export.
 Among the new features are among others:</p>
@@ -1723,14 +1816,14 @@ Among the new features are among others:</p>
 <p>The function "Search and replace" in the contact person list supports the fields "Salutation, department and position". The fields "Title" and "Name affix"are missing.</p>
 <h5 id="outcome-73">Outcome</h5>
 <p>Other functions have been added to the "Title" and "Name affix" fields. The functionality can be limited or deactivated via the rights management. "Search and Replace" now works reliably with marks set in the addresses and contacts. The default settings in the options dialog are used as a default for replacing.</p>
-<h3 id="system">System</h3>
+<h3 id="system-1">System</h3>
 <h4 id="searchfieldinprojectlisthistoryeventstaskstasksetcallowsprerunninginput">Search field in project list/history/events/tasks/tasks/etc. allows pre-running input</h4>
 <h5 id="dissection-77">Dissection</h5>
 <p>If an entry is made in the search field with an interruption, a filter is already executed according to the previous entry during the interruption. While the filter was running, the search box was deactivated and all entries following the interruption were discarded until the filter was fully applied. This made the handling of the project list/history/dates/tasks/etc. considerably more difficult.</p>
 <h5 id="outcome-74">Outcome</h5>
 <p>During the execution of a filter, the search field remains activated and allows for a pre-running input. After the filter has been executed, it is executed again if the input has changed.</p>
 <h2 id="6512">6.5.12</h2>
-<h3 id="cad-44">CAD</h3>
+<h3 id="cad-45">CAD</h3>
 <h4 id="invisibletextsareoutputwithintelligentpdfexport">Invisible texts are output with intelligent PDF export</h4>
 <h5 id="dissection-78">Dissection</h5>
 <p>Previously, texts with a negative text height were also output.</p>
@@ -1763,7 +1856,7 @@ Among the new features are among others:</p>
 <h5 id="outcome-79">Outcome</h5>
 <p>By adapting the communication with the TAPI interface, all supported telephones/lines are now read out and are therefore also available for use with Treesoft Office.</p>
 <h2 id="6510">6.5.10</h2>
-<h3 id="cad-45">CAD</h3>
+<h3 id="cad-46">CAD</h3>
 <h4 id="framelabelingnotcorrect">Frame labeling not correct</h4>
 <h5 id="dissection-83">Dissection</h5>
 <p>Both the project name and the project description were incorrectly inserted into the drawing frame.</p>
@@ -1801,7 +1894,7 @@ Among the new features are among others:</p>
 <h4 id="createprjinfodat">Create PrjInfo.dat</h4>
 <p>The Prjinfo. dat file stores the data of a project that is normally stored in the database. This information is used when reconstructing and registering projects to complete the information in the database. When creating the PrjInfo. dat explicitly, the current contents of the project variables were not saved.</p>
 <h2 id="659">6.5.9</h2>
-<h3 id="cad-46">CAD</h3>
+<h3 id="cad-47">CAD</h3>
 <h4 id="resourceswithseveralassignedarticlesforpdfexport">Resources with several assigned articles for PDF export</h4>
 <h5 id="dissection-89">Dissection</h5>
 <p>If several articles were assigned to an item, only the last added article was displayed in the item information.</p>
@@ -1824,7 +1917,7 @@ Among the new features are among others:</p>
 <h5 id="outcome-89">Outcome</h5>
 <p>The resolution of hatching when exporting to ZNG has been adjusted and should no longer hinder the completion of the export.</p>
 <h2 id="658">6.5.8</h2>
-<h3 id="cad-47">CAD</h3>
+<h3 id="cad-48">CAD</h3>
 <h4 id="applicationcrashesduringpdfexport-1">Application crashes during PDF export</h4>
 <h5 id="dissection-93">Dissection</h5>
 <p>Treesoft CAD could crash when exporting PDF-drawings containing many images.</p>
@@ -1833,14 +1926,14 @@ Among the new features are among others:</p>
 <h4 id="outputofconnectionpointsforpdfexport">Output of connection points for PDF export</h4>
 <p>Connection points are no longer output when exporting PDF files.</p>
 <h2 id="657">6.5.7</h2>
-<h3 id="erpdokumente-11">ERP Dokumente</h3>
+<h3 id="erpdokumente-13">ERP Dokumente</h3>
 <h4 id="outputoftheshareofthevalueaddedtaxinapartialinvoice">Output of the share of the value added tax in a partial invoice</h4>
 <h5 id="dissection-94">Dissection</h5>
 <p>If "Subtotals only" is selected in the print presets of a final invoice, the VAT share is no longer shown under the total amount of the final invoice when deducting the partial invoices.</p>
 <h5 id="outcome-91">Outcome</h5>
 <p>For other print presets, the VAT portion for partial invoices is now also included in all final invoices.</p>
 <h2 id="656">6.5.6</h2>
-<h3 id="cad-48">CAD</h3>
+<h3 id="cad-49">CAD</h3>
 <h4 id="intelligentpdfexport">Intelligent PDF export</h4>
 <p>With the intelligent PDF export, you can convert your Treesoft CAD projects into an intelligent PDF at the touch of a button.
 The intelligent PDFs stand out from normal PDFs by the following features:</p>
@@ -1862,7 +1955,7 @@ The intelligent PDFs stand out from normal PDFs by the following features:</p>
 <p>Both the manufacturer's abbreviation and the manufacturer's code could not be indexed in the full-text search. Consequently, a search query for one of the two fields was unsuccessful.</p>
 <h5 id="outcome-93">Outcome</h5>
 <p>The vendor data is now also indexed correctly. It is necessary to rebuild the full text search for configurations that contain the manufacturer's abbreviation or manufacturer code!</p>
-<h3 id="importschnittstelle-1">Importschnittstelle</h3>
+<h3 id="importschnittstelle-3">Importschnittstelle</h3>
 <h4 id="performanceoptimization">performance optimization</h4>
 <h5 id="dissection-97">Dissection</h5>
 <p>A new full-text search server has been delivered with the Treesoft Office 6.5 version. One of the advantages of full-text search is that it automatically detects changes to the records in a full-text search configuration and updates them automatically. Due to the system used for tracking the changes, the re-importing of catalogs (catalogues update) via the interfaces DATANORM, ELDANORM, ZVEHNORM and plug-ins took many times the time in versions 6.3 and 6.4, depending on the number of full-text search configurations.</p>
@@ -1894,7 +1987,7 @@ The intelligent PDFs stand out from normal PDFs by the following features:</p>
 <h5 id="outcome-98">Outcome</h5>
 <p>The material number is now also indexed correctly. It is necessary to rebuild the full text search for configurations containing the material number! </p>
 <h2 id="654">6.5.4</h2>
-<h3 id="cad-49">CAD</h3>
+<h3 id="cad-50">CAD</h3>
 <h4 id="documenttreedoesnotshowallbranches">Document tree does not show all branches</h4>
 <h5 id="dissection-102">Dissection</h5>
 <p>It could happen that not all branches were displayed in the document tree of Treesoft CAD.</p>
@@ -1928,7 +2021,7 @@ The intelligent PDFs stand out from normal PDFs by the following features:</p>
 <p>The product Sage Office Line has been renamed to Sage 100.</p>
 <h5 id="outcome-104">Outcome</h5>
 <p>We have checked and ensured that the current Office Line interface also works with Sage 100.</p>
-<h3 id="projektverwaltung-4">Projektverwaltung</h3>
+<h3 id="projektverwaltung-5">Projektverwaltung</h3>
 <h4 id="imagesinthefiletreeoftreesoftcad">Images in the file tree of Treesoft CAD</h4>
 <h5 id="dissection-108">Dissection</h5>
 <p>The images in png or bmp format were not displayed in the Treesoft CAD file tree under CAD Converter.</p>
@@ -1953,7 +2046,7 @@ The intelligent PDFs stand out from normal PDFs by the following features:</p>
 <p>Entering letters or special characters for customer, supplier or employee numbers led to an unexpected termination of the program.</p>
 <h5 id="outcome-108">Outcome</h5>
 <p>The input is now checked for invalid characters and in the event of an error, a meaningful message is issued to the user.</p>
-<h3 id="system-1">System</h3>
+<h3 id="system-2">System</h3>
 <h4 id="incorrectdisplayintreesoftoffice">Incorrect display in Treesoft Office</h4>
 <h5 id="dissection-112">Dissection</h5>
 <p>Corrected display errors in Windows Vista up to and including Windows 8.0 and the corresponding server operating systems Windows Server 2008/2008R2 and 2012 for address management, options dialog, text editor and master data.</p>
@@ -1967,7 +2060,7 @@ The intelligent PDFs stand out from normal PDFs by the following features:</p>
 <h5 id="outcome-110">Outcome</h5>
 <p>The address system does not lead to an unexpected abort of the program even in the few circumstances.</p>
 <h2 id="651">6.5.1</h2>
-<h3 id="cad-50">CAD</h3>
+<h3 id="cad-51">CAD</h3>
 <h4 id="erasingimagesintheschematicbuildingsengineeringassistant">Erasing images in the schematic/buildings engineering assistant</h4>
 <h5 id="dissection-114">Dissection</h5>
 <p>Images with a color depth of 32 bit could not be erased until now.</p>
