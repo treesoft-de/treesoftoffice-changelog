@@ -238,9 +238,43 @@
 <p>Die Mehrfachmarkierung konnten leicht durch versehentliches Klicken in der Tabelle verloren gehen. 
 Nun verhält sie sich wie erwartet, sodass das Kontrollkästchen direkt aktiviert oder deaktiviert werden muss. 
 Ein Klick auf die Zeile reicht dafür nicht mehr aus.</p>
+<h3 id="cadkonverter">CAD Konverter</h3>
+<h4 id="projektsperrung">Projektsperrung</h4>
+<p>Der CAD Konverter prüft nun einseitig, ob eine Sperrung des zu bearbeitenden Projekts vorliegt.</p>
 <h3 id="cad">CAD</h3>
+<h4 id="fremdsprachenbersetzungumzustzlichesprachenerweitert">Fremdsprachenübersetzung um zusätzliche Sprachen erweitert</h4>
+<p>Die Palette an Sprachen die mit dem Zeichensatz "ISO 3098" ausgegeben werden, wurde erweitert. Siehe https://github.com/hikikomori82/osifont</p>
+<h4 id="fremdsprachenbersetzungumzustzlichesprachenzeichenstzeerweitert">Fremdsprachenübersetzung um zusätzliche Sprachen/Zeichensätze erweitert</h4>
+<p>Um die Unterstützung von Chinesisch/Japanisch/Koreanisch herzustellen, wurden zusätzliche Zeichensätze hinzugefügt.
+Leider können diese zum jetzigen Zeitpunkt nicht einwandfrei über den PDF-Export genutzt werden. Bitte wenden Sie sich an unseren Support, sollten Sie diese per intelligentem PDF-Export ausgeben wollen.</p>
+<h4 id="fremdsprachenbersetzungummehrfachauswahlimwrterbucherweitert">Fremdsprachenübersetzung um Mehrfachauswahl im Wörterbuch erweitert</h4>
+<p>Im Wörterbuch können nun mehrere Einträge zum Löschen markiert werden.</p>
+<h4 id="statusvonzeichenstzeninfremdsprachenbersetzung">Status von Zeichensätzen in Fremdsprachenübersetzung</h4>
+<p>Zeichensätze welche nicht geladen werden können werden in der Liste der Zeichensätze nun in der Farbe rot dargestellt.</p>
 <h4 id="projektbezogenetextbausteindatei">Projektbezogene Textbausteindatei</h4>
 <p>Die Funktionen zum Erzeugen und Bearbeiten von projektbezogenen Textbausteindateien wurden entfernt.</p>
+<h4 id="muttersprachevonwrterbuchnurnochbertastenkombinationnderbar">Muttersprache von Wörterbuch nur noch über Tastenkombination änderbar</h4>
+<p>Die Muttersprache des Wörterbuchs wird über die Reihenfolge der Sprachen definiert. Der erste Eintrag ist immer die Muttersprache. Da dieser Eintrag eine besondere Bedeutung hat, ist dieser ausschließlich über die Tastenkombination STRG+ALT+UMSCHALT+M änderbar.</p>
+<h4 id="statusleisteumspracheundalternativespracheerweitert">Statusleiste um Sprache und alternative Sprache erweitert</h4>
+<p>In der Statusleiste werden die Länderflaggen der Sprache und alternativen Flagge angezeigt. Mittels Links-Click der Maus kann eine andere Sprache/alternative Sprache gewählt werden.</p>
+<h4 id="automatischemarkierungvonbersetzbarentexten">Automatische Markierung von übersetzbaren Texten</h4>
+<p>Symboltexte werden nun immer entsprechend der Whitelist auf "Übersetzbar" bzw. "Nicht übersetzbar" gesetzt.</p>
+<h4 id="bernahmevonbersetzbarkeitsstatusbeibeschriftungvonsymbolen">Übernahme von Übersetzbarkeitsstatus bei Beschriftung von Symbolen</h4>
+<p>Der Übersetzbarkeitsstatus wird nun im Dialog "Text" vom zu beschriftenden Symboltext übernommen.</p>
+<h4 id="allesprachenundlnderdialoge">Alle Sprachen- und Länderdialoge</h4>
+<p>Alle Sprachen- und Länderdialoge sind jetzt entsprechen der Reihenfolge der Sprachen und Länder des Wörterbuchs sortiert.</p>
+<h4 id="texteingabenzuzeichenstzenimwrterbuchangepasst">Texteingaben zu Zeichensätzen im Wörterbuch angepasst</h4>
+<p>Die Eingaben für "Quelle" und "Datei" sind in die erste Zeile der Einstellungen gewandert.</p>
+<h4 id="mehrerealteverweiseaufdiealtefremdsprachenbersetzungentfernt">Mehrere alte Verweise auf die alte Fremdsprachenübersetzung entfernt</h4>
+<p>Unter anderem wurden die Menüeinträge für die alte Fremdsprachenübersetzung aus dem Optionen-Dialog entfernt.</p>
+<h4 id="bernahmevonbersetzungen">Übernahme von Übersetzungen</h4>
+<p>Im Dialog "Übersetzung" des Dialogs "Text" können Übersetzungen über den Dialog "Wörterbuch" übernommen werden. Anstatt fehlende Übersetzungen hinzuzufügen, werden nun alle Übersetzungen mit jedem aus dem Wörterbuch ersetzt.</p>
+<h4 id="textblckeausdialogtextentfernt">Textblöcke aus Dialog "Text" entfernt</h4>
+<p>Es wurden alle Textblöcke mit Ausnahme von "SPS-Blöcke" entfernt</p>
+<h4 id="ausschlussvonnumerischentexten">Ausschluss von numerischen Texten</h4>
+<p>Alle Texte welche keine Buchstaben enthalten werden nun als "Nicht übersetzbar" markiert.</p>
+<h4 id="ausgabeberintelligentempdfexport">Ausgabe über intelligentem PDF-Export</h4>
+<p>Alle PDF-Dateien werden nun mit dem korrekten Zeichensatz ausgegeben.</p>
 <h3 id="cadgebudetechnikassistent">CAD Gebäudetechnik-Assistent</h3>
 <h4 id="kopierenvonelektrobauteilen">Kopieren von Elektrobauteilen</h4>
 <p>Beim Kopieren von Elektrobauteilen wurde die Kennzeichnung mit kopiert, d.h. nach dem Kopiervorgang existierten zwei Elektrobauteile mit der gleichen Kennzeichnung im Grundrissplan. Um dies zu
@@ -258,6 +292,13 @@ Stromkreises auf unterschiedliche Grundrisse verteilt, so werden diese in einem 
 <p>Die Liste "Kabel-/Leitungsverbindungen" ist standardmäßig nach der Spalte "Stromkreis" sortiert. Diese wurde bisher numerisch sortiert, so dass alphanumerische Stromkreise durcheinander in
 der Liste aufgeführt wurden. Jetzt wird eine alphanumerische Sortierung angewendet.</p>
 <h2 id="7122betareleasedate22112019releasedate">7.1.22-beta <releasedate>22.11.2019</releasedate></h2>
+<h3 id="cad-1">CAD</h3>
+<h4 id="statusimdialogbersetzungenerweitert">Status im Dialog Übersetzungen erweitert</h4>
+<p>Übersetze Texte, welche jedoch keine Übersetzungen für die aktuelle Sprache bzw. alternative Sprache beinhalten, werden nun durch gesonderte Icons und Tooltipps hervorgehoben.</p>
+<h4 id="vorschauimdialogbersetzungen">Vorschau im Dialog Übersetzungen</h4>
+<p>Nach Aktivieren der kumulierten Ansicht wird die Vorschau zurückgesetzt.</p>
+<h4 id="spracheundalternativespracheimdialogbersetzungen">Sprache und alternative Sprache im Dialog Übersetzungen</h4>
+<p>Sowohl die Sprache als auch die alternative Sprache wird nun wie die Auswahl im Dialog Text behandelt.</p>
 <h3 id="crmdublettenbereinigung">CRM Dublettenbereinigung</h3>
 <h4 id="detailliertebeschreibungderdublettenauflsungbeifehlenderlizenz">Detaillierte Beschreibung der Dublettenauflösung bei fehlender Lizenz</h4>
 <p>Ein Highlight dieses neuen Upgrades ist die überarbeitete Dublettenbereinigung. 
@@ -265,10 +306,51 @@ Dubletten finden können alle CRM-Kunden nun als Teil des Basismoduls.
 Lediglich die Dublettenauflösung erfordert eine zusätzliche Lizenz. 
 Wenn solch eine Lizenz noch nicht vorhanden ist, öffnet sich nun die Hilfe mit einer detaillierten Beschreibung und warum Sie dieses Modul definitiv verwenden sollten.</p>
 <h2 id="7121betareleasedate18112019releasedate">7.1.21-beta <releasedate>18.11.2019</releasedate></h2>
-<p>Allgemeine Optimierungen und Verbesserungen der Stabilität.</p>
+<h3 id="cad-2">CAD</h3>
+<h4 id="whitelistbeimstartvontreesoftcaderstellt">Whitelist beim Start von Treesoft CAD erstellt</h4>
+<p>Die Datei TranslatableWhitelist.txt wird nun beim Start von Treesoft CAD erstellt, wenn diese nicht vorhanden ist. Bei Neuinstallationen wird die Datei direkt angelegt.</p>
+<h4 id="anpassungderschaltflchenindentoolleistenderdialogederfremdsprachenbersetzung">Anpassung der Schaltflächen in den Toolleisten der Dialoge der Fremdsprachenübersetzung</h4>
+<p>Die Größe der Schaltflächen in den Toolleisten wird nun anders ermittelt. Die Umstellung verhindert das in einigen Toolleisten die Schaltflächen zu klein und in anderen zu groß dargestellt werden.</p>
+<h4 id="schaltflchefrtextblckeimdialogtext">Schaltfläche für Textblöcke im Dialog Text</h4>
+<p>Die Schaltfläche Textblöcke steht in der Toolleiste des Dialogs Text wieder zur Verfügung.</p>
+<h4 id="validierungvontextenbeimimportindaswrterbuchhinzugefgt">Validierung von Texten beim Import in das Wörterbuch hinzugefügt</h4>
+<p>Die zu importierenden Texte werden nun validiert und bereinigt, damit diese nur die für die jeweilige Sprache zulässigen Zeichen beinhalten.</p>
+<h4 id="hintergrundaktualisierungderwrterbuchs">Hintergrundaktualisierung der Wörterbuchs</h4>
+<p>Änderungen am Wörterbuch werden nun automatisch an alle angemeldeten Benutzer verteilt.</p>
+<h4 id="mehrfachauswahlindialogbersetzungen">Mehrfachauswahl in Dialog Übersetzungen</h4>
+<p>Es können nun mehrere Texte ausgewählt und über die Taste [Leertaste] "Übersetzbar" bzw. "nicht Übersetzbar" geschaltet werden. Dies gilt auch für die kumulierte Ansicht.</p>
+<h4 id="freidefinierbaretextundspaltentrennerentfernt">Frei definierbare Text- und Spaltentrenner entfernt</h4>
+<p>Beim Import in das Wörterbuch können nun keine frei definierbaren Text- und Spaltentrenner eingestellt werden.</p>
+<h4 id="problemebeimcsvimportbehoben">Probleme beim CSV-Import behoben</h4>
+<p>Je nach Kombination von Text- und Spaltentrennern, beim Import in das Wörterbuch, konnten nicht alle Text sauber importiert werden.</p>
+<h4 id="bersetzbarkeitbeimkonvertieren">Übersetzbarkeit beim Konvertieren</h4>
+<p>Beim Konvertieren von Zeichnungen der Version 7.0 oder älter, werden ausschließlich Texte mit einer Texthöhe größer null als "Übersetzbar" markiert.</p>
+<h4 id="eingabefeldfrmutterspracheimdialogbersetzungdeaktiviert">Eingabefeld für Muttersprache im Dialog Übersetzung deaktiviert</h4>
+<p>Das Eingabefeld für die Muttersprache im Dialog Übersetzung ist nun nicht länger "nur lesend" geschaltet, sondern deaktiviert.</p>
+<h4 id="datenbankpfadausstatuszeileentfernt">Datenbankpfad aus Statuszeile entfernt</h4>
+<p>Der Datenbankpfad wird nicht länger in der Statuszeile angezeigt.</p>
 <h2 id="7120betareleasedate15112019releasedate">7.1.20-beta <releasedate>15.11.2019</releasedate></h2>
-<p>Allgemeine Optimierungen und Verbesserungen der Stabilität.</p>
+<h3 id="cad-3">CAD</h3>
+<h4 id="problemebeimspeichernvonzeichnungenmittstckenbehoben">Probleme beim Speichern von Zeichnungen mit T-Stücken behoben</h4>
+<p>Beim Speichern von Zeichnungen im neuen Datenformat, konnte es vorkommen, dass für gleichartige T-Stücke mehrere Symboldefinitionen generiert wurden. Beim Lesen einer solchen Zeichnung konnte die Auswertung abstürzen.</p>
+<h4 id="autovervollstndigungoptimiert">Autovervollständigung optimiert</h4>
+<p>Die Ergebnisse der Autovervollständigung im Dialog Text sind nun sortiert.</p>
+<h4 id="benachrichtigungbernichtbersetztetextbeimexportunddruck">Benachrichtigung über nicht übersetzte Text beim Export und Druck</h4>
+<p>Beim intelligenten PDF-Export sowie beim Datei-/Projektdruck wird nun eine Meldung angezeigt, wenn nicht alle Text für in der eingestellten Sprache bzw. alternativen Sprache ausgegeben werden können.</p>
+<h4 id="muttersprachebeiimportinswrterbuch">Muttersprache bei Import ins Wörterbuch</h4>
+<p>Die Muttersprache beim Import in das Wörterbuch kann nicht länger frei bestimmt werden, sondern entspricht nun der Muttersprache des Wörterbuchs.</p>
+<h4 id="dezimalstellenimdialogtextfixiert">Dezimalstellen im Dialog Text fixiert</h4>
+<p>Die Anzahl der Dezimalstellen im Dialog Text wird nicht länger von den Einstellungen zur Anzahl der Dezimalstellen für die Anzeige bestimmt, sondern ist auf zwei fixiert.</p>
+<h4 id="ausschlielichpotenziellbersetzbaretexteindialogbersetzungen">Ausschließlich potenziell übersetzbare Texte in Dialog Übersetzungen</h4>
+<p>Im Dialog Übersetzungen werden nun ausschließlich die Texte aufgelistet, welche potenziell übersetzbar sind. Dies sind Texte mit dem Texttyp Kommentar und Variable.</p>
 <h2 id="7119betareleasedate11112019releasedate">7.1.19-beta <releasedate>11.11.2019</releasedate></h2>
+<h3 id="cad-4">CAD</h3>
+<h4 id="filterinallenfilterbarenlistenderfremdsprachenbersetzungoptimiert">Filter in allen filterbaren Listen der Fremdsprachenübersetzung optimiert</h4>
+<p>Alle Filter arbeiten nun wie die Volltextsuche. Die Eingabe wird in Wörter gegliedert und jedes Wort muss vorkommen. Worttrenner sind alle Formen von Leerzeichen sowie die CAD Zeilenumbrüche nach oben und nach unten.</p>
+<h4 id="dialogtitelangepasst">Dialogtitel angepasst</h4>
+<p>Der Dialog "Text bearbeiten" wurde "Text" umbenannt. Der Dialog "Übersetzung bearbeiten und dem Wörterbuch hinzufügen" wurde in "Übersetzung (hinzufügen)" umbenannt. Der Dialog "Übersetzung bearbeiten und im Wörterbuch aktualisieren" wurde in "Übersetzung (aktualisieren)" umbenannt.</p>
+<h4 id="whitelistzurermittlungderbersetzbarkeitvonvariabletextenhinzugefgt">Whitelist zur Ermittlung der Übersetzbarkeit von Variable Texten hinzugefügt</h4>
+<p>Das AppData-Verzeichnis wurde um die Datei "TranslatableWhitelist.txt" ergänzt. In dieser Datei sind die Inhalte der Variable Texten hinterlegt, welche beim Konvertieren einer Zeichnung als übersetzbar markiert werden sollen.</p>
 <h3 id="crm">CRM</h3>
 <h4 id="filterausfhrungoptimiert">Filterausführung optimiert</h4>
 <p>Mit Adressfiltern kann der Adressbestand gezielt durchsucht werden. Je nach Anwendungsfall können dabei sehr komplexe Filter entstehen, dessen Ausführung mehrere Minuten dauert. 
@@ -288,7 +370,7 @@ Dieser Mechanismus hatte nicht in allen Situationen sauber funktioniert.</p>
 <h2 id="7118betareleasedate04112019releasedate">7.1.18-beta <releasedate>04.11.2019</releasedate></h2>
 <p>Allgemeine Optimierungen und Verbesserungen der Stabilität.</p>
 <h2 id="7117betareleasedate29102019releasedate">7.1.17-beta <releasedate>29.10.2019</releasedate></h2>
-<h3 id="cad-1">CAD</h3>
+<h3 id="cad-5">CAD</h3>
 <h4 id="fremdsprachenbersetzungoptimiert">Fremdsprachenübersetzung optimiert</h4>
 <p>Eingabe von Übersetzungen optimiert und anwendungsinterne Vorbereitungen für die Übersetzungsfunktion deutlich beschleunigt.</p>
 <h3 id="cadprojektliste">CAD Projektliste</h3>
@@ -355,7 +437,7 @@ Zukünftig können sie direkt über die neue Adressliste verwendet werden.</p>
 <p>Während der Dublettenauflösung werden Vertreter aus- und wieder eingetragen. 
 Hierfür wird jeweils ein Historieneintrag erzeugt, um diesen Vorgang zu protokollieren.
 Nun wird der Benutzer korrekt darüber informiert, wenn Einstellungen fehlen und im Optionendialog ergänzt werden müssen.</p>
-<h3 id="cad-2">CAD</h3>
+<h3 id="cad-6">CAD</h3>
 <h4 id="f2funktionneuimplementiertundaufdockbarefensterumgestellt">F2-Funktion neu implementiert und auf dockbare Fenster umgestellt</h4>
 <p>Die F2-Funktion wurde von Grund auf neu implementiert und auf abdockbare Fenster umgestellt.
 Die anzuzeigenden Artikel/Symbole werden jetzt wesentlich schneller geladen. Das Fensterhandling
@@ -369,7 +451,7 @@ wurde deutlich verbessert. Eine Auflistung der Vorteile:</p>
 <li>Moderneres Aussehen</li>
 </ul>
 <h2 id="712betareleasedate13082019releasedate">7.1.2-beta <releasedate>13.08.2019</releasedate></h2>
-<h3 id="cad-3">CAD</h3>
+<h3 id="cad-7">CAD</h3>
 <h4 id="neuefremdsprachenbersetzungundneueszngdatenformat">Neue Fremdsprachenübersetzung und neues ZNG-Datenformat</h4>
 <p>Ab sofort steht Ihnen die neu entwickelte Fremdsprachenübersetzung zur Verfügung.
 Übersetzungen ersetzen nicht länger die Texte von Zeichnungen, sonder ergänzen diese.</p>
@@ -385,7 +467,7 @@ wird eine Fehlermeldung angezeigt und es werden keine Änderungen am Projektname
 <h3 id="crmeinstellungen">CRM Einstellungen</h3>
 <h4 id="lschenvonhauptgruppengruppenbetreffs">Löschen von Hauptgruppen/Gruppen Betreffs</h4>
 <p>Das Löschen von Betreffs ist nun möglich, auch wenn der Betreff noch in Verwendung ist.</p>
-<h3 id="cadkonverter">CAD Konverter</h3>
+<h3 id="cadkonverter-1">CAD Konverter</h3>
 <h4 id="kreisemitkleinenradienwerdenalspunkteexportiert">Kreise mit kleinen Radien werden als Punkte exportiert</h4>
 <p>Es kann vorkommen, dass Kreise mit kleinen Radien als Punkt exportiert wurden, auch wenn der Kreis Bestandteil eines Symbols mit hohem Skalierungsfaktor ist.</p>
 <h2 id="710betareleasedate09072019releasedate">7.1.0-beta <releasedate>09.07.2019</releasedate></h2>
@@ -415,7 +497,7 @@ Falls sie ein Batch-Basiertes Skript für die Datensicherung verwenden, korrigie
 <p>Bisher haben wir für den separaten Zugriff auf die Datenbank das Programm IBOConsole mit ausgeliefert. 
 Aufgrund des Alters und technischer Probleme wurde dieses Tool nun durch Flamerobin ersetzt. 
 Im Programm-Verzeichnis von Treesoft Office befindet sich eine Verknüpfung, um Flamerobin mit vorkonfigurierten Datenbanken zu starten.</p>
-<h3 id="cadkonverter-1">CAD Konverter</h3>
+<h3 id="cadkonverter-2">CAD Konverter</h3>
 <h4 id="neugestaltungvonassistentenauswahlunddersymbolleiste">Neugestaltung von Assistentenauswahl und der Symbolleiste</h4>
 <p>Die Namen der Assistenten sowie einige Icons wurden aktualisiert. Zu jedem Assistenten wird in der Assistentenauswahl nun eine detailliertere Beschreibung angezeigt.</p>
 <h4 id="projektbasiertesarbeiten">Projektbasiertes Arbeiten</h4>

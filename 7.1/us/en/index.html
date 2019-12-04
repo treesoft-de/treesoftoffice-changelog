@@ -241,9 +241,43 @@
 <p>The multiple marker could easily be lost by accidental clicking in the table. 
 Now it behaves as expected, so the check box must be checked or unchecked directly. 
 A click on the row is no longer sufficient.</p>
+<h3 id="cadkonverter">CAD Konverter</h3>
+<h4 id="projectlockdown">Project lockdown</h4>
+<p>The CAD converter now checks unilaterally whether the project to be processed has been locked.</p>
 <h3 id="cad">CAD</h3>
+<h4 id="foreignlanguagetranslationextendedbyadditionallanguages">Foreign language translation extended by additional languages</h4>
+<p>The range of languages output with the character set "ISO 3098" has been extended. See https://github.com/hikikomori82/osifont</p>
+<h4 id="foreignlanguagetranslationextendedbyadditionallanguagescharactersets">Foreign language translation extended by additional languages/character sets</h4>
+<p>Additional character sets have been added to support Chinese/Japanese/Korean.
+Unfortunately, these cannot be used correctly via the PDF export at this time. Please contact our support if you want to export them via intelligent PDF export.</p>
+<h4 id="foreignlanguagetranslationextendedbymultipleselectionindictionary">Foreign language translation extended by multiple selection in dictionary</h4>
+<p>Several entries can now be marked for deletion in the dictionary.</p>
+<h4 id="statusoffontsinforeignlanguagetranslation">Status of fonts in foreign language translation</h4>
+<p>Fonts which cannot be loaded are now displayed in red in the list of fonts.</p>
 <h4 id="projectrelatedtextmodulefile">Project-related text module file</h4>
 <p>The functions for creating and editing project-related text module files have been removed.</p>
+<h4 id="nativelanguageofdictionarycanonlybechangedviakeycombination">Native language of dictionary can only be changed via key combination</h4>
+<p>The native language of the dictionary is defined by the order of the languages. The first entry is always the native language. Since this entry has a special meaning, it can only be changed using the key combination CTRL+ALT+SHIFT+M.</p>
+<h4 id="statusbarextendedbylanguageandalternativelanguage">Status bar extended by language and alternative language</h4>
+<p>In the status bar, the country flags of the language and alternative flag are displayed. Left-click the mouse to select another language/alternative language.</p>
+<h4 id="automaticmarkingoftranslatabletexts">Automatic marking of translatable texts</h4>
+<p>Symbol texts are now always set to "Translatable" or "Not translatable" according to the whitelist.</p>
+<h4 id="transferoftranslatabilitystatuswhenlabellingsymbols">Transfer of translatability status when labelling symbols</h4>
+<p>The translatability status is now adopted from the symbol text to be labeled in the "Text" dialog.</p>
+<h4 id="alllanguageandcountrydialogs">All language and country dialogs</h4>
+<p>All language and country dialogs are now sorted according to the order of the languages and countries in the dictionary.</p>
+<h4 id="textinputforcharactersetsindictionaryadapted">Text input for character sets in dictionary adapted</h4>
+<p>The inputs for "Source" and "File" have moved to the first line of the settings.</p>
+<h4 id="severaloldreferencestotheoldforeignlanguagetranslationremoved">Several old references to the old foreign language translation removed</h4>
+<p>Among other things, the menu entries for the old foreign language translation have been removed from the Options dialog.</p>
+<h4 id="transferoftranslations">Transfer of translations</h4>
+<p>In the "Translation" dialog of the "Text" dialog, translations can be taken over via the "Dictionary" dialog. Instead of adding missing translations, all translations will now be replaced with each from the dictionary.</p>
+<h4 id="textblocksremovedfromtextdialog">Text blocks removed from "Text" dialog</h4>
+<p>All text blocks with the exception of "PLC blocks" have been removed.</p>
+<h4 id="exclusionofnumerictexts">Exclusion of numeric texts</h4>
+<p>All texts that do not contain any letters are now marked as "Not translatable".</p>
+<h4 id="outputviaintelligentpdfexport">Output via intelligent PDF export</h4>
+<p>All PDF files are now output with the correct character set.</p>
 <h3 id="cadgebudetechnikassistent">CAD Gebäudetechnik-Assistent</h3>
 <h4 id="copyingelectricalcomponents">Copying electrical components</h4>
 <p>When copying electrical components, the marking was also copied, i.e. after the copying process, two electrical components with the same marking existed in the floor plan. 
@@ -261,6 +295,13 @@ circuit is distributed over different floor plans, these are displayed in a diff
 <p>The list "Cable connections" is sorted by the column "Circuit" by default. This column was previously sorted numerically, so that alphanumeric circuits can be mixed 
 up into were included in the list. Now an alphanumeric sorting is applied.</p>
 <h2 id="7122betareleasedate11222019releasedate">7.1.22-beta <releasedate>11/22/2019</releasedate></h2>
+<h3 id="cad-1">CAD</h3>
+<h4 id="statusintranslationdialogenhanced">Status in Translation Dialog Enhanced</h4>
+<p>Translated texts that do not contain translations for the current language or alternative language are now highlighted by separate icons and tooltips.</p>
+<h4 id="previewindialogtranslations">Preview in dialog Translations</h4>
+<p>After activating the cumulated view, the preview is reset.</p>
+<h4 id="languageandalternativelanguageinthetranslationsdialog">Language and alternative language in the Translations dialog</h4>
+<p>Both the language and the alternate language are now treated like the ones selected in the Text dialog.</p>
 <h3 id="crmdublettenbereinigung">CRM Dublettenbereinigung</h3>
 <h4 id="detaileddescriptionofduplicateresolutioniflicenseismissing">Detailed description of duplicate resolution if license is missing</h4>
 <p>A highlight of this new upgrade is the revised duplicate cleanup. 
@@ -268,10 +309,51 @@ All CRM customers can now retrieve
 Only the duplicate resolution requires an additional license. 
 If such a license is not yet available, the help opens with a detailed description and why you should definitely use this module.</p>
 <h2 id="7121betareleasedate11182019releasedate">7.1.21-beta <releasedate>11/18/2019</releasedate></h2>
-<p>General optimizations and stability improvements.</p>
+<h3 id="cad-2">CAD</h3>
+<h4 id="whitelistcreatedwhenstartingtreesoftcad">Whitelist created when starting Treesoft CAD</h4>
+<p>The "TranslatableWhitelist.txt" file is now created when Treesoft CAD is started if it is not already present. For new installations, the file is created directly.</p>
+<h4 id="adjustmentofthebuttonsinthetoolbarsoftheforeignlanguagetranslationdialogs">Adjustment of the buttons in the toolbars of the foreign language translation dialogs</h4>
+<p>The size of the buttons in the toolbars is now determined differently. The change prevents that in some toolbars the buttons are displayed too small and in others too large.</p>
+<h4 id="buttonfortextblocksinthetextdialogbox">Button for text blocks in the Text dialog box</h4>
+<p>The Text Blocks button is available again in the Text dialog toolbar.</p>
+<h4 id="validationoftextsaddedwhenimportingintodictionary">Validation of texts added when importing into dictionary</h4>
+<p>The texts to be imported are now validated and cleaned so that they only contain the characters permitted for the respective language.</p>
+<h4 id="backgroundupdateofthedictionary">Background update of the dictionary</h4>
+<p>Changes to the dictionary are now automatically distributed to all logged in users.</p>
+<h4 id="multiselectionindialogtranslations">Multiselection in dialog translations</h4>
+<p>Several texts can now be selected and switched to "Translatable" or "Not Translatable" using the [Spacebar] key. This also applies to the cumulated view.</p>
+<h4 id="freelydefinabletextandcolumnseparatorsremoved">Freely definable text and column separators removed</h4>
+<p>When importing into the dictionary, no freely definable text and column separators can be set.</p>
+<h4 id="problemswithcsvimportfixed">Problems with CSV import fixed</h4>
+<p>Depending on the combination of text and column separators when importing into the dictionary, not all text could be imported correctly.</p>
+<h4 id="translatabilityduringconversion">Translatability during conversion</h4>
+<p>When converting drawings of version 7.0 or older, only texts with a text height greater than zero are marked as "Translatable".</p>
+<h4 id="inputfieldformotherlanguageintranslationdialogdisabled">Input field for mother language in Translation dialog disabled</h4>
+<p>The input field for the mother language in the Translation dialog is no longer "read-only" but disabled.</p>
+<h4 id="databasepathremovedfromstatusbar">Database path removed from status bar</h4>
+<p>The database path is no longer displayed in the status bar.</p>
 <h2 id="7120betareleasedate11152019releasedate">7.1.20-beta <releasedate>11/15/2019</releasedate></h2>
-<p>General optimizations and stability improvements.</p>
+<h3 id="cad-3">CAD</h3>
+<h4 id="problemssavingdrawingswithtpiecesfixed">Problems saving drawings with T-pieces fixed</h4>
+<p>When saving drawings in the new data format, it could happen that several symbol definitions were generated for similar T-connectors. When reading such a drawing the processing could crash.</p>
+<h4 id="autocompletionoptimized">Autocompletion optimized</h4>
+<p>The autocomplete results in the Text dialog are now sorted.</p>
+<h4 id="notificationofuntranslatedtextduringexportandprinting">Notification of untranslated text during export and printing</h4>
+<p>A message is now displayed during intelligent PDF export and file/project printing when not all text for the selected language or alternative language can be output.</p>
+<h4 id="motherlanguageforimportintodictionary">Mother language for import into dictionary</h4>
+<p>The mother language when importing into the dictionary can no longer be freely determined, but now corresponds to the mother language of the dictionary.</p>
+<h4 id="decimalplacesfixedindialogtext">Decimal places fixed in dialog Text</h4>
+<p>The number of decimal places in the Text dialog is no longer determined by the settings for the number of decimal places for the display, but is fixed at two.</p>
+<h4 id="exclusivelypotentiallytranslatabletextsindialogtranslations">Exclusively potentially translatable texts in dialog Translations</h4>
+<p>The Translations dialog now lists only those texts that are potentially translatable. These are texts with the text type comment and variable.</p>
 <h2 id="7119betareleasedate11112019releasedate">7.1.19-beta <releasedate>11/11/2019</releasedate></h2>
+<h3 id="cad-4">CAD</h3>
+<h4 id="filteroptimizedinallfilterableforeignlanguagetranslationlists">Filter optimized in all filterable foreign language translation lists</h4>
+<p>All filters now work like the full text search. The input is divided into words and each word must occur. Word separators are all forms of spaces as well as the CAD line breaks up and down.</p>
+<h4 id="dialogtitlesadjusted">Dialog titles adjusted</h4>
+<p>The "Edit Text" dialog has been renamed to "Text". The "Edit Translation and Add to Dictionary" dialog has been renamed to "Translation (Add)". The "Edit translation and update in dictionary" dialog has been renamed to "Translation (update)".</p>
+<h4 id="addedwhitelisttodeterminethetranslatabilityofvariabletexts">Added whitelist to determine the translatability of variable texts</h4>
+<p>The file "TranslatableWhitelist.txt" has been added to the AppData directory. This file contains the contents of the variable texts, which should be marked as translatable when converting a drawing.</p>
 <h3 id="crm">CRM</h3>
 <h4 id="filterexecutionoptimized">Filter execution optimized</h4>
 <p>Address filters can be used to search for specific addresses. Depending on the application, very complex filters can be created, which take several minutes to execute. 
@@ -291,7 +373,7 @@ This mechanism did not work properly in all situations.</p>
 <h2 id="7118betareleasedate11042019releasedate">7.1.18-beta <releasedate>11/04/2019</releasedate></h2>
 <p>General optimizations and stability improvements.</p>
 <h2 id="7117betareleasedate10292019releasedate">7.1.17-beta <releasedate>10/29/2019</releasedate></h2>
-<h3 id="cad-1">CAD</h3>
+<h3 id="cad-5">CAD</h3>
 <h4 id="optimizedforeignlanguagetranslation">Optimized foreign language translation</h4>
 <p>Input of translations optimized and internal application preparations for the translation function significantly accelerated. </p>
 <h3 id="cadprojektliste">CAD Projektliste</h3>
@@ -357,7 +439,7 @@ In future they can be used directly via the new address list.</p>
 <p>During duplicate resolution, salesman are deleted and entered again. 
 For this purpose, a history entry is created to log this process.
 Now the user is correctly informed if settings are missing and have to be added in the options dialog.</p>
-<h3 id="cad-2">CAD</h3>
+<h3 id="cad-6">CAD</h3>
 <h4 id="f2functionnewlyimplementedandswitchedtodockablewindows">F2 function newly implemented and switched to dockable windows</h4>
 <p>The F2 function was implemented from scratch and switched to undockable windows.
 The articles/symbols to be displayed are now loaded much faster. The window handling
@@ -371,7 +453,7 @@ was significantly improved. A list of the advantages:</p>
 <li>More modern look</li>
 </ul>
 <h2 id="712betareleasedate08132019releasedate">7.1.2-beta <releasedate>08/13/2019</releasedate></h2>
-<h3 id="cad-3">CAD</h3>
+<h3 id="cad-7">CAD</h3>
 <h4 id="newforeignlanguagetranslationandnewzngdataformat">New foreign language translation and new ZNG data format</h4>
 <p>The newly developed foreign language translation is now available to you.
 Translations no longer replace the texts of drawings, but supplement them.</p>
@@ -387,7 +469,7 @@ an error message is displayed and no changes are made to the project name and di
 <h3 id="crmeinstellungen">CRM Einstellungen</h3>
 <h4 id="deletingmaingroupsgroupssubjects">Deleting Main Groups/Groups Subjects</h4>
 <p>Subject deletion is now possible even if the subject is still in use.</p>
-<h3 id="cadkonverter">CAD Konverter</h3>
+<h3 id="cadkonverter-1">CAD Konverter</h3>
 <h4 id="circleswithsmallradiiareexportedaspoints">Circles with small radii are exported as points</h4>
 <p>It may happen that circles with small radii were exported as a point, even if the circle is part of a symbol with a high scaling factor.</p>
 <h2 id="710betareleasedate09072019releasedate">7.1.0-beta <releasedate>09.07.2019</releasedate></h2>
@@ -417,7 +499,7 @@ If you are using a batch-based script for the backup, please correct the names o
 <p>So far we have delivered the program IBOConsole for the separate access to the database. 
 Due to age and technical problems this tool has now been replaced by Flamerobin. 
 In the program directory of Treesoft Office there is a link to start Flamerobin with preconfigured databases.</p>
-<h3 id="cadkonverter-1">CAD Konverter</h3>
+<h3 id="cadkonverter-2">CAD Konverter</h3>
 <h4 id="redesignofwizardselectionandtoolbar">Redesign of wizard selection and toolbar</h4>
 <p>The names of the wizards and some icons have been updated. A more detailed description of each wizard is now displayed in the wizard selection.</p>
 <h4 id="projectbasedwork">Project-based work</h4>
