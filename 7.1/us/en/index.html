@@ -106,6 +106,14 @@
                                     
                                     <div style="margin-top: 5px">
                                         <b>
+                                            <a class="item" href="#7124releasedate12102019releasedate">
+                                                7.1.24
+                                            </a>
+                                        </b>
+                                    </div>
+                                    
+                                    <div style="margin-top: 5px">
+                                        <b>
                                             <a class="item" href="#7123releasedate11292019releasedate">
                                                 7.1.23
                                             </a>
@@ -235,16 +243,33 @@
   <p>This article was translated by machine.</p>
 </blockquote>
 <h1 id="changelogversion71">Changelog Version 7.1</h1>
-<h2 id="7123releasedate11292019releasedate">7.1.23 <releasedate>11/29/2019</releasedate></h2>
+<h2 id="7124releasedate12102019releasedate">7.1.24 <releasedate>12/10/2019</releasedate></h2>
 <h3 id="crmadressverwaltung">CRM Adressverwaltung</h3>
+<h4 id="globalkeyboardshortcutsintheaddresslist">Global keyboard shortcuts in the address list</h4>
+<p>Until now the global shortcuts could not be used in the new address list, this has now been fixed so that the shortcuts can also be used here.</p>
+<h3 id="cad">CAD</h3>
+<h4 id="deletedialogpositions">Delete dialog positions.</h4>
+<p>"Delete dialog positions" from the window menu now also resets the positions of the "Set symbols via catalog tree" windows.</p>
+<h4 id="setsymbolviacatalogtreewithoutfunction">Set symbol via catalog tree without function.</h4>
+<p>Only symbols from the respective library, electronics technology or cabinet construction could be set in the schematic and cabinet assistant via the graphics and name window.</p>
+<h4 id="smallsymbolpreviewcannotbehidden">Small symbol preview cannot be hidden</h4>
+<p>Small symbol preview (article/name) cannot be hidden, try to enable this explicitly (usually this is the default).</p>
+<h3 id="cadkonverter">CAD Konverter</h3>
+<h4 id="displayoftheworkarea">Display of the work area</h4>
+<p>When using the "Update floor plan" function, the maximum dimensions of the working area are no longer displayed.</p>
+<h4 id="starting">Starting</h4>
+<p>If the CAD Converter was started from the CAD wizard selection, a message appeared saying that the active project is already being processed and that the CAD Converter is therefore not working. 
+This message no longer appears if the same user has opened the project in CAD and wants to open it in CAD Converter. If another user tries to open the project in the CAD Converter, this message still appears.</p>
+<h2 id="7123releasedate11292019releasedate">7.1.23 <releasedate>11/29/2019</releasedate></h2>
+<h3 id="crmadressverwaltung-1">CRM Adressverwaltung</h3>
 <h4 id="addresslistlosesmarkerswhenmultiplemarkersareenabled">Address list loses markers when multiple markers are enabled</h4>
 <p>The multiple marker could easily be lost by accidental clicking in the table. 
 Now it behaves as expected, so the check box must be checked or unchecked directly. 
 A click on the row is no longer sufficient.</p>
-<h3 id="cadkonverter">CAD Konverter</h3>
+<h3 id="cadkonverter-1">CAD Konverter</h3>
 <h4 id="projectlockdown">Project lockdown</h4>
 <p>The CAD converter now checks unilaterally whether the project to be processed has been locked.</p>
-<h3 id="cad">CAD</h3>
+<h3 id="cad-1">CAD</h3>
 <h4 id="foreignlanguagetranslationextendedbyadditionallanguages">Foreign language translation extended by additional languages</h4>
 <p>The range of languages output with the character set "ISO 3098" has been extended. See https://github.com/hikikomori82/osifont</p>
 <h4 id="foreignlanguagetranslationextendedbyadditionallanguagescharactersets">Foreign language translation extended by additional languages/character sets</h4>
@@ -295,7 +320,7 @@ circuit is distributed over different floor plans, these are displayed in a diff
 <p>The list "Cable connections" is sorted by the column "Circuit" by default. This column was previously sorted numerically, so that alphanumeric circuits can be mixed 
 up into were included in the list. Now an alphanumeric sorting is applied.</p>
 <h2 id="7122betareleasedate11222019releasedate">7.1.22-beta <releasedate>11/22/2019</releasedate></h2>
-<h3 id="cad-1">CAD</h3>
+<h3 id="cad-2">CAD</h3>
 <h4 id="statusintranslationdialogenhanced">Status in Translation Dialog Enhanced</h4>
 <p>Translated texts that do not contain translations for the current language or alternative language are now highlighted by separate icons and tooltips.</p>
 <h4 id="previewindialogtranslations">Preview in dialog Translations</h4>
@@ -309,7 +334,7 @@ All CRM customers can now retrieve
 Only the duplicate resolution requires an additional license. 
 If such a license is not yet available, the help opens with a detailed description and why you should definitely use this module.</p>
 <h2 id="7121betareleasedate11182019releasedate">7.1.21-beta <releasedate>11/18/2019</releasedate></h2>
-<h3 id="cad-2">CAD</h3>
+<h3 id="cad-3">CAD</h3>
 <h4 id="whitelistcreatedwhenstartingtreesoftcad">Whitelist created when starting Treesoft CAD</h4>
 <p>The "TranslatableWhitelist.txt" file is now created when Treesoft CAD is started if it is not already present. For new installations, the file is created directly.</p>
 <h4 id="adjustmentofthebuttonsinthetoolbarsoftheforeignlanguagetranslationdialogs">Adjustment of the buttons in the toolbars of the foreign language translation dialogs</h4>
@@ -333,7 +358,7 @@ If such a license is not yet available, the help opens with a detailed descripti
 <h4 id="databasepathremovedfromstatusbar">Database path removed from status bar</h4>
 <p>The database path is no longer displayed in the status bar.</p>
 <h2 id="7120betareleasedate11152019releasedate">7.1.20-beta <releasedate>11/15/2019</releasedate></h2>
-<h3 id="cad-3">CAD</h3>
+<h3 id="cad-4">CAD</h3>
 <h4 id="problemssavingdrawingswithtpiecesfixed">Problems saving drawings with T-pieces fixed</h4>
 <p>When saving drawings in the new data format, it could happen that several symbol definitions were generated for similar T-connectors. When reading such a drawing the processing could crash.</p>
 <h4 id="autocompletionoptimized">Autocompletion optimized</h4>
@@ -347,7 +372,7 @@ If such a license is not yet available, the help opens with a detailed descripti
 <h4 id="exclusivelypotentiallytranslatabletextsindialogtranslations">Exclusively potentially translatable texts in dialog Translations</h4>
 <p>The Translations dialog now lists only those texts that are potentially translatable. These are texts with the text type comment and variable.</p>
 <h2 id="7119betareleasedate11112019releasedate">7.1.19-beta <releasedate>11/11/2019</releasedate></h2>
-<h3 id="cad-4">CAD</h3>
+<h3 id="cad-5">CAD</h3>
 <h4 id="filteroptimizedinallfilterableforeignlanguagetranslationlists">Filter optimized in all filterable foreign language translation lists</h4>
 <p>All filters now work like the full text search. The input is divided into words and each word must occur. Word separators are all forms of spaces as well as the CAD line breaks up and down.</p>
 <h4 id="dialogtitlesadjusted">Dialog titles adjusted</h4>
@@ -373,14 +398,14 @@ This mechanism did not work properly in all situations.</p>
 <h2 id="7118betareleasedate11042019releasedate">7.1.18-beta <releasedate>11/04/2019</releasedate></h2>
 <p>General optimizations and stability improvements.</p>
 <h2 id="7117betareleasedate10292019releasedate">7.1.17-beta <releasedate>10/29/2019</releasedate></h2>
-<h3 id="cad-5">CAD</h3>
+<h3 id="cad-6">CAD</h3>
 <h4 id="optimizedforeignlanguagetranslation">Optimized foreign language translation</h4>
 <p>Input of translations optimized and internal application preparations for the translation function significantly accelerated. </p>
 <h3 id="cadprojektliste">CAD Projektliste</h3>
 <h4 id="tabforcadfilesrenamedfromtreecadtocad">Tab for CAD files renamed from TreeCAD to CAD</h4>
 <h3 id="crm-1">CRM</h3>
-<h4 id="meneintrgemarkiereninvertierenausadressemenentfernt">Menü-Einträge Markieren &amp; Invertieren aus Adresse-Menü entfernt</h4>
-<p>Diese beiden Funktionen haben einen sehr starken Bezug zur Adressliste und sollen zukünftig direkt darüber verwendet werden.</p>
+<h4 id="menuitemsmarkinvertremovedfromaddressmenu">Menu items Mark &amp; Invert removed from Address menu</h4>
+<p>These two functions have a very strong relation to the address list and will be used directly above it in the future.</p>
 <h3 id="treesoftoffice">Treesoft Office</h3>
 <h4 id="twoerrormessageswithwronglogin">Two error messages with wrong login</h4>
 <p>If you try to log in with an incorrect user name or password, an error message will appear. 
@@ -422,7 +447,7 @@ If the Datanorm file did not contain net prices, but the price file did, then it
 The prices were imported correctly, but were not available for price calculation. 
 This error has now been corrected.</p>
 <h2 id="7115betareleasedate10112019releasedate">7.1.15-beta <releasedate>10/11/2019</releasedate></h2>
-<h3 id="crmadressverwaltung-1">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-2">CRM Adressverwaltung</h3>
 <h4 id="menucommandsmarkandinvertremovedfrommenuaddress">Menu commands Mark and invert removed from menu address</h4>
 <p>The menu Address previously contained the two menu commands Mark and Invert.
 These commands refer exclusively to the address list and were therefore removed from this menu.
@@ -432,14 +457,14 @@ In future they can be used directly via the new address list.</p>
 <h4 id="missingcommandsintreesoftcadwindowmenuadded">Missing commands in Treesoft CAD window menu added</h4>
 <p>The window menu in Treesoft CAD now contains the e-mail outbox, e-mails in transit and the notifier in addition to the e-mail inbox.</p>
 <h2 id="7113betareleasedate10032019releasedate">7.1.13-beta <releasedate>10/03/2019</releasedate></h2>
-<h3 id="crmadressverwaltung-2">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-3">CRM Adressverwaltung</h3>
 <h4 id="menucommandsearchforduplicatesrenamedtoduplicatecleanup">Menu command "Search for duplicates…" renamed to "Duplicate cleanup…</h4>
 <h3 id="crmdublettenbereinigung-1">CRM Dublettenbereinigung</h3>
 <h4 id="notificationofmissingsalesmansettings">Notification of missing salesman settings</h4>
 <p>During duplicate resolution, salesman are deleted and entered again. 
 For this purpose, a history entry is created to log this process.
 Now the user is correctly informed if settings are missing and have to be added in the options dialog.</p>
-<h3 id="cad-6">CAD</h3>
+<h3 id="cad-7">CAD</h3>
 <h4 id="f2functionnewlyimplementedandswitchedtodockablewindows">F2 function newly implemented and switched to dockable windows</h4>
 <p>The F2 function was implemented from scratch and switched to undockable windows.
 The articles/symbols to be displayed are now loaded much faster. The window handling
@@ -453,7 +478,7 @@ was significantly improved. A list of the advantages:</p>
 <li>More modern look</li>
 </ul>
 <h2 id="712betareleasedate08132019releasedate">7.1.2-beta <releasedate>08/13/2019</releasedate></h2>
-<h3 id="cad-7">CAD</h3>
+<h3 id="cad-8">CAD</h3>
 <h4 id="newforeignlanguagetranslationandnewzngdataformat">New foreign language translation and new ZNG data format</h4>
 <p>The newly developed foreign language translation is now available to you.
 Translations no longer replace the texts of drawings, but supplement them.</p>
@@ -469,7 +494,7 @@ an error message is displayed and no changes are made to the project name and di
 <h3 id="crmeinstellungen">CRM Einstellungen</h3>
 <h4 id="deletingmaingroupsgroupssubjects">Deleting Main Groups/Groups Subjects</h4>
 <p>Subject deletion is now possible even if the subject is still in use.</p>
-<h3 id="cadkonverter-1">CAD Konverter</h3>
+<h3 id="cadkonverter-2">CAD Konverter</h3>
 <h4 id="circleswithsmallradiiareexportedaspoints">Circles with small radii are exported as points</h4>
 <p>It may happen that circles with small radii were exported as a point, even if the circle is part of a symbol with a high scaling factor.</p>
 <h2 id="710betareleasedate09072019releasedate">7.1.0-beta <releasedate>09.07.2019</releasedate></h2>
@@ -499,7 +524,7 @@ If you are using a batch-based script for the backup, please correct the names o
 <p>So far we have delivered the program IBOConsole for the separate access to the database. 
 Due to age and technical problems this tool has now been replaced by Flamerobin. 
 In the program directory of Treesoft Office there is a link to start Flamerobin with preconfigured databases.</p>
-<h3 id="cadkonverter-2">CAD Konverter</h3>
+<h3 id="cadkonverter-3">CAD Konverter</h3>
 <h4 id="redesignofwizardselectionandtoolbar">Redesign of wizard selection and toolbar</h4>
 <p>The names of the wizards and some icons have been updated. A more detailed description of each wizard is now displayed in the wizard selection.</p>
 <h4 id="projectbasedwork">Project-based work</h4>

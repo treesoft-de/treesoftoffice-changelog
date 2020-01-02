@@ -106,6 +106,14 @@
                                     
                                     <div style="margin-top: 5px">
                                         <b>
+                                            <a class="item" href="#7124releasedate10122019releasedate">
+                                                7.1.24
+                                            </a>
+                                        </b>
+                                    </div>
+                                    
+                                    <div style="margin-top: 5px">
+                                        <b>
                                             <a class="item" href="#7123releasedate29112019releasedate">
                                                 7.1.23
                                             </a>
@@ -232,16 +240,33 @@
                         
                         <div id="contentArea">
                             <h1 id="nderungsprotokollversion71">Änderungsprotokoll Version 7.1</h1>
-<h2 id="7123releasedate29112019releasedate">7.1.23 <releasedate>29.11.2019</releasedate></h2>
+<h2 id="7124releasedate10122019releasedate">7.1.24 <releasedate>10.12.2019</releasedate></h2>
 <h3 id="crmadressverwaltung">CRM Adressverwaltung</h3>
+<h4 id="globaletastenkrzelinderadressliste">Globale Tastenkürzel in der Adressliste</h4>
+<p>Bisher konnten die globalen Tastenkürzel in der neuen Adressliste nicht benutzt werden, dies wurde nun behoben sodass die Tastenkürzel auch hier verwendbar sind.</p>
+<h3 id="cad">CAD</h3>
+<h4 id="dialogpositionenlschen">Dialogpositionen löschen.</h4>
+<p>"Dialogpositionen löschen" aus dem Fenster-Menü setzt jetzt auch die Positionen der "Symbole setzen über Katalogbaum"-Fenster zurück.</p>
+<h4 id="symbolberkatalogbaumsetzenohnefunktion">Symbol über Katalogbaum setzen ohne Funktion</h4>
+<p>Im Schaltplan- sowie Schaltschrankassistenten konnten, über das Grafik- und Namen-Fenster, nur Symbole aus der jeweiligen Bibliothek, Elektrontechnik bzw. Schaltschrank-Kontstruktion, gesetzt werden.</p>
+<h4 id="kleinesymbolvorschaukannnichtausgeblendetwerden">Kleine Symbolvorschau kann nicht ausgeblendet werden</h4>
+<p>Kleine Symbolvorschau (Artikel/Namen) kann nicht ausgeblendet werden, versuch dies explizit einzuschalten (normalerweise ist dies der default).</p>
+<h3 id="cadkonverter">CAD Konverter</h3>
+<h4 id="darstellungdesarbeitsbereichs">Darstellung des Arbeitsbereichs</h4>
+<p>Bei Verwendung der Funktion "Grundriss aktualisieren" werden die maximalen Ausmaße des Arbeitsbereichs nicht mehr angezeigt.</p>
+<h4 id="startenberdieassistentenauswahldescad">Starten über die Assistentenauswahl des CAD</h4>
+<p>Wenn der CAD Konverter über die Assistentenauswahl des CAD gestartet wurde, erschien die Meldung, dass das aktive Projekt bereits bearbeitet wird und der CAD Konverter aus diesem Grund nicht 
+gestartet werden kann. Diese Meldung erscheint nun nicht mehr, wenn der gleiche Benutzer das Projekt im CAD geöffnet hat und im CAD Konverter öffnen möchte. Versucht ein anderer Benutzer, das Projekt im CAD Konverter zu öffnen, dann erscheint diese Meldung weiterhin.</p>
+<h2 id="7123releasedate29112019releasedate">7.1.23 <releasedate>29.11.2019</releasedate></h2>
+<h3 id="crmadressverwaltung-1">CRM Adressverwaltung</h3>
 <h4 id="adresslisteverliertmarkierungenbeiaktiviertermehrfachmarkierung">Adressliste verliert Markierungen bei aktivierter Mehrfachmarkierung</h4>
 <p>Die Mehrfachmarkierung konnten leicht durch versehentliches Klicken in der Tabelle verloren gehen. 
 Nun verhält sie sich wie erwartet, sodass das Kontrollkästchen direkt aktiviert oder deaktiviert werden muss. 
 Ein Klick auf die Zeile reicht dafür nicht mehr aus.</p>
-<h3 id="cadkonverter">CAD Konverter</h3>
+<h3 id="cadkonverter-1">CAD Konverter</h3>
 <h4 id="projektsperrung">Projektsperrung</h4>
 <p>Der CAD Konverter prüft nun einseitig, ob eine Sperrung des zu bearbeitenden Projekts vorliegt.</p>
-<h3 id="cad">CAD</h3>
+<h3 id="cad-1">CAD</h3>
 <h4 id="fremdsprachenbersetzungumzustzlichesprachenerweitert">Fremdsprachenübersetzung um zusätzliche Sprachen erweitert</h4>
 <p>Die Palette an Sprachen die mit dem Zeichensatz "ISO 3098" ausgegeben werden, wurde erweitert. Siehe https://github.com/hikikomori82/osifont</p>
 <h4 id="fremdsprachenbersetzungumzustzlichesprachenzeichenstzeerweitert">Fremdsprachenübersetzung um zusätzliche Sprachen/Zeichensätze erweitert</h4>
@@ -292,7 +317,7 @@ Stromkreises auf unterschiedliche Grundrisse verteilt, so werden diese in einem 
 <p>Die Liste "Kabel-/Leitungsverbindungen" ist standardmäßig nach der Spalte "Stromkreis" sortiert. Diese wurde bisher numerisch sortiert, so dass alphanumerische Stromkreise durcheinander in
 der Liste aufgeführt wurden. Jetzt wird eine alphanumerische Sortierung angewendet.</p>
 <h2 id="7122betareleasedate22112019releasedate">7.1.22-beta <releasedate>22.11.2019</releasedate></h2>
-<h3 id="cad-1">CAD</h3>
+<h3 id="cad-2">CAD</h3>
 <h4 id="statusimdialogbersetzungenerweitert">Status im Dialog Übersetzungen erweitert</h4>
 <p>Übersetze Texte, welche jedoch keine Übersetzungen für die aktuelle Sprache bzw. alternative Sprache beinhalten, werden nun durch gesonderte Icons und Tooltipps hervorgehoben.</p>
 <h4 id="vorschauimdialogbersetzungen">Vorschau im Dialog Übersetzungen</h4>
@@ -306,7 +331,7 @@ Dubletten finden können alle CRM-Kunden nun als Teil des Basismoduls.
 Lediglich die Dublettenauflösung erfordert eine zusätzliche Lizenz. 
 Wenn solch eine Lizenz noch nicht vorhanden ist, öffnet sich nun die Hilfe mit einer detaillierten Beschreibung und warum Sie dieses Modul definitiv verwenden sollten.</p>
 <h2 id="7121betareleasedate18112019releasedate">7.1.21-beta <releasedate>18.11.2019</releasedate></h2>
-<h3 id="cad-2">CAD</h3>
+<h3 id="cad-3">CAD</h3>
 <h4 id="whitelistbeimstartvontreesoftcaderstellt">Whitelist beim Start von Treesoft CAD erstellt</h4>
 <p>Die Datei TranslatableWhitelist.txt wird nun beim Start von Treesoft CAD erstellt, wenn diese nicht vorhanden ist. Bei Neuinstallationen wird die Datei direkt angelegt.</p>
 <h4 id="anpassungderschaltflchenindentoolleistenderdialogederfremdsprachenbersetzung">Anpassung der Schaltflächen in den Toolleisten der Dialoge der Fremdsprachenübersetzung</h4>
@@ -330,7 +355,7 @@ Wenn solch eine Lizenz noch nicht vorhanden ist, öffnet sich nun die Hilfe mit 
 <h4 id="datenbankpfadausstatuszeileentfernt">Datenbankpfad aus Statuszeile entfernt</h4>
 <p>Der Datenbankpfad wird nicht länger in der Statuszeile angezeigt.</p>
 <h2 id="7120betareleasedate15112019releasedate">7.1.20-beta <releasedate>15.11.2019</releasedate></h2>
-<h3 id="cad-3">CAD</h3>
+<h3 id="cad-4">CAD</h3>
 <h4 id="problemebeimspeichernvonzeichnungenmittstckenbehoben">Probleme beim Speichern von Zeichnungen mit T-Stücken behoben</h4>
 <p>Beim Speichern von Zeichnungen im neuen Datenformat, konnte es vorkommen, dass für gleichartige T-Stücke mehrere Symboldefinitionen generiert wurden. Beim Lesen einer solchen Zeichnung konnte die Auswertung abstürzen.</p>
 <h4 id="autovervollstndigungoptimiert">Autovervollständigung optimiert</h4>
@@ -344,7 +369,7 @@ Wenn solch eine Lizenz noch nicht vorhanden ist, öffnet sich nun die Hilfe mit 
 <h4 id="ausschlielichpotenziellbersetzbaretexteindialogbersetzungen">Ausschließlich potenziell übersetzbare Texte in Dialog Übersetzungen</h4>
 <p>Im Dialog Übersetzungen werden nun ausschließlich die Texte aufgelistet, welche potenziell übersetzbar sind. Dies sind Texte mit dem Texttyp Kommentar und Variable.</p>
 <h2 id="7119betareleasedate11112019releasedate">7.1.19-beta <releasedate>11.11.2019</releasedate></h2>
-<h3 id="cad-4">CAD</h3>
+<h3 id="cad-5">CAD</h3>
 <h4 id="filterinallenfilterbarenlistenderfremdsprachenbersetzungoptimiert">Filter in allen filterbaren Listen der Fremdsprachenübersetzung optimiert</h4>
 <p>Alle Filter arbeiten nun wie die Volltextsuche. Die Eingabe wird in Wörter gegliedert und jedes Wort muss vorkommen. Worttrenner sind alle Formen von Leerzeichen sowie die CAD Zeilenumbrüche nach oben und nach unten.</p>
 <h4 id="dialogtitelangepasst">Dialogtitel angepasst</h4>
@@ -370,14 +395,14 @@ Dieser Mechanismus hatte nicht in allen Situationen sauber funktioniert.</p>
 <h2 id="7118betareleasedate04112019releasedate">7.1.18-beta <releasedate>04.11.2019</releasedate></h2>
 <p>Allgemeine Optimierungen und Verbesserungen der Stabilität.</p>
 <h2 id="7117betareleasedate29102019releasedate">7.1.17-beta <releasedate>29.10.2019</releasedate></h2>
-<h3 id="cad-5">CAD</h3>
+<h3 id="cad-6">CAD</h3>
 <h4 id="fremdsprachenbersetzungoptimiert">Fremdsprachenübersetzung optimiert</h4>
 <p>Eingabe von Übersetzungen optimiert und anwendungsinterne Vorbereitungen für die Übersetzungsfunktion deutlich beschleunigt.</p>
 <h3 id="cadprojektliste">CAD Projektliste</h3>
 <h4 id="registerkartefrcaddateienumbenanntvontreecadnachcad">Registerkarte für CAD-Dateien umbenannt von TreeCAD nach CAD</h4>
 <h3 id="crm-1">CRM</h3>
-<h4 id="menuitemsmarkinvertremovedfromaddressmenu">Menu items Mark &amp; Invert removed from Address menu</h4>
-<p>These two functions have a very strong relation to the address list and will be used directly above it in the future.</p>
+<h4 id="meneintrgemarkiereninvertierenausadressemenentfernt">Menü-Einträge Markieren &amp; Invertieren aus Adresse-Menü entfernt</h4>
+<p>Diese beiden Funktionen haben einen sehr starken Bezug zur Adressliste und sollen zukünftig direkt darüber verwendet werden.</p>
 <h3 id="treesoftoffice">Treesoft Office</h3>
 <h4 id="zweifehlermeldungenbeifalschemlogin">Zwei Fehlermeldungen bei falschem Login</h4>
 <p>Versucht man sich mit einem falschen Benutzernamen oder Kennwort anzumelden, erscheint eine entsprechende Fehlermeldung. 
@@ -401,7 +426,7 @@ Dieser Fehler wurde nun korrigiert.</p>
 <p>Abhängig von der eingestellten Hintergrundfarbe war der Text eines Kalender-Eintrages schwer zu lesen. 
 Der Text orientiert sich nun an der Hintergrund-Farbe und wird entweder Schwarz oder Weiß dargestellt.</p>
 <h2 id="7116betareleasedate18102019releasedate">7.1.16-beta <releasedate>18.10.2019</releasedate></h2>
-<h3 id="crmadressverwaltung-1">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-2">CRM Adressverwaltung</h3>
 <h4 id="adresslistesuchenachtelefonnummerndieeinminusenthalten">Adressliste, Suche nach Telefonnummern, die ein Minus enthalten</h4>
 <p>Über die neue Adressliste kann man nach Auswahl von Kommunikation im Drop-down Listenfeld die komplette Kommunikation durchsuchen.
 Telefonnummern die ein Minus enthalten wurden dabei nicht gefunden.</p>
@@ -420,7 +445,7 @@ Wenn die Datanorm-Datei keine Netto-Preise enthielt, die Preis-Datei jedoch scho
 Die Preise wurden zwar korrekt importiert, standen jedoch nicht für die Preisberechnung zur Verfügung. 
 Dieser Fehler wurde nun korrigiert.</p>
 <h2 id="7115betareleasedate11102019releasedate">7.1.15-beta <releasedate>11.10.2019</releasedate></h2>
-<h3 id="crmadressverwaltung-2">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-3">CRM Adressverwaltung</h3>
 <h4 id="menbefehlemarkierenundinvertierenausmenadresseentfernt">Menübefehle Markieren und Invertieren aus Menü Adresse entfernt</h4>
 <p>Im Menü Adresse befanden sich bisher die beiden Menübefehle Markieren und Invertieren.
 Diese Befehle beziehen sich ausschließlich auf die Adressliste und wurden daher aus diesem Menü entfernt.
@@ -430,14 +455,14 @@ Zukünftig können sie direkt über die neue Adressliste verwendet werden.</p>
 <h4 id="fehlendebefehleimtreesoftcadfenstermenergnzt">Fehlende Befehle im Treesoft CAD Fenster-Menü ergänzt</h4>
 <p>Das Fenster-Menü in Treesoft CAD beinhaltet nun neben dem E-Mail Eingang auch den E-Mail Ausgang, E-Mails in Transit und den Notifier.</p>
 <h2 id="7113betareleasedate03102019releasedate">7.1.13-beta <releasedate>03.10.2019</releasedate></h2>
-<h3 id="crmadressverwaltung-3">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-4">CRM Adressverwaltung</h3>
 <h4 id="menbefehldublettensuchenindublettenbereinigungumbenannt">Menübefehl "Dubletten suchen…" in "Dublettenbereinigung…" umbenannt</h4>
 <h3 id="crmdublettenbereinigung-1">CRM Dublettenbereinigung</h3>
 <h4 id="benachrichtigungberfehlendeeinstellungenfrvertreter">Benachrichtigung über fehlende Einstellungen für Vertreter</h4>
 <p>Während der Dublettenauflösung werden Vertreter aus- und wieder eingetragen. 
 Hierfür wird jeweils ein Historieneintrag erzeugt, um diesen Vorgang zu protokollieren.
 Nun wird der Benutzer korrekt darüber informiert, wenn Einstellungen fehlen und im Optionendialog ergänzt werden müssen.</p>
-<h3 id="cad-6">CAD</h3>
+<h3 id="cad-7">CAD</h3>
 <h4 id="f2funktionneuimplementiertundaufdockbarefensterumgestellt">F2-Funktion neu implementiert und auf dockbare Fenster umgestellt</h4>
 <p>Die F2-Funktion wurde von Grund auf neu implementiert und auf abdockbare Fenster umgestellt.
 Die anzuzeigenden Artikel/Symbole werden jetzt wesentlich schneller geladen. Das Fensterhandling
@@ -451,7 +476,7 @@ wurde deutlich verbessert. Eine Auflistung der Vorteile:</p>
 <li>Moderneres Aussehen</li>
 </ul>
 <h2 id="712betareleasedate13082019releasedate">7.1.2-beta <releasedate>13.08.2019</releasedate></h2>
-<h3 id="cad-7">CAD</h3>
+<h3 id="cad-8">CAD</h3>
 <h4 id="neuefremdsprachenbersetzungundneueszngdatenformat">Neue Fremdsprachenübersetzung und neues ZNG-Datenformat</h4>
 <p>Ab sofort steht Ihnen die neu entwickelte Fremdsprachenübersetzung zur Verfügung.
 Übersetzungen ersetzen nicht länger die Texte von Zeichnungen, sonder ergänzen diese.</p>
@@ -467,7 +492,7 @@ wird eine Fehlermeldung angezeigt und es werden keine Änderungen am Projektname
 <h3 id="crmeinstellungen">CRM Einstellungen</h3>
 <h4 id="lschenvonhauptgruppengruppenbetreffs">Löschen von Hauptgruppen/Gruppen Betreffs</h4>
 <p>Das Löschen von Betreffs ist nun möglich, auch wenn der Betreff noch in Verwendung ist.</p>
-<h3 id="cadkonverter-1">CAD Konverter</h3>
+<h3 id="cadkonverter-2">CAD Konverter</h3>
 <h4 id="kreisemitkleinenradienwerdenalspunkteexportiert">Kreise mit kleinen Radien werden als Punkte exportiert</h4>
 <p>Es kann vorkommen, dass Kreise mit kleinen Radien als Punkt exportiert wurden, auch wenn der Kreis Bestandteil eines Symbols mit hohem Skalierungsfaktor ist.</p>
 <h2 id="710betareleasedate09072019releasedate">7.1.0-beta <releasedate>09.07.2019</releasedate></h2>
@@ -497,7 +522,7 @@ Falls sie ein Batch-Basiertes Skript für die Datensicherung verwenden, korrigie
 <p>Bisher haben wir für den separaten Zugriff auf die Datenbank das Programm IBOConsole mit ausgeliefert. 
 Aufgrund des Alters und technischer Probleme wurde dieses Tool nun durch Flamerobin ersetzt. 
 Im Programm-Verzeichnis von Treesoft Office befindet sich eine Verknüpfung, um Flamerobin mit vorkonfigurierten Datenbanken zu starten.</p>
-<h3 id="cadkonverter-2">CAD Konverter</h3>
+<h3 id="cadkonverter-3">CAD Konverter</h3>
 <h4 id="neugestaltungvonassistentenauswahlunddersymbolleiste">Neugestaltung von Assistentenauswahl und der Symbolleiste</h4>
 <p>Die Namen der Assistenten sowie einige Icons wurden aktualisiert. Zu jedem Assistenten wird in der Assistentenauswahl nun eine detailliertere Beschreibung angezeigt.</p>
 <h4 id="projektbasiertesarbeiten">Projektbasiertes Arbeiten</h4>
