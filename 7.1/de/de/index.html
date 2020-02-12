@@ -106,6 +106,54 @@
                                     
                                     <div style="margin-top: 5px">
                                         <b>
+                                            <a class="item" href="#7132releasedate06022020releasedate">
+                                                7.1.32
+                                            </a>
+                                        </b>
+                                    </div>
+                                    
+                                    <div style="margin-top: 5px">
+                                        <b>
+                                            <a class="item" href="#7131releasedate30012020releasedate">
+                                                7.1.31
+                                            </a>
+                                        </b>
+                                    </div>
+                                    
+                                    <div style="margin-top: 5px">
+                                        <b>
+                                            <a class="item" href="#7130releasedate29012020releasedate">
+                                                7.1.30
+                                            </a>
+                                        </b>
+                                    </div>
+                                    
+                                    <div style="margin-top: 5px">
+                                        <b>
+                                            <a class="item" href="#7129releasedate27012020releasedate">
+                                                7.1.29
+                                            </a>
+                                        </b>
+                                    </div>
+                                    
+                                    <div style="margin-top: 5px">
+                                        <b>
+                                            <a class="item" href="#7128releasedate24012020releasedate">
+                                                7.1.28
+                                            </a>
+                                        </b>
+                                    </div>
+                                    
+                                    <div style="margin-top: 5px">
+                                        <b>
+                                            <a class="item" href="#7127releasedate20012020releasedate">
+                                                7.1.27
+                                            </a>
+                                        </b>
+                                    </div>
+                                    
+                                    <div style="margin-top: 5px">
+                                        <b>
                                             <a class="item" href="#7126releasedate13012020releasedate">
                                                 7.1.26
                                             </a>
@@ -256,16 +304,100 @@
                         
                         <div id="contentArea">
                             <h1 id="nderungsprotokollversion71">Änderungsprotokoll Version 7.1</h1>
+<h2 id="7132releasedate06022020releasedate">7.1.32 <releasedate>06.02.2020</releasedate></h2>
+<p>Allgemeine Optimierungen und Verbesserungen der Stabilität.</p>
+<h2 id="7131releasedate30012020releasedate">7.1.31 <releasedate>30.01.2020</releasedate></h2>
+<p>Allgemeine Optimierungen und Verbesserungen der Stabilität.</p>
+<h2 id="7130releasedate29012020releasedate">7.1.30 <releasedate>29.01.2020</releasedate></h2>
+<h3 id="cadfremdsprachenbersetzung">CAD Fremdsprachenübersetzung</h3>
+<h4 id="differenziellekollisionsprfunghinzugefgt">Differenzielle Kollisionsprüfung hinzugefügt</h4>
+<p>Dem Dialog "Übersetzen" wurde der neue Filter "Nur Texte mit kollidierenden Übersetzungen anzeigen" hinzugefügt. Jeder einzelne Text wird in der jeweiligen Muttersprache auf Kollisionen mit anderen Objekten auf dem gleichen Blatt geprüft. Anschließend werden die Kollisionen für die dem Text hinterlegten Übersetzungen erneut geprüft. Sollten sich die Kollisionen unterscheiden, so werden diese in der gefilterten Liste entsprechend markiert.</p>
+<h3 id="startcenter">Start-Center</h3>
+<h4 id="anpassungfrbildschirmskalierung">Anpassung für Bildschirmskalierung</h4>
+<p>Die Darstellung im News-Widget berücksichtigt jetzt die im Betriebssystem eingestellte Bildschirmskalierung.</p>
+<h2 id="7129releasedate27012020releasedate">7.1.29 <releasedate>27.01.2020</releasedate></h2>
+<p>Allgemeine Optimierungen und Verbesserungen der Stabilität.</p>
+<h2 id="7128releasedate24012020releasedate">7.1.28 <releasedate>24.01.2020</releasedate></h2>
+<h3 id="cadfremdsprachenbersetzung-1">CAD Fremdsprachenübersetzung</h3>
+<h4 id="importverfahrenangepasst">Importverfahren angepasst</h4>
+<p>Der Excel-/CSV-Wörterbuch-Import gleicht die zu importierenden Übersetzungen über die Referenzsprache des Wörterbuchs ab. Enthielt der zu importierende Eintrag keine Übersetzung in der Referenzsprache, wurde dieser dem Wörterbuch einfach hinzugefügt. Ab sofort werden zu einem zu importierenden Eintrag ohne Übersetzung in der Referenzsprache, die Anzahl der übereinstimmenden Übersetzungen zu jedem Eintrag des Wörterbuchs ermittelt. Der zu importierende Eintrag wird anschließend mit dem Eintrag des Wörterbuchs mit den meisten Übereinstimmungen abgeglichen. Sollte sich kein Eintrag im Wörterbuch mit Übereinstimmungen finden, so wird der zu importierende Eintrag dem Wörterbuch hinzugefügt.</p>
+<h4 id="projektvorlagemuttersprache">Projektvorlage-Muttersprache</h4>
+<p>Im Optionendialog von Treesoft Office, im Zweig "Projekte &gt; Projekteinstellungen", kann nun die Projektvorlage-Muttersprache eingestellt werden. Sie bestimmt die vorausgewählte Muttersprache bei der Anlage von neuen Projekten und bestimmt die Referenzsprache beim Import in das Wörterbuch von Treesoft CAD.</p>
+<h4 id="funktionbersetzenimgleichnamigendialogentschrft">Funktion "Übersetzen" im gleichnamigen Dialog entschärft</h4>
+<p>Die Funktion "Übersetzen" entfernt nicht länger Übersetzungen, welche nicht im Wörterbuch hinterlegt sind.</p>
+<h4 id="hinzufgenvonbersetzungenindaswrterbuchausdemdialogbersetzen">Hinzufügen von Übersetzungen in das Wörterbuch aus dem Dialog "Übersetzen"</h4>
+<p>Einträge der Zeichnung welche einem Eintrag im Wörterbuch zugeordnet werden können, werden beim Hinzufügen in das Wörterbuch nicht länger ignoriert.</p>
+<h4 id="funktionallebersetzenindialogbersetzenscheinbarohnefunktion">Funktion "Alle Übersetzen" in Dialog "Übersetzen" scheinbar ohne Funktion</h4>
+<p>Wurde in dem Dialog "Übersetzen" die Funktion "Alle Übersetzen" ausgeführt und der Dialog anschließen, ohne einen Eintrag in der Tabelle ausgewählt zu haben, über die Schaltfläche "OK" geschlossen, wurde die aktive Zeichnung nicht erneut geladen. Dies hatte zur Folge, dass scheinbar keine Übersetzungen hinterlegt wurden.</p>
+<h3 id="crm">CRM</h3>
+<h4 id="adressenzuadressgruppenhinzufgen">Adressen zu Adressgruppen hinzufügen</h4>
+<p>Es ist nun wieder möglich, Adressen zu Adressgruppen hinzuzufügen. Dies geschieht indem man die gewünschten Adressen markiert und anschließend im Kontextmenü der Adressliste "Adressen zu Adressgruppe hinzufügen" auswählt. Anschließend öffnet sich ein Dialog zum Auswählen der gewünschten Adressgruppe.</p>
+<h4 id="adressenausadressgruppeentfernen">Adressen aus Adressgruppe entfernen</h4>
+<p>Die Adressliste bietet nun die Möglichkeit, Adressen aus Adressgruppen zu entfernen. Hierzu muss man auf der linken Seite der Adressliste eine Adressgruppe auswählen und anschließend die zu entfernen gewünschten Adressen in der Adressliste markieren. Anschließend wählt man im Kontextmenü der Adressliste "Adressen aus Adressgruppe entfernen" aus.</p>
+<h4 id="adressenausadressuntergruppenbernehmen">Adressen aus Adress-Untergruppen übernehmen</h4>
+<p>Es ist nun möglich Adressen von Adress-Untergruppen in Adressgruppen zu übernehmen. Hierfür wählt man eine Adressgruppe mit Adress-Untergruppen in der Adressliste aus und führt anschließend im Kontextmenü der Adressgruppen "Adressen von Adress-Untergruppen übernehmen" aus.</p>
+<h4 id="linkaufadressehinzufgen">Link auf Adresse hinzufügen</h4>
+<p>Über die Adressliste können nun Ansprechpartner mit Adressen verlinkt werden, dies ging bisher nur übers Adressfenster.
+Hierfür muss man auf der rechten Seite der Adressliste einen Ansprechpartner auswählen und im Kontextmenü "Link auf Adresse hinzufügen" auswählen.</p>
+<h4 id="berarbeitungdesdialogszumauswhlenderadressgruppe">Überarbeitung des Dialogs zum Auswählen der Adressgruppe</h4>
+<p>Im Adressfenster kann man sich Adressgruppen anzeigen lassen indem man auf Listen, Gruppen klickt. Dieser Dialog wurde nun durch einen neuen Qt Dialog ausgetauscht. </p>
+<h4 id="eintrgemitadressenverknpfen">Einträge mit Adressen verknüpfen</h4>
+<p>Im Adressfenster kann man übers Kontextmenü Einträge mit Adressen verknüpfen, hier wurde die alte Adressliste durch die neue Adressliste ersetzt.</p>
+<h4 id="linkaufadressehinzufgen-1">Link auf Adresse hinzufügen</h4>
+<p>Im Adressfenster kann man bei den Ansprechpartnern übers Kontextmenü einzelne Ansprechpartner mit Adressen verlinken, hier wurde nun die alte Adressliste durch die neue Adressliste ausgetauscht.</p>
+<h4 id="alternativadressehinzufgen">Alternativadresse hinzufügen</h4>
+<p>Im Adressfenster kann man über die Menüleiste "Adresse, Alternativadressen, Alternativadressen hinzufügen" Alternativadressen der aktuell geöffneten Adresse zuordnen. Hier wurde die alte Adressliste durch die neue Adressliste ersetzt.</p>
+<h4 id="adresseneineradressgruppezuordnen">Adressen einer Adressgruppe zuordnen</h4>
+<p>Im Adressfenster kann man nun wieder über die Menüleiste "Adresse, Einer Adressgruppe zuordnen" die aktuell geöffnete Adresse einer Adressgruppe zuordnen, dies ging seit der Version 7.1.0 nicht.</p>
+<h3 id="crmfilter">CRM Filter</h3>
+<h4 id="filternnachadressennr">Filtern nach Adressen-Nr.</h4>
+<p>Im Adressfilterdialog kann man beim Erstellen und Bearbeiten von Adressfiltern nach bestimmten Adressnummern suchen, hier wurde die alte Adressliste durch die neue Adressliste ersetzt.</p>
+<h3 id="crmmailing">CRM Mailing</h3>
+<h4 id="adressewhlen">Adresse wählen</h4>
+<p>Beim Auswählen von E-Mail-Empfängern wurde bisher noch die alte Adressliste benutzt, diese wurde durch die neue Adressliste ausgetauscht.</p>
+<h3 id="projektverwaltung">Projektverwaltung</h3>
+<h4 id="hinzufgenvonadressen">Hinzufügen von Adressen</h4>
+<p>In der Projektverwaltung kann man Adressen in den Einstellungen hinzufügen. Hier wurde die alte Adressliste durch die neue Adressliste ersetzt.</p>
+<h2 id="7127releasedate20012020releasedate">7.1.27 <releasedate>20.01.2020</releasedate></h2>
+<h3 id="cad">CAD</h3>
+<h4 id="texteinexportierterpdffalschpositioniert">Texte in exportierter PDF falsch positioniert</h4>
+<p>Mittig oder rechtsbündig ausgerichtete Texte wurden in exportierten PDF-Dateien falsch positioniert.</p>
+<h3 id="cadfremdsprachenbersetzung-2">CAD Fremdsprachenübersetzung</h3>
+<h4 id="keinetexteinexportierterpdf">Keine Texte in exportierter PDF</h4>
+<p>Änderungen an den Fonts führten dazu, dass exportierte PDF-Dateien keine Texte mehr enthielten. Das Problem ließ sich nur durch einen anschließenden Neustart von Treesoft CAD beheben.</p>
+<h4 id="excelcsvexportimdialogbersetzen">Excel-/CSV-Export im Dialog "Übersetzen"</h4>
+<p>Über das Kontextmenü kann nun der Excel-/CSV-Export für ausgewählte Einträge, welche zuvor bereits dem Wörterbuch hinzugefügt sein müssen, gestartet werden.</p>
+<h4 id="importverfahrenfrexcelcsvwrterbuchzeichnungsimportindaswrterbuchangepasst">Importverfahren für Excel-/CSV-/Wörterbuch-/Zeichnungs-Import in das Wörterbuch angepasst</h4>
+<p>Das Importverfahren "Fehlende Übersetzungen hinzufügen" wurde entfernt. Die Namen der zwei verbleibenden Importverfahren wurden in "Hinzufügen und Ergänzen" bzw. "Überschreiben, Hinzufügen und Ergänzen" geändert und sie wurden um einen Tooltip ergänzt.</p>
+<h4 id="einstellungausexcelcsvimportentfernt">Einstellung aus Excel-/CSV-Import entfernt</h4>
+<p>Beim Excel-/CSV-Import wurde die Einstellung "Erste Zeile ist Kopfdatensatz:" entfernt. Zukünftig müssen alle zum importierenden Excel-/CSV-Dateien einen Kopfdatensatz beinhalten. Mehr Informationen können Sie der Kontexthilfe der betoffenden Importdialoge entnehmen.</p>
+<h4 id="darstellungsfehlerimwrterbuch">Darstellungsfehler im Wörterbuch</h4>
+<p>Nach dem Entfernen von mehreren Einträgen konnte es zu Darstellungsproblemen in der Liste kommen; Einträge waren falsch sortiert oder es wurde eine leere Zeile angezeigt.</p>
+<h3 id="crmadressverwaltung">CRM Adressverwaltung</h3>
+<h4 id="absturzbeimffnenvonsoftwareinformationen">Absturz beim Öffnen von Softwareinformationen</h4>
+<p>Beim Öffnen von Softwareinformationen konnte es zu einem Absturz kommen, wenn die Farb-ID einer Software-Gruppe einen bestimmten Wert erreicht hatte. Mit jeder neuen Software-Gruppe wird die Farbe intern automatisch hochgezählt.</p>
+<h4 id="findenvonadressennichtmglich">Finden von Adressen nicht möglich</h4>
+<p>Durch einen kleinen Fehler in der Adressliste war es unter bestimmten Umständen nicht möglich nach Adressen zu suchen.</p>
+<h3 id="treesoftoffice">Treesoft Office</h3>
+<h4 id="eingehendeemailkontenabrufenmancheremailsnichtmglich">Eingehende E-Mail Konten, Abrufen mancher E-Mails nicht möglich</h4>
+<p>Unter seltenen Umständen konnte es passieren, dass bestimme E-Mails durch unseren Mail-Agent nicht sauber von POP3 Konten abgeholt wurden.
+Dieses Problem trat im Zusammenspiel mit der Rechteverwaltung für E-Mails auf und konnte nur auftreten, wenn eine relevante Adresse oder ein relevantes E-Mail Konto Rechte besitzen.</p>
 <h2 id="7126releasedate13012020releasedate">7.1.26 <releasedate>13.01.2020</releasedate></h2>
 <p>Allgemeine Optimierungen und Verbesserungen der Stabilität.</p>
 <h2 id="7125releasedate07012020releasedate">7.1.25 <releasedate>07.01.2020</releasedate></h2>
-<h3 id="cad">CAD</h3>
+<h3 id="cad-1">CAD</h3>
+<h4 id="symboleabgleichen">Symbole Abgleichen</h4>
+<p>Diese Funktion importiert Informationen zu allen Symbolen in Bibliotheken in die Datenbank. 
+Sie stand bisher entweder über die Symbolverwaltung, über Symbole setzen (F4) oder die Umgebung im Optionendialog zur Verfügung.
+In Zukunft kann man sie unter dem Namen "Import" ausschließlich über die Umgebung im Optionendialog verwenden. 
+Zusätzlich gibt es dort einen "Export", der die Symbolinformationen aus der Datenbank auf die descript.ion-Datei in den Bibliotheken überträgt.</p>
+<h3 id="cadfremdsprachenbersetzung-3">CAD Fremdsprachenübersetzung</h3>
 <h4 id="schaltflchenimdialogbersetzen">Schaltflächen im Dialog "Übersetzen"</h4>
 <p>Die Schaltflächen "Übersetzbar schalten", "Nicht übersetzbar schalten" und "Übersetzbar umschalten" im Dialog "Übersetzen" werden nun je nach Übersetzbarkeit der ausgewählten Einträge aktiviert bzw. deaktiviert. Die Schaltflächen für die zusätzlichen Filter wurden nach links neben dem Textfilter angeordnet.</p>
 <h4 id="neuefilterimdialogbersetzen">Neue Filter im Dialog "Übersetzen"</h4>
 <p>Neben dem Filter "Nur übersetzbare Texte anzeigen" stehen nun auch die Filter "Nur aktivierte Zeichnungen anzeigen" (nicht in kumulierter Ansicht), "Nur übersetze Texte anzeigen", "Nur nicht übersetzte Texte anzeigen" und "Nur Texte ohne gefundene Übersetzung anzeigen" zur Verfügung.</p>
 <h4 id="funktionallehinzufgenimdialogbersetzen">Funktion "Alle hinzufügen" im Dialog "Übersetzen"</h4>
-<p>Die Funktion "Alle hinzufügen" ist nun übersetzbare Texte beschränkt.</p>
+<p>Die Funktion "Alle hinzufügen" ist nun auf übersetzbare Texte beschränkt.</p>
 <h4 id="funktionhinzufgenimdialogbersetzen">Funktion "Hinzufügen" im Dialog "Übersetzen"</h4>
 <p>Über das Kontextmenü können nun ausgewählte Texte und zu diesen hinterlegte Übersetzungen dem Wörterbuch hinzugefügt werden.</p>
 <h4 id="importdialogfrfunktionhinzufgenundallehinzufgenimdialogbersetzen">Importdialog für Funktion "Hinzufügen" und "Alle hinzufügen" im Dialog "Übersetzen"</h4>
@@ -274,23 +406,20 @@
 <p>Wurde einem Projekt die falsche Muttersprache zugeordnet und eine Zeichnung geöffnet und gespeichert, so haben alle Texte der gespeicherten Zeichnung nun die falsch zugeordnete Muttersprache. Die Anpassung der Projekt-Muttersprache ändert nicht die Muttersprache der jeweiligen Texte. Diese kann nun im Dialog "Text" mittels linken Mausklicks auf die Länderflagge links oberhalb der Texteingabe oder über das Kontextmenü im Dialog "Übersetzen" angepasst werden. Sollte ein Text bereits eine Übersetzung für die neue Muttersprache hinterlegt haben, so werden die Sprachen der betroffenen Übersetzung und des Textes getauscht. </p>
 <h4 id="bernahmevonbersetzungauswrterbuch">Übernahme von Übersetzung aus Wörterbuch</h4>
 <p>Im Dialog "Text" kann über die Schaltfläche "Wörterbuch" das Wörterbuch aufgerufen werden. Nach Auswahl eines geeigneten Eintrags kann dieser über die Schaltfläche "Übernehmen" übernommen werden. Neben den Übersetzungen wird nun auch der Text selbst mit den Inhalten des Eintrags aus dem Wörterbuch überschrieben.</p>
-<h4 id="symboleabgleichen">Symbole Abgleichen</h4>
-<p>Diese Funktion importiert Informationen zu allen Symbolen in Bibliotheken in die Datenbank. 
-Sie stand bisher entweder über die Symbolverwaltung, über Symbole setzen (F4) oder die Umgebung im Optionendialog zur Verfügung.
-In Zukunft kann man sie unter dem Namen "Import" ausschließlich über die Umgebung im Optionendialog verwenden. 
-Zusätzlich gibt es dort einen "Export", der die Symbolinformationen aus der Datenbank auf die descript.ion-Datei in den Bibliotheken überträgt.</p>
-<h3 id="crmadressverwaltung">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-1">CRM Adressverwaltung</h3>
 <h4 id="navigationimfeldfinden">Navigation im Feld "Finden"</h4>
-<p>Wenn der Fokus auf dem Feld "Finden" steht kann man nun mit den Pfeiltasten nun auch in der Liste hoch und runter navigieren.</p>
+<p>Wenn der Fokus auf dem Feld "Finden" steht, kann man nun mit den Pfeiltasten auch in der Liste hoch und runter navigieren.</p>
 <h4 id="globaletastenkrzelinderadressliste">Globale Tastenkürzel in der Adressliste</h4>
-<p>Globale Tastenkürzel wurden teilweise von den Eingabefeldern abgefangen und konnten somit nicht verwendet werden, dies wurde nun behoben sodass die globalen Tastenkürzel wie erwartet in der neuen Adressliste funktionieren.</p>
+<p>Globale Tastenkürzel wurden teilweise von den Eingabefeldern abgefangen und konnten somit nicht verwendet werden, dies wurde nun behoben, sodass die globalen Tastenkürzel wie erwartet in der neuen Adressliste funktionieren.</p>
 <h4 id="navigationsschaltflchenimadressfenster">Navigationsschaltflächen im Adressfenster</h4>
-<p>Die Schaltflächen zur Navigation unten rechts im Adressfenster waren bisher nicht mit der neuen Adressliste verbunden. Dies wurde nun so angepasst, sodass die Schaltflächen genutzt werden können um in der Adressliste zu navigieren.</p>
+<p>Die Schaltflächen zur Navigation unten rechts im Adressfenster waren bisher nicht mit der neuen Adressliste verbunden. Dies wurde nun so angepasst, sodass die Schaltflächen genutzt werden können, um in der Adressliste zu navigieren.</p>
+<h4 id="speichernderadressgruppenselektion">Speichern der Adressgruppen-Selektion</h4>
+<p>Die Adressgruppen-Selektion wurde zuvor gespeichert, dies wurde entfernt, da dies nicht intuitiv ist.</p>
 <h3 id="emailviewer">E-Mail Viewer</h3>
 <h4 id="fehlendeemailanhnge">Fehlende E-Mail Anhänge</h4>
 <p>Bei E-Mails, die ein gewisses vom Standard abweichendes Format besitzen, konnte es vorkommen, dass einzelne Anhänge nicht aus der E-Mail extrahiert werden konnten.</p>
 <h2 id="7124releasedate10122019releasedate">7.1.24 <releasedate>10.12.2019</releasedate></h2>
-<h3 id="crmadressverwaltung-1">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-2">CRM Adressverwaltung</h3>
 <h4 id="globaletastenkrzelinderadressliste-1">Globale Tastenkürzel in der Adressliste</h4>
 <p>Bisher konnten die globalen Tastenkürzel in der neuen Adressliste nicht benutzt werden, dies wurde nun behoben sodass die Tastenkürzel auch hier verwendbar sind.</p>
 <h4 id="falschebezeichnunginderadressliste">Falsche Bezeichnung in der Adressliste</h4>
@@ -301,7 +430,7 @@ Zusätzlich gibt es dort einen "Export", der die Symbolinformationen aus der Dat
 <p>Die Ansprechpartnerauswahl kann nun mit Doppelklick auf Adressen und Ansprechpartner bestätigt werden.</p>
 <h4 id="anzeigenvonadressenimgeodatentool">Anzeigen von Adressen im Geodaten-Tool</h4>
 <p>Adressen mit Postleitzahlen, zu denen mehrere Postleitzahlenbereiche zugeordnet werden konnten nicht angezeigt werden. Diese Adressen können nun auch wie erwartet angezeigt werden.</p>
-<h3 id="cad-1">CAD</h3>
+<h3 id="cad-2">CAD</h3>
 <h4 id="dialogpositionenlschen">Dialogpositionen löschen.</h4>
 <p>"Dialogpositionen löschen" aus dem Fenster-Menü setzt jetzt auch die Positionen der "Symbole setzen über Katalogbaum"-Fenster zurück.</p>
 <h4 id="symbolberkatalogbaumsetzenohnefunktion">Symbol über Katalogbaum setzen ohne Funktion</h4>
@@ -315,26 +444,29 @@ Zusätzlich gibt es dort einen "Export", der die Symbolinformationen aus der Dat
 <p>Wenn der CAD Konverter über die Assistentenauswahl des CAD gestartet wurde, erschien die Meldung, dass das aktive Projekt bereits bearbeitet wird und der CAD Konverter aus diesem Grund nicht 
 gestartet werden kann. Diese Meldung erscheint nun nicht mehr, wenn der gleiche Benutzer das Projekt im CAD geöffnet hat und im CAD Konverter öffnen möchte. Versucht ein anderer Benutzer, das Projekt im CAD Konverter zu öffnen, dann erscheint diese Meldung weiterhin.</p>
 <h2 id="7123releasedate29112019releasedate">7.1.23 <releasedate>29.11.2019</releasedate></h2>
-<h3 id="crmadressverwaltung-2">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-3">CRM Adressverwaltung</h3>
 <h4 id="adresslisteverliertmarkierungenbeiaktiviertermehrfachmarkierung">Adressliste verliert Markierungen bei aktivierter Mehrfachmarkierung</h4>
 <p>Die Mehrfachmarkierung konnten leicht durch versehentliches Klicken in der Tabelle verloren gehen. 
 Nun verhält sie sich wie erwartet, sodass das Kontrollkästchen direkt aktiviert oder deaktiviert werden muss. 
 Ein Klick auf die Zeile reicht dafür nicht mehr aus.</p>
+<h3 id="cad-3">CAD</h3>
+<h4 id="projektbezogenetextbausteindatei">Projektbezogene Textbausteindatei</h4>
+<p>Die Funktionen zum Erzeugen und Bearbeiten von projektbezogenen Textbausteindateien wurden entfernt.</p>
+<h4 id="ausgabeberintelligentempdfexport">Ausgabe über intelligentem PDF-Export</h4>
+<p>Alle PDF-Dateien werden nun wieder mit dem korrekten Zeichensatz ausgegeben.</p>
 <h3 id="cadkonverter-1">CAD Konverter</h3>
 <h4 id="projektsperrung">Projektsperrung</h4>
 <p>Der CAD Konverter prüft nun einseitig, ob eine Sperrung des zu bearbeitenden Projekts vorliegt.</p>
-<h3 id="cad-2">CAD</h3>
-<h4 id="fremdsprachenbersetzungumzustzlichesprachenerweitert">Fremdsprachenübersetzung um zusätzliche Sprachen erweitert</h4>
+<h3 id="cadfremdsprachenbersetzung-4">CAD Fremdsprachenübersetzung</h3>
+<h4 id="zustzlichesprachen">Zusätzliche Sprachen</h4>
 <p>Die Palette an Sprachen die mit dem Zeichensatz "ISO 3098" ausgegeben werden, wurde erweitert. Siehe https://github.com/hikikomori82/osifont</p>
-<h4 id="fremdsprachenbersetzungumzustzlichesprachenzeichenstzeerweitert">Fremdsprachenübersetzung um zusätzliche Sprachen/Zeichensätze erweitert</h4>
+<h4 id="zustzlichesprachenzeichenstze">Zusätzliche Sprachen/Zeichensätze</h4>
 <p>Um die Unterstützung von Chinesisch/Japanisch/Koreanisch herzustellen, wurden zusätzliche Zeichensätze hinzugefügt.
 Leider können diese zum jetzigen Zeitpunkt nicht einwandfrei über den PDF-Export genutzt werden. Bitte wenden Sie sich an unseren Support, sollten Sie diese per intelligentem PDF-Export ausgeben wollen.</p>
-<h4 id="fremdsprachenbersetzungummehrfachauswahlimwrterbucherweitert">Fremdsprachenübersetzung um Mehrfachauswahl im Wörterbuch erweitert</h4>
+<h4 id="mehrfachauswahlimwrterbuch">Mehrfachauswahl im Wörterbuch</h4>
 <p>Im Wörterbuch können nun mehrere Einträge zum Löschen markiert werden.</p>
-<h4 id="statusvonzeichenstzeninfremdsprachenbersetzung">Status von Zeichensätzen in Fremdsprachenübersetzung</h4>
+<h4 id="statusvonzeichenstzen">Status von Zeichensätzen</h4>
 <p>Zeichensätze welche nicht geladen werden können werden in der Liste der Zeichensätze nun in der Farbe rot dargestellt.</p>
-<h4 id="projektbezogenetextbausteindatei">Projektbezogene Textbausteindatei</h4>
-<p>Die Funktionen zum Erzeugen und Bearbeiten von projektbezogenen Textbausteindateien wurden entfernt.</p>
 <h4 id="muttersprachevonwrterbuchnurnochbertastenkombinationnderbar">Muttersprache von Wörterbuch nur noch über Tastenkombination änderbar</h4>
 <p>Die Muttersprache des Wörterbuchs wird über die Reihenfolge der Sprachen definiert. Der erste Eintrag ist immer die Muttersprache. Da dieser Eintrag eine besondere Bedeutung hat, ist dieser ausschließlich über die Tastenkombination STRG+ALT+UMSCHALT+M änderbar.</p>
 <h4 id="statusleisteumspracheundalternativespracheerweitert">Statusleiste um Sprache und alternative Sprache erweitert</h4>
@@ -355,8 +487,6 @@ Leider können diese zum jetzigen Zeitpunkt nicht einwandfrei über den PDF-Expo
 <p>Es wurden alle Textblöcke mit Ausnahme von "SPS-Blöcke" entfernt</p>
 <h4 id="ausschlussvonnumerischentexten">Ausschluss von numerischen Texten</h4>
 <p>Alle Texte welche keine Buchstaben enthalten werden nun als "Nicht übersetzbar" markiert.</p>
-<h4 id="ausgabeberintelligentempdfexport">Ausgabe über intelligentem PDF-Export</h4>
-<p>Alle PDF-Dateien werden nun mit dem korrekten Zeichensatz ausgegeben.</p>
 <h3 id="cadgebudetechnikassistent">CAD Gebäudetechnik-Assistent</h3>
 <h4 id="kopierenvonelektrobauteilen">Kopieren von Elektrobauteilen</h4>
 <p>Beim Kopieren von Elektrobauteilen wurde die Kennzeichnung mit kopiert, d.h. nach dem Kopiervorgang existierten zwei Elektrobauteile mit der gleichen Kennzeichnung im Grundrissplan. Um dies zu
@@ -374,7 +504,7 @@ Stromkreises auf unterschiedliche Grundrisse verteilt, so werden diese in einem 
 <p>Die Liste "Kabel-/Leitungsverbindungen" ist standardmäßig nach der Spalte "Stromkreis" sortiert. Diese wurde bisher numerisch sortiert, so dass alphanumerische Stromkreise durcheinander in
 der Liste aufgeführt wurden. Jetzt wird eine alphanumerische Sortierung angewendet.</p>
 <h2 id="7122betareleasedate22112019releasedate">7.1.22-beta <releasedate>22.11.2019</releasedate></h2>
-<h3 id="cad-3">CAD</h3>
+<h3 id="cad-4">CAD</h3>
 <h4 id="statusimdialogbersetzungenerweitert">Status im Dialog Übersetzungen erweitert</h4>
 <p>Übersetze Texte, welche jedoch keine Übersetzungen für die aktuelle Sprache bzw. alternative Sprache beinhalten, werden nun durch gesonderte Icons und Tooltipps hervorgehoben.</p>
 <h4 id="vorschauimdialogbersetzungen">Vorschau im Dialog Übersetzungen</h4>
@@ -388,7 +518,7 @@ Dubletten finden können alle CRM-Kunden nun als Teil des Basismoduls.
 Lediglich die Dublettenauflösung erfordert eine zusätzliche Lizenz. 
 Wenn solch eine Lizenz noch nicht vorhanden ist, öffnet sich nun die Hilfe mit einer detaillierten Beschreibung und warum Sie dieses Modul definitiv verwenden sollten.</p>
 <h2 id="7121betareleasedate18112019releasedate">7.1.21-beta <releasedate>18.11.2019</releasedate></h2>
-<h3 id="cad-4">CAD</h3>
+<h3 id="cad-5">CAD</h3>
 <h4 id="whitelistbeimstartvontreesoftcaderstellt">Whitelist beim Start von Treesoft CAD erstellt</h4>
 <p>Die Datei TranslatableWhitelist.txt wird nun beim Start von Treesoft CAD erstellt, wenn diese nicht vorhanden ist. Bei Neuinstallationen wird die Datei direkt angelegt.</p>
 <h4 id="anpassungderschaltflchenindentoolleistenderdialogederfremdsprachenbersetzung">Anpassung der Schaltflächen in den Toolleisten der Dialoge der Fremdsprachenübersetzung</h4>
@@ -412,7 +542,7 @@ Wenn solch eine Lizenz noch nicht vorhanden ist, öffnet sich nun die Hilfe mit 
 <h4 id="datenbankpfadausstatuszeileentfernt">Datenbankpfad aus Statuszeile entfernt</h4>
 <p>Der Datenbankpfad wird nicht länger in der Statuszeile angezeigt.</p>
 <h2 id="7120betareleasedate15112019releasedate">7.1.20-beta <releasedate>15.11.2019</releasedate></h2>
-<h3 id="cad-5">CAD</h3>
+<h3 id="cad-6">CAD</h3>
 <h4 id="problemebeimspeichernvonzeichnungenmittstckenbehoben">Probleme beim Speichern von Zeichnungen mit T-Stücken behoben</h4>
 <p>Beim Speichern von Zeichnungen im neuen Datenformat, konnte es vorkommen, dass für gleichartige T-Stücke mehrere Symboldefinitionen generiert wurden. Beim Lesen einer solchen Zeichnung konnte die Auswertung abstürzen.</p>
 <h4 id="autovervollstndigungoptimiert">Autovervollständigung optimiert</h4>
@@ -426,14 +556,14 @@ Wenn solch eine Lizenz noch nicht vorhanden ist, öffnet sich nun die Hilfe mit 
 <h4 id="ausschlielichpotenziellbersetzbaretexteindialogbersetzungen">Ausschließlich potenziell übersetzbare Texte in Dialog Übersetzungen</h4>
 <p>Im Dialog Übersetzungen werden nun ausschließlich die Texte aufgelistet, welche potenziell übersetzbar sind. Dies sind Texte mit dem Texttyp Kommentar und Variable.</p>
 <h2 id="7119betareleasedate11112019releasedate">7.1.19-beta <releasedate>11.11.2019</releasedate></h2>
-<h3 id="cad-6">CAD</h3>
+<h3 id="cad-7">CAD</h3>
 <h4 id="filterinallenfilterbarenlistenderfremdsprachenbersetzungoptimiert">Filter in allen filterbaren Listen der Fremdsprachenübersetzung optimiert</h4>
 <p>Alle Filter arbeiten nun wie die Volltextsuche. Die Eingabe wird in Wörter gegliedert und jedes Wort muss vorkommen. Worttrenner sind alle Formen von Leerzeichen sowie die CAD Zeilenumbrüche nach oben und nach unten.</p>
 <h4 id="dialogtitelangepasst">Dialogtitel angepasst</h4>
 <p>Der Dialog "Text bearbeiten" wurde "Text" umbenannt. Der Dialog "Übersetzung bearbeiten und dem Wörterbuch hinzufügen" wurde in "Übersetzung (hinzufügen)" umbenannt. Der Dialog "Übersetzung bearbeiten und im Wörterbuch aktualisieren" wurde in "Übersetzung (aktualisieren)" umbenannt.</p>
 <h4 id="whitelistzurermittlungderbersetzbarkeitvonvariabletextenhinzugefgt">Whitelist zur Ermittlung der Übersetzbarkeit von Variable Texten hinzugefügt</h4>
 <p>Das AppData-Verzeichnis wurde um die Datei "TranslatableWhitelist.txt" ergänzt. In dieser Datei sind die Inhalte der Variable Texten hinterlegt, welche beim Konvertieren einer Zeichnung als übersetzbar markiert werden sollen.</p>
-<h3 id="crm">CRM</h3>
+<h3 id="crm-1">CRM</h3>
 <h4 id="filterausfhrungoptimiert">Filterausführung optimiert</h4>
 <p>Mit Adressfiltern kann der Adressbestand gezielt durchsucht werden. Je nach Anwendungsfall können dabei sehr komplexe Filter entstehen, dessen Ausführung mehrere Minuten dauert. 
 Früher war die Anwendung während dieser Zeit komplett blockiert. Mit der neuen Adressliste passiert die nicht mehr und der Filter wird im Hintergrund ausgeführt. 
@@ -452,15 +582,15 @@ Dieser Mechanismus hatte nicht in allen Situationen sauber funktioniert.</p>
 <h2 id="7118betareleasedate04112019releasedate">7.1.18-beta <releasedate>04.11.2019</releasedate></h2>
 <p>Allgemeine Optimierungen und Verbesserungen der Stabilität.</p>
 <h2 id="7117betareleasedate29102019releasedate">7.1.17-beta <releasedate>29.10.2019</releasedate></h2>
-<h3 id="cad-7">CAD</h3>
+<h3 id="cad-8">CAD</h3>
 <h4 id="fremdsprachenbersetzungoptimiert">Fremdsprachenübersetzung optimiert</h4>
 <p>Eingabe von Übersetzungen optimiert und anwendungsinterne Vorbereitungen für die Übersetzungsfunktion deutlich beschleunigt.</p>
 <h3 id="cadprojektliste">CAD Projektliste</h3>
 <h4 id="registerkartefrcaddateienumbenanntvontreecadnachcad">Registerkarte für CAD-Dateien umbenannt von TreeCAD nach CAD</h4>
-<h3 id="crm-1">CRM</h3>
+<h3 id="crm-2">CRM</h3>
 <h4 id="meneintrgemarkiereninvertierenausadressemenentfernt">Menü-Einträge Markieren &amp; Invertieren aus Adresse-Menü entfernt</h4>
 <p>Diese beiden Funktionen haben einen sehr starken Bezug zur Adressliste und sollen zukünftig direkt darüber verwendet werden.</p>
-<h3 id="treesoftoffice">Treesoft Office</h3>
+<h3 id="treesoftoffice-1">Treesoft Office</h3>
 <h4 id="zweifehlermeldungenbeifalschemlogin">Zwei Fehlermeldungen bei falschem Login</h4>
 <p>Versucht man sich mit einem falschen Benutzernamen oder Kennwort anzumelden, erscheint eine entsprechende Fehlermeldung. 
 Durch einen internen Fehler wurde diese Meldung doppelt angezeigt.</p>
@@ -483,7 +613,7 @@ Dieser Fehler wurde nun korrigiert.</p>
 <p>Abhängig von der eingestellten Hintergrundfarbe war der Text eines Kalender-Eintrages schwer zu lesen. 
 Der Text orientiert sich nun an der Hintergrund-Farbe und wird entweder Schwarz oder Weiß dargestellt.</p>
 <h2 id="7116betareleasedate18102019releasedate">7.1.16-beta <releasedate>18.10.2019</releasedate></h2>
-<h3 id="crmadressverwaltung-3">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-4">CRM Adressverwaltung</h3>
 <h4 id="adresslistesuchenachtelefonnummerndieeinminusenthalten">Adressliste, Suche nach Telefonnummern, die ein Minus enthalten</h4>
 <p>Über die neue Adressliste kann man nach Auswahl von Kommunikation im Drop-down Listenfeld die komplette Kommunikation durchsuchen.
 Telefonnummern die ein Minus enthalten wurden dabei nicht gefunden.</p>
@@ -502,24 +632,24 @@ Wenn die Datanorm-Datei keine Netto-Preise enthielt, die Preis-Datei jedoch scho
 Die Preise wurden zwar korrekt importiert, standen jedoch nicht für die Preisberechnung zur Verfügung. 
 Dieser Fehler wurde nun korrigiert.</p>
 <h2 id="7115betareleasedate11102019releasedate">7.1.15-beta <releasedate>11.10.2019</releasedate></h2>
-<h3 id="crmadressverwaltung-4">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-5">CRM Adressverwaltung</h3>
 <h4 id="menbefehlemarkierenundinvertierenausmenadresseentfernt">Menübefehle Markieren und Invertieren aus Menü Adresse entfernt</h4>
 <p>Im Menü Adresse befanden sich bisher die beiden Menübefehle Markieren und Invertieren.
 Diese Befehle beziehen sich ausschließlich auf die Adressliste und wurden daher aus diesem Menü entfernt.
 Zukünftig können sie direkt über die neue Adressliste verwendet werden.</p>
 <h2 id="7114betareleasedate11102019releasedate">7.1.14-beta <releasedate>11.10.2019</releasedate></h2>
-<h3 id="treesoftoffice-1">Treesoft Office</h3>
+<h3 id="treesoftoffice-2">Treesoft Office</h3>
 <h4 id="fehlendebefehleimtreesoftcadfenstermenergnzt">Fehlende Befehle im Treesoft CAD Fenster-Menü ergänzt</h4>
 <p>Das Fenster-Menü in Treesoft CAD beinhaltet nun neben dem E-Mail Eingang auch den E-Mail Ausgang, E-Mails in Transit und den Notifier.</p>
 <h2 id="7113betareleasedate03102019releasedate">7.1.13-beta <releasedate>03.10.2019</releasedate></h2>
-<h3 id="crmadressverwaltung-5">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-6">CRM Adressverwaltung</h3>
 <h4 id="menbefehldublettensuchenindublettenbereinigungumbenannt">Menübefehl "Dubletten suchen…" in "Dublettenbereinigung…" umbenannt</h4>
 <h3 id="crmdublettenbereinigung-1">CRM Dublettenbereinigung</h3>
 <h4 id="benachrichtigungberfehlendeeinstellungenfrvertreter">Benachrichtigung über fehlende Einstellungen für Vertreter</h4>
 <p>Während der Dublettenauflösung werden Vertreter aus- und wieder eingetragen. 
 Hierfür wird jeweils ein Historieneintrag erzeugt, um diesen Vorgang zu protokollieren.
 Nun wird der Benutzer korrekt darüber informiert, wenn Einstellungen fehlen und im Optionendialog ergänzt werden müssen.</p>
-<h3 id="cad-8">CAD</h3>
+<h3 id="cad-9">CAD</h3>
 <h4 id="f2funktionneuimplementiertundaufdockbarefensterumgestellt">F2-Funktion neu implementiert und auf dockbare Fenster umgestellt</h4>
 <p>Die F2-Funktion wurde von Grund auf neu implementiert und auf abdockbare Fenster umgestellt.
 Die anzuzeigenden Artikel/Symbole werden jetzt wesentlich schneller geladen. Das Fensterhandling
@@ -533,7 +663,7 @@ wurde deutlich verbessert. Eine Auflistung der Vorteile:</p>
 <li>Moderneres Aussehen</li>
 </ul>
 <h2 id="712betareleasedate13082019releasedate">7.1.2-beta <releasedate>13.08.2019</releasedate></h2>
-<h3 id="cad-9">CAD</h3>
+<h3 id="cad-10">CAD</h3>
 <h4 id="neuefremdsprachenbersetzungundneueszngdatenformat">Neue Fremdsprachenübersetzung und neues ZNG-Datenformat</h4>
 <p>Ab sofort steht Ihnen die neu entwickelte Fremdsprachenübersetzung zur Verfügung.
 Übersetzungen ersetzen nicht länger die Texte von Zeichnungen, sonder ergänzen diese.</p>
@@ -541,7 +671,7 @@ wurde deutlich verbessert. Eine Auflistung der Vorteile:</p>
 Es müssen keine Kopien für übersetzte Zeichnungen angelegt werden; Eine Zeichnung enthält alle Übersetzungen.</p>
 <p>Diese Umstellung erfordert die Änderung des ZNG-Dateiformats und die Zuordnung einer Muttersprache zu jedem Projekt.
 Weitere Informationen finden Sie im Handbuch zur Fremdsprachenübersetzung.</p>
-<h3 id="projektverwaltung">Projektverwaltung</h3>
+<h3 id="projektverwaltung-1">Projektverwaltung</h3>
 <h4 id="umbenenenvonprojektenwennprojektverzeichnisnochinverwendung">Umbenenen von Projekten wenn Projektverzeichnis noch in Verwendung</h4>
 <p>Wenn beim Umbenennen des Projekts das zugehörige Projektverzeichnis nicht mit umbenannt werden kann,
 wird eine Fehlermeldung angezeigt und es werden keine Änderungen am Projektnamen und -verzeichnis vorgenommen.</p>
@@ -588,7 +718,7 @@ Im Programm-Verzeichnis von Treesoft Office befindet sich eine Verknüpfung, um 
 <p>Ab sofort besteht die Möglichkeit, mittels Bidirektional-Modul exportierte, Grundrisszeichnungen zu aktualisieren. Um eine Grundrisszeichnung zu aktualisieren, starten Sie den CAD Konverter im Assistenten "PDF/DWG/DXF Export Gebäudetechnik" und öffnen Sie die Konfiguration, in welcher die zu aktualisierende Grundrisszeichnung exportiert worden ist. Anschließend steht Ihnen in der Symbolleiste und im Menü "Export" der Befehl "Grundrisszeichnung aktualisieren" zur Verfügung. Nach dem Start der Funktion wählen Sie die neue Grundriss-Datei aus. Die Exportbereiche werden automatisch auf die neuen Grundrisszeichnung übertragen. Im Exportdialog werden die übertragenen Exportbereiche mit dem Status "Aktualisieren" angezeigt. Starten Sie den Export mit Betätigung der Schaltfläche "OK". Vor dem Export wird automatisch eine Sicherung des aktiven Projekts erstellt, welches Sie im Falle eines Problems im CAD über das Menü "Projekt &gt; Verwalten &gt; Rekonstruieren …" wiederherstellen können.</p>
 <h4 id="diverseabsturzursachenbehoben">Diverse Absturzursachen behoben</h4>
 <p>Nach der Auswahl von Objekten zwecks Bearbeitung konnte die Software durch diverse Funktionen wie das Wechseln des Assistenten abstürzen.</p>
-<h3 id="crm-2">CRM</h3>
+<h3 id="crm-3">CRM</h3>
 <h4 id="neuedublettenbereinigung">Neue Dublettenbereinigung</h4>
 <p>Das Modul zur Suche und Auflösung von Dubletten wurde vollständig überarbeitet. Die neue Dublettensuche ist effizienter und im Hintergrund ausführbar. 
 Sie lässt sich einfacher bedienen, bietet einen transparenten Ablauf und berücksichtigt nun mehr Aspekte von Adressen.</p>
@@ -598,7 +728,7 @@ Es bietet eine intuitiv bedienbare interne Karte, auf der Ergebnisse von Adressf
 Zusätzlich bietet es die Möglichkeit alle Adressen in Google Earth anzuzeigen, als KML-Datei zu exportieren oder alternativ zu Drucken.
 Die Rechte für den Export können im Optionsdialog unter "Geodaten Export" vergeben werden.
 Zur Strukturierung werden Adressfilter in Gruppen eingeordnet und global gespeichert. </p>
-<h3 id="treesoftoffice-2">Treesoft Office</h3>
+<h3 id="treesoftoffice-3">Treesoft Office</h3>
 <h4 id="einheitlichesservicemeninallenmodulen">Einheitliches Service Menü in allen Modulen</h4>
 <p>Über das Service-Menü sind nun in allen Programmteilen wichtige Informationen wie die Hotline-Angaben erreichbar.</p>
 <h4 id="einstellungenfrrckfragefensterimoptionendialogberarbeitet">Einstellungen für Rückfragefenster im Optionendialog überarbeitet</h4>
