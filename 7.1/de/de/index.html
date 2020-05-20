@@ -106,6 +106,14 @@
                                     
                                     <div style="margin-top: 5px">
                                         <b>
+                                            <a class="item" href="#7137releasedate14042020releasedate">
+                                                7.1.37
+                                            </a>
+                                        </b>
+                                    </div>
+                                    
+                                    <div style="margin-top: 5px">
+                                        <b>
                                             <a class="item" href="#7136releasedate09032020releasedate">
                                                 7.1.36
                                             </a>
@@ -336,6 +344,14 @@
                         
                         <div id="contentArea">
                             <h1 id="nderungsprotokollversion71">Änderungsprotokoll Version 7.1</h1>
+<h2 id="7137releasedate14042020releasedate">7.1.37 <releasedate>14.04.2020</releasedate></h2>
+<h3 id="crmadressverwaltung">CRM Adressverwaltung</h3>
+<h4 id="berarbeitungdialogauswahlansprechpartner">Überarbeitung Dialog Auswahl Ansprechpartner</h4>
+<p>Der Dialog Auswahl Ansprechpartner wurde so überarbeitet. Um nur Adressen ohne Ansprechpartner auszuwählen, kann der Benutzer auf das Kontrollkästchen neben dem Zweig für die Adresse klicken, wenn hier ein Pfeil im Kästchen angezeigt wird, ist nur die Adresse ausgewählt.
+Um Ansprechpartner mit Adresse auszuwählen, kann der Benutzer die Kontrollkästchen neben den Ansprechpartnern aktivieren.</p>
+<h3 id="notifier">Notifier</h3>
+<h4 id="telefonanrufttigen">Telefonanruf tätigen</h4>
+<p>Hier wurde bisher noch eine alte Adressliste verwendet, diese wurde nun durch die neue ersetzt.</p>
 <h2 id="7136releasedate09032020releasedate">7.1.36 <releasedate>09.03.2020</releasedate></h2>
 <h3 id="cad">CAD</h3>
 <h4 id="importiertedwgdxfzeichnungohnetexte">Importierte DWG-/DXF-Zeichnung ohne Texte</h4>
@@ -346,17 +362,21 @@
 <p>Texte in gedrehten und gestreckten/gestauchten Symbolen wurden nicht korrekt angezeigt.</p>
 <h4 id="absturzbeimpdfexport">Absturz beim PDF-Export</h4>
 <p>Symbole welche um einen Faktor von 10.000,00 oder mehr auf der X- oder Y-Achse gestreckt sind, führten zum Absturz beim PDF-Export. </p>
-<h3 id="crmadressverwaltung">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-1">CRM Adressverwaltung</h3>
+<h4 id="fokusdersuche">Fokus der Suche</h4>
+<p>Beim Anklicken des Adressfensters konnte es unter bestimmten Bedingungen passieren, dass beim anschließenden Anzeigen der Adressliste die Suche nicht markiert wurde. Dies wurde nun behoben.</p>
+<h4 id="suchewirdgeleertbeimfilternnachmarkiertenadressen">Suche wird geleert beim Filtern nach markierten Adressen</h4>
+<p>Beim Betätigen des Filters nach markierten Adressen wird nun die Suche geleert, da dies zu Verwirrung geführt hat, wenn noch nach Begriffen gefiltert wird.</p>
 <h4 id="sucheinadressliste">Suche in Adressliste</h4>
 <p>Bei der Suche von Adressen mit der Volltextsuche konnte es passieren, dass zu viele Adressen angezeigt werden. Dies wurde nun behoben, sodass nur noch Adressen angezeigt werden, die den Suchkriterien entsprechen.</p>
 <h4 id="adressenimdialogauswahlansprechpartner">Adressen im Dialog Auswahl Ansprechpartner</h4>
 <p>Im Dialog Auswahl Ansprechpartner werden Adressen und die dazugehörigen Ansprechpartner in einer Baumansicht angezeigt. Adressen werden nun beim Öffnen des Dialogs vor markiert, sodass der Benutzer nur noch die gewünschten Ansprechpartner markieren muss, oder mit Enter die markieren Adressen zuordnen kann.</p>
 <h4 id="mehrfachmarkierunginderadresslisteimadressfenster">Mehrfachmarkierung in der Adressliste im Adressfenster</h4>
-<p>Wenn die Mehrfachmarkierung in der Adressliste im Adressfenster aktiv ist, wie bei modalen Adresslisten, auch hier die markierten Adressen gemerkt. Hierdurch geht die Markierung durch Suchen und Sortieren nicht mehr verloren.</p>
+<p>Wenn die Mehrfachmarkierung in der Adressliste im Adressfenster aktiv ist, wie bei modalen Adresslisten, werden auch hier die markierten Adressen gemerkt. Hierdurch geht die Markierung durch Suchen und Sortieren nicht mehr verloren.</p>
 <h4 id="sucheingabebeimffnenderadresslisteselektieren">Sucheingabe beim Öffnen der Adressliste selektieren</h4>
 <p>Wenn in der Adressliste nach einem Begriff gesucht wurde, wird beim erneuten Öffnen der Liste dieser Begriff nun wieder automatisch selektiert.</p>
 <h2 id="7135releasedate03032020releasedate">7.1.35 <releasedate>03.03.2020</releasedate></h2>
-<h3 id="crmadressverwaltung-1">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-2">CRM Adressverwaltung</h3>
 <h4 id="mehrfachmarkierungimdialogauswahlansprechpartner">Mehrfachmarkierung im Dialog Auswahl Ansprechpartner</h4>
 <p>Über die Befehle im Kontextmenü vom Dialog Auswahl Ansprechpartner kam es zu einem Absturz, dieser wurde behoben.</p>
 <h2 id="7134releasedate02032020releasedate">7.1.34 <releasedate>02.03.2020</releasedate></h2>
@@ -372,7 +392,7 @@
 <h3 id="cadfremdsprachenbersetzung">CAD Fremdsprachenübersetzung</h3>
 <h4 id="speichernundwiederherstellenderausgabespracheundausgabealternativsprache">Speichern und Wiederherstellen der Ausgabesprache und Ausgabealternativsprache</h4>
 <p>Ab sofort wird sowohl die Ausgabesprache als auch die Ausgabealternativsprache zu jedem Projekt gespeichert und wiederhergestellt.</p>
-<h3 id="crmadressverwaltung-2">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-3">CRM Adressverwaltung</h3>
 <h4 id="miteinerhauptadresseverbinden">Mit einer Hauptadresse verbinden</h4>
 <p>Über den Befehl "Mit einer Hauptadresse verbinden" in der Menüleiste im Adressfenster kann die aktuelle Adresse einer Hauptadresse zugeordnet werden, hier wurde die alte Adressliste durch die neue ersetzt.</p>
 <h4 id="miteinernebenadresseverbinden">Mit einer Nebenadresse verbinden</h4>
@@ -403,7 +423,7 @@
 <h3 id="cad-2">CAD</h3>
 <h4 id="graufstufenfilterangepasst">Graufstufen-Filter angepasst</h4>
 <p>Die Helligkeit des Graufstufen-Filters wurde angepasst um die Darstellung auf kontrastarmen Monitoren zu verbessern.</p>
-<h3 id="notifier">Notifier</h3>
+<h3 id="notifier-1">Notifier</h3>
 <h4 id="eintragmitadresseverknpfen">Eintrag mit Adresse verknüpfen</h4>
 <p>Beim Verknüpfen von Einträgen im Notifier wurde bisher noch die alte Adressliste verwendet, diese wurde durch die neue Adressliste ersetzt.</p>
 <h3 id="treesoftoffice">Treesoft Office</h3>
@@ -500,7 +520,7 @@ Hierfür muss man auf der rechten Seite der Adressliste einen Ansprechpartner au
 <p>Beim Excel-/CSV-Import wurde die Einstellung "Erste Zeile ist Kopfdatensatz:" entfernt. Zukünftig müssen alle zum importierenden Excel-/CSV-Dateien einen Kopfdatensatz beinhalten. Mehr Informationen können Sie der Kontexthilfe der betoffenden Importdialoge entnehmen.</p>
 <h4 id="darstellungsfehlerimwrterbuch">Darstellungsfehler im Wörterbuch</h4>
 <p>Nach dem Entfernen von mehreren Einträgen konnte es zu Darstellungsproblemen in der Liste kommen; Einträge waren falsch sortiert oder es wurde eine leere Zeile angezeigt.</p>
-<h3 id="crmadressverwaltung-3">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-4">CRM Adressverwaltung</h3>
 <h4 id="absturzbeimffnenvonsoftwareinformationen">Absturz beim Öffnen von Softwareinformationen</h4>
 <p>Beim Öffnen von Softwareinformationen konnte es zu einem Absturz kommen, wenn die Farb-ID einer Software-Gruppe einen bestimmten Wert erreicht hatte. Mit jeder neuen Software-Gruppe wird die Farbe intern automatisch hochgezählt.</p>
 <h4 id="findenvonadressennichtmglich">Finden von Adressen nicht möglich</h4>
@@ -533,7 +553,7 @@ Zusätzlich gibt es dort einen "Export", der die Symbolinformationen aus der Dat
 <p>Wurde einem Projekt die falsche Muttersprache zugeordnet und eine Zeichnung geöffnet und gespeichert, so haben alle Texte der gespeicherten Zeichnung nun die falsch zugeordnete Muttersprache. Die Anpassung der Projekt-Muttersprache ändert nicht die Muttersprache der jeweiligen Texte. Diese kann nun im Dialog "Text" mittels linken Mausklicks auf die Länderflagge links oberhalb der Texteingabe oder über das Kontextmenü im Dialog "Übersetzen" angepasst werden. Sollte ein Text bereits eine Übersetzung für die neue Muttersprache hinterlegt haben, so werden die Sprachen der betroffenen Übersetzung und des Textes getauscht. </p>
 <h4 id="bernahmevonbersetzungauswrterbuch">Übernahme von Übersetzung aus Wörterbuch</h4>
 <p>Im Dialog "Text" kann über die Schaltfläche "Wörterbuch" das Wörterbuch aufgerufen werden. Nach Auswahl eines geeigneten Eintrags kann dieser über die Schaltfläche "Übernehmen" übernommen werden. Neben den Übersetzungen wird nun auch der Text selbst mit den Inhalten des Eintrags aus dem Wörterbuch überschrieben.</p>
-<h3 id="crmadressverwaltung-4">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-5">CRM Adressverwaltung</h3>
 <h4 id="navigationimfeldfinden">Navigation im Feld "Finden"</h4>
 <p>Wenn der Fokus auf dem Feld "Finden" steht, kann man nun mit den Pfeiltasten auch in der Liste hoch und runter navigieren.</p>
 <h4 id="globaletastenkrzelinderadressliste">Globale Tastenkürzel in der Adressliste</h4>
@@ -546,7 +566,7 @@ Zusätzlich gibt es dort einen "Export", der die Symbolinformationen aus der Dat
 <h4 id="fehlendeemailanhnge">Fehlende E-Mail Anhänge</h4>
 <p>Bei E-Mails, die ein gewisses vom Standard abweichendes Format besitzen, konnte es vorkommen, dass einzelne Anhänge nicht aus der E-Mail extrahiert werden konnten.</p>
 <h2 id="7124releasedate10122019releasedate">7.1.24 <releasedate>10.12.2019</releasedate></h2>
-<h3 id="crmadressverwaltung-5">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-6">CRM Adressverwaltung</h3>
 <h4 id="globaletastenkrzelinderadressliste-1">Globale Tastenkürzel in der Adressliste</h4>
 <p>Bisher konnten die globalen Tastenkürzel in der neuen Adressliste nicht benutzt werden, dies wurde nun behoben sodass die Tastenkürzel auch hier verwendbar sind.</p>
 <h4 id="falschebezeichnunginderadressliste">Falsche Bezeichnung in der Adressliste</h4>
@@ -567,7 +587,7 @@ Zusätzlich gibt es dort einen "Export", der die Symbolinformationen aus der Dat
 <p>Wenn der CAD Konverter über die Assistentenauswahl des CAD gestartet wurde, erschien die Meldung, dass das aktive Projekt bereits bearbeitet wird und der CAD Konverter aus diesem Grund nicht 
 gestartet werden kann. Diese Meldung erscheint nun nicht mehr, wenn der gleiche Benutzer das Projekt im CAD geöffnet hat und im CAD Konverter öffnen möchte. Versucht ein anderer Benutzer, das Projekt im CAD Konverter zu öffnen, dann erscheint diese Meldung weiterhin.</p>
 <h2 id="7123releasedate29112019releasedate">7.1.23 <releasedate>29.11.2019</releasedate></h2>
-<h3 id="crmadressverwaltung-6">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-7">CRM Adressverwaltung</h3>
 <h4 id="adresslisteverliertmarkierungenbeiaktiviertermehrfachmarkierung">Adressliste verliert Markierungen bei aktivierter Mehrfachmarkierung</h4>
 <p>Die Mehrfachmarkierung konnten leicht durch versehentliches Klicken in der Tabelle verloren gehen. 
 Nun verhält sie sich wie erwartet, sodass das Kontrollkästchen direkt aktiviert oder deaktiviert werden muss. 
@@ -736,7 +756,7 @@ Dieser Fehler wurde nun korrigiert.</p>
 <p>Abhängig von der eingestellten Hintergrundfarbe war der Text eines Kalender-Eintrages schwer zu lesen. 
 Der Text orientiert sich nun an der Hintergrund-Farbe und wird entweder Schwarz oder Weiß dargestellt.</p>
 <h2 id="7116betareleasedate18102019releasedate">7.1.16-beta <releasedate>18.10.2019</releasedate></h2>
-<h3 id="crmadressverwaltung-7">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-8">CRM Adressverwaltung</h3>
 <h4 id="adresslistesuchenachtelefonnummerndieeinminusenthalten">Adressliste, Suche nach Telefonnummern, die ein Minus enthalten</h4>
 <p>Über die neue Adressliste kann man nach Auswahl von Kommunikation im Drop-down Listenfeld die komplette Kommunikation durchsuchen.
 Telefonnummern die ein Minus enthalten wurden dabei nicht gefunden.</p>
@@ -755,7 +775,7 @@ Wenn die Datanorm-Datei keine Netto-Preise enthielt, die Preis-Datei jedoch scho
 Die Preise wurden zwar korrekt importiert, standen jedoch nicht für die Preisberechnung zur Verfügung. 
 Dieser Fehler wurde nun korrigiert.</p>
 <h2 id="7115betareleasedate11102019releasedate">7.1.15-beta <releasedate>11.10.2019</releasedate></h2>
-<h3 id="crmadressverwaltung-8">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-9">CRM Adressverwaltung</h3>
 <h4 id="menbefehlemarkierenundinvertierenausmenadresseentfernt">Menübefehle Markieren und Invertieren aus Menü Adresse entfernt</h4>
 <p>Im Menü Adresse befanden sich bisher die beiden Menübefehle Markieren und Invertieren.
 Diese Befehle beziehen sich ausschließlich auf die Adressliste und wurden daher aus diesem Menü entfernt.
@@ -765,7 +785,7 @@ Zukünftig können sie direkt über die neue Adressliste verwendet werden.</p>
 <h4 id="fehlendebefehleimtreesoftcadfenstermenergnzt">Fehlende Befehle im Treesoft CAD Fenster-Menü ergänzt</h4>
 <p>Das Fenster-Menü in Treesoft CAD beinhaltet nun neben dem E-Mail Eingang auch den E-Mail Ausgang, E-Mails in Transit und den Notifier.</p>
 <h2 id="7113betareleasedate03102019releasedate">7.1.13-beta <releasedate>03.10.2019</releasedate></h2>
-<h3 id="crmadressverwaltung-9">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-10">CRM Adressverwaltung</h3>
 <h4 id="menbefehldublettensuchenindublettenbereinigungumbenannt">Menübefehl "Dubletten suchen…" in "Dublettenbereinigung…" umbenannt</h4>
 <h3 id="crmdublettenbereinigung-2">CRM Dublettenbereinigung</h3>
 <h4 id="benachrichtigungberfehlendeeinstellungenfrvertreter">Benachrichtigung über fehlende Einstellungen für Vertreter</h4>
