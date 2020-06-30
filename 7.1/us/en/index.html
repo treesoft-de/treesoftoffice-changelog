@@ -110,8 +110,8 @@
                                     
                                     <div style="margin-top: 5px">
                                         <b>
-                                            <a class="item" href="#7139releasedate06262020releasedate">
-                                                7.1.39
+                                            <a class="item" href="#7140releasedate06262020releasedate">
+                                                7.1.40
                                             </a>
                                         </b>
                                     </div>
@@ -367,17 +367,7 @@
   <p>This article was translated by machine.</p>
 </blockquote>
 <h1 id="changelogversion71">Changelog Version 7.1</h1>
-<h2 id="7139releasedate06262020releasedate">7.1.39 <releasedate>06/26/2020</releasedate></h2>
-<h3 id="cad">CAD</h3>
-<h4 id="alternativefontforprintingandpdfexport">Alternative font for printing and PDF export</h4>
-<p>For printing and PDF export, the set font for the set language or alternative language is always used. For Treesoft's own fonts "zeichen.set", "kursiv.set" and "dreid.set" an alternative font can now be specified for printing and PDF export.</p>
-<h3 id="cadkonverter">CAD Konverter</h3>
-<h4 id="cameramovementpossibleinallfunctions">Camera movement possible in all functions</h4>
-<p>By pressing and holding the middle mouse button, the camera can now be moved in all functions, such as dimensioning.</p>
-<h4 id="backupwhenupdatingafloorplan">Backup when updating a floor plan</h4>
-<p>When updating a floor plan, an automatic backup is no longer created.</p>
-<h4 id="confirmationofasuccessfulexport">Confirmation of a successful export</h4>
-<p>The confirmation if an export was successful is now also displayed for the control engineering when exporting.</p>
+<h2 id="7140releasedate06262020releasedate">7.1.40 <releasedate>06/26/2020</releasedate></h2>
 <h3 id="erp">ERP</h3>
 <h4 id="changestotheuseofthenewvatratesfrom01072020">Changes to the use of the new VAT Rates from 01.07.2020</h4>
 <p>Due to the current crisis, the German government has decided to reduce the value added tax from 19% to 16% and from 7% to 5% for the period from 01.07.2020 to 31.12.2020 inclusive.
@@ -395,6 +385,16 @@ The correct tax rates are then used to calculate the VAT, depending on the docum
 <p>Technical Details:</p>
 <p>Previously, the VAT rate was saved directly in each item for a document. Due to the structure of the ERP, each item basically exists only once. It does not matter whether the item is transferred from a quotation to an order confirmation and then to an invoice, for example. Thus it would not have been possible to create a partial invoice before the increase with 19% and after the increase with 16%. Due to the change made now, an item now only contains the tax class (full tax rate, half tax rate, …). Based on this tax class in combination with the tax code of the document (taxable, tax-exempt, …) and the document date, the correct value added tax is now determined dynamically via the allocation matrix.</p>
 <p>To make this change possible, the item data must be partially converted. In most cases, this conversion is done automatically and no user intervention is required. Should we still find a tax code within an item that we cannot automatically convert to a tax class, the user must make this assignment manually when opening any document for the first time.</p>
+<h3 id="cad">CAD</h3>
+<h4 id="alternativefontforprintingandpdfexport">Alternative font for printing and PDF export</h4>
+<p>For printing and PDF export, the set font for the set language or alternative language is always used. For Treesoft's own fonts "zeichen.set", "kursiv.set" and "dreid.set" an alternative font can now be specified for printing and PDF export.</p>
+<h3 id="cadkonverter">CAD Konverter</h3>
+<h4 id="cameramovementpossibleinallfunctions">Camera movement possible in all functions</h4>
+<p>By pressing and holding the middle mouse button, the camera can now be moved in all functions, such as dimensioning.</p>
+<h4 id="backupwhenupdatingafloorplan">Backup when updating a floor plan</h4>
+<p>When updating a floor plan, an automatic backup is no longer created.</p>
+<h4 id="confirmationofasuccessfulexport">Confirmation of a successful export</h4>
+<p>The confirmation if an export was successful is now also displayed for the control engineering when exporting.</p>
 <h2 id="7138releasedate05192020releasedate">7.1.38 <releasedate>05/19/2020</releasedate></h2>
 <h3 id="cad-1">CAD</h3>
 <h4 id="catalogtreeoff2functiondidnotshowallcatalogs">Catalog tree of F2 function did not show all catalogs</h4>

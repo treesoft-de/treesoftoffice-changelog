@@ -110,8 +110,8 @@
                                     
                                     <div style="margin-top: 5px">
                                         <b>
-                                            <a class="item" href="#7139releasedate26062020releasedate">
-                                                7.1.39
+                                            <a class="item" href="#7140releasedate26062020releasedate">
+                                                7.1.40
                                             </a>
                                         </b>
                                     </div>
@@ -364,17 +364,7 @@
                         
                         <div id="contentArea">
                             <h1 id="nderungsprotokollversion71">Änderungsprotokoll Version 7.1</h1>
-<h2 id="7139releasedate26062020releasedate">7.1.39 <releasedate>26.06.2020</releasedate></h2>
-<h3 id="cad">CAD</h3>
-<h4 id="alternativerzeichensatzbeimdruckundpdfexport">Alternativer Zeichensatz beim Druck und PDF-Export</h4>
-<p>Beim Druck und PDF-Export wird immer der eingestellte Zeichensatz für die eingestellte Sprache bzw. Alternativsprache verwendet. Für die Treesoft eigenen Zeichensätze "zeichen.set", "kursiv.set" und "dreid.set" kann nun ein alternativer Zeichensatz für die Ausgabe beim Druck und PDF-Export bestimmt werden. </p>
-<h3 id="cadkonverter">CAD Konverter</h3>
-<h4 id="kamerafahrtinallenfunktionenmglich">Kamerafahrt in allen Funktionen möglich</h4>
-<p>Durch Betätigen und Halten der mittleren Maustaste kann nun die Kamera in allen Funktionen, wie z.&nbsp;B. der Bemaßung, verschoben werden.</p>
-<h4 id="backupbeimaktualisiereneinesgrundrisses">Backup beim Aktualisieren eines Grundrisses</h4>
-<p>Beim Aktualisieren eines Grundrisses wird nicht länger ein automatisches Backup erzeugt.</p>
-<h4 id="besttigungeineserfolgreichenexports">Bestätigung eines erfolgreichen Exports</h4>
-<p>Die Bestätigung, wenn ein Export erfolgreich war, wird nun auch beim Export für die Steuerungstechnik angezeigt.</p>
+<h2 id="7140releasedate26062020releasedate">7.1.40 <releasedate>26.06.2020</releasedate></h2>
 <h3 id="erp">ERP</h3>
 <h4 id="nderungenzurverwendungderneuenmwststzeab01072020">Änderungen zur Verwendung der neuen MwSt. Sätze ab 01.07.2020</h4>
 <p>Aufgrund der aktuellen Krise hat die deutsche Bundesregierung entschieden für den Zeitraum vom 01.07.2020 bis einschließlich 31.12.2020 die Umsatzsteuer von 19% auf 16% bzw. von 7% auf 5% zu verringern.
@@ -392,6 +382,16 @@ Abhängig vom Dokumentendatum wird nun der korrekten Steuersatz für die Berechn
 <p>Technische Details:</p>
 <p>Bisher wurde in jeder Position zu einem Dokument der Umsatzsteuersatz direkt gespeichert. Aufgrund der Struktur des ERP gibt es jede Position grundsätzlich nur ein einziges Mal. Unabhängig davon, ob die Position beispielsweise von einem Angebot in eine Auftragsbestätigung und anschließend in eine Rechnung übernommen wird. Dadurch wäre es nicht möglich gewesen beispielsweise eine Teilrechnung vor der Erhöhung mit 19% und nach der Erhöhung mit 16% zu Erstellen. Durch die nun durchgeführte Änderung enthält eine Position nun lediglich noch die Steuerklasse (Voller Steuersatz, Halber Steuersatz, …). Basierend auf dieser Steuer-Klasse in Kombination mit dem Steuerkennzeichen des Dokumentes (Steuerpflichtig, Steuerbefreit, …) und dem Dokumenten-Datum, wird nun dynamisch über die Zuordnungsmatrix die korrekte Umsatzsteuer ermittelt.</p>
 <p>Damit diese Änderung möglich ist, müssen die Positionsdaten zum Teil konvertiert werden. In den allermeisten Fällen passiert diese Konvertierung automatisch und es ist kein Eingriff des Benutzers erforderlich. Sollten wird dennoch einen Steuercode innerhalb einer Position finden, den wir nicht automatisch in eine Steuer-Klasse konvertieren können, muss der Anwender diese Zuordnung beim Ersten Öffnen eines beliebigen Dokumentes manuell vornehmen.</p>
+<h3 id="cad">CAD</h3>
+<h4 id="alternativerzeichensatzbeimdruckundpdfexport">Alternativer Zeichensatz beim Druck und PDF-Export</h4>
+<p>Beim Druck und PDF-Export wird immer der eingestellte Zeichensatz für die eingestellte Sprache bzw. Alternativsprache verwendet. Für die Treesoft eigenen Zeichensätze "zeichen.set", "kursiv.set" und "dreid.set" kann nun ein alternativer Zeichensatz für die Ausgabe beim Druck und PDF-Export bestimmt werden. </p>
+<h3 id="cadkonverter">CAD Konverter</h3>
+<h4 id="kamerafahrtinallenfunktionenmglich">Kamerafahrt in allen Funktionen möglich</h4>
+<p>Durch Betätigen und Halten der mittleren Maustaste kann nun die Kamera in allen Funktionen, wie z.&nbsp;B. der Bemaßung, verschoben werden.</p>
+<h4 id="backupbeimaktualisiereneinesgrundrisses">Backup beim Aktualisieren eines Grundrisses</h4>
+<p>Beim Aktualisieren eines Grundrisses wird nicht länger ein automatisches Backup erzeugt.</p>
+<h4 id="besttigungeineserfolgreichenexports">Bestätigung eines erfolgreichen Exports</h4>
+<p>Die Bestätigung, wenn ein Export erfolgreich war, wird nun auch beim Export für die Steuerungstechnik angezeigt.</p>
 <h2 id="7138releasedate19052020releasedate">7.1.38 <releasedate>19.05.2020</releasedate></h2>
 <h3 id="cad-1">CAD</h3>
 <h4 id="katalogbaumderf2funktionzeigtenichtallekataloge">Katalogbaum der F2-Funktion zeigte nicht alle Kataloge</h4>
