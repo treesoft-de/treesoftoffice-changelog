@@ -110,6 +110,30 @@
                                     
                                     <div style="margin-top: 5px">
                                         <b>
+                                            <a class="item" href="#7144releasedate09102020releasedate">
+                                                7.1.44
+                                            </a>
+                                        </b>
+                                    </div>
+                                    
+                                    <div style="margin-top: 5px">
+                                        <b>
+                                            <a class="item" href="#7143releasedate09042020releasedate">
+                                                7.1.43
+                                            </a>
+                                        </b>
+                                    </div>
+                                    
+                                    <div style="margin-top: 5px">
+                                        <b>
+                                            <a class="item" href="#7142releasedate09022020releasedate">
+                                                7.1.42
+                                            </a>
+                                        </b>
+                                    </div>
+                                    
+                                    <div style="margin-top: 5px">
+                                        <b>
                                             <a class="item" href="#7141releasedate07222020releasedate">
                                                 7.1.41
                                             </a>
@@ -375,6 +399,78 @@
   <p>This article was translated by machine.</p>
 </blockquote>
 <h1 id="changelogversion71">Changelog Version 7.1</h1>
+<h2 id="7144releasedate09102020releasedate">7.1.44 <releasedate>09/10/2020</releasedate></h2>
+<h3 id="crmadressverwaltung">CRM Adressverwaltung</h3>
+<h4 id="searchforshortname">Search for short name</h4>
+<p>When searching for short names in the address list, the beginning of the string is now searched for.</p>
+<h4 id="dropdownlistfieldforcolumnsintheaddresslist">Drop-down list field for columns in the address list</h4>
+<p>The drop-down list field for columns in the address list used to contain a lot of entries to search for addresses, this selection has now been reduced. The following entries have been removed: Contact person, Name, Street, City, State, Country, Created by, Modified by.</p>
+<h4 id="shortkeyinaddresswindow">Short key in address window</h4>
+<p>Previously, the address list did not always switch to the short description when searching, when pressing the short key Ctrl + F. This has now been fixed.</p>
+<h3 id="projektverwaltung">Projektverwaltung</h3>
+<h4 id="displayoflinkedprojectsifaspecialprojectwassearchedforbefore">Display of linked projects, if a special project was searched for before</h4>
+<p>Entries can be assigned to any number of projects. In the list of entries (e.g. tasks) it is possible to display all linked projects in the project list by pressing [ALT] + left click on the projects column. However, if you searched for a term using the input field in the top left-hand corner, the linked projects were briefly visible, but were then overwritten by the search.</p>
+<h3 id="erpoffenepostenverwaltung">ERP Offene Posten Verwaltung</h3>
+<h4 id="roundingerrorsinprintingtheoutgoinginvoicebook">Rounding errors in printing the outgoing invoice book</h4>
+<p>Rounding errors could occur in the printout of the outgoing invoice book. This error has now been corrected.</p>
+<h2 id="7143releasedate09042020releasedate">7.1.43 <releasedate>09/04/2020</releasedate></h2>
+<p>General optimizations and stability improvements.</p>
+<h2 id="7142releasedate09022020releasedate">7.1.42 <releasedate>09/02/2020</releasedate></h2>
+<h3 id="erpoffenepostenverwaltung-1">ERP Offene Posten Verwaltung</h3>
+<h4 id="incorrecttaxesintheprintoutoftheoutgoinginvoicebook">Incorrect taxes in the printout of the outgoing invoice book</h4>
+<p>In the case of a temporary change in value added taxes, invoices in the outgoing invoice book were printed with the wrong tax rates. This error has now been corrected.</p>
+<h3 id="cad">CAD</h3>
+<h4 id="setsymbolovercatalogtreef2functionshowsthecatalogrootagain">Set symbol over catalog tree (F2-function) shows the catalog root again</h4>
+<p>If articles or symbols are assigned to a catalog without being assigned to a branch of the catalog, the catalog root is displayed with a warning triangle. Otherwise the catalog root is hidden.
+Please refer to the help of the catalog tree for a more detailed explanation.</p>
+<h4 id="errormessageafterchangingtheactiveprojectdrawing">Error message after changing the active project/drawing</h4>
+<p>After changing the active project or drawing from Treesoft Office, it could happen that the error message "TreesoftCAD.exe does not work anymore" was displayed. By optimizing the de-/ initialization routines of Treesoft CAD the cause could be eliminated and the project/drawing change from Treesoft Office is now faster.</p>
+<h4 id="conversionofprojectsanddrawingsfromtreesoftcadversion40">Conversion of projects and drawings from Treesoft CAD Version 4.0</h4>
+<p>Older projects and drawings from Treesoft CAD Version 4.0 can now be converted again.</p>
+<h4 id="nameandtranslationofdrawingtypesredefined">Name and translation of drawing types redefined</h4>
+<p>Over the years of development new terms have been found, especially for the English translations of drawing types (e.g. Inhaltsverzeichnis = Index = Table of contents = Contents). We have now redefined these and will gradually integrate the new names and translations into Treesoft Office.</p>
+<h4 id="automaticconversiontovariabletext">Automatic conversion to variable text</h4>
+<p>After selecting a text format or a variable in the "Text" dialog, the type of text is now set to variable text and the dialog for determining the variable type is opened.</p>
+<h3 id="cadfremdsprachenbersetzung">CAD Fremdsprachenübersetzung</h3>
+<h4 id="bookmarksinexportedpdfspart1">Bookmarks in exported PDFs (Part 1)</h4>
+<p>The bookmarks in exported PDFs are formed from the page number, the sheet number and the labels of Content1 and Content2. From now on, the translations, corresponding to the set language or alternative language, of the labels of Content1 and Content2 will be used.</p>
+<h4 id="bookmarksinexportedpdfspart2">Bookmarks in exported PDFs (Part 2)</h4>
+<p>The bookmarks for individual drawings in exported PDFs were created from the comments that can be stored for each drawing. It is not possible to store several comments in different languages, so from now on the bookmarks are determined by the drawing type. If the language is set to German, the drawing type is output in German. If the language is neither German nor English, but the alternative language is German, the drawing types are also output in German. In all other cases, the output will be in English.</p>
+<h4 id="csvexportinthetranslatedialog">CSV export in the "Translate" dialog</h4>
+<p>The CSV export via the context menu in the "Translate" dialog now only exports the selected translations.</p>
+<h4 id="formattingofcellsforexcelexport">Formatting of cells for Excel export</h4>
+<p>Cells which contain texts beginning with the formula sign "=" are no longer formatted as formulas but as texts.</p>
+<h3 id="cadkonverter">CAD Konverter</h3>
+<h4 id="adjustingthescalingofexportedgroundplans">Adjusting the scaling of exported ground plans</h4>
+<p>To prevent operating errors, it is now no longer possible to adjust the scaling (units per meter) of already exported ground plans.</p>
+<h3 id="crmadressverwaltung-1">CRM Adressverwaltung</h3>
+<h4 id="searchisnolongerclearedwhenresettingthefilters">Search is no longer cleared when resetting the filters</h4>
+<p>When resetting the address filters, the search is no longer cleared.</p>
+<h4 id="addressgroupsareresettedwhenresettingthefilters">Address groups are resetted when resetting the filters</h4>
+<p>The selected address group is now also resetted when resetting the filters.</p>
+<h4 id="iconforaddressgroupsintheaddresslist">Icon for address groups in the address list</h4>
+<p>The icon for address groups has been replaced in the address list.</p>
+<h4 id="showcustomersintheaddresslist">Show customers in the address list</h4>
+<p>The button "Show only customers" has been changed to show only addresses that have a main module in the software administration.</p>
+<h4 id="doubleclickindialogselectcontactperson">Double-click in dialog Select contact person</h4>
+<p>Contact persons and addresses can now be selected and confirmed by double-clicking in the dialog Select contact person.</p>
+<h4 id="closingtheaddresslistwithescape">Closing the address list with Escape</h4>
+<p>The address list in the address window can now be closed with the ESC key, just like the old address list before.</p>
+<h4 id="stackwasrenamedtofavoritesandmovedtotheaddresslist">Stack was renamed to Favorites and moved to the address list</h4>
+<p>The addresses previously marked as "Stack" in the address window were renamed to "Favorites" and moved to the address list.
+The telephone numbers were removed from the Favourites and contact persons were added in return. </p>
+<h4 id="crashwhencopyingcontactpersons">Crash when copying contact persons</h4>
+<p>When copying contact persons and then pasting them into another address, the software crashed. This meant that no global telephone numbers could be created afterwards. This error has now been fixed so that the software no longer crashes and global phone numbers can be created again for the affected addresses.</p>
+<h4 id="hyperlinkforstreetandpostcodecity">Hyperlink for street and postcode/city</h4>
+<p>When changing addresses, the hyperlinks for street and postcode/city in the address window may no longer work. This has now been fixed.</p>
+<h4 id="texttemplateforaddressinformation">Text template for address information</h4>
+<p>Previously, no text template was set in the info field for new addresses. This was changed so that the standard text defined in the options dialog is applied to new addresses.</p>
+<h4 id="mergepersonsandinstitutionsbuttonsintheaddresslist">Merge persons and institutions Buttons in the address list</h4>
+<p>The buttons for filtering persons and institutions have been combined. Now you can use the "Type" button to filter by address types.</p>
+<h4 id="tasksandappointmentsafteraddressmerging">Tasks and appointments after address merging</h4>
+<p>After an address merge, it happened that tasks and appointments from shared calendars were incorrectly assigned to another shared calendar. This issue has now been fixed.</p>
+<h4 id="settingthetexttemplatewhenresolvingduplicates">Setting the text template when resolving duplicates</h4>
+<p>If the destination address has an empty info field after a duplicate resolution, the default text template defined in the options dialog is automatically applied to the info field.</p>
 <h2 id="7141releasedate07222020releasedate">7.1.41 <releasedate>07/22/2020</releasedate></h2>
 <h3 id="cadgebudetechnikassistent">CAD Gebäudetechnik-Assistent</h3>
 <h4 id="circuitlistconnectionlist">Circuit list/connection list</h4>
@@ -382,7 +478,7 @@
 <h3 id="treesoftoffice">Treesoft Office</h3>
 <h4 id="serialnumberinservicemenu">Serial number in service menu</h4>
 <p>The serial number is displayed in the service menu.</p>
-<h3 id="crmadressverwaltung">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-2">CRM Adressverwaltung</h3>
 <h4 id="errormessageintheaddressdialogafteraduplicateresolution">Error message in the address dialog after a duplicate resolution</h4>
 <p>After a duplicate resolution, it could happen that an error message with the content "Unknown format" was displayed when opening the merged address in the address dialog. This error has now been fixed.</p>
 <h2 id="7140releasedate06262020releasedate">7.1.40 <releasedate>06/26/2020</releasedate></h2>
@@ -403,10 +499,10 @@ The correct tax rates are then used to calculate the VAT, depending on the docum
 <p>Technical Details:</p>
 <p>Previously, the VAT rate was saved directly in each item for a document. Due to the structure of the ERP, each item basically exists only once. It does not matter whether the item is transferred from a quotation to an order confirmation and then to an invoice, for example. Thus it would not have been possible to create a partial invoice before the increase with 19% and after the increase with 16%. Due to the change made now, an item now only contains the tax class (full tax rate, half tax rate, …). Based on this tax class in combination with the tax code of the document (taxable, tax-exempt, …) and the document date, the correct value added tax is now determined dynamically via the allocation matrix.</p>
 <p>To make this change possible, the item data must be partially converted. In most cases, this conversion is done automatically and no user intervention is required. Should we still find a tax code within an item that we cannot automatically convert to a tax class, the user must make this assignment manually when opening any document for the first time.</p>
-<h3 id="cad">CAD</h3>
+<h3 id="cad-1">CAD</h3>
 <h4 id="alternativefontforprintingandpdfexport">Alternative font for printing and PDF export</h4>
 <p>For printing and PDF export, the set font for the set language or alternative language is always used. For Treesoft's own fonts "zeichen.set", "kursiv.set" and "dreid.set" an alternative font can now be specified for printing and PDF export.</p>
-<h3 id="cadkonverter">CAD Konverter</h3>
+<h3 id="cadkonverter-1">CAD Konverter</h3>
 <h4 id="cameramovementpossibleinallfunctions">Camera movement possible in all functions</h4>
 <p>By pressing and holding the middle mouse button, the camera can now be moved in all functions, such as dimensioning.</p>
 <h4 id="backupwhenupdatingafloorplan">Backup when updating a floor plan</h4>
@@ -422,16 +518,16 @@ So it is now possible to test Treesoft Office also on systems without direct int
 <h4 id="proxysupportforthetreesoftnewstile">Proxy support for the "Treesoft News" tile</h4>
 <p>The content of the "Treesoft News" tiles is now loaded, if necessary, via the proxy server entered in the windows control panel.</p>
 <h2 id="7138releasedate05192020releasedate">7.1.38 <releasedate>05/19/2020</releasedate></h2>
-<h3 id="cad-1">CAD</h3>
+<h3 id="cad-2">CAD</h3>
 <h4 id="catalogtreeoff2functiondidnotshowallcatalogs">Catalog tree of F2 function did not show all catalogs</h4>
 <p>Under certain database configurations, it could happen that the contents of individual catalogs are stored within
 of the catalog tree were not displayed. The catalog tree has been adjusted accordingly,
 all catalogs are displayed in the catalog tree again.</p>
-<h3 id="cadkonverter-1">CAD Konverter</h3>
+<h3 id="cadkonverter-2">CAD Konverter</h3>
 <h4 id="conversionofpdffiles">Conversion of PDF files</h4>
 <p>The conversion of PDF files now takes place in the project directory again.</p>
 <h2 id="7137releasedate04142020releasedate">7.1.37 <releasedate>04/14/2020</releasedate></h2>
-<h3 id="crmadressverwaltung-1">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-3">CRM Adressverwaltung</h3>
 <h4 id="revisiondialogueselectioncontactperson">Revision Dialogue selection contact person</h4>
 <p>The dialog Selection contact person has been revised. To select only addresses without contacts, the user can click on the checkbox next to the branch for the address. If an arrow is displayed in the box, only the address is selected.
 To select contacts with address, the user can select the checkboxes next to the contacts.</p>
@@ -439,7 +535,7 @@ To select contacts with address, the user can select the checkboxes next to the 
 <h4 id="makeaphonecall">Make a phone call</h4>
 <p>An old address list was still used here, but this has now been replaced by the new one.</p>
 <h2 id="7136releasedate03092020releasedate">7.1.36 <releasedate>03/09/2020</releasedate></h2>
-<h3 id="cad-2">CAD</h3>
+<h3 id="cad-3">CAD</h3>
 <h4 id="importeddwgdxfdrawingwithouttext">Imported DWG/DXF drawing without text</h4>
 <p>Texts with a text height less than 1, were not displayed in Treesoft CAD after import.</p>
 <h4 id="displayerrorduringprinting">Display error during printing</h4>
@@ -448,7 +544,7 @@ To select contacts with address, the user can select the checkboxes next to the 
 <p>Text in rotated and stretched/compressed symbols were not displayed correctly.</p>
 <h4 id="crashduringpdfexport">Crash during PDF export</h4>
 <p>Symbols that are stretched by a factor of 10,000.00 or more on the X or Y axis caused the PDF export to crash. </p>
-<h3 id="crmadressverwaltung-2">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-4">CRM Adressverwaltung</h3>
 <h4 id="focusofthesearch">Focus of the search</h4>
 <p>Under certain conditions, clicking the address window could cause the search to be unchecked when the address list was subsequently displayed. This has now been fixed.</p>
 <h4 id="searchisclearedwhenfilteringforselectedaddresses">Search is cleared when filtering for selected addresses</h4>
@@ -462,11 +558,11 @@ To select contacts with address, the user can select the checkboxes next to the 
 <h4 id="selectsearchinputwhenopeningtheaddresslist">Select search input when opening the address list</h4>
 <p>If a search was made for a term in the address list, this term is now automatically selected again when the list is opened again.</p>
 <h2 id="7135releasedate03032020releasedate">7.1.35 <releasedate>03/03/2020</releasedate></h2>
-<h3 id="crmadressverwaltung-3">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-5">CRM Adressverwaltung</h3>
 <h4 id="multimarkingindialogselectioncontacts">Multimarking in dialog Selection contacts</h4>
 <p>Using the commands in the context menu of the dialog Select contacts caused a crash, this has been fixed.</p>
 <h2 id="7134releasedate03022020releasedate">7.1.34 <releasedate>03/02/2020</releasedate></h2>
-<h3 id="cad-3">CAD</h3>
+<h3 id="cad-4">CAD</h3>
 <h4 id="greeklettersoffsetinprint">Greek letters offset in print</h4>
 <p>In printed drawings, Greek letters such as theta, alpha and gamma were offset and on the screen, characters from a different font were displayed.</p>
 <h4 id="kerningdisabledbydefault">Kerning disabled by default</h4>
@@ -475,10 +571,10 @@ To select contacts with address, the user can select the checkboxes next to the 
 <p>In addition to the character spacing, the word spacing for a font can now also be set. All character fonts preconfigured by Treesoft have been adapted accordingly. The new option can be found in the editing dialog for individual fonts (menu "Text" &gt; "Foreign Language Translation" &gt; "Dictionary" &gt; "Fonts").</p>
 <h4 id="evaluationofcontactmirrorsfordummies">Evaluation of contact mirrors for dummies</h4>
 <p>The evaluation of contact mirrors for dummies, to determine the number and type of stored contacts, now works correctly again.</p>
-<h3 id="cadfremdsprachenbersetzung">CAD Fremdsprachenübersetzung</h3>
+<h3 id="cadfremdsprachenbersetzung-1">CAD Fremdsprachenübersetzung</h3>
 <h4 id="saveandrestoretheoutputlanguageandoutputalternativelanguage">Save and restore the output language and output alternative language</h4>
 <p>From now on, both the output language and the output alternative language will be saved and restored for each project.</p>
-<h3 id="crmadressverwaltung-4">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-6">CRM Adressverwaltung</h3>
 <h4 id="connecttoamainaddress">Connect to a main address</h4>
 <p>Using the command "Connect to a main address" in the menu bar in the address window, the current address can be assigned to a main address, here the old address list was replaced by the new one.</p>
 <h4 id="connecttoasecondaryaddress">Connect to a secondary address</h4>
@@ -506,7 +602,7 @@ To select contacts with address, the user can select the checkboxes next to the 
 <h4 id="inserthyperlink">Insert hyperlink</h4>
 <p>With the command "Insert hyperlink" you can link different data in the text of entries, when linking addresses the new address list is used in the dialog Insert hyperlink.</p>
 <h2 id="7133releasedate02192020releasedate">7.1.33 <releasedate>02/19/2020</releasedate></h2>
-<h3 id="cad-4">CAD</h3>
+<h3 id="cad-5">CAD</h3>
 <h4 id="grayscalefilteradjusted">Grayscale filter adjusted</h4>
 <p>The brightness of the grayscale filter has been adjusted to improve the display on low-contrast monitors.</p>
 <h3 id="notifier-1">Notifier</h3>
@@ -515,7 +611,7 @@ To select contacts with address, the user can select the checkboxes next to the 
 <h3 id="treesoftoffice-1">Treesoft Office</h3>
 <h4 id="onlyworkstationlicensesaredisplayedinthelicensewizardintheservicehotlinedetailsmenu">Only workstation licenses are displayed in the license wizard in the Service/Hotline-details menu</h4>
 <p>In the License Assistant in the menu Service/Hotline-details, workstation or user licenses are displayed according to the license file.</p>
-<h3 id="projektverwaltung">Projektverwaltung</h3>
+<h3 id="projektverwaltung-1">Projektverwaltung</h3>
 <h4 id="addingaddressesinprojectsettings">Adding addresses in project settings</h4>
 <p>When adding addresses in the project settings, the last added address is set as project address, this must not happen. The project address does not change anymore when adding more addresses.</p>
 <h4 id="updateaddressesafteradding">Update addresses after adding</h4>
@@ -538,11 +634,11 @@ This error has now been corrected, so that the newer one is always transferred t
 <h2 id="7132releasedate02062020releasedate">7.1.32 <releasedate>02/06/2020</releasedate></h2>
 <p>General optimizations and stability improvements.</p>
 <h2 id="7131releasedate01302020releasedate">7.1.31 <releasedate>01/30/2020</releasedate></h2>
-<h3 id="cad-5">CAD</h3>
+<h3 id="cad-6">CAD</h3>
 <h4 id="correctionandoptimizationofmemorymanagement">Correction and optimization of memory management</h4>
 <p>Due to drawings with large graphics, it could happen in various functions that the allocated working memory was completely utilized and thus problems could occur during the saving process. </p>
 <h2 id="7130releasedate01292020releasedate">7.1.30 <releasedate>01/29/2020</releasedate></h2>
-<h3 id="cadfremdsprachenbersetzung-1">CAD Fremdsprachenübersetzung</h3>
+<h3 id="cadfremdsprachenbersetzung-2">CAD Fremdsprachenübersetzung</h3>
 <h4 id="addeddifferentialcollisioncheck">Added differential collision check</h4>
 <p>The new filter "Show texts with colliding translations only" has been added to the "Translate" dialog. Every single text is checked for collisions with other objects on the same page in its mother language. Then the collisions are checked again for the translations stored for the text. If the collisions differ, they are marked accordingly in the filtered list.</p>
 <h3 id="startcenter-1">Start-Center</h3>
@@ -551,7 +647,7 @@ This error has now been corrected, so that the newer one is always transferred t
 <h2 id="7129releasedate01272020releasedate">7.1.29 <releasedate>01/27/2020</releasedate></h2>
 <p>General optimizations and stability improvements.</p>
 <h2 id="7128releasedate01242020releasedate">7.1.28 <releasedate>01/24/2020</releasedate></h2>
-<h3 id="cadfremdsprachenbersetzung-2">CAD Fremdsprachenübersetzung</h3>
+<h3 id="cadfremdsprachenbersetzung-3">CAD Fremdsprachenübersetzung</h3>
 <h4 id="importproceduresadapted">Import procedures adapted</h4>
 <p>The Excel/CSV dictionary import matches the translations to be imported using the reference language of the dictionary. If the entry to be imported contains no translation in the reference language, it was simply added to the dictionary. From now on for an entry to be imported without a translation in the reference language, the number of matching translations for each entry in the dictionary is determined. The entry to be imported is then synchronized with the entry in the dictionary with the most matches. If there is no entry in the dictionary with matches, the entry to be imported is added to the dictionary.</p>
 <h4 id="projecttemplatemotherlanguage">Project template mother language</h4>
@@ -588,14 +684,14 @@ To do this, you have to select a contact on the right side of the address list a
 <h3 id="crmmailing-1">CRM Mailing</h3>
 <h4 id="selectaddress">Select address</h4>
 <p>When selecting e-mail recipients, the old address list was still used, it was replaced by the new address list now.</p>
-<h3 id="projektverwaltung-1">Projektverwaltung</h3>
+<h3 id="projektverwaltung-2">Projektverwaltung</h3>
 <h4 id="addingaddresses">Adding addresses</h4>
 <p>In the project management you can add addresses in the settings. Here the old address list has been replaced by the new address list.</p>
 <h2 id="7127releasedate01202020releasedate">7.1.27 <releasedate>01/20/2020</releasedate></h2>
-<h3 id="cad-6">CAD</h3>
+<h3 id="cad-7">CAD</h3>
 <h4 id="textinexportedpdfincorrectlypositioned">Text in exported PDF incorrectly positioned</h4>
 <p>Center-aligned or right-aligned texts were positioned incorrectly in exported PDF files.</p>
-<h3 id="cadfremdsprachenbersetzung-3">CAD Fremdsprachenübersetzung</h3>
+<h3 id="cadfremdsprachenbersetzung-4">CAD Fremdsprachenübersetzung</h3>
 <h4 id="notextsinexportedpdf">No texts in exported PDF</h4>
 <p>Changes to the fonts resulted in exported PDF files no longer containing texts. This problem could only be solved by restarting Treesoft CAD afterwards.</p>
 <h4 id="excelcsvexportinthetranslatedialog">Excel/CSV export in the "Translate" dialog</h4>
@@ -606,7 +702,7 @@ To do this, you have to select a contact on the right side of the address list a
 <p>For Excel/CSV import, the setting "First row is header:" has been removed. In future, all Excel/CSV files to be imported must contain a header. More information can be found in the context help of the respective import dialogs.</p>
 <h4 id="displayprobleminthedictionary">Display problem in the dictionary</h4>
 <p>After removing several entries, there could be display problems in the list; Entries were incorrectly sorted or an empty line was displayed.</p>
-<h3 id="crmadressverwaltung-5">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-7">CRM Adressverwaltung</h3>
 <h4 id="crashwhenopeningsoftwareinformation">Crash when opening software information</h4>
 <p>When opening software information, a crash could occur if the color ID of a software group reached a certain value. With each new software group, the color is automatically incremented internally.</p>
 <h4 id="notpossibletofindbyaddress">Not possible to find by address</h4>
@@ -618,13 +714,13 @@ This problem occurred in conjunction with the email permissions management and c
 <h2 id="7126releasedate01132020releasedate">7.1.26 <releasedate>01/13/2020</releasedate></h2>
 <p>General optimizations and stability improvements.</p>
 <h2 id="7125releasedate01072020releasedate">7.1.25 <releasedate>01/07/2020</releasedate></h2>
-<h3 id="cad-7">CAD</h3>
+<h3 id="cad-8">CAD</h3>
 <h4 id="matchsymbols">Match symbols</h4>
 <p>This function imports information about all symbols in libraries into the database. 
 Until now, it was available either via the symbol management, via Set symbols (F4) or the environment in the options dialog.
 In the future it can be used under the name "Import" exclusively via the environment in the options dialog. 
 In addition, there is an "Export" there, which transfers the symbol information from the database to the descript.ion file in the libraries.</p>
-<h3 id="cadfremdsprachenbersetzung-4">CAD Fremdsprachenübersetzung</h3>
+<h3 id="cadfremdsprachenbersetzung-5">CAD Fremdsprachenübersetzung</h3>
 <h4 id="buttonsinthetranslatedialog">Buttons in the "Translate" dialog</h4>
 <p>The buttons "Set translatable", "Set not translatable" and "Toggle translatable" in the "Translate" dialog are now activated or deactivated depending on the translatability of the selected entries.</p>
 <h4 id="newfiltersinthetranslatedialog">New filters in the "Translate" dialog</h4>
@@ -639,7 +735,7 @@ In addition, there is an "Export" there, which transfers the symbol information 
 <p>If a project was assigned the wrong native language and a drawing was opened and saved, all texts of the saved drawing now have the wrong assigned mother language. The adjustment of the project mother language does not change the mother language of the respective texts. This can now be adapted in the "Text" dialog by left mouse clicks on the country flag on the left above the text input or via the context menu in the "Translate" dialog. If a text already has a translation for the new mother language, the languages of the affected translation and the text are swapped. </p>
 <h4 id="applyingoftranslationfromdictionary">Applying of translation from dictionary</h4>
 <p>The dictionary can be called up in the "Text" dialog via the "Dictionary" button. After selecting a suitable entry, it can be accepted via the "Apply" button. In addition to the translations, the text itself is now also overwritten with the contents of the entry from the dictionary.</p>
-<h3 id="crmadressverwaltung-6">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-8">CRM Adressverwaltung</h3>
 <h4 id="navigationinthesearchfield">Navigation in the "Search" field</h4>
 <p>If the focus is on the "Search" field, you can now navigate up and down the list using the arrow keys.</p>
 <h4 id="globalkeyboardshortcutsintheaddresslist">Global keyboard shortcuts in the address list</h4>
@@ -652,7 +748,7 @@ In addition, there is an "Export" there, which transfers the symbol information 
 <h4 id="missingemailattachments">Missing e-mail attachments</h4>
 <p>With e-mails that have a certain format that deviates from the standard, it could happen that individual attachments could not be extracted from the e-mail.</p>
 <h2 id="7124releasedate12102019releasedate">7.1.24 <releasedate>12/10/2019</releasedate></h2>
-<h3 id="crmadressverwaltung-7">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-9">CRM Adressverwaltung</h3>
 <h4 id="globalkeyboardshortcutsintheaddresslist-1">Global keyboard shortcuts in the address list</h4>
 <p>Until now the global shortcuts could not be used in the new address list, this has now been fixed so that the shortcuts can also be used here.</p>
 <h4 id="incorrectnameintheaddresslist">Incorrect name in the address list</h4>
@@ -663,30 +759,30 @@ In addition, there is an "Export" there, which transfers the symbol information 
 <p>The contact person selection can now be confirmed by double-clicking on addresses and contact persons.</p>
 <h4 id="displayingaddressesinthegeodatatool">Displaying addresses in the geodata tool</h4>
 <p>Addresses with postal codes to which several postal code areas are assigned could not be displayed. These addresses can now be displayed as expected.</p>
-<h3 id="cad-8">CAD</h3>
+<h3 id="cad-9">CAD</h3>
 <h4 id="deletedialogpositions">Delete dialog positions.</h4>
 <p>"Delete dialog positions" from the window menu now also resets the positions of the "Set symbols via catalog tree" windows.</p>
-<h3 id="cadkonverter-2">CAD Konverter</h3>
+<h3 id="cadkonverter-3">CAD Konverter</h3>
 <h4 id="displayoftheworkarea">Display of the work area</h4>
 <p>When using the "Update floor plan" function, the maximum dimensions of the working area are no longer displayed.</p>
 <h4 id="starting">Starting</h4>
 <p>If the CAD Converter was started from the CAD wizard selection, a message appeared saying that the active project is already being processed and that the CAD Converter is therefore not working. 
 This message no longer appears if the same user has opened the project in CAD and wants to open it in CAD Converter. If another user tries to open the project in the CAD Converter, this message still appears.</p>
 <h2 id="7123releasedate11292019releasedate">7.1.23 <releasedate>11/29/2019</releasedate></h2>
-<h3 id="crmadressverwaltung-8">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-10">CRM Adressverwaltung</h3>
 <h4 id="addresslistlosesmarkerswhenmultiplemarkersareenabled">Address list loses markers when multiple markers are enabled</h4>
 <p>The multiple marker could easily be lost by accidental clicking in the table. 
 Now it behaves as expected, so the check box must be checked or unchecked directly. 
 A click on the row is no longer sufficient.</p>
-<h3 id="cad-9">CAD</h3>
+<h3 id="cad-10">CAD</h3>
 <h4 id="projectrelatedtextmodulefile">Project-related text module file</h4>
 <p>The functions for creating and editing project-related text module files have been removed.</p>
 <h4 id="outputviaintelligentpdfexport">Output via intelligent PDF export</h4>
 <p>All PDF files are now output with the correct character set.</p>
-<h3 id="cadkonverter-3">CAD Konverter</h3>
+<h3 id="cadkonverter-4">CAD Konverter</h3>
 <h4 id="projectlockdown">Project lockdown</h4>
 <p>The CAD converter now checks unilaterally whether the project to be processed has been locked.</p>
-<h3 id="cadfremdsprachenbersetzung-5">CAD Fremdsprachenübersetzung</h3>
+<h3 id="cadfremdsprachenbersetzung-6">CAD Fremdsprachenübersetzung</h3>
 <h4 id="additionallanguages">Additional languages</h4>
 <p>The range of languages output with the character set "ISO 3098" has been extended. See https://github.com/hikikomori82/osifont</p>
 <h4 id="additionallanguagescharactersets">Additional languages/character sets</h4>
@@ -733,7 +829,7 @@ circuit is distributed over different floor plans, these are displayed in a diff
 <p>The list "Cable connections" is sorted by the column "Circuit" by default. This column was previously sorted numerically, so that alphanumeric circuits can be mixed 
 up into were included in the list. Now an alphanumeric sorting is applied.</p>
 <h2 id="7122betareleasedate11222019releasedate">7.1.22-beta <releasedate>11/22/2019</releasedate></h2>
-<h3 id="cad-10">CAD</h3>
+<h3 id="cad-11">CAD</h3>
 <h4 id="statusintranslationdialogenhanced">Status in Translation Dialog Enhanced</h4>
 <p>Translated texts that do not contain translations for the current language or alternative language are now highlighted by separate icons and tooltips.</p>
 <h4 id="previewindialogtranslations">Preview in dialog Translations</h4>
@@ -747,7 +843,7 @@ All CRM customers can now retrieve
 Only the duplicate resolution requires an additional license. 
 If such a license is not yet available, the help opens with a detailed description and why you should definitely use this module.</p>
 <h2 id="7121betareleasedate11182019releasedate">7.1.21-beta <releasedate>11/18/2019</releasedate></h2>
-<h3 id="cad-11">CAD</h3>
+<h3 id="cad-12">CAD</h3>
 <h4 id="whitelistcreatedwhenstartingtreesoftcad">Whitelist created when starting Treesoft CAD</h4>
 <p>The "TranslatableWhitelist.txt" file is now created when Treesoft CAD is started if it is not already present. For new installations, the file is created directly.</p>
 <h4 id="adjustmentofthebuttonsinthetoolbarsoftheforeignlanguagetranslationdialogs">Adjustment of the buttons in the toolbars of the foreign language translation dialogs</h4>
@@ -771,7 +867,7 @@ If such a license is not yet available, the help opens with a detailed descripti
 <h4 id="databasepathremovedfromstatusbar">Database path removed from status bar</h4>
 <p>The database path is no longer displayed in the status bar.</p>
 <h2 id="7120betareleasedate11152019releasedate">7.1.20-beta <releasedate>11/15/2019</releasedate></h2>
-<h3 id="cad-12">CAD</h3>
+<h3 id="cad-13">CAD</h3>
 <h4 id="problemssavingdrawingswithtpiecesfixed">Problems saving drawings with T-pieces fixed</h4>
 <p>When saving drawings in the new data format, it could happen that several symbol definitions were generated for similar T-connectors. When reading such a drawing the processing could crash.</p>
 <h4 id="autocompletionoptimized">Autocompletion optimized</h4>
@@ -785,7 +881,7 @@ If such a license is not yet available, the help opens with a detailed descripti
 <h4 id="exclusivelypotentiallytranslatabletextsindialogtranslations">Exclusively potentially translatable texts in dialog Translations</h4>
 <p>The Translations dialog now lists only those texts that are potentially translatable. These are texts with the text type comment and variable.</p>
 <h2 id="7119betareleasedate11112019releasedate">7.1.19-beta <releasedate>11/11/2019</releasedate></h2>
-<h3 id="cad-13">CAD</h3>
+<h3 id="cad-14">CAD</h3>
 <h4 id="filteroptimizedinallfilterableforeignlanguagetranslationlists">Filter optimized in all filterable foreign language translation lists</h4>
 <p>All filters now work like the full text search. The input is divided into words and each word must occur. Word separators are all forms of spaces as well as the CAD line breaks up and down.</p>
 <h4 id="dialogtitlesadjusted">Dialog titles adjusted</h4>
@@ -811,7 +907,7 @@ This mechanism did not work properly in all situations.</p>
 <h2 id="7118betareleasedate11042019releasedate">7.1.18-beta <releasedate>11/04/2019</releasedate></h2>
 <p>General optimizations and stability improvements.</p>
 <h2 id="7117betareleasedate10292019releasedate">7.1.17-beta <releasedate>10/29/2019</releasedate></h2>
-<h3 id="cad-14">CAD</h3>
+<h3 id="cad-15">CAD</h3>
 <h4 id="optimizedforeignlanguagetranslation">Optimized foreign language translation</h4>
 <p>Input of translations optimized and internal application preparations for the translation function significantly accelerated. </p>
 <h3 id="cadprojektliste">CAD Projektliste</h3>
@@ -860,7 +956,7 @@ If the Datanorm file did not contain net prices, but the price file did, then it
 The prices were imported correctly, but were not available for price calculation. 
 This error has now been corrected.</p>
 <h2 id="7115betareleasedate10112019releasedate">7.1.15-beta <releasedate>10/11/2019</releasedate></h2>
-<h3 id="crmadressverwaltung-9">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-11">CRM Adressverwaltung</h3>
 <h4 id="menucommandsmarkandinvertremovedfrommenuaddress">Menu commands Mark and invert removed from menu address</h4>
 <p>The menu Address previously contained the two menu commands Mark and Invert.
 These commands refer exclusively to the address list and were therefore removed from this menu.
@@ -870,14 +966,14 @@ In future they can be used directly via the new address list.</p>
 <h4 id="missingcommandsintreesoftcadwindowmenuadded">Missing commands in Treesoft CAD window menu added</h4>
 <p>The window menu in Treesoft CAD now contains the e-mail outbox, e-mails in transit and the notifier in addition to the e-mail inbox.</p>
 <h2 id="7113betareleasedate10032019releasedate">7.1.13-beta <releasedate>10/03/2019</releasedate></h2>
-<h3 id="crmadressverwaltung-10">CRM Adressverwaltung</h3>
+<h3 id="crmadressverwaltung-12">CRM Adressverwaltung</h3>
 <h4 id="menucommandsearchforduplicatesrenamedtoduplicatecleanup">Menu command "Search for duplicates…" renamed to "Duplicate cleanup…</h4>
 <h3 id="crmdublettenbereinigung-2">CRM Dublettenbereinigung</h3>
 <h4 id="notificationofmissingsalesmansettings">Notification of missing salesman settings</h4>
 <p>During duplicate resolution, salesman are deleted and entered again. 
 For this purpose, a history entry is created to log this process.
 Now the user is correctly informed if settings are missing and have to be added in the options dialog.</p>
-<h3 id="cad-15">CAD</h3>
+<h3 id="cad-16">CAD</h3>
 <h4 id="f2functionnewlyimplementedandswitchedtodockablewindows">F2 function newly implemented and switched to dockable windows</h4>
 <p>The F2 function was implemented from scratch and switched to undockable windows.
 The articles/symbols to be displayed are now loaded much faster. The window handling
@@ -891,7 +987,7 @@ was significantly improved. A list of the advantages:</p>
 <li>More modern look</li>
 </ul>
 <h2 id="712betareleasedate08132019releasedate">7.1.2-beta <releasedate>08/13/2019</releasedate></h2>
-<h3 id="cad-16">CAD</h3>
+<h3 id="cad-17">CAD</h3>
 <h4 id="newforeignlanguagetranslationandnewzngdataformat">New foreign language translation and new ZNG data format</h4>
 <p>The newly developed foreign language translation is now available to you.
 Translations no longer replace the texts of drawings, but supplement them.</p>
@@ -899,7 +995,7 @@ Translations no longer replace the texts of drawings, but supplement them.</p>
 There is no need to make copies for translated drawings; one drawing contains all translations.</p>
 <p>This change requires changing the ZNG file format and assigning a mother language to each project.
 For more information, see the Foreign Language Translation Guide.</p>
-<h3 id="projektverwaltung-2">Projektverwaltung</h3>
+<h3 id="projektverwaltung-3">Projektverwaltung</h3>
 <h4 id="renameprojectsifprojectdirectoryisstillinuse">Rename projects if project directory is still in use.</h4>
 <p>If the corresponding project directory cannot be renamed when renaming the project,
 an error message is displayed and no changes are made to the project name and directory.</p>
@@ -907,7 +1003,7 @@ an error message is displayed and no changes are made to the project name and di
 <h3 id="crmeinstellungen">CRM Einstellungen</h3>
 <h4 id="deletingmaingroupsgroupssubjects">Deleting Main Groups/Groups Subjects</h4>
 <p>Subject deletion is now possible even if the subject is still in use.</p>
-<h3 id="cadkonverter-4">CAD Konverter</h3>
+<h3 id="cadkonverter-5">CAD Konverter</h3>
 <h4 id="circleswithsmallradiiareexportedaspoints">Circles with small radii are exported as points</h4>
 <p>It may happen that circles with small radii were exported as a point, even if the circle is part of a symbol with a high scaling factor.</p>
 <h2 id="710betareleasedate09072019releasedate">7.1.0-beta <releasedate>09.07.2019</releasedate></h2>
@@ -937,7 +1033,7 @@ If you are using a batch-based script for the backup, please correct the names o
 <p>So far we have delivered the program IBOConsole for the separate access to the database. 
 Due to age and technical problems this tool has now been replaced by Flamerobin. 
 In the program directory of Treesoft Office there is a link to start Flamerobin with preconfigured databases.</p>
-<h3 id="cadkonverter-5">CAD Konverter</h3>
+<h3 id="cadkonverter-6">CAD Konverter</h3>
 <h4 id="redesignofwizardselectionandtoolbar">Redesign of wizard selection and toolbar</h4>
 <p>The names of the wizards and some icons have been updated. A more detailed description of each wizard is now displayed in the wizard selection.</p>
 <h4 id="projectbasedwork">Project-based work</h4>
